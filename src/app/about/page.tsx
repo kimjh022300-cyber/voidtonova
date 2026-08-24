@@ -1,17 +1,32 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
+import { createPageMetadata } from "@/lib/metadata";
+import { createBreadcrumbStructuredData, createWebPageStructuredData } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
-  title: "About — Void to Nova",
-  description: "불확실해도 계속 나아가는 사람을 위해, 일상을 조금 더 편하게 만드는 도구를 만듭니다.",
-};
+const description = "불확실해도 계속 나아가는 사람을 위해, 일상을 조금 더 편하게 만드는 도구를 만듭니다.";
+
+export const metadata = createPageMetadata({
+  title: "브랜드 이야기",
+  description,
+  path: "/about",
+  keywords: ["Void to Nova 브랜드", "Void to Nova 이야기"],
+});
 
 export default function AboutPage() {
   return (
     <main className="about-page" id="top">
+      <JsonLd
+        data={[
+          createWebPageStructuredData({ path: "/about", name: "브랜드 이야기 | Void to Nova", description }),
+          createBreadcrumbStructuredData([
+            { name: "홈", path: "/" },
+            { name: "브랜드 이야기", path: "/about" },
+          ]),
+        ]}
+      />
       <header className="site-header">
         <Link href="/" className="mini-mark">Void to Nova</Link>
-        <nav>
+        <nav aria-label="주요 메뉴">
           <Link href="/products">PRODUCTS</Link>
           <Link href="/about" aria-current="page">ABOUT</Link>
           <Link href="/contact">CONTACT</Link>
@@ -20,8 +35,7 @@ export default function AboutPage() {
 
       <section className="about-hero">
         <p className="eyebrow">ABOUT / Void to Nova</p>
-        <h1 className="about-title-desktop">불확실해도,<br />나아가는 사람을 위해.</h1>
-        <h1 className="about-title-mobile">불확실해도,<br />계속 나아가는<br />사람을 위해.</h1>
+        <h1>불확실해도,<br /><span className="about-mobile-title-word">계속 </span>나아가는<br className="about-mobile-break" /> 사람을 위해.</h1>
         <p className="about-hero-copy">우리는 완벽한 답을 기다리기보다,<br />오늘을 조금 더 나은 상태로 만드는<br className="about-mobile-break" /> 도구를 만듭니다.</p>
         <span className="about-scroll">OUR STORY <i>↓</i></span>
       </section>
@@ -40,7 +54,7 @@ export default function AboutPage() {
 
       <section className="about-name">
         <p className="eyebrow">THE NAME</p>
-        <div className="about-name-mark" aria-label="Void to Nova"><span>Void</span><i>→</i><span>Nova</span></div>
+        <h2 className="about-name-mark" aria-label="Void to Nova"><span>Void</span><i>→</i><span>Nova</span></h2>
         <div className="about-name-copy">
           <p><strong>Void</strong>는 아직 형태가 없는 가능성입니다.</p>
           <p><strong>Nova</strong>는 그 가능성이 움직이기 시작하는 순간입니다.</p>
@@ -66,7 +80,7 @@ export default function AboutPage() {
 
       <footer className="landing-footer">
         <div className="landing-footer-top"><Link href="/" className="landing-footer-mark">Void to Nova</Link><p>아직 정해지지 않은 상태에서,<br />더 나은 다음 상태로.</p></div>
-        <div className="landing-footer-bottom"><span>© 2026 Void to Nova</span><nav><Link href="/products">PRODUCTS</Link><Link href="/about">ABOUT</Link><Link href="/contact">CONTACT</Link></nav><a href="#top">TOP ↑</a></div>
+        <div className="landing-footer-bottom"><span>© 2026 Void to Nova</span><nav aria-label="푸터 메뉴"><Link href="/products">PRODUCTS</Link><Link href="/about">ABOUT</Link><Link href="/contact">CONTACT</Link></nav><a href="#top">TOP ↑</a></div>
       </footer>
     </main>
   );

@@ -5,7 +5,7 @@
 /* About page */
 .about-page { background: #f5f5f2; color: #111; }
 .about-mobile-break { display: none; }
-.about-title-mobile { display: none; }
+.about-mobile-title-word { display: none; }
 
 .about-hero {
   min-height: 100svh;
@@ -130,6 +130,7 @@
 }
 
 .about-name-mark {
+  margin: 0;
   display: flex;
   align-items: center;
   gap: clamp(24px, 4vw, 64px);
@@ -224,8 +225,7 @@
 
 @media (max-width: 699px) {
   .about-mobile-break { display: block; }
-  .about-title-desktop { display: none; }
-  .about-title-mobile { display: block; }
+  .about-mobile-title-word { display: inline; }
   .about-hero { min-height: 100svh; padding: 132px 24px 46px; justify-content: center; align-items: flex-start; text-align: left; }
   .about-hero h1 { font-size: clamp(43px, 12.2vw, 58px); line-height: 1.08; }
   .about-hero-copy { margin: 52px 0 0; font-size: 15px; }
@@ -1233,6 +1233,7 @@ h2,
 }
 
 .product-card-placeholder { min-width: 0; }
+.product-card-live { display: block; }
 
 .product-card-image {
   aspect-ratio: 1 / 1;

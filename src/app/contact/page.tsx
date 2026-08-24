@@ -1,12 +1,18 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
+import { createPageMetadata } from "@/lib/metadata";
+import { createBreadcrumbStructuredData, createWebPageStructuredData } from "@/lib/structured-data";
+import { SITE_EMAIL } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Contact — Void to Nova",
-  description: "제품 문의와 협업 제안, 그 밖의 이야기를 Void to Nova에 남겨주세요.",
-};
+const description = "제품 문의와 협업 제안, 그 밖의 이야기를 Void to Nova에 남겨주세요.";
 
-const email = "kimjh022300@gmail.com";
+export const metadata = createPageMetadata({
+  title: "문의하기",
+  description,
+  path: "/contact",
+});
+
+const email = SITE_EMAIL;
 const inquiries = [
   { label: "PRODUCT", title: "제품 문의", copy: "제품의 사용과 구매에 관해 궁금한 점을 남겨주세요." },
   { label: "PARTNERSHIP", title: "협업 및 제안", copy: "함께 만들고 싶은 프로젝트나 새로운 제안을 들려주세요." },
@@ -16,9 +22,18 @@ const inquiries = [
 export default function ContactPage() {
   return (
     <main className="contact-page" id="top">
+      <JsonLd
+        data={[
+          createWebPageStructuredData({ path: "/contact", name: "문의하기 | Void to Nova", description }),
+          createBreadcrumbStructuredData([
+            { name: "홈", path: "/" },
+            { name: "문의하기", path: "/contact" },
+          ]),
+        ]}
+      />
       <header className="site-header">
         <Link href="/" className="mini-mark">Void to Nova</Link>
-        <nav>
+        <nav aria-label="주요 메뉴">
           <Link href="/products">PRODUCTS</Link>
           <Link href="/about">ABOUT</Link>
           <Link href="/contact" aria-current="page">CONTACT</Link>
@@ -49,7 +64,7 @@ export default function ContactPage() {
 
       <footer className="landing-footer">
         <div className="landing-footer-top"><Link href="/" className="landing-footer-mark">Void to Nova</Link><p>아직 정해지지 않은 상태에서,<br />더 나은 다음 상태로.</p></div>
-        <div className="landing-footer-bottom"><span>© 2026 Void to Nova</span><nav><Link href="/products">PRODUCTS</Link><Link href="/about">ABOUT</Link><Link href="/contact">CONTACT</Link></nav><a href="#top">TOP ↑</a></div>
+        <div className="landing-footer-bottom"><span>© 2026 Void to Nova</span><nav aria-label="푸터 메뉴"><Link href="/products">PRODUCTS</Link><Link href="/about">ABOUT</Link><Link href="/contact">CONTACT</Link></nav><a href="#top">TOP ↑</a></div>
       </footer>
     </main>
   );
