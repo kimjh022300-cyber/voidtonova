@@ -61,7 +61,7 @@ export default function NovaPressureStepperPage() {
           <div className="mt-12 flex justify-center overflow-visible pb-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/nova/pressure-stepper/보라색 돌기형 마사지 매트 제품 사진-2.webp"
+              src="/assets/nova/pressure-stepper/hero.webp"
               alt="퍼플 Nova 에어 지압 스텝퍼"
               className="h-auto w-full max-w-[1280px] origin-center object-contain"
               style={{
