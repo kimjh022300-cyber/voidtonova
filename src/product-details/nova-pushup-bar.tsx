@@ -60,7 +60,7 @@ export default function NovaPushupBarPage() {
           <div className="mt-16 flex h-[660px] justify-center overflow-hidden pb-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/nova/pushup-bar/hihihi.png"
+              src="/assets/nova/pushup-bar/hihihi.webp"
               alt="블랙 Nova 프리미엄 메탈 푸쉬업바 한 세트"
               className="h-full w-full max-w-[1280px] origin-center object-cover"
               style={{
@@ -105,7 +105,7 @@ export default function NovaPushupBarPage() {
                 푸쉬업에 집중하세요.
               </>
             }
-            imageSrc="/assets/nova/pushup-bar/wrist-alignment-compare.png"
+            imageSrc="/assets/nova/pushup-bar/wrist-alignment-compare.webp"
             imageAlt="맨손 푸쉬업과 푸쉬업 바 사용 시 손목 정렬 비교"
             bodyAfterImage
           >
@@ -122,7 +122,7 @@ export default function NovaPushupBarPage() {
                 더 깊어진 움직임.
               </>
             }
-            imageSrc="/assets/nova/pushup-bar/deep-range.png"
+            imageSrc="/assets/nova/pushup-bar/deep-range.webp"
             imageAlt="푸쉬업 바를 사용해 몸을 깊게 내리는 자세"
             bodyAfterImage
           >
@@ -143,25 +143,25 @@ export default function NovaPushupBarPage() {
               {
                 title: "기본 푸쉬업",
                 photoLabel: "사진 — 푸쉬업 바를 어깨너비로 놓고 하는 기본 푸쉬업 자세",
-                photoSrc: "/assets/nova/pushup-bar/pushup-wide.png",
+                photoSrc: "/assets/nova/pushup-bar/pushup-wide.webp",
                 photoAlt: "푸쉬업 바를 어깨너비로 놓고 하는 기본 푸쉬업",
               },
               {
                 title: "와이드 푸쉬업",
                 photoLabel: "사진 — 푸쉬업 바 간격을 넓게 둔 와이드 푸쉬업 자세",
-                photoSrc: "/assets/nova/pushup-bar/pushup-standard.png",
+                photoSrc: "/assets/nova/pushup-bar/pushup-standard.webp",
                 photoAlt: "푸쉬업 바 간격을 넓게 벌려 하는 와이드 푸쉬업",
               },
               {
                 title: "다이아몬드 푸쉬업",
                 photoLabel: "사진 — 푸쉬업 바 간격을 좁힌 다이아몬드 푸쉬업 자세",
-                photoSrc: "/assets/nova/pushup-bar/pushup-narrow.png",
+                photoSrc: "/assets/nova/pushup-bar/pushup-narrow.webp",
                 photoAlt: "푸쉬업 바 간격을 좁혀 하는 다이아몬드 푸쉬업",
               },
               {
                 title: "더 깊게 내려가는 푸쉬업",
                 photoLabel: "사진 — 푸쉬업 바를 사용해 깊게 내려가는 자세",
-                photoSrc: "/assets/nova/pushup-bar/pushup-deep.png",
+                photoSrc: "/assets/nova/pushup-bar/pushup-deep.webp",
                 photoAlt: "푸쉬업 바를 사용해 깊게 내려가는 푸쉬업",
               },
             ]}
@@ -175,7 +175,7 @@ export default function NovaPushupBarPage() {
                 안정적으로 받쳐줍니다.
               </>
             }
-            imageSrc="/assets/nova/pushup-bar/triangle-frame.png"
+            imageSrc="/assets/nova/pushup-bar/triangle-frame.webp"
             imageAlt="화이트 배경 위에 놓인 블랙 푸쉬업 바 한 세트"
             bodyAfterImage
           >
@@ -192,7 +192,7 @@ export default function NovaPushupBarPage() {
                 단단하게 버티도록.
               </>
             }
-            imageSrc="/assets/nova/pushup-bar/steel-frame-detail.png"
+            imageSrc="/assets/nova/pushup-bar/steel-frame-detail.webp"
             imageAlt="푸쉬업 바의 강관 프레임과 손잡이 연결부 클로즈업"
             bodyAfterImage
           >
@@ -209,7 +209,7 @@ export default function NovaPushupBarPage() {
                 편안하게, 미끄러지지 않게.
               </>
             }
-            imageSrc="/assets/nova/pushup-bar/grip-detail.png"
+            imageSrc="/assets/nova/pushup-bar/grip-detail.webp"
             imageAlt="두꺼운 이중 폼 그립이 적용된 푸쉬업 바 클로즈업"
             bodyAfterImage
           >
@@ -226,7 +226,7 @@ export default function NovaPushupBarPage() {
                 손잡이는 안정적으로.
               </>
             }
-            imageSrc="/assets/nova/pushup-bar/stable-grip.png"
+            imageSrc="/assets/nova/pushup-bar/stable-grip.webp"
             imageAlt="손으로 푸쉬업 바 손잡이를 단단히 잡은 모습"
             bodyAfterImage
           >
@@ -243,7 +243,7 @@ export default function NovaPushupBarPage() {
                 가볍게 꺼내서 시작하세요.
               </>
             }
-            imageSrc="/assets/nova/pushup-bar/weight-210g.png"
+            imageSrc="/assets/nova/pushup-bar/weight-210g.webp"
             imageAlt="저울 위에서 210g으로 측정된 푸쉬업 바 한 개"
             bodyAfterImage
           >
@@ -407,28 +407,28 @@ export default function NovaPushupBarPage() {
             {
               scene: "손목이 불편한 분",
               line: "손을 직접 짚는 대신 손잡이를 잡고, 보다 자연스러운 각도로 운동해보세요.",
-              imageSrc: "/assets/nova/pushup-bar/audience-wrist-strain.png",
+              imageSrc: "/assets/nova/pushup-bar/audience-wrist-strain.webp",
               imageAlt: "푸쉬업 중 손목에 부담을 느끼는 모습",
               photo: "",
             },
             {
               scene: "더 깊게 하고 싶은 분",
               line: "높아진 손 위치만큼 몸을 더 깊게 내리며 움직임을 넓혀보세요.",
-              imageSrc: "/assets/nova/pushup-bar/deep-range.png",
+              imageSrc: "/assets/nova/pushup-bar/deep-range.webp",
               imageAlt: "푸쉬업 바를 사용해 깊게 내려가는 자세",
               photo: "",
             },
             {
               scene: "집에서 운동하는 분",
               line: "꺼내서 바로 사용할 수 있는 도구 하나로 루틴을 이어가세요.",
-              imageSrc: "/assets/nova/pushup-bar/audience-home-workout.png",
+              imageSrc: "/assets/nova/pushup-bar/audience-home-workout.webp",
               imageAlt: "집에서 푸쉬업으로 운동하는 모습",
               photo: "",
             },
             {
               scene: "상체를 키우고 싶은 분",
               line: "손 위치와 자세를 바꾸며 내 운동 루틴에 맞춰 활용해보세요.",
-              imageSrc: "/assets/nova/pushup-bar/audience-travel-workout.png",
+              imageSrc: "/assets/nova/pushup-bar/audience-travel-workout.webp",
               imageAlt: "여행지에서 푸쉬업으로 운동하는 모습",
               photo: "",
             },
@@ -624,7 +624,7 @@ export default function NovaPushupBarPage() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/nova/pushup-bar/closing-product.png"
+            src="/assets/nova/pushup-bar/closing-product.webp"
             alt="블랙 푸쉬업 바 한 세트"
             className="h-full w-full object-cover"
           />
@@ -759,7 +759,7 @@ export default function NovaPushupBarPage() {
             <li key={label} className="mx-auto w-full max-w-[780px] text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/assets/nova/pushup-bar/included-bars.png"
+                src="/assets/nova/pushup-bar/included-bars.webp"
                 alt="푸쉬업 바 2개 구성품"
                 className="h-auto w-full rounded-[28px] object-cover"
               />

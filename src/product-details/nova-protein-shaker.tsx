@@ -60,7 +60,7 @@ export default function NovaProteinShakerPage() {
           <div className="mt-24 flex justify-center overflow-visible pb-12">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/nova/protein-shaker/3e51ae39-7171-4b07-8531-2a8ebb5ba0a7-2.png"
+              src="/assets/nova/protein-shaker/3e51ae39-7171-4b07-8531-2a8ebb5ba0a7-2.webp"
               alt="500ml 블랙 Nova 트라이탄 프로틴 쉐이커"
               className="h-auto w-full max-w-[1280px] origin-center object-contain"
               style={{
@@ -109,7 +109,7 @@ export default function NovaProteinShakerPage() {
                 물통은 아무거나 쓰고 있었다면.
               </>
             }
-            imageSrc="/assets/nova/protein-shaker/1.png"
+            imageSrc="/assets/nova/protein-shaker/1.webp"
             imageAlt="운동 가방 속 일반 쉐이커"
             bodyAfterImage
           >
@@ -118,7 +118,7 @@ export default function NovaProteinShakerPage() {
 
           <FeatureBlock
             title="트라이탄 소재로 고민 끝."
-            imageSrc="/assets/nova/protein-shaker/tritan-water-drops.png"
+            imageSrc="/assets/nova/protein-shaker/tritan-water-drops.webp"
             imageAlt="물방울이 맺힌 블랙 트라이탄 프로틴 쉐이커"
             bodyAfterImage
           >
@@ -133,9 +133,9 @@ export default function NovaProteinShakerPage() {
                 식기세척기·전자레인지까지.
               </>
             }
-            imageSrc="/assets/nova/protein-shaker/dishwasher-safe.png"
+            imageSrc="/assets/nova/protein-shaker/dishwasher-safe.webp"
             imageAlt="식기세척기 안에 분리해 넣은 블랙 프로틴 쉐이커"
-            imageSrc2="/assets/nova/protein-shaker/microwave-safe.png"
+            imageSrc2="/assets/nova/protein-shaker/microwave-safe.webp"
             imageAlt2="전자레인지 안에 놓인 블랙 프로틴 쉐이커"
             aspect="4 / 3"
             bodyAfterImage
@@ -145,9 +145,9 @@ export default function NovaProteinShakerPage() {
 
           <FeatureBlock
             title="덩어리 생길 걱정은 그만."
-            imageSrc="/assets/nova/protein-shaker/mixing-ball.png"
+            imageSrc="/assets/nova/protein-shaker/mixing-ball.webp"
             imageAlt="블랙 프로틴 쉐이커와 스테인리스 믹싱 볼"
-            imageSrc2="/assets/nova/protein-shaker/mixed-shake.png"
+            imageSrc2="/assets/nova/protein-shaker/mixed-shake.webp"
             imageAlt2="덩어리 없이 고르게 섞인 프로틴 음료가 담긴 블랙 쉐이커"
             bodyAfterImage
           >
@@ -162,9 +162,9 @@ export default function NovaProteinShakerPage() {
                 씻는 일까지 간단하죠.
               </>
             }
-            imageSrc="/assets/nova/protein-shaker/interior-top-view.png"
+            imageSrc="/assets/nova/protein-shaker/interior-top-view.webp"
             imageAlt="위에서 내려다본 블랙 프로틴 쉐이커의 오목한 내부 구조"
-            imageSrc2="/assets/nova/protein-shaker/concave-interior.png"
+            imageSrc2="/assets/nova/protein-shaker/concave-interior.webp"
             imageAlt2="뚜껑을 분리해 오목한 바닥 구조가 보이는 블랙 프로틴 쉐이커 본체"
             bodyAfterImage
           >
@@ -179,9 +179,9 @@ export default function NovaProteinShakerPage() {
                 물이 새지 않도록.
               </>
             }
-            imageSrc="/assets/nova/protein-shaker/leakproof-shake.png"
+            imageSrc="/assets/nova/protein-shaker/leakproof-shake.webp"
             imageAlt="물을 담은 상태로 기울여도 새지 않는 블랙 프로틴 쉐이커"
-            imageSrc2="/assets/nova/protein-shaker/gym-bag.png"
+            imageSrc2="/assets/nova/protein-shaker/gym-bag.webp"
             imageAlt2="운동복과 함께 운동 가방 안에 넣은 블랙 프로틴 쉐이커"
             aspect="4 / 3"
             bodyAfterImage
@@ -197,9 +197,9 @@ export default function NovaProteinShakerPage() {
                 한 번 마시기에 딱.
               </>
             }
-            imageSrc="/assets/nova/protein-shaker/capacity-detail.png"
+            imageSrc="/assets/nova/protein-shaker/capacity-detail.webp"
             imageAlt="100ml부터 500ml까지 표시된 블랙 프로틴 쉐이커 용량 눈금 클로즈업"
-            imageSrc2="/assets/nova/protein-shaker/serving-500ml.png"
+            imageSrc2="/assets/nova/protein-shaker/serving-500ml.webp"
             imageAlt2="500ml 눈금이 보이도록 음료를 담은 블랙 프로틴 쉐이커"
             bodyAfterImage
           >
@@ -208,7 +208,7 @@ export default function NovaProteinShakerPage() {
 
           <FeatureBlock
             title="220g의 가벼운 무게."
-            imageSrc="/assets/nova/protein-shaker/weight-220g.png"
+            imageSrc="/assets/nova/protein-shaker/weight-220g.webp"
             imageAlt="전자저울에서 220g으로 측정된 블랙 프로틴 쉐이커"
             bodyAfterImage
           >
@@ -223,7 +223,7 @@ export default function NovaProteinShakerPage() {
                 깔끔한 블랙.
               </>
             }
-            imageSrc="/assets/nova/protein-shaker/desk.png"
+            imageSrc="/assets/nova/protein-shaker/desk.webp"
             imageAlt="노트북과 식물 사이 책상 위에 놓인 블랙 프로틴 쉐이커"
             bodyAfterImage
           >
@@ -258,28 +258,28 @@ export default function NovaProteinShakerPage() {
             {
               scene: "운동 전",
               line: "물과 파우더를 담아 두면, 운동을 시작할 준비도 한결 간단해집니다.",
-              imageSrc: "/assets/nova/protein-shaker/before-workout.png",
+              imageSrc: "/assets/nova/protein-shaker/before-workout.webp",
               imageAlt: "운동 전 헬스장 가방 옆에 놓인 블랙 프로틴 쉐이커",
               photo: "사진 — 운동 전, 가방 옆에 놓인 쉐이커 컷",
             },
             {
               scene: "운동 직후",
               line: "숨이 가라앉기 전, 필요한 한 잔을 바로 챙길 수 있습니다.",
-              imageSrc: "/assets/nova/protein-shaker/after-workout.png",
+              imageSrc: "/assets/nova/protein-shaker/after-workout.webp",
               imageAlt: "운동 직후 블랙 프로틴 쉐이커로 음료를 마시는 남성",
               photo: "사진 — 운동 직후 쉐이커를 든 컷",
             },
             {
               scene: "출근길",
               line: "운동이 없는 날에도, 나를 챙기는 일은 계속되니까요.",
-              imageSrc: "/assets/nova/protein-shaker/commute.png",
+              imageSrc: "/assets/nova/protein-shaker/commute.webp",
               imageAlt: "출근길에 백팩을 메고 블랙 프로틴 쉐이커로 음료를 마시는 남성",
               photo: "사진 — 출근 가방과 블랙 쉐이커 컷",
             },
             {
               scene: "집에서",
               line: "홈트가 끝난 뒤에도, 물과 파우더를 담고 가볍게 흔들면 됩니다.",
-              imageSrc: "/assets/nova/protein-shaker/at-home.png",
+              imageSrc: "/assets/nova/protein-shaker/at-home.webp",
               imageAlt: "집 주방 조리대 위에 놓인 블랙 프로틴 쉐이커",
               photo: "사진 — 집에서 쉐이크를 준비하는 컷",
             },
@@ -474,7 +474,7 @@ export default function NovaProteinShakerPage() {
 
         <PhotoSlot
           label="사진 — 운동을 마친 뒤 블랙 쉐이커를 든 완성 컷 (와이드)"
-          imageSrc="/assets/nova/protein-shaker/closing.png"
+          imageSrc="/assets/nova/protein-shaker/closing.webp"
           imageAlt="흰 배경 위의 블랙 프로틴 쉐이커와 스테인리스 믹싱 볼"
           aspect="3 / 2"
         />
@@ -612,7 +612,7 @@ export default function NovaProteinShakerPage() {
 
         <PhotoSlot
           label="사진 — 500ml 쉐이커 사이즈 안내 이미지"
-          imageSrc="/assets/nova/protein-shaker/size.png"
+          imageSrc="/assets/nova/protein-shaker/size.webp"
           imageAlt="높이 21cm, 너비 10cm인 프로틴 쉐이커와 높이 5cm인 믹싱 볼 사이즈 안내"
           aspect="3 / 4"
         />
@@ -633,7 +633,7 @@ export default function NovaProteinShakerPage() {
 
         <PhotoSlot
           label="사진 — 프로틴 쉐이커 본체와 스테인리스 믹싱 볼"
-          imageSrc="/assets/nova/protein-shaker/mixing-ball.png"
+          imageSrc="/assets/nova/protein-shaker/mixing-ball.webp"
           imageAlt="블랙 프로틴 쉐이커 본체 1개와 스테인리스 믹싱 볼 1개"
           aspect="3 / 4"
         />

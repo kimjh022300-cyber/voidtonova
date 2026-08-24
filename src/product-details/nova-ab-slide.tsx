@@ -61,7 +61,7 @@ export default function NovaAbSlidePage() {
           <div className="mt-24 flex justify-center overflow-visible pb-12">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/nova/ab-slide/ab-hero-2.png"
+              src="/assets/nova/ab-slide/ab-hero-2.webp"
               alt="블랙 Nova 저소음 AB 슬라이드"
               className="h-auto w-full max-w-[1280px] origin-center object-contain"
               style={{
@@ -107,7 +107,7 @@ export default function NovaAbSlidePage() {
                 최대 100kg의 튼튼함.
               </>
             }
-            imageSrc="/assets/nova/ab-slide/weight-500g.png"
+            imageSrc="/assets/nova/ab-slide/weight-500g.webp"
             imageAlt="디지털 저울에서 약 500g으로 측정된 AB 슬라이드"
             bodyAfterImage
           >
@@ -124,7 +124,7 @@ export default function NovaAbSlidePage() {
                 조용하게 굴러가도록.
               </>
             }
-            imageSrc="/assets/nova/ab-slide/quiet-night-workout.png"
+            imageSrc="/assets/nova/ab-slide/quiet-night-workout.webp"
             imageAlt="늦은 시간 거실에서 AB 슬라이드로 운동하는 모습"
             bodyAfterImage
           >
@@ -143,11 +143,11 @@ export default function NovaAbSlidePage() {
             }
             imageSrcs={[
               {
-                src: "/assets/nova/ab-slide/wheel-width-9cm.png",
+                src: "/assets/nova/ab-slide/wheel-width-9cm.webp",
                 alt: "폭 9cm 치수가 표시된 AB 슬라이드 휠",
               },
               {
-                src: "/assets/nova/ab-slide/wheel-diameter-16-5cm.png",
+                src: "/assets/nova/ab-slide/wheel-diameter-16-5cm.webp",
                 alt: "지름 16.5cm 치수가 표시된 AB 슬라이드 휠",
               },
             ]}
@@ -167,7 +167,7 @@ export default function NovaAbSlidePage() {
                 30cm 와이드 그립.
               </>
             }
-            imageSrc="/assets/nova/ab-slide/grip-width-30cm.png"
+            imageSrc="/assets/nova/ab-slide/grip-width-30cm.webp"
             imageAlt="전체 폭 30cm 치수가 표시된 AB 슬라이드 와이드 그립"
             bodyAfterImage
           >
@@ -186,11 +186,11 @@ export default function NovaAbSlidePage() {
             }
             imageSrcs={[
               {
-                src: "/assets/nova/ab-slide/foam-grip-closeup.png",
+                src: "/assets/nova/ab-slide/foam-grip-closeup.webp",
                 alt: "부드러운 폼 그립이 보이는 AB 슬라이드 손잡이 클로즈업",
               },
               {
-                src: "/assets/nova/ab-slide/steel-pipe-grip.png",
+                src: "/assets/nova/ab-slide/steel-pipe-grip.webp",
                 alt: "폼 그립 안쪽의 강관 구조가 보이는 AB 슬라이드 손잡이",
               },
             ]}
@@ -210,7 +210,7 @@ export default function NovaAbSlidePage() {
                 내 힘으로 돌아오도록.
               </>
             }
-            imageSrc="/assets/nova/ab-slide/manual-return-sequence.png"
+            imageSrc="/assets/nova/ab-slide/manual-return-sequence.webp"
             imageAlt="AB 슬라이드를 밀어낸 뒤 시작 자세로 돌아오는 연속 동작"
             aspect="2250 / 5000"
             bodyAfterImage
@@ -230,11 +230,11 @@ export default function NovaAbSlidePage() {
             }
             imageSrcs={[
               {
-                src: "/assets/nova/ab-slide/storage-shelf-closeup.png",
+                src: "/assets/nova/ab-slide/storage-shelf-closeup.webp",
                 alt: "홈짐 선반에 AB 슬라이드를 보관한 모습의 클로즈업",
               },
               {
-                src: "/assets/nova/ab-slide/storage-shelf-wide.png",
+                src: "/assets/nova/ab-slide/storage-shelf-wide.webp",
                 alt: "거실 선반의 작은 공간에 AB 슬라이드를 보관한 모습",
               },
             ]}
@@ -254,7 +254,7 @@ export default function NovaAbSlidePage() {
                 거리부터 조절하세요.
               </>
             }
-            imageSrc="/assets/nova/ab-slide/rollout-distance-stages.png"
+            imageSrc="/assets/nova/ab-slide/rollout-distance-stages.webp"
             imageAlt="짧은 거리부터 긴 거리까지 단계별로 AB 슬라이드를 밀어내는 모습"
             bodyAfterImage
           >
@@ -274,17 +274,17 @@ export default function NovaAbSlidePage() {
             }
             imageSrcs={[
               {
-                src: "/assets/nova/ab-slide/assembly-step-1.png",
+                src: "/assets/nova/ab-slide/assembly-step-1.webp",
                 alt: "AB 슬라이드 휠과 강관, 폼 손잡이를 나란히 놓은 조립 준비 단계",
                 stepNumber: 1,
               },
               {
-                src: "/assets/nova/ab-slide/assembly-step-2.png",
+                src: "/assets/nova/ab-slide/assembly-step-2.webp",
                 alt: "강관과 폼 손잡이를 휠 한쪽에 끼운 조립 중간 단계",
                 stepNumber: 2,
               },
               {
-                src: "/assets/nova/ab-slide/assembly-step-3.png",
+                src: "/assets/nova/ab-slide/assembly-step-3.webp",
                 alt: "반대쪽 폼 손잡이를 끼워 AB 슬라이드 조립을 마무리하는 단계",
                 stepNumber: 3,
               },
@@ -448,28 +448,28 @@ export default function NovaAbSlidePage() {
           {[
             {
               scene: "집에서 코어 루틴을 만드는 분",
-              imageSrc: "/assets/nova/ab-slide/home-core-routine.png",
+              imageSrc: "/assets/nova/ab-slide/home-core-routine.webp",
               imageAlt: "거실 운동 매트 위에서 코어 운동을 하는 모습",
               imagePosition: "center top",
               photo: "사진 — 거실 매트 위에서 무릎을 대고 AB 슬라이드를 사용하는 홈트 장면",
             },
             {
               scene: "반동 없는 기본형을 찾는 분",
-              imageSrc: "/assets/nova/ab-slide/rollout-distance-stages.png",
+              imageSrc: "/assets/nova/ab-slide/rollout-distance-stages.webp",
               imageAlt: "AB 슬라이드를 직접 밀어내며 롤아웃 동작을 이어가는 모습",
               imagePosition: "center",
               photo: "사진 — AB 슬라이드를 앞으로 밀어낸 뒤, 내 힘으로 돌아오는 측면 동작 컷",
             },
             {
               scene: "짧게, 밀도 있게 운동하는 분",
-              imageSrc: "/assets/nova/ab-slide/intense-short-workout.png",
+              imageSrc: "/assets/nova/ab-slide/intense-short-workout.webp",
               imageAlt: "짧고 강도 높은 운동을 마친 뒤 호흡을 고르는 모습",
               imagePosition: "center top",
               photo: "사진 — 집 안에서 짧은 롤아웃 한 세트를 마무리하는 운동 장면",
             },
             {
               scene: "자세부터 차근히 배우는 분",
-              imageSrc: "/assets/nova/ab-slide/beginner-form-practice.png",
+              imageSrc: "/assets/nova/ab-slide/beginner-form-practice.webp",
               imageAlt: "무릎을 대고 AB 슬라이드의 시작 자세를 연습하는 모습",
               imagePosition: "center",
               photo: "사진 — 동봉 무릎 매트 위에서 짧은 가동 범위를 연습하는 정면 컷",
@@ -658,7 +658,7 @@ export default function NovaAbSlidePage() {
 
         <PhotoSlot
           label="사진 — 블랙 AB 슬라이드와 무릎 매트를 놓은 정돈된 홈트 공간 와이드 컷"
-          src="/assets/nova/ab-slide/closing-core-workout.png"
+          src="/assets/nova/ab-slide/closing-core-workout.webp"
           alt="AB 슬라이드를 앞으로 밀며 코어 운동에 집중하는 모습"
           aspect="1672 / 941"
         />
@@ -785,7 +785,7 @@ export default function NovaAbSlidePage() {
         <div className="mx-auto mt-16 aspect-[3/4] w-full overflow-hidden rounded-[28px] bg-[#f5f5f7]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/nova/ab-slide/size.png"
+            src="/assets/nova/ab-slide/size.webp"
             alt="AB 슬라이드 가로 30cm, 휠 폭 9cm, 휠 지름 16.5cm 사이즈 안내"
             className="h-full w-full object-cover"
           />
@@ -808,7 +808,7 @@ export default function NovaAbSlidePage() {
         <div className="mx-auto mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] bg-white">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/nova/ab-slide/components.png"
+            src="/assets/nova/ab-slide/components.webp"
             alt="AB 슬라이드 본체와 전용 무릎 매트 구성품"
             className="h-full w-full object-cover"
           />

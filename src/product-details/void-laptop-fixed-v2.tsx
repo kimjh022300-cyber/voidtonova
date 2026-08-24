@@ -61,7 +61,7 @@ export default function VoidLaptopFixedV2Page() {
           <div className="mt-24 flex justify-center overflow-visible pb-12">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/void/laptop-fixed/95ae0ab5-d6ce-44d1-bcf0-e203986f1c3d-2.png"
+              src="/assets/void/laptop-fixed/95ae0ab5-d6ce-44d1-bcf0-e203986f1c3d-2.webp"
               alt="블랙 고정형 VOID 노트북 거치대"
               className="h-auto w-full max-w-[1280px] origin-center object-contain"
               style={{
@@ -110,7 +110,7 @@ export default function VoidLaptopFixedV2Page() {
                 화면이 미세하게 떨렸다면.
               </>
             }
-            imageSrc="/assets/void/laptop-fixed/wobble.png"
+            imageSrc="/assets/void/laptop-fixed/wobble.webp"
             imageAlt="거치대 위에서 타이핑하는 모습"
             bodyAfterImage
           >
@@ -130,7 +130,7 @@ export default function VoidLaptopFixedV2Page() {
                 가장 확실한 강점.
               </>
             }
-            imageSrc="/assets/void/laptop-fixed/weight-1000g-user.png"
+            imageSrc="/assets/void/laptop-fixed/weight-1000g-user.webp"
             imageAlt="전자저울 위에서 1000g으로 측정된 고정형 노트북 거치대"
             bodyAfterImage
             afterImage={
@@ -140,7 +140,7 @@ export default function VoidLaptopFixedV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-fixed/load-test-v2.png"
+                  src="/assets/void/laptop-fixed/load-test-v2.webp"
                   alt="여러 대의 노트북 하중을 지지하는 고정형 노트북 거치대"
                   className="h-full w-full object-cover"
                 />
@@ -155,7 +155,7 @@ export default function VoidLaptopFixedV2Page() {
 
           <FeatureBlock
             title="여기에, 편안한 자세까지."
-            imageSrc="/assets/void/laptop-portable/posture.jpg"
+            imageSrc="/assets/void/laptop-portable/posture.webp"
             imageAlt="거치대 사용 전후 자세 비교"
             bodyAfterImage
           >
@@ -166,7 +166,7 @@ export default function VoidLaptopFixedV2Page() {
 
           <FeatureBlock
             title="높이와 각도도 자유롭죠."
-            imageSrc="/assets/void/laptop-stand-height-angle-user.png"
+            imageSrc="/assets/void/laptop-stand-height-angle-user.webp"
             imageAlt="노트북 거치대의 높이와 각도 조절 단계 비교"
             bodyAfterImage
           >
@@ -183,7 +183,7 @@ export default function VoidLaptopFixedV2Page() {
                 가장 단순한 방법.
               </>
             }
-            imageSrc="/assets/void/laptop-fixed/cooling-airflow-v2.png"
+            imageSrc="/assets/void/laptop-fixed/cooling-airflow-v2.webp"
             imageAlt="고정형 노트북 거치대의 오픈형 방열 구조와 공기 흐름"
             bodyAfterImage
           >
@@ -200,7 +200,7 @@ export default function VoidLaptopFixedV2Page() {
                 섬세한 디테일.
               </>
             }
-            imageSrc="/assets/void/laptop-stand-silicone-pad-detail-v2.png"
+            imageSrc="/assets/void/laptop-stand-silicone-pad-detail-v2.webp"
             imageAlt="노트북 접촉부의 미끄럼 방지 실리콘 패드"
             aspect="1 / 1"
             bodyAfterImage
@@ -212,7 +212,7 @@ export default function VoidLaptopFixedV2Page() {
 
           <FeatureBlock
             title="태블릿부터 노트북까지."
-            imageSrc="/assets/void/laptop-fixed/tablet-to-laptop-tablet-user.png"
+            imageSrc="/assets/void/laptop-fixed/tablet-to-laptop-tablet-user.webp"
             imageAlt="고정형 거치대에 올려 영상 시청 중인 태블릿"
             bodyAfterImage
             afterImage={
@@ -222,7 +222,7 @@ export default function VoidLaptopFixedV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-fixed/tablet-to-laptop-user.png"
+                  src="/assets/void/laptop-fixed/tablet-to-laptop-user.webp"
                   alt="고정형 거치대에 올려 영상 시청 중인 노트북"
                   className="h-full w-full object-cover"
                 />
@@ -236,7 +236,7 @@ export default function VoidLaptopFixedV2Page() {
 
           <FeatureBlock
             title="데스크를 완성하는 블랙."
-            imageSrc="/assets/void/laptop-fixed/black-desk-v2.png"
+            imageSrc="/assets/void/laptop-fixed/black-desk-v2.webp"
             imageAlt="블랙 데스크 위에 배치된 고정형 노트북 거치대"
             bodyAfterImage
             afterImage={
@@ -246,7 +246,7 @@ export default function VoidLaptopFixedV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-fixed/black-desk-working-v2.png"
+                  src="/assets/void/laptop-fixed/black-desk-working-v2.webp"
                   alt="고정형 노트북 거치대를 사용해 작업하는 모습"
                   className="h-full w-full object-cover"
                 />
@@ -284,28 +284,28 @@ export default function VoidLaptopFixedV2Page() {
             {
               scene: "하루 종일 노트북 앞",
               line: "자세가 무너지는 건 시간 문제입니다. 화면 높이부터 바꿔 두세요.",
-              imageSrc: "/assets/void/laptop-fixed/long-session.png",
+              imageSrc: "/assets/void/laptop-fixed/long-session.webp",
               imageAlt: "책상에서 장시간 작업 중인 모습",
               photo: null,
             },
             {
               scene: "외장 키보드를 쓰는 분",
               line: "화면만 올리고 손은 책상에. 거치대가 가장 제 몫을 하는 조합입니다.",
-              imageSrc: "/assets/void/laptop-fixed/external-keyboard.png",
+              imageSrc: "/assets/void/laptop-fixed/external-keyboard.webp",
               imageAlt: "거치대와 외장 키보드·마우스 셋업",
               photo: null,
             },
             {
               scene: "목·어깨가 자주 뻐근한 분",
               line: "원인이 자세가 아니라 화면 높이일 수 있습니다.",
-              imageSrc: "/assets/void/laptop-fixed/posture-compare.png",
+              imageSrc: "/assets/void/laptop-fixed/posture-compare.webp",
               imageAlt: "거치대 사용 전 목이 뻐근한 자세",
               photo: null,
             },
             {
               scene: "한자리에서 일하는 분",
               line: "들고 다닐 일이 없다면, 접히지 않는 쪽이 더 단단합니다.",
-              imageSrc: "/assets/void/laptop-fixed/desk-setup.png",
+              imageSrc: "/assets/void/laptop-fixed/desk-setup.webp",
               imageAlt: "고정된 데스크 셋업 와이드 컷",
               photo: null,
             },
@@ -493,7 +493,7 @@ export default function VoidLaptopFixedV2Page() {
         <PhotoSlot
           label="사진 — 거치대에 노트북 올린 완성된 데스크 (정면 와이드 컷)"
           aspect="16 / 10"
-          imageSrc="/assets/void/laptop-fixed/closing-wide-v2.png"
+          imageSrc="/assets/void/laptop-fixed/closing-wide-v2.webp"
           imageAlt="밝은 공간에 놓인 고정형 노트북 거치대"
         />
 
@@ -621,7 +621,7 @@ export default function VoidLaptopFixedV2Page() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/laptop-fixed/size-v2.png"
+            src="/assets/void/laptop-fixed/size-v2.webp"
             alt="고정형 노트북 거치대 사이즈"
             className="block h-auto w-full"
           />
@@ -645,7 +645,7 @@ export default function VoidLaptopFixedV2Page() {
           {[
             {
               label: "고정형 거치대 본체 x1",
-              src: "/assets/void/laptop-fixed/in-the-box-v2.png",
+              src: "/assets/void/laptop-fixed/in-the-box-v2.webp",
             },
           ].map(({ label, src }) => (
             <li key={label} className="mx-auto w-full max-w-[780px] text-center">

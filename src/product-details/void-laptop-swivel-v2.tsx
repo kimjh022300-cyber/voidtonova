@@ -61,7 +61,7 @@ export default function VoidLaptopSwivelV2Page() {
           <div className="mt-24 flex justify-center overflow-visible pb-12">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/void/laptop-swivel/hero-3.png"
+              src="/assets/void/laptop-swivel/hero-3.webp"
               alt="블랙 360도 회전형 Void 노트북 거치대"
               className="h-auto w-full max-w-[1280px] origin-center object-contain"
               style={{
@@ -112,7 +112,7 @@ export default function VoidLaptopSwivelV2Page() {
                 노트북을 통째로 들었던 순간.
               </>
             }
-            imageSrc="/assets/void/laptop-swivel/lift-to-share.png"
+            imageSrc="/assets/void/laptop-swivel/lift-to-share.webp"
             imageAlt="옆자리에 화면을 보여주려 노트북을 들어 돌리는 모습"
             bodyAfterImage
           >
@@ -131,7 +131,7 @@ export default function VoidLaptopSwivelV2Page() {
                 자유로운 시선.
               </>
             }
-            imageSrc="/assets/void/laptop-swivel/rotation-360-v2.png"
+            imageSrc="/assets/void/laptop-swivel/rotation-360-v2.webp"
             imageAlt="360도 회전 방향을 표시한 회전형 노트북 거치대"
             bodyAfterImage
           >
@@ -142,7 +142,7 @@ export default function VoidLaptopSwivelV2Page() {
 
           <FeatureBlock
             title="여기에, 편안한 자세까지."
-            imageSrc="/assets/void/laptop-portable/posture.jpg"
+            imageSrc="/assets/void/laptop-portable/posture.webp"
             imageAlt="거치대 사용 전후 자세 비교"
             bodyAfterImage
           >
@@ -153,7 +153,7 @@ export default function VoidLaptopSwivelV2Page() {
 
           <FeatureBlock
             title="높이와 각도도 자유롭죠."
-            imageSrc="/assets/void/laptop-stand-height-angle-user.png"
+            imageSrc="/assets/void/laptop-stand-height-angle-user.webp"
             imageAlt="노트북 거치대의 높이와 각도 조절 단계 비교"
             bodyAfterImage
           >
@@ -164,7 +164,7 @@ export default function VoidLaptopSwivelV2Page() {
 
           <FeatureBlock
             title="흔들림 없는 안정감."
-            imageSrc="/assets/void/laptop-swivel/weight-1000g-user.png"
+            imageSrc="/assets/void/laptop-swivel/weight-1000g-user.webp"
             imageAlt="전자저울 위에서 1000g으로 측정된 회전형 노트북 거치대"
             bodyAfterImage
             afterImage={
@@ -174,7 +174,7 @@ export default function VoidLaptopSwivelV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-swivel/load-test-v2.png"
+                  src="/assets/void/laptop-swivel/load-test-v2.webp"
                   alt="여러 대의 노트북 하중을 지지하는 회전형 노트북 거치대"
                   className="h-full w-full object-cover"
                 />
@@ -194,7 +194,7 @@ export default function VoidLaptopSwivelV2Page() {
                 가장 단순한 방법.
               </>
             }
-            imageSrc="/assets/void/laptop-swivel/cooling-airflow-v2.png"
+            imageSrc="/assets/void/laptop-swivel/cooling-airflow-v2.webp"
             imageAlt="회전형 노트북 거치대의 오픈형 방열 구조와 공기 흐름"
             bodyAfterImage
           >
@@ -211,7 +211,7 @@ export default function VoidLaptopSwivelV2Page() {
                 섬세한 디테일.
               </>
             }
-            imageSrc="/assets/void/laptop-stand-silicone-pad-detail-v2.png"
+            imageSrc="/assets/void/laptop-stand-silicone-pad-detail-v2.webp"
             imageAlt="노트북 접촉부의 미끄럼 방지 실리콘 패드"
             aspect="1 / 1"
             bodyAfterImage
@@ -223,7 +223,7 @@ export default function VoidLaptopSwivelV2Page() {
 
           <FeatureBlock
             title="태블릿부터 노트북까지."
-            imageSrc="/assets/void/laptop-swivel/tablet-to-laptop-user.png"
+            imageSrc="/assets/void/laptop-swivel/tablet-to-laptop-user.webp"
             imageAlt="회전형 거치대에 올려 영상 시청 중인 노트북"
             bodyAfterImage
             afterImage={
@@ -233,7 +233,7 @@ export default function VoidLaptopSwivelV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-swivel/tablet-to-laptop-tablet-user.png"
+                  src="/assets/void/laptop-swivel/tablet-to-laptop-tablet-user.webp"
                   alt="회전형 거치대에 올려 영상 시청 중인 태블릿"
                   className="h-full w-full object-cover"
                 />
@@ -247,7 +247,7 @@ export default function VoidLaptopSwivelV2Page() {
 
           <FeatureBlock
             title="데스크를 완성하는 블랙."
-            imageSrc="/assets/void/laptop-swivel/black-desk-v2.png"
+            imageSrc="/assets/void/laptop-swivel/black-desk-v2.webp"
             imageAlt="블랙 데스크 위에 배치된 회전형 노트북 거치대"
             bodyAfterImage
             afterImage={
@@ -257,7 +257,7 @@ export default function VoidLaptopSwivelV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-swivel/black-desk-working-v2.png"
+                  src="/assets/void/laptop-swivel/black-desk-working-v2.webp"
                   alt="회전형 노트북 거치대를 사용해 작업하는 모습"
                   className="h-full w-full object-cover"
                 />
@@ -295,28 +295,28 @@ export default function VoidLaptopSwivelV2Page() {
             {
               scene: "옆자리 동료에게",
               line: "자료를 보여줄 때 노트북을 들지 않습니다. 손끝으로 돌리면 끝입니다.",
-              imageSrc: "/assets/void/laptop-swivel/colleague-share.png",
+              imageSrc: "/assets/void/laptop-swivel/colleague-share.webp",
               imageAlt: "옆자리 동료 쪽으로 화면을 돌려 보여주는 모습",
               photo: null,
             },
             {
               scene: "고객 앞에서",
               line: "마주 앉은 채로 화면만 넘겨 보여주세요. 자리를 옮길 필요가 없습니다.",
-              imageSrc: "/assets/void/laptop-swivel/client-share.png",
+              imageSrc: "/assets/void/laptop-swivel/client-share.webp",
               imageAlt: "마주 앉은 상대에게 화면을 돌려 설명하는 모습",
               photo: null,
             },
             {
               scene: "둘이서 볼 때",
               line: "가운데 두고 각도만 맞추면 두 사람 모두 편한 시선이 나옵니다.",
-              imageSrc: "/assets/void/laptop-swivel/together-view.png",
+              imageSrc: "/assets/void/laptop-swivel/together-view.webp",
               imageAlt: "두 사람이 함께 화면을 보는 모습",
               photo: null,
             },
             {
               scene: "혼자 집중할 때",
               line: "정면으로 돌려 두면 그냥 단단한 거치대입니다. 흔들림도 없고요.",
-              imageSrc: "/assets/void/laptop-swivel/solo-focus.png",
+              imageSrc: "/assets/void/laptop-swivel/solo-focus.webp",
               imageAlt: "정면 거치 상태로 혼자 작업하는 모습",
               photo: null,
             },
@@ -504,7 +504,7 @@ export default function VoidLaptopSwivelV2Page() {
         <PhotoSlot
           label="사진 — 거치대에 노트북 올린 완성된 데스크 (정면 와이드 컷)"
           aspect="16 / 10"
-          imageSrc="/assets/void/laptop-swivel/closing-360-wide-v2.png"
+          imageSrc="/assets/void/laptop-swivel/closing-360-wide-v2.webp"
           imageAlt="360도 회전 방향을 표시한 회전형 노트북 거치대"
         />
 
@@ -633,7 +633,7 @@ export default function VoidLaptopSwivelV2Page() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/laptop-swivel/size.png"
+            src="/assets/void/laptop-swivel/size.webp"
             alt="Void 360도 노트북 거치대의 제품 치수"
             className="block h-auto w-full"
           />
@@ -657,7 +657,7 @@ export default function VoidLaptopSwivelV2Page() {
           {[
             {
               label: "회전형 거치대 본체 x1",
-              src: "/assets/void/laptop-swivel/hero-3.png",
+              src: "/assets/void/laptop-swivel/hero-3.webp",
             },
           ].map(({ label, src }) => (
             <li key={label} className="mx-auto w-full max-w-[780px] text-center">

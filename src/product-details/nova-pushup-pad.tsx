@@ -29,7 +29,7 @@ export default function NovaPushupPadPage() {
         <div className="relative px-4 pb-[4.4rem] pt-28">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/nova/pushup-pad/hero.png"
+            src="/assets/nova/pushup-pad/hero.webp"
             alt="그레이와 오렌지 색상의 Nova 푸쉬업 패드 한 세트"
             className="mx-auto h-auto w-full max-w-[860px] object-contain"
             style={{
@@ -111,7 +111,7 @@ export default function NovaPushupPadPage() {
               </>
             }
             photoLabel="사진 — 맨손 푸쉬업 중 손목이 부담스러워 잠시 멈춘 모습 (측면 클로즈업)"
-            photoSrc="/assets/nova/pushup-pad/pushup.PNG"
+            photoSrc="/assets/nova/pushup-pad/pushup.webp"
             photoAlt="맨손 푸쉬업 중 손목 통증을 느끼는 사람"
           >
             몇 세트만 해도 손목이 뻐근해지고, 자세가 무너지면 푸쉬업은 금방
@@ -128,7 +128,7 @@ export default function NovaPushupPadPage() {
               </>
             }
             photoLabel="사진 — 회색 패드 위 손 위치 클로즈업"
-            photoSrc="/assets/nova/pushup-pad/wrist-alignment-compare-v2.png"
+            photoSrc="/assets/nova/pushup-pad/wrist-alignment-compare-v2.webp"
             photoAlt="맨손 푸쉬업과 푸쉬업 패드를 사용한 동작의 손목 부담 비교"
             aspect="2 / 3"
           >
@@ -150,25 +150,25 @@ export default function NovaPushupPadPage() {
               {
                 title: "표준 푸쉬업",
                 photoLabel: "사진 — 표준 푸쉬업 자세",
-                photoSrc: "/assets/nova/pushup-pad/11.png",
+                photoSrc: "/assets/nova/pushup-pad/11.webp",
                 photoAlt: "푸쉬업 패드를 어깨너비로 놓고 하는 표준 푸쉬업",
               },
               {
                 title: "와이드 푸쉬업",
                 photoLabel: "사진 — 양손 간격을 넓힌 와이드 푸쉬업 자세",
-                photoSrc: "/assets/nova/pushup-pad/22.png",
+                photoSrc: "/assets/nova/pushup-pad/22.webp",
                 photoAlt: "푸쉬업 패드 간격을 넓게 벌린 와이드 푸쉬업",
               },
               {
                 title: "다이아몬드 푸쉬업",
                 photoLabel: "사진 — 패드를 가깝게 놓은 다이아몬드 푸쉬업 자세",
-                photoSrc: "/assets/nova/pushup-pad/33.png",
+                photoSrc: "/assets/nova/pushup-pad/33.webp",
                 photoAlt: "푸쉬업 패드를 가깝게 놓고 하는 다이아몬드 푸쉬업",
               },
               {
                 title: "인클라인 푸쉬업",
                 photoLabel: "사진 — 높은 곳에 패드를 놓은 인클라인 푸쉬업 자세",
-                photoSrc: "/assets/nova/pushup-pad/44.png",
+                photoSrc: "/assets/nova/pushup-pad/44.webp",
                 photoAlt: "푸쉬업 패드를 짚고 상체를 밀어 올리는 푸쉬업 자세",
               },
             ]}
@@ -187,10 +187,10 @@ export default function NovaPushupPadPage() {
               </>
             }
             photoLabel="사진 — 상단 그립과 하단 논슬립 질감 비교"
-            photoSrc="/assets/nova/pushup-pad/sweat-grip-use.png"
+            photoSrc="/assets/nova/pushup-pad/sweat-grip-use.webp"
             photoAlt="물기가 있는 손으로 푸쉬업 패드를 짚고 운동하는 모습"
             aspect="8 / 5"
-            additionalPhotoSrc="/assets/nova/pushup-pad/wet-grip-detail.png"
+            additionalPhotoSrc="/assets/nova/pushup-pad/wet-grip-detail.webp"
             additionalPhotoAlt="물기가 맺힌 푸쉬업 패드의 상단 그립 표면"
             additionalPhotoAspect="3 / 4"
           >
@@ -209,12 +209,12 @@ export default function NovaPushupPadPage() {
               </>
             }
             photoLabel="사진 — 패드 압축 전후, 푸쉬업 동작"
-            photoSrc="/assets/nova/pushup-pad/1.png"
+            photoSrc="/assets/nova/pushup-pad/1.webp"
             photoAlt="6cm 두께의 고밀도 쿠션 구조를 표현한 이미지"
             additionalPhotoLabel="사진 — 6cm 고밀도 쿠션의 두께와 복원력을 보여주는 장면"
-            additionalPhotoSrc="/assets/nova/pushup-pad/cushion-material-gray.png"
+            additionalPhotoSrc="/assets/nova/pushup-pad/cushion-material-gray.webp"
             additionalPhotoAlt="그레이와 오렌지 입자로 푸쉬업 패드의 고밀도 소재를 표현한 이미지"
-            widePhotoSrc="/assets/nova/pushup-pad/cushion-side-grip.png"
+            widePhotoSrc="/assets/nova/pushup-pad/cushion-side-grip.webp"
             widePhotoAlt="손으로 잡은 푸쉬업 패드의 6cm 측면 두께"
           >
             6cm 고밀도 EVA 폼은 내려갈 때의 충격은 받아주고, 버텨야 할 때는
@@ -231,11 +231,11 @@ export default function NovaPushupPadPage() {
               </>
             }
             photoLabel="사진 — 가방·호텔·홈트 사용 장면"
-            photoSrc="/assets/nova/pushup-pad/무게.png"
+            photoSrc="/assets/nova/pushup-pad/무게.webp"
             photoAlt="전자저울 위에 놓인 68g 푸쉬업 패드"
-            additionalPhotoSrc="/assets/nova/pushup-pad/portable-bag.png"
+            additionalPhotoSrc="/assets/nova/pushup-pad/portable-bag.webp"
             additionalPhotoAlt="푸쉬업 패드를 운동 가방에 넣는 모습"
-            thirdPhotoSrc="/assets/nova/pushup-pad/lightweight-hand.png"
+            thirdPhotoSrc="/assets/nova/pushup-pad/lightweight-hand.webp"
             thirdPhotoAlt="한 손으로 가볍게 들어 올린 푸쉬업 패드"
           >
             양손 한 세트여도 136g. 스마트폰보다 가볍게, 가방 한쪽에 들어갑니다.
@@ -252,7 +252,7 @@ export default function NovaPushupPadPage() {
               </>
             }
             photoLabel="사진 — 그레이 패드 제품 단독 컷"
-            photoSrc="/assets/nova/pushup-pad/gray-lifestyle.png"
+            photoSrc="/assets/nova/pushup-pad/gray-lifestyle.webp"
             photoAlt="차분한 공간에 놓인 그레이와 오렌지 컬러의 푸쉬업 패드"
           >
 차분한 그레이에 선명한 오렌지 포인트를 더했습니다. 숨겨두어야 할 운동
@@ -413,7 +413,7 @@ export default function NovaPushupPadPage() {
               scene: "손목이 먼저 아픈 분",
               line: "가슴보다 손목이 먼저 끝났다면. 손목 부담을 덜어주는 자세부터 다시 시작하세요.",
               photoLabel: "사진 — 손목 부담 때문에 푸쉬업을 멈춘 사람의 측면 컷",
-              photoSrc: "/assets/nova/pushup-pad/wrist-strain.png",
+              photoSrc: "/assets/nova/pushup-pad/wrist-strain.webp",
               photoAlt: "손목 부담 때문에 푸쉬업을 멈춘 사람의 측면 컷",
             },
             {
@@ -421,14 +421,14 @@ export default function NovaPushupPadPage() {
               line: "거창한 홈짐보다, 꺼내는 데 망설임 없는 도구 하나가 더 오래 갑니다.",
               photoLabel:
                 "사진 — 거실 매트 위에서 푸쉬업 패드를 사용하는 홈트 장면",
-              photoSrc: "/assets/nova/pushup-pad/home-workout.png",
+              photoSrc: "/assets/nova/pushup-pad/home-workout.webp",
               photoAlt: "거실 매트 위에서 푸쉬업 패드를 사용하는 홈트 장면",
             },
             {
               scene: "푸쉬업바가 불편한 분",
               line: "흔들리는 손잡이보다 손바닥 전체를 받치는 쪽이 편하다면 잘 맞습니다.",
               photoLabel: "사진 — 푸쉬업바 대신 회색 패드를 짚은 손 클로즈업",
-              photoSrc: "/assets/nova/pushup-pad/pushup-bar-discomfort.png",
+              photoSrc: "/assets/nova/pushup-pad/pushup-bar-discomfort.webp",
               photoAlt: "푸쉬업바를 잡고 손목에 부담을 느끼는 모습",
             },
             {
@@ -436,7 +436,7 @@ export default function NovaPushupPadPage() {
               line: "한 세트 136g. 가방 한쪽에 넣고, 어디서든 익숙한 루틴을 이어가세요.",
               photoLabel:
                 "사진 — 운동 가방 또는 호텔 바닥 위 푸쉬업 패드 사용 장면",
-              photoSrc: "/assets/nova/pushup-pad/travel-hotel.png",
+              photoSrc: "/assets/nova/pushup-pad/travel-hotel.webp",
               photoAlt: "호텔 바닥에서 푸쉬업하는 여행 중 홈트 장면",
             },
           ].map(({ scene, line, photoLabel, photoSrc, photoAlt }) => (
@@ -647,7 +647,7 @@ export default function NovaPushupPadPage() {
         <PhotoSlot
           label="사진 — 푸쉬업 패드에 손을 올리고 운동하는 장면"
           aspect="16 / 10"
-          src="/assets/nova/pushup-pad/pushup_studio_product_light.png"
+          src="/assets/nova/pushup-pad/pushup_studio_product_light.webp"
           alt="푸쉬업 패드에 손을 올리고 운동하는 모습"
         />
 
@@ -766,7 +766,7 @@ export default function NovaPushupPadPage() {
         <PhotoSlot
           label="사진 — 그레이 푸쉬업 패드 한 개의 가로·세로·높이 치수 안내 컷 (20 × 13 × 6cm)"
           aspect="3 / 4"
-          src="/assets/nova/pushup-pad/size-top-v2.png"
+          src="/assets/nova/pushup-pad/size-top-v2.webp"
           alt="가로 130mm, 세로 200mm 푸쉬업 패드 사이즈 안내"
         />
       </section>
@@ -790,7 +790,7 @@ export default function NovaPushupPadPage() {
             style={{ aspectRatio: "4 / 3" }}
           >
             <Image
-              src="/assets/nova/pushup-pad/Photoroom_20260809_213220.png"
+              src="/assets/nova/pushup-pad/Photoroom_20260809_213220.webp"
               alt="푸쉬업 패드 좌·우 1세트"
               fill
               sizes="(max-width: 768px) 100vw, 768px"

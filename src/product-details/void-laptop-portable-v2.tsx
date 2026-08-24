@@ -30,7 +30,7 @@ export default function VoidLaptopPortableV2Page() {
         <div className="relative px-4 pb-[4.4rem] pt-28">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/laptop-portable/hero-2.png"
+            src="/assets/void/laptop-portable/hero-2.webp"
             alt="노트북이 올려진 검정색 Void 휴대용 노트북 거치대"
             className="mx-auto h-auto w-full max-w-[860px] object-contain"
             style={{
@@ -121,7 +121,7 @@ export default function VoidLaptopPortableV2Page() {
                 목 뒤가 뻐근해지는 이유.
               </>
             }
-            imageSrc="/assets/void/laptop-portable/neck-strain.png"
+            imageSrc="/assets/void/laptop-portable/neck-strain.webp"
             imageAlt="책상에서 고개 숙이고 노트북 보는 모습"
             bodyAfterImage
           >
@@ -140,7 +140,7 @@ export default function VoidLaptopPortableV2Page() {
                 목이 아닌 화면.
               </>
             }
-            imageSrc="/assets/void/laptop-portable/posture.jpg"
+            imageSrc="/assets/void/laptop-portable/posture.webp"
             imageAlt="거치대 사용 전후 자세 비교"
             bodyAfterImage
           >
@@ -151,7 +151,7 @@ export default function VoidLaptopPortableV2Page() {
 
           <FeatureBlock
             title="20°~45° 6단계로."
-            imageSrc="/assets/void/laptop-portable/angle-stages-v2.png"
+            imageSrc="/assets/void/laptop-portable/angle-stages-v2.webp"
             imageAlt="20°~45° 6단계로 조절되는 휴대용 노트북 거치대"
             aspect="3 / 4"
             bodyAfterImage
@@ -162,7 +162,7 @@ export default function VoidLaptopPortableV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-portable/angle-adjustment-detail-v2.png"
+                  src="/assets/void/laptop-portable/angle-adjustment-detail-v2.webp"
                   alt="6단계 각도 조절 홈 디테일"
                   className="h-full w-full object-cover"
                 />
@@ -177,7 +177,7 @@ export default function VoidLaptopPortableV2Page() {
 
           <FeatureBlock
             title="가벼움과 견고함을 동시에."
-            imageSrc="/assets/void/laptop-portable/weight-180g-v2.png"
+            imageSrc="/assets/void/laptop-portable/weight-180g-v2.webp"
             imageAlt="전자저울 위에서 180g으로 측정된 휴대용 노트북 거치대"
             bodyAfterImage
           >
@@ -189,7 +189,7 @@ export default function VoidLaptopPortableV2Page() {
 
           <FeatureBlock
             title="어디든 함께하는 작업 환경."
-            imageSrc="/assets/void/laptop-portable/backpack-portability-v2.png"
+            imageSrc="/assets/void/laptop-portable/backpack-portability-v2.webp"
             imageAlt="백팩 주머니에 휴대용 노트북 거치대를 넣은 모습"
             bodyAfterImage
             afterImage={
@@ -199,7 +199,7 @@ export default function VoidLaptopPortableV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-portable/cafe-portability-v2.png"
+                  src="/assets/void/laptop-portable/cafe-portability-v2.webp"
                   alt="카페 테이블 위 노트북과 접힌 휴대용 노트북 거치대"
                   className="h-full w-full object-cover"
                 />
@@ -219,7 +219,7 @@ export default function VoidLaptopPortableV2Page() {
                 가장 단순한 방법.
               </>
             }
-            imageSrc="/assets/void/laptop-portable/cooling-airflow-v2.png"
+            imageSrc="/assets/void/laptop-portable/cooling-airflow-v2.webp"
             imageAlt="노트북 아래 공기 흐름을 보여주는 휴대용 노트북 거치대"
             bodyAfterImage
           >
@@ -236,7 +236,7 @@ export default function VoidLaptopPortableV2Page() {
                 섬세한 디테일.
               </>
             }
-            imageSrc="/assets/void/laptop-portable/silicone-protection-detail-v2.png"
+            imageSrc="/assets/void/laptop-portable/silicone-protection-detail-v2.webp"
             imageAlt="노트북 보호용 실리콘 패드가 적용된 휴대용 노트북 거치대"
             bodyAfterImage
           >
@@ -247,7 +247,7 @@ export default function VoidLaptopPortableV2Page() {
 
           <FeatureBlock
             title="태블릿부터 노트북까지."
-            imageSrc="/assets/void/laptop-portable/tablet-compatibility-v2.png"
+            imageSrc="/assets/void/laptop-portable/tablet-compatibility-v2.webp"
             imageAlt="휴대용 노트북 거치대에 세로로 놓인 태블릿"
             bodyAfterImage
             afterImage={
@@ -257,7 +257,7 @@ export default function VoidLaptopPortableV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-portable/laptop-compatibility-v2.png"
+                  src="/assets/void/laptop-portable/laptop-compatibility-v2.webp"
                   alt="휴대용 노트북 거치대에 놓인 노트북"
                   className="h-full w-full object-cover"
                 />
@@ -271,7 +271,7 @@ export default function VoidLaptopPortableV2Page() {
 
           <FeatureBlock
             title="데스크를 완성하는 블랙."
-            imageSrc="/assets/void/laptop-portable/C025B579-A275-4E79-AC56-D78BD6D742AA.PNG"
+            imageSrc="/assets/void/laptop-portable/C025B579-A275-4E79-AC56-D78BD6D742AA.webp"
             imageAlt="블랙 휴대용 노트북 거치대"
             bodyAfterImage
             afterImage={
@@ -281,7 +281,7 @@ export default function VoidLaptopPortableV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-portable/black-portable-carry-v2.png"
+                  src="/assets/void/laptop-portable/black-portable-carry-v2.webp"
                   alt="노트북과 함께 든 블랙 휴대용 노트북 거치대"
                   className="h-full w-full object-cover"
                 />
@@ -320,28 +320,28 @@ export default function VoidLaptopPortableV2Page() {
               scene: "집 책상에서",
               line: "매일 앉는 자리에 펼쳐 두세요. 화면이 올라간 만큼 고개는 내려가지 않습니다.",
               imageSrc:
-                "/assets/void/laptop-portable/E05940D6-F169-4142-9134-1301D6592E7D.PNG",
+                "/assets/void/laptop-portable/E05940D6-F169-4142-9134-1301D6592E7D.webp",
               imageAlt: "집 책상에 펼쳐 사용 중인 VOID 노트북 거치대",
             },
             {
               scene: "카페에서",
               line: "낮은 테이블일수록 차이가 큽니다. 접힌 채로 가방에서 꺼내 바로 펼치면 끝.",
               imageSrc:
-                "/assets/void/laptop-portable/D21AE67D-9CCC-45F0-833D-4E3C62B6A870.PNG",
+                "/assets/void/laptop-portable/D21AE67D-9CCC-45F0-833D-4E3C62B6A870.webp",
               imageAlt: "카페 테이블 위에서 사용 중인 VOID 노트북 거치대",
             },
             {
               scene: "사무실에서",
               line: "회의실로 옮겨 앉아도 그대로 들고 갑니다. 180g이라 손에 든 줄도 모르죠.",
               imageSrc:
-                "/assets/void/laptop-portable/AFA6616D-02E5-4681-92F3-A1A783C8A20F.PNG",
+                "/assets/void/laptop-portable/AFA6616D-02E5-4681-92F3-A1A783C8A20F.webp",
               imageAlt: "노트북과 함께 들고 이동하는 VOID 노트북 거치대",
             },
             {
               scene: "출장지에서",
               line: "호텔 책상은 늘 애매합니다. 파우치에 함께 넣어 두면 어디서든 같은 높이.",
               imageSrc:
-                "/assets/void/laptop-portable/9C936CB0-3188-4007-8FC8-BB2B7EA6FB30.PNG",
+                "/assets/void/laptop-portable/9C936CB0-3188-4007-8FC8-BB2B7EA6FB30.webp",
               imageAlt: "파우치에서 꺼내 호텔 책상에서 사용하는 VOID 노트북 거치대",
             },
           ].map(({ scene, line, imageSrc, imageAlt }) => (
@@ -514,7 +514,7 @@ export default function VoidLaptopPortableV2Page() {
         <div className="mt-16 w-full" style={{ aspectRatio: "4 / 3" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/laptop-portable/hero-2.png"
+            src="/assets/void/laptop-portable/hero-2.webp"
             alt="노트북이 올려진 블랙 휴대용 노트북 거치대"
             className="h-full w-full object-contain"
             style={{ filter: "drop-shadow(0 24px 48px rgba(29,29,31,0.14))" }}
@@ -610,7 +610,7 @@ export default function VoidLaptopPortableV2Page() {
         <div className="mx-auto mt-24 max-w-[780px] overflow-hidden rounded-[28px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/laptop-portable/size.png"
+            src="/assets/void/laptop-portable/size.webp"
             alt="Void 휴대용 노트북 거치대의 펼친 크기와 접힌 크기 안내"
             className="block h-auto w-full"
           />
@@ -637,7 +637,7 @@ export default function VoidLaptopPortableV2Page() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/void/laptop-portable/included-components-v2.png"
+              src="/assets/void/laptop-portable/included-components-v2.webp"
               alt="휴대용 노트북 거치대 본체와 휴대용 파우치 구성품"
               className="h-full w-full object-cover"
             />

@@ -61,7 +61,7 @@ export default function NovaPressureStepperPage() {
           <div className="mt-12 flex justify-center overflow-visible pb-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/nova/pressure-stepper/보라색 돌기형 마사지 매트 제품 사진-2.png"
+              src="/assets/nova/pressure-stepper/보라색 돌기형 마사지 매트 제품 사진-2.webp"
               alt="퍼플 Nova 에어 지압 스텝퍼"
               className="h-auto w-full max-w-[1280px] origin-center object-contain"
               style={{
@@ -107,7 +107,7 @@ export default function NovaPressureStepperPage() {
                 의지보다 시작이 커서입니다.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-03-seated-use.png"
+            imageSrc="/assets/nova/pressure-stepper/user-03-seated-use.webp"
             imageAlt="의자에 앉아 양말을 신고 지압 스텝퍼를 사용하는 모습"
             photoLabel="사진 — 오래 앉아 있다가 스텝퍼에 발을 올리는 장면"
             bodyAfterImage
@@ -125,7 +125,7 @@ export default function NovaPressureStepperPage() {
                 운동이 아닌 날에도.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-05-standing-use.png"
+            imageSrc="/assets/nova/pressure-stepper/user-05-standing-use.webp"
             imageAlt="맨발로 지압 스텝퍼 위에 서서 사용하는 모습"
             photoLabel="사진 — 거실에서 가볍게 스태핑하는 장면"
             bodyAfterImage
@@ -144,7 +144,7 @@ export default function NovaPressureStepperPage() {
                 리듬은 가볍게.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-04-side-pressure.png"
+            imageSrc="/assets/nova/pressure-stepper/user-04-side-pressure.webp"
             imageAlt="발을 디뎠을 때 지압 돌기와 발판의 측면 반응"
             photoLabel="사진 — 눌린 공기 발판의 쿠션감을 보여주는 측면 컷"
             bodyAfterImage
@@ -163,7 +163,7 @@ export default function NovaPressureStepperPage() {
                 또렷한 자극.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-10-pressure-highlight.png"
+            imageSrc="/assets/nova/pressure-stepper/user-10-pressure-highlight.webp"
             imageAlt="발바닥이 지압 돌기에 닿는 자극을 강조한 사용 모습"
             photoLabel="사진 — 서로 다른 형태의 입체 지압 돌기 클로즈업"
             bodyAfterImage
@@ -181,7 +181,7 @@ export default function NovaPressureStepperPage() {
                 다르게.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-06-product-top.png"
+            imageSrc="/assets/nova/pressure-stepper/user-06-product-top.webp"
             imageAlt="입체 지압 돌기와 발 모양 구조가 보이는 제품 상면"
             photoLabel="사진 — 입체 돌기와 에어 구조를 함께 보여주는 제품 컷"
             bodyAfterImage
@@ -201,7 +201,7 @@ export default function NovaPressureStepperPage() {
                 같은 리듬으로 편안하게.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-09-alternating-feet.png"
+            imageSrc="/assets/nova/pressure-stepper/user-09-alternating-feet.webp"
             imageAlt="양발을 번갈아 디디는 지압 스텝퍼 사용 모습"
             photoLabel="사진 — 양발 대칭 발판 위에 맨발을 올린 장면"
             bodyAfterImage
@@ -219,7 +219,7 @@ export default function NovaPressureStepperPage() {
                 발판은 제자리에.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-01-bottom.png"
+            imageSrc="/assets/nova/pressure-stepper/user-01-bottom.webp"
             imageAlt="미끄럼 방지 패턴이 보이는 지압 스텝퍼 바닥면"
             photoLabel="사진 — 미끄럼 방지 바닥 패턴 클로즈업"
             bodyAfterImage
@@ -238,7 +238,7 @@ export default function NovaPressureStepperPage() {
                 내 리듬은 멈추지 않게.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-08-late-night.png"
+            imageSrc="/assets/nova/pressure-stepper/user-08-late-night.webp"
             imageAlt="늦은 밤 침실 옆에서 지압 스텝퍼를 사용하는 모습"
             photoLabel="사진 — 조용한 저녁 거실에서 스태핑하는 장면"
             bodyAfterImage
@@ -256,7 +256,7 @@ export default function NovaPressureStepperPage() {
                 매일의 루틴이 되니까.
               </>
             }
-            imageSrc="/assets/nova/pressure-stepper/user-07-storage.png"
+            imageSrc="/assets/nova/pressure-stepper/user-07-storage.webp"
             imageAlt="거실 수납장 위에 세워 보관한 지압 스텝퍼"
             photoLabel="사진 — 소파 옆 또는 침대 아래에 정리된 스텝퍼"
             bodyAfterImage
@@ -425,28 +425,28 @@ export default function NovaPressureStepperPage() {
             {
               scene: "오래 앉아 있던 오후",
               line: "다음 일을 시작하기 전, 두 발을 올리고 내 리듬대로 천천히 디뎌보세요.",
-              imageSrc: "/assets/nova/pressure-stepper/scene-01-after-sitting.png",
+              imageSrc: "/assets/nova/pressure-stepper/scene-01-after-sitting.webp",
               imageAlt: "오래 앉아 책상 앞에 있는 사람",
               photo: "이미지 준비 중",
             },
             {
               scene: "운동 전 워밍업",
               line: "본격적인 루틴 전에, 발부터 가볍게 깨우는 작은 스텝으로 시작할 수 있습니다.",
-              imageSrc: "/assets/nova/pressure-stepper/scene-02-warmup.png",
+              imageSrc: "/assets/nova/pressure-stepper/scene-02-warmup.webp",
               imageAlt: "거실에서 운동 전 스트레칭을 하는 사람",
               photo: "이미지 준비 중",
             },
             {
               scene: "집에서 쉬는 시간",
               line: "소파 앞에 두고 영상 한 편을 보는 동안에도 한 발씩 천천히 움직일 수 있습니다.",
-              imageSrc: "/assets/nova/pressure-stepper/scene-03-rest.png",
+              imageSrc: "/assets/nova/pressure-stepper/scene-03-rest.webp",
               imageAlt: "침대에서 편안하게 쉬는 사람",
               photo: "이미지 준비 중",
             },
             {
               scene: "운동이 끝난 뒤",
               line: "숨을 고르며 발바닥에 전해지는 입체 돌기의 감각을 느껴보세요.",
-              imageSrc: "/assets/nova/pressure-stepper/scene-04-after-workout.png",
+              imageSrc: "/assets/nova/pressure-stepper/scene-04-after-workout.webp",
               imageAlt: "운동 후 매트 위에서 휴식을 취하는 사람",
               photo: "이미지 준비 중",
             },
@@ -641,7 +641,7 @@ export default function NovaPressureStepperPage() {
 
         <PhotoSlot
           label="사진 — 거실에서 지압 스텝퍼를 사용하는 완성 컷 (와이드)"
-          imageSrc="/assets/nova/pressure-stepper/final-wide-storage.png"
+          imageSrc="/assets/nova/pressure-stepper/final-wide-storage.webp"
           imageAlt="따뜻한 거실 조명 아래 세워 보관한 지압 스텝퍼"
           aspect="16 / 10"
         />
@@ -765,7 +765,7 @@ export default function NovaPressureStepperPage() {
           {[
             {
               label: "에어 지압 스텝퍼 본체 x1 · 공기 주입 펌프 x1",
-              src: "/assets/nova/pressure-stepper/components.png",
+              src: "/assets/nova/pressure-stepper/components.webp",
             },
           ].map(({ label, src }) => (
             <li key={label} className="mx-auto w-full max-w-[780px] text-center">
