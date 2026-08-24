@@ -52,7 +52,13 @@ export default function ProductsPage() {
           <div className="product-card-grid">
             {productsByLine[group.name].map((product) => (
               <article className="product-card-placeholder" id={product.id} key={product.id}>
-                <a className="product-card-live" href={product.purchaseUrl} target="_blank" rel="noopener noreferrer external" aria-label={`${product.name} 네이버 스마트스토어에서 보기`}>
+                <Link
+                  className="product-card-live"
+                  href={product.detailPath ?? product.purchaseUrl}
+                  target={product.detailPath ? undefined : "_blank"}
+                  rel={product.detailPath ? undefined : "noopener noreferrer external"}
+                  aria-label={product.detailPath ? `${product.name} 자세히 보기` : `${product.name} 네이버 스마트스토어에서 보기`}
+                >
                   <div className="product-card-image product-card-image-filled">
                     <Image src={product.image} alt={product.imageAlt} fill sizes="(max-width: 699px) 100vw, 50vw" />
                   </div>
@@ -62,7 +68,7 @@ export default function ProductsPage() {
                     <p>{product.description}</p>
                     <span className="product-card-arrow" aria-hidden="true">↗</span>
                   </div>
-                </a>
+                </Link>
               </article>
             ))}
           </div>

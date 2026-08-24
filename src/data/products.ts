@@ -9,6 +9,9 @@ export type Product = {
   purchaseUrl: string;
   image: string;
   imageAlt: string;
+  detailPath?: `/products/${string}`;
+  detailTitleLines?: readonly string[];
+  detailTitleCompact?: boolean;
 };
 
 export const productGroups = [
@@ -36,6 +39,8 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13724117530",
     image: "/products/void-portable-laptop-stand.png",
     imageAlt: "검정색 Void 휴대용 노트북 거치대",
+    detailPath: "/products/void-portable-laptop-stand",
+    detailTitleLines: ["Void 휴대용", "노트북 거치대"],
   },
   {
     id: "void-360-laptop-stand",
@@ -46,6 +51,8 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13723985948",
     image: "/products/void-360-laptop-stand.png",
     imageAlt: "360도 회전 표시가 있는 검정색 Void 노트북 거치대",
+    detailPath: "/products/void-360-laptop-stand",
+    detailTitleLines: ["Void 360도", "노트북 거치대"],
   },
   {
     id: "void-fixed-laptop-stand",
@@ -56,6 +63,8 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13723979970",
     image: "/products/void-fixed-laptop-stand.png",
     imageAlt: "검정색 Void 고정형 노트북 거치대",
+    detailPath: "/products/void-fixed-laptop-stand",
+    detailTitleLines: ["Void 고정형", "노트북 거치대"],
   },
   {
     id: "void-magnetic-phone-stand",
@@ -66,6 +75,9 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13725279854",
     image: "/products/void-dual-magnetic-phone-stand.png",
     imageAlt: "검정색 마그네틱 스마트폰 거치대에 부착된 스마트폰",
+    detailPath: "/products/void-magnetic-phone-stand",
+    detailTitleLines: ["Void 마그네틱", "스마트폰 거치대"],
+    detailTitleCompact: true,
   },
   {
     id: "void-tablet-floor-stand",
@@ -76,6 +88,8 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13729739148",
     image: "/products/void-tablet-floor-stand.png",
     imageAlt: "침대 옆에 설치한 검정색 Void 태블릿 거치대 스탠드",
+    detailPath: "/products/void-tablet-floor-stand",
+    detailTitleLines: ["Void 태블릿", "거치대 스탠드"],
   },
   {
     id: "nova-pushup-pads",
@@ -86,6 +100,8 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13714705585",
     image: "/products/nova-pushup-pads.jpeg",
     imageAlt: "Nova 푸쉬업 패드를 잡고 푸쉬업하는 사람",
+    detailPath: "/products/nova-pushup-pads",
+    detailTitleLines: ["Nova 푸쉬업", "패드"],
   },
   {
     id: "nova-tritan-protein-shaker",
@@ -96,6 +112,9 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13725109671",
     image: "/products/nova-tritan-protein-shaker.png",
     imageAlt: "500ml 눈금이 표시된 검정색 Nova 트라이탄 프로틴 쉐이커",
+    detailPath: "/products/nova-tritan-protein-shaker",
+    detailTitleLines: ["Nova 트라이탄", "프로틴 쉐이커"],
+    detailTitleCompact: true,
   },
   {
     id: "nova-quiet-ab-slide",
@@ -106,6 +125,8 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13723228059",
     image: "/products/nova-quiet-ab-slide.png",
     imageAlt: "Nova 저소음 AB 슬라이드로 운동하는 사람",
+    detailPath: "/products/nova-quiet-ab-slide",
+    detailTitleLines: ["Nova 저소음", "AB슬라이드"],
   },
   {
     id: "nova-premium-metal-pushup-bars",
@@ -116,6 +137,9 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13726601654",
     image: "/products/nova-premium-metal-pushup-bars.png",
     imageAlt: "Nova 프리미엄 메탈 푸쉬업바로 운동하는 사람",
+    detailPath: "/products/nova-premium-metal-pushup-bars",
+    detailTitleLines: ["Nova 프리미엄 메탈", "푸쉬업바"],
+    detailTitleCompact: true,
   },
   {
     id: "nova-air-acupressure-stepper",
@@ -126,6 +150,8 @@ export const products: Product[] = [
     purchaseUrl: "https://smartstore.naver.com/voidtonova/products/13699985027",
     image: "/products/nova-air-acupressure-stepper.png",
     imageAlt: "보라색 Nova 에어 지압 스텝퍼",
+    detailPath: "/products/nova-air-acupressure-stepper",
+    detailTitleLines: ["Nova 에어 지압", "스텝퍼"],
   },
 ];
 
@@ -133,3 +159,12 @@ export const productsByLine: Record<ProductLine, Product[]> = {
   Void: products.filter((product) => product.line === "Void"),
   Nova: products.filter((product) => product.line === "Nova"),
 };
+
+export const productsWithDetails = products.filter(
+  (product): product is Product & { detailPath: `/products/${string}` } =>
+    Boolean(product.detailPath),
+);
+
+export function getProductById(productId: string) {
+  return products.find((product) => product.id === productId);
+}

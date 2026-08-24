@@ -67,10 +67,6 @@
 
 .about-scroll i { margin-left: 10px; color: #bbb; font-style: normal; }
 
-@media (min-width: 700px) {
-  .about-hero > .eyebrow { display: none; }
-}
-
 .about-origin,
 .about-belief { padding: clamp(140px, 19vh, 230px) max(32px, 8vw); }
 

@@ -1,4 +1,5 @@
-import { products } from "@/data/products";
+import { products, type Product } from "@/data/products";
+import type { ProductDetailFaq, ProductDetailFacts } from "@/data/product-detail-facts";
 import {
   absoluteUrl,
   NAVER_SMART_STORE_URL,
@@ -38,10 +39,12 @@ export function createWebPageStructuredData({
   path,
   name,
   description,
+  mainEntityId,
 }: {
   path: string;
   name: string;
   description: string;
+  mainEntityId?: string;
 }) {
   const url = absoluteUrl(path);
 
@@ -55,6 +58,7 @@ export function createWebPageStructuredData({
     inLanguage: "ko-KR",
     isPartOf: { "@id": websiteId },
     about: { "@id": organizationId },
+    ...(mainEntityId ? { mainEntity: { "@id": mainEntityId } } : {}),
   };
 }
 
@@ -73,6 +77,55 @@ export function createBreadcrumbStructuredData(
   };
 }
 
+export function createProductStructuredData(
+  product: Product,
+  facts?: ProductDetailFacts,
+) {
+  if (!product.detailPath) {
+    throw new Error(`Product detail path is missing for ${product.id}`);
+  }
+
+  const url = absoluteUrl(product.detailPath);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${url}#product`,
+    name: product.name,
+    description: product.description,
+    image: [absoluteUrl(product.image)],
+    category: product.category,
+    url,
+    sameAs: product.purchaseUrl,
+    brand: { "@id": organizationId },
+    mainEntityOfPage: { "@id": `${url}#webpage` },
+    ...(facts
+      ? {
+          additionalProperty: facts.properties.map((property) => ({
+            "@type": "PropertyValue",
+            name: property.name,
+            value: property.value,
+          })),
+        }
+      : {}),
+  };
+}
+
+export function createFaqStructuredData(faq: readonly ProductDetailFaq[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
 export const productListStructuredData = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -83,14 +136,19 @@ export const productListStructuredData = {
     "@type": "ListItem",
     position: index + 1,
     item: {
-      "@type": "Thing",
-      "@id": `${absoluteUrl("/products")}#${product.id}`,
+      "@type": product.detailPath ? "Product" : "Thing",
+      "@id": product.detailPath
+        ? `${absoluteUrl(product.detailPath)}#product`
+        : `${absoluteUrl("/products")}#${product.id}`,
       name: product.name,
       description: product.description,
       category: product.category,
       image: absoluteUrl(product.image),
-      url: `${absoluteUrl("/products")}#${product.id}`,
+      url: product.detailPath
+        ? absoluteUrl(product.detailPath)
+        : `${absoluteUrl("/products")}#${product.id}`,
       sameAs: product.purchaseUrl,
+      brand: { "@id": organizationId },
     },
   })),
 };

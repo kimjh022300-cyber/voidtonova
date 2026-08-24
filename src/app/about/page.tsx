@@ -34,7 +34,7 @@ export default function AboutPage() {
       </header>
 
       <section className="about-hero">
-        <p className="eyebrow">ABOUT / Void to Nova</p>
+        <p className="eyebrow">ABOUT</p>
         <h1>불확실해도,<br /><span className="about-mobile-title-word">계속 </span>나아가는<br className="about-mobile-break" /> 사람을 위해.</h1>
         <p className="about-hero-copy">우리는 완벽한 답을 기다리기보다,<br />오늘을 조금 더 나은 상태로 만드는<br className="about-mobile-break" /> 도구를 만듭니다.</p>
         <span className="about-scroll">OUR STORY <i>↓</i></span>

@@ -1,11 +1,22 @@
 import { products } from "@/data/products";
+import { getProductDetailFacts } from "@/data/product-detail-facts";
 import { NAVER_SMART_STORE_URL, SITE_EMAIL, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 export function GET() {
   const productList = products
-    .map((product) => `- ${product.name}: ${product.description}`)
+    .map((product) => {
+      const detailUrl = product.detailPath ? ` — ${SITE_URL}${product.detailPath}` : "";
+      const facts = getProductDetailFacts(product.id);
+      const specifications = facts
+        ? ` 주요 사양: ${facts.properties
+            .slice(0, 7)
+            .map((property) => `${property.name} ${property.value}`)
+            .join(", ")}.`
+        : "";
+      return `- ${product.name}: ${product.description}${specifications}${detailUrl}`;
+    })
     .join("\n");
 
   const content = `# ${SITE_NAME}
@@ -27,6 +38,8 @@ ${productList}
 
 ## Purchasing
 이 웹사이트는 상품을 소개하며 직접 주문이나 결제를 처리하지 않습니다. 상품 구매는 제품 페이지에서 연결되는 Void to Nova 네이버 스마트스토어(${NAVER_SMART_STORE_URL})에서 이루어집니다.
+
+상품 상세페이지에는 실제 제품 사양, 사용 장면, 구성품, 제품 정보, 자주 묻는 질문과 공식 외부 구매 링크가 포함됩니다.
 
 ## Contact
 - ${SITE_EMAIL}
