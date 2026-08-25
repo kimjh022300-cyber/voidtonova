@@ -330,6 +330,22 @@ const novaProteinShakerFacts: ProductDetailFacts = {
   ],
 };
 
+const novaProteinShakerClearFacts: ProductDetailFacts = {
+  ...novaProteinShakerFacts,
+  keywords: [
+    "투명 트라이탄 프로틴 쉐이커",
+    "500ml 투명 쉐이커",
+    "BPA Free 쉐이커",
+    "운동용 물병",
+  ],
+  properties: novaProteinShakerFacts.properties.map((property) =>
+    property.name === "색상" ? { ...property, value: "투명" } : property,
+  ),
+  productInformation: novaProteinShakerFacts.productInformation.map(([name, value]) =>
+    name === "색상" ? [name, "투명"] : [name, value],
+  ),
+};
+
 const novaAbSlideFacts: ProductDetailFacts = {
   keywords: ["저소음 AB슬라이드", "복근 운동 기구", "AB 롤러", "홈트레이닝 코어 운동"],
   properties: [
@@ -437,6 +453,7 @@ const novaPressureStepperFacts: ProductDetailFacts = {
 export const PRODUCT_DETAIL_FACTS: Record<string, ProductDetailFacts> = {
   "nova-pushup-pads": novaPushupPadFacts,
   "nova-tritan-protein-shaker": novaProteinShakerFacts,
+  "nova-tritan-protein-shaker-clear": novaProteinShakerClearFacts,
   "nova-quiet-ab-slide": novaAbSlideFacts,
   "nova-premium-metal-pushup-bars": novaPushupBarFacts,
   "nova-air-acupressure-stepper": novaPressureStepperFacts,

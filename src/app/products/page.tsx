@@ -9,7 +9,7 @@ import {
   productListStructuredData,
 } from "@/lib/structured-data";
 
-const description = "집중과 움직임을 위한 Void to Nova의 10가지 도구와 공식 구매 채널을 확인하세요.";
+const description = "집중과 움직임을 위한 Void to Nova의 11가지 도구와 공식 구매 채널을 확인하세요.";
 
 export const metadata = createPageMetadata({
   title: "제품",

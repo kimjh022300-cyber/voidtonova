@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import NovaAbSlidePage from "./nova-ab-slide";
 import NovaPressureStepperPage from "./nova-pressure-stepper";
+import NovaProteinShakerClearPage from "./nova-protein-shaker-clear";
 import NovaProteinShakerPage from "./nova-protein-shaker";
 import NovaPushupBarPage from "./nova-pushup-bar";
 import NovaPushupPadPage from "./nova-pushup-pad";
@@ -13,6 +14,7 @@ import VoidTabletStandV2Page from "./void-tablet-stand-v2";
 export const PRODUCT_DETAIL_PAGES: Record<string, ComponentType> = {
   "nova-pushup-pads": NovaPushupPadPage,
   "nova-tritan-protein-shaker": NovaProteinShakerPage,
+  "nova-tritan-protein-shaker-clear": NovaProteinShakerClearPage,
   "nova-quiet-ab-slide": NovaAbSlidePage,
   "nova-premium-metal-pushup-bars": NovaPushupBarPage,
   "nova-air-acupressure-stepper": NovaPressureStepperPage,
