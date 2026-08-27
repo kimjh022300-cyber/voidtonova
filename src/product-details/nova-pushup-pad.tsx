@@ -201,6 +201,25 @@ export default function NovaPushupPadPage() {
           </FeatureBlock>
 
           <FeatureBlock
+            title="손목 부담을 덜어주는 설계."
+            photoSrc="/assets/nova/pushup-pad/design-01.webp"
+            photoAlt="푸쉬업 패드 두 개가 겹쳐 놓인 제품 사진"
+            photoCaption="손목을 받치는 높이와 곡선"
+            additionalPhotoSrc="/assets/nova/pushup-pad/design-02.webp"
+            additionalPhotoAlt="푸쉬업 패드 두 개의 상단 그립면을 보여주는 사진"
+            additionalPhotoCaption="손이 닿는 면은 촘촘한 그립"
+            thirdPhotoSrc="/assets/nova/pushup-pad/design-03.webp"
+            thirdPhotoAlt="푸쉬업 패드 한 개의 측면 홈과 높이를 보여주는 사진"
+            thirdPhotoCaption="손가락이 자연스럽게 걸리는 측면 홈"
+            aspect="1 / 1"
+          >
+            손바닥이 닿는 면은 넓게, 손목이 놓이는 방향은 자연스럽게. 높이와
+            곡선을 함께 설계해 손목이 한쪽으로 과하게 꺽이지 않도록 돕습니다.
+            손가락은 측면 홈에 가볍게 걸리고, 패드는 손바닥 전체를 안정적으로
+            받칩니다.
+          </FeatureBlock>
+
+          <FeatureBlock
             title={
               <>
                 충격에 강한,
@@ -1055,11 +1074,14 @@ function FeatureBlock({
   photoLabel,
   photoSrc,
   photoAlt = "",
+  photoCaption,
   additionalPhotoLabel,
   additionalPhotoSrc,
   additionalPhotoAlt = "",
+  additionalPhotoCaption,
   thirdPhotoSrc,
   thirdPhotoAlt = "",
+  thirdPhotoCaption,
   widePhotoSrc,
   widePhotoAlt = "",
   photoGrid,
@@ -1071,11 +1093,14 @@ function FeatureBlock({
   photoLabel?: string;
   photoSrc?: string;
   photoAlt?: string;
+  photoCaption?: string;
   additionalPhotoLabel?: string;
   additionalPhotoSrc?: string;
   additionalPhotoAlt?: string;
+  additionalPhotoCaption?: string;
   thirdPhotoSrc?: string;
   thirdPhotoAlt?: string;
+  thirdPhotoCaption?: string;
   widePhotoSrc?: string;
   widePhotoAlt?: string;
   photoGrid?: readonly {
@@ -1147,18 +1172,21 @@ function FeatureBlock({
           ))}
         </div>
       ) : photoSrc ? (
-        <div
-          className="relative mt-24 w-full overflow-hidden rounded-[28px]"
-          style={{ aspectRatio: aspect, backgroundColor: "#f5f5f7" }}
-        >
-          <Image
-            src={photoSrc}
-            alt={photoAlt}
-            fill
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
-          />
-        </div>
+        <>
+          {photoCaption ? <PhotoPoint>{photoCaption}</PhotoPoint> : null}
+          <div
+            className={`relative ${photoCaption ? "mt-7" : "mt-24"} w-full overflow-hidden rounded-[28px]`}
+            style={{ aspectRatio: aspect, backgroundColor: "#f5f5f7" }}
+          >
+            <Image
+              src={photoSrc}
+              alt={photoAlt}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          </div>
+        </>
       ) : photoLabel ? (
         <div
           className="mt-24 flex w-full items-center justify-center rounded-[28px]"
@@ -1174,21 +1202,26 @@ function FeatureBlock({
       ) : null}
 
       {additionalPhotoSrc ? (
-        <div
-          className="relative mt-8 w-full overflow-hidden rounded-[28px]"
-          style={{
-            aspectRatio: additionalPhotoAspect,
-            backgroundColor: "#f5f5f7",
-          }}
-        >
-          <Image
-            src={additionalPhotoSrc}
-            alt={additionalPhotoAlt}
-            fill
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
-          />
-        </div>
+        <>
+          {additionalPhotoCaption ? (
+            <PhotoPoint>{additionalPhotoCaption}</PhotoPoint>
+          ) : null}
+          <div
+            className={`relative ${additionalPhotoCaption ? "mt-7" : "mt-8"} w-full overflow-hidden rounded-[28px]`}
+            style={{
+              aspectRatio: additionalPhotoAspect,
+              backgroundColor: "#f5f5f7",
+            }}
+          >
+            <Image
+              src={additionalPhotoSrc}
+              alt={additionalPhotoAlt}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          </div>
+        </>
       ) : additionalPhotoLabel ? (
         <div
           className="mt-8 flex w-full items-center justify-center rounded-[28px]"
@@ -1207,18 +1240,21 @@ function FeatureBlock({
       ) : null}
 
       {thirdPhotoSrc ? (
-        <div
-          className="relative mt-8 w-full overflow-hidden rounded-[28px]"
-          style={{ aspectRatio: aspect, backgroundColor: "#f5f5f7" }}
-        >
-          <Image
-            src={thirdPhotoSrc}
-            alt={thirdPhotoAlt}
-            fill
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
-          />
-        </div>
+        <>
+          {thirdPhotoCaption ? <PhotoPoint>{thirdPhotoCaption}</PhotoPoint> : null}
+          <div
+            className={`relative ${thirdPhotoCaption ? "mt-7" : "mt-8"} w-full overflow-hidden rounded-[28px]`}
+            style={{ aspectRatio: aspect, backgroundColor: "#f5f5f7" }}
+          >
+            <Image
+              src={thirdPhotoSrc}
+              alt={thirdPhotoAlt}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          </div>
+        </>
       ) : null}
 
       {widePhotoSrc ? (
@@ -1249,5 +1285,17 @@ function FeatureBlock({
         </p>
       ) : null}
     </div>
+  );
+}
+
+function PhotoPoint({ children }: { children: ReactNode }) {
+  return (
+    <p
+      className="mt-12 flex items-center gap-3 text-[24px] font-semibold tracking-[-0.01em]"
+      style={{ color: "#E4572A" }}
+    >
+      <Check className="h-6 w-6 shrink-0" strokeWidth={3} aria-hidden />
+      <span>{children}</span>
+    </p>
   );
 }
