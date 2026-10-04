@@ -286,66 +286,6 @@ const novaPushupPadFacts: ProductDetailFacts = {
   ],
 };
 
-const novaProteinShakerFacts: ProductDetailFacts = {
-  keywords: ["트라이탄 프로틴 쉐이커", "500ml 프로틴 쉐이커", "BPA Free 쉐이커", "운동용 물병"],
-  properties: [
-    { name: "용량", value: "500ml" },
-    { name: "재질", value: "트라이탄 · 스테인리스 믹싱 볼" },
-    { name: "BPA", value: "BPA Free" },
-    { name: "내열 온도", value: "90°C 이하" },
-    { name: "크기", value: "10 × 21cm" },
-    { name: "중량", value: "약 220g" },
-    { name: "색상", value: "블랙" },
-    { name: "구성품", value: "쉐이커 본체 1개, 스테인리스 믹싱 볼 1개" },
-    { name: "제조국", value: "중국" },
-  ],
-  productInformation: [
-    ["품명 및 모델명", "Nova 프로틴 쉐이커"],
-    ["재질", "트라이탄 · 스테인리스 믹싱 볼"],
-    ["색상", "블랙"],
-    ["크기", "10 × 21cm"],
-    ["용량", "500ml"],
-    ["중량", "약 220g"],
-    ["BPA", "BPA Free"],
-    ["내열 온도", "90°C 이하"],
-    ["사용 가능", "식기세척기 · 전자레인지 (믹싱 볼 제외)"],
-    ["구성품", "쉐이커 본체 1개, 스테인리스 믹싱 볼 1개"],
-    ["제조자(수입자)", "보이드 투 노바"],
-    ["제조국", "중국"],
-    ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
-    ["A/S 책임자와 전화번호", "010-6393-0907"],
-  ],
-  faq: [
-    { question: "트라이탄이면, 그냥 플라스틱 물병이랑 뭐가 다른가요?", answer: "트라이탄은 물병과 드링크웨어에 많이 쓰이는 단단한 소재입니다. 매일 들고 다니며 부딪히고 씻는 물병에 잘 어울립니다." },
-    { question: "파우더가 잘 안 풀리는 제품도 있잖아요. 그래도 괜찮나요?", answer: "파우더 종류와 물의 양에 따라 섞이는 정도는 달라질 수 있습니다. 안쪽의 오목한 구조와 스테인리스 믹싱 볼이 흔드는 흐름을 도와 더 고르게 섞일 수 있게 했습니다." },
-    { question: "믹싱 볼은 매번 꺼내야 하나요?", answer: "아닙니다. 쉐이커 안에 넣은 채로 사용하시면 됩니다. 세척할 때만 함께 꺼내 헹궈주시면 됩니다." },
-    { question: "운동 가방에 넣어도 정말 괜찮나요?", answer: "뚜껑과 마시는 입구를 끝까지 닫은 상태라면 가방에 넣어도 됩니다. 넣기 전 한 번 더 잠겼는지 확인해 주세요." },
-    { question: "운동이 끝났는데 바로 못 씻으면 어떻게 하나요?", answer: "가능하면 남은 내용물을 비우고 물로 한 번 헹궈 두는 게 좋습니다. 집에 돌아와 세척하는 건 괜찮지만 내용물은 비우고 가는 쪽이 편합니다." },
-    { question: "매일 쓰면 냄새나 색이 배지 않나요?", answer: "사용 후 그대로 두면 냄새가 남을 수 있습니다. 마신 뒤 바로 비우고 헹구는 습관을 권합니다." },
-    { question: "500ml가 저한테도 맞을까요?", answer: "운동 전후 한 번의 쉐이크를 준비하는 분에게 잘 맞는 용량입니다. 매일 한 잔씩 챙기는 루틴에 맞춘 크기입니다." },
-    { question: "프로틴 말고 물만 넣어도 되나요?", answer: "물론입니다. 운동할 때 물병으로 쓰다가 필요할 때만 파우더와 믹싱 볼을 넣어 쉐이커로 쓰셔도 됩니다." },
-    { question: "뜨거운 물을 넣어도 되나요?", answer: "90°C 이하의 음료를 담아 사용해 주세요. 뜨거운 음료를 담을 때는 화상에 주의해 주세요." },
-    { question: "식기세척기와 전자레인지 사용이 가능한가요?", answer: "네, 가능합니다. 전자레인지에 사용할 때는 스테인리스 믹싱 볼을 반드시 빼고 사용해 주세요." },
-    { question: "BPA Free 제품인가요?", answer: "네. BPA Free 트라이탄 소재로 제작했습니다." },
-  ],
-};
-
-const novaProteinShakerClearFacts: ProductDetailFacts = {
-  ...novaProteinShakerFacts,
-  keywords: [
-    "투명 트라이탄 프로틴 쉐이커",
-    "500ml 투명 쉐이커",
-    "BPA Free 쉐이커",
-    "운동용 물병",
-  ],
-  properties: novaProteinShakerFacts.properties.map((property) =>
-    property.name === "색상" ? { ...property, value: "투명" } : property,
-  ),
-  productInformation: novaProteinShakerFacts.productInformation.map(([name, value]) =>
-    name === "색상" ? [name, "투명"] : [name, value],
-  ),
-};
-
 const novaAbSlideFacts: ProductDetailFacts = {
   keywords: ["저소음 AB슬라이드", "복근 운동 기구", "AB 롤러", "홈트레이닝 코어 운동"],
   properties: [
@@ -450,10 +390,131 @@ const novaPressureStepperFacts: ProductDetailFacts = {
   ],
 };
 
+const voidMagsafeRingPremiumFacts: ProductDetailFacts = {
+  keywords: [
+    "맥세이프 마그네틱 링",
+    "듀얼 자석 스마트폰 거치대",
+    "스마트폰 그립톡",
+    "360도 휴대폰 거치대",
+  ],
+  properties: [
+    { name: "색상", value: "블랙" },
+    { name: "중량", value: "약 45g" },
+    { name: "회전 범위", value: "360°" },
+    { name: "접었을 때 두께", value: "약 4mm" },
+    { name: "펼쳤을 때 길이", value: "12cm" },
+    { name: "주요 기능", value: "스마트폰 그립 · 스탠드 · 금속 표면 거치" },
+    { name: "지원 기기", value: "MagSafe 지원 스마트폰 및 MagSafe 호환 케이스" },
+    { name: "구성품", value: "마그네틱 링 1개 · 부착용 메탈링 1개" },
+  ],
+  productInformation: [
+    ["품명 및 모델명", "Void Magnetic Ring"],
+    ["색상", "블랙"],
+    [
+      "크기",
+      "펼쳤을 때 길이 12cm · 큰 링 외경 5.6cm/내경 4.2cm · 작은 링 외경 3.7cm/내경 2.5cm · 접었을 때 두께 약 4mm",
+    ],
+    ["중량", "약 45g"],
+    ["회전 범위", "360°"],
+    ["주요 기능", "스마트폰 그립 · 스탠드 · 금속 표면 거치"],
+    ["지원 기기", "MagSafe 지원 스마트폰 및 MagSafe 호환 케이스"],
+    ["구성품", "마그네틱 링 1개 · 부착용 메탈링 1개"],
+    ["제조자(수입자)", "보이드 투 노바"],
+    ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
+    ["A/S 책임자와 전화번호", "010-6393-0907"],
+  ],
+  faq: [
+    { question: "어떤 스마트폰에서 사용할 수 있나요?", answer: "MagSafe 지원 스마트폰과 MagSafe 호환 케이스에 바로 부착할 수 있습니다. 그 외 기기는 동봉된 메탈링을 케이스 바깥쪽의 평평한 면에 부착해 사용할 수 있습니다." },
+    { question: "케이스를 착용한 상태에서도 사용할 수 있나요?", answer: "MagSafe 호환 케이스라면 바로 사용할 수 있습니다. 일반 케이스는 동봉된 메탈링을 부착해 주세요. 두껍거나 표면이 거친 케이스는 자력과 접착력이 약해질 수 있습니다." },
+    { question: "양면 마그네틱은 어떻게 사용하나요?", answer: "큰 원형 면은 스마트폰에, 접이식 링 면은 냉장고·사물함·운동기구처럼 자석이 붙는 평평한 철제 표면에 부착합니다." },
+    { question: "세로와 가로 모두 거치할 수 있나요?", answer: "360° 회전 구조로 세로와 가로 방향을 자유롭게 바꿀 수 있으며, 두 개의 관절을 펼쳐 원하는 시청 각도로 조절할 수 있습니다." },
+    { question: "그립으로도 사용할 수 있나요?", answer: "링에 손가락을 걸어 큰 화면 스마트폰을 한 손으로 사용할 때 안정감을 보조할 수 있습니다." },
+    { question: "무선 충전할 때도 부착해 둘 수 있나요?", answer: "거치대가 무선 충전기의 접촉을 방해할 수 있으므로 무선 충전 시에는 본체를 분리한 뒤 사용하는 것을 권장합니다." },
+  ],
+};
+
+const novaQuickGripFacts: ProductDetailFacts = {
+  keywords: [
+    "퀵그립 리프팅 스트랩",
+    "헬스 손목 스트랩",
+    "웨이트 그립",
+    "데드리프트 스트랩",
+  ],
+  properties: [
+    { name: "색상", value: "블랙" },
+    { name: "크기", value: "세로 17.5cm × 가로 8.5cm" },
+    { name: "중량", value: "85g (1개 기준)" },
+    { name: "사용 부위", value: "양손 손목 및 손바닥" },
+    { name: "사용 용도", value: "웨이트 트레이닝 시 그립 보조" },
+    { name: "구성품", value: "퀵그립 왼손용 1개 · 오른손용 1개" },
+    { name: "제조국", value: "중국" },
+  ],
+  productInformation: [
+    ["품명 및 모델명", "Nova Quick Grip"],
+    ["색상", "블랙"],
+    ["크기", "세로 17.5cm × 가로 8.5cm"],
+    ["중량", "85g (1개 기준)"],
+    ["사용 부위", "양손 손목 및 손바닥"],
+    ["사용 용도", "웨이트 트레이닝 시 그립 보조"],
+    ["구성품", "퀵그립 왼손용 1개, 오른손용 1개"],
+    ["제조자(수입자)", "보이드 투 노바"],
+    ["제조국", "중국"],
+    ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
+    ["A/S 책임자와 전화번호", "010-6393-0907"],
+  ],
+  faq: [
+    { question: "일반 줄 스트랩과 무엇이 다른가요?", answer: "긴 줄을 바에 여러 번 감는 방식 대신, 넓은 그립 부분을 바에 대고 한 바퀴 감아 쥐는 방식입니다. 양손 착용에 걸리는 시간을 줄여 세트 사이에 빠르게 사용할 수 있습니다." },
+    { question: "어떤 운동에 사용하면 좋나요?", answer: "랫풀다운, 바벨·덤벨 로우, 데드리프트, 풀업처럼 바나 손잡이를 당기는 운동에 활용하기 좋습니다." },
+    { question: "악력이 전혀 필요 없어지는 건가요?", answer: "퀵그립은 바를 쥐는 힘을 보조하는 운동 장비이며 악력을 완전히 대신하지는 않습니다." },
+    { question: "손바닥과 손목 보호에도 도움이 되나요?", answer: "넓은 그립 면이 바와 손바닥 사이의 마찰을 줄이고, 손목 안쪽의 폼 소재가 중량이 실릴 때의 압박과 쓸림 부담을 덜어줍니다." },
+    { question: "사이즈는 어떻게 선택하나요?", answer: "손목 둘레에 맞춰 벨크로의 고정 위치를 조절하는 원 사이즈 제품입니다." },
+    { question: "좌우가 구분되어 있나요?", answer: "양손에 각각 착용하는 왼손용과 오른손용 한 쌍 구성입니다." },
+  ],
+};
+
+const novaWirelessBattleRopeFacts: ProductDetailFacts = {
+  keywords: [
+    "무선 배틀로프",
+    "홈트 배틀로프",
+    "상체 유산소 운동기구",
+    "스프링 배틀로프",
+  ],
+  properties: [
+    { name: "제품 유형", value: "스프링 반발식 무선 배틀로프" },
+    { name: "재질", value: "강철 · PP" },
+    { name: "색상", value: "블랙" },
+    { name: "크기", value: "개당 약 50cm" },
+    { name: "중량", value: "한 쌍 약 1kg" },
+    { name: "사용 용도", value: "상체 근지구력 및 전신 컨디셔닝 운동" },
+    { name: "구성품", value: "스프링 배틀로프 2개" },
+  ],
+  productInformation: [
+    ["품명 및 모델명", "Nova Battle Rope"],
+    ["제품 유형", "스프링 반발식 무선 배틀로프"],
+    ["재질", "강철 · PP"],
+    ["색상", "블랙"],
+    ["크기", "개당 약 50cm"],
+    ["중량", "한 쌍 약 1kg"],
+    ["사용 용도", "상체 근지구력 및 전신 컨디셔닝 운동"],
+    ["구성품", "스프링 배틀로프 2개"],
+    ["제조자(수입자)", "보이드 투 노바"],
+    ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
+    ["A/S 책임자와 전화번호", "010-6393-0907"],
+  ],
+  faq: [
+    { question: "일반 배틀로프와 무엇이 다른가요?", answer: "긴 로프와 고정 장치 없이 양손에 하나씩 잡고 흔드는 방식이라, 양팔을 움직일 공간만 있으면 바로 운동할 수 있습니다." },
+    { question: "어떤 원리로 운동 부하가 생기나요?", answer: "제품을 흔들면 내부 스프링의 반발력과 제품 자체의 관성이 되돌아오며 반복적인 저항을 만듭니다." },
+    { question: "집에서 사용하면 층간소음이 생기지 않나요?", answer: "무거운 로프를 바닥에 내려치는 방식은 아니지만 스프링이 움직이는 소리와 빠르게 흔들 때의 작동음은 있을 수 있어 완전한 무소음 제품은 아닙니다." },
+    { question: "운동 강도는 어떻게 조절하나요?", answer: "처음에는 작고 천천히 흔들고, 익숙해지면 움직임의 범위와 속도를 높여 강도를 조절할 수 있습니다." },
+    { question: "운동 초보자도 사용할 수 있나요?", answer: "양손을 동시에 위아래로 흔드는 기본 웨이브부터 작은 범위와 느린 속도로 시작할 수 있습니다." },
+    { question: "충전이나 별도의 설치가 필요한가요?", answer: "전원과 배터리를 사용하지 않는 기계식 스프링 구조이며, 나사나 앵커로 고정하는 설치 과정도 없습니다." },
+  ],
+};
+
 export const PRODUCT_DETAIL_FACTS: Record<string, ProductDetailFacts> = {
+  "nova-quick-grip": novaQuickGripFacts,
+  "nova-wireless-battle-rope": novaWirelessBattleRopeFacts,
   "nova-pushup-pads": novaPushupPadFacts,
-  "nova-tritan-protein-shaker": novaProteinShakerFacts,
-  "nova-tritan-protein-shaker-clear": novaProteinShakerClearFacts,
   "nova-quiet-ab-slide": novaAbSlideFacts,
   "nova-premium-metal-pushup-bars": novaPushupBarFacts,
   "nova-air-acupressure-stepper": novaPressureStepperFacts,
@@ -462,6 +523,7 @@ export const PRODUCT_DETAIL_FACTS: Record<string, ProductDetailFacts> = {
   "void-360-laptop-stand": voidSwivelLaptopStandFacts,
   "void-magnetic-phone-stand": voidMagneticPhoneStandFacts,
   "void-tablet-floor-stand": voidTabletStandFacts,
+  "void-magsafe-ring-premium": voidMagsafeRingPremiumFacts,
 };
 
 export function getProductDetailFacts(productId: string) {
