@@ -11,7 +11,11 @@ import {
   Smartphone,
 } from "lucide-react";
 
-/** Void Magnetic Ring */
+/**
+ * Void Magnetic Ring
+ * 원본: void-laptop-swivel-v2.tsx — 원본과 완전히 분리된 작업본
+ * 실제 제품 사진은 준비 전까지 빈 카드로 유지한다.
+ */
 export default function VoidMagsafeRingPremiumPage() {
   return (
     <BrandFrame brand="void">
@@ -617,6 +621,7 @@ export default function VoidMagsafeRingPremiumPage() {
             ["지원 기기", "MagSafe 지원 스마트폰 및 MagSafe 호환 케이스"],
             ["구성품", "마그네틱 링 1개 · 부착용 메탈링 1개"],
             ["제조자(수입자)", "보이드 투 노바"],
+            ["제조국", "확인 후 업데이트 예정"],
             ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
             ["A/S 책임자와 전화번호", "010-6393-0907"],
           ].map(([label, value]) => (

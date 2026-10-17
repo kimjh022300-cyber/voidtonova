@@ -1244,7 +1244,7 @@ h2,
 }
 
 .product-card-image-filled { background: #f4f4f2; }
-.product-card-image-filled img { object-fit: cover; }
+.product-card-image-filled img { object-fit: contain; }
 .product-card-live .product-card-image img { transition: transform 500ms ease; }
 .product-card-live:hover .product-card-image img { transform: scale(1.025); }
 

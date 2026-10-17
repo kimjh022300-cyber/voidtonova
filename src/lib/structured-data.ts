@@ -93,10 +93,10 @@ export function createProductStructuredData(
     "@id": `${url}#product`,
     name: product.name,
     description: product.description,
-    image: [absoluteUrl(product.image)],
+    ...(product.image ? { image: [absoluteUrl(product.image)] } : {}),
     category: product.category,
     url,
-    sameAs: product.purchaseUrl,
+    ...(product.purchaseUrl ? { sameAs: product.purchaseOptions?.map((option) => option.url) ?? product.purchaseUrl } : {}),
     brand: { "@id": organizationId },
     mainEntityOfPage: { "@id": `${url}#webpage` },
     ...(facts
@@ -143,11 +143,11 @@ export const productListStructuredData = {
       name: product.name,
       description: product.description,
       category: product.category,
-      image: absoluteUrl(product.image),
+      ...(product.image ? { image: absoluteUrl(product.image) } : {}),
       url: product.detailPath
         ? absoluteUrl(product.detailPath)
         : `${absoluteUrl("/products")}#${product.id}`,
-      sameAs: product.purchaseUrl,
+      ...(product.purchaseUrl ? { sameAs: product.purchaseOptions?.map((option) => option.url) ?? product.purchaseUrl } : {}),
       brand: { "@id": organizationId },
     },
   })),

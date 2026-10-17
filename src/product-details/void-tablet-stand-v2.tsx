@@ -10,8 +10,7 @@ import {
 } from "lucide-react";
 
 /**
- * VOID · 태블릿 거치대 스탠드형 (v2 — 설득 구조 실험본)
- * 원본: void-tablet-stand.tsx
+ * VOID · 태블릿 거치대 스탠드형
  * 아이콘: Lucide (https://lucide.dev) — 앞으로 전부 여기 사용
  */
 export default function VoidTabletStandV2Page() {
@@ -46,7 +45,7 @@ export default function VoidTabletStandV2Page() {
             Void Tablet Stand
           </p>
 
-          <h2
+          <h1
             className="mx-auto mt-8 whitespace-nowrap text-[90px] font-bold leading-[1.08] tracking-[-0.01em]"
             style={{
               color: "#1d1d1f",
@@ -56,12 +55,12 @@ export default function VoidTabletStandV2Page() {
             }}
           >
             당신의 시선에 맞추다.
-          </h2>
+          </h1>
 
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/void/tablet-stand/hero.webp"
-            alt="블랙 Void 태블릿 거치대 스탠드"
+            alt="VOID Tablet Stand"
             className="mx-auto mt-2 h-auto w-full max-w-[980px] object-contain"
             style={{
               maxHeight: 1680,
@@ -99,6 +98,58 @@ export default function VoidTabletStandV2Page() {
             <br />
             태블릿을 사용해 볼까요?
           </p>
+        </div>
+      </section>
+
+      {/* 구매 고객 후기 — 히어로 직후 신뢰 형성 */}
+      <section className="bg-white px-10 pb-32 pt-40">
+        <div className="mx-auto max-w-[780px]">
+          <div
+            className="flex items-center justify-center gap-4"
+            aria-label="별점 5점, 평점 5.0"
+          >
+            <p className="text-[34px] font-bold tracking-[-0.02em] text-[#1d1d1f]">5.0</p>
+            <p className="text-[36px] font-bold tracking-[0.12em] text-[#F5B700]">★★★★★</p>
+          </div>
+          <h2
+            className="mt-6 text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
+            style={{
+              color: "#1d1d1f",
+              fontFamily:
+                '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+            }}
+          >
+            실제 구매자들의 솔직한 후기
+          </h2>
+          <p className="mt-5 text-center text-[22px] font-medium text-[#6e6e73]">
+            먼저 사용해 본 분들의 솔직한 후기입니다.
+          </p>
+
+          <div className="mt-16 space-y-6">
+            {[
+              "탄소강이라 그런지 태블릿을 올려놔도 흔들림이 거의 없고 정말 안정적입니다. 영상 보거나 책상에서 작업할 때 화면 높이가 딱 맞아서 목이 훨씬 편해졌어요.",
+              "2단 관절이라 원하는 위치로 맞추기 쉽고 360도 회전도 부드럽게 잘 됩니다. 침대에서 누워서 영상 볼 때도 손으로 들고 있지 않아도 돼서 만족스럽습니다.",
+              "온라인 강의 들을 때 사용하려고 샀는데 각도 조절이 생각보다 편합니다. 아이패드도 잘 잡아주고 책상 위가 깔끔해져서 공부할 때 집중하기 좋아요.",
+              "소파 옆에 두고 쓰고 있습니다. 높이 조절 범위가 넓어서 자세에 맞춰 화면을 볼 수 있고, 거치대를 한 번 세팅해두면 필요할 때 방향만 돌리면 돼서 편합니다.",
+              "디자인이 심플해서 집 어디에 둬도 잘 어울리고 조립도 어렵지 않았습니다. 튼튼하게 잘 잡아줘서 영상 시청부터 레시피 확인까지 생각보다 활용도가 높아요.",
+            ].map((review) => (
+              <article
+                key={review}
+                className="rounded-[28px] border border-[#dfe3e7] bg-[#f5f5f7] px-8 py-8"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <div className="flex items-center gap-3">
+                    <p className="text-[24px] font-bold text-[#1d1d1f]">5.0</p>
+                    <p className="text-[24px] font-bold tracking-[0.08em] text-[#F5B700]">★★★★★</p>
+                  </div>
+                  <p className="text-[18px] font-medium text-[#86868b]">네이버 구매 고객</p>
+                </div>
+                <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">
+                  {review}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -806,7 +857,7 @@ export default function VoidTabletStandV2Page() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/void/tablet-stand/size.webp"
-            alt="Void 태블릿 거치대 스탠드의 제품 치수"
+            alt="Tablet Stand 사이즈"
             className="block h-auto w-full"
           />
         </div>

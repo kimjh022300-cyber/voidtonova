@@ -1,4 +1,5 @@
 import { BrandFrame } from "@/components/product-detail/brand-frame";
+import Image from "next/image";
 import type { ReactNode } from "react";
 import {
   Check,
@@ -16,16 +17,26 @@ import {
  */
 export default function NovaAbSlidePage() {
   return (
-    <BrandFrame brand="nova">
-      {/* 1. 제품 히어로 — Apple MacBook Air 스타일 */}
-      <section
-        className="relative overflow-x-hidden"
-        style={{
-          background:
-            "linear-gradient(180deg, #d2d2d7 0%, #e8e8ed 50%, #f5f5f7 82%, #ffffff 100%)",
-        }}
-      >
-        <div className="relative px-4 pb-[4.4rem] pt-28">
+    <BrandFrame brand="void">
+      {/* 1. 제품 히어로 */}
+      <section className="relative min-h-[1720px] overflow-hidden bg-[#111111]">
+        <Image
+          src="/assets/nova/ab-slide/hero-ab-rollout-v2.webp"
+          alt="헬스장에서 Nova AB Slide로 롤아웃 운동을 하는 남성"
+          fill
+          priority
+          sizes="860px"
+          className="object-cover object-center"
+        />
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0.24) 28%, rgba(0,0,0,0.08) 54%, rgba(0,0,0,0.88) 100%)",
+          }}
+          aria-hidden
+        />
+        <div className="relative z-10 flex min-h-[1720px] flex-col px-4 pb-24 pt-14">
           <div
             className="px-8 text-center"
             style={{
@@ -37,44 +48,35 @@ export default function NovaAbSlidePage() {
               className="mx-auto text-[41px] font-semibold leading-[1.25] tracking-[0.007em]"
               style={{
                 backgroundImage:
-                  "linear-gradient(105deg, #1d1d1f 0%, #2a3d4a 45%, #3d5a6e 70%, #1d1d1f 100%)",
+                  "linear-gradient(105deg, #ffffff 0%, #d9e9f5 48%, #ffffff 100%)",
                 WebkitBackgroundClip: "text",
                 backgroundClip: "text",
                 color: "transparent",
                 width: "fit-content",
+                filter: "drop-shadow(0 2px 10px rgba(0,0,0,0.9))",
               }}
             >
               Nova AB Slide
             </p>
-            <h2
-              className="mx-auto mt-2 whitespace-nowrap text-[95px] font-bold leading-[1.15] tracking-[-0.025em]"
+            <h1
+              className="mx-auto mt-6 whitespace-nowrap text-[95px] font-bold leading-[1.15] tracking-[-0.025em]"
               style={{
-                color: "#1d1d1f",
+                color: "#ffffff",
+                textShadow:
+                  "0 3px 28px rgba(0,0,0,1), 0 1px 6px rgba(0,0,0,0.95)",
                 fontFamily:
                   '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
                 width: "fit-content",
               }}
             >
               코어에 집중하다.
-            </h2>
-          </div>
-          <div className="mt-24 flex justify-center overflow-visible pb-12">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/nova/ab-slide/ab-hero-2.webp"
-              alt="블랙 Nova 저소음 AB 슬라이드"
-              className="h-auto w-full max-w-[1280px] origin-center object-contain"
-              style={{
-                maxHeight: 1100,
-                transform: "scale(0.826)",
-                filter: "drop-shadow(0 24px 48px rgba(29,29,31,0.18))",
-              }}
-            />
+            </h1>
           </div>
           <p
-            className="mx-auto mt-20 max-w-[780px] px-4 text-center text-[28px] font-normal leading-[1.5] tracking-[-0.01em]"
+            className="mx-auto mt-auto max-w-[780px] px-4 text-center text-[28px] font-medium leading-[1.5] tracking-[-0.01em]"
             style={{
-              color: "#1d1d1f",
+              color: "#ffffff",
+              textShadow: "0 2px 14px rgba(0,0,0,0.95)",
               fontFamily:
                 '"SF Pro KR", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Helvetica Neue", Helvetica, Arial, sans-serif',
             }}
@@ -96,6 +98,145 @@ export default function NovaAbSlidePage() {
         </div>
       </section>
 
+      <section className="relative aspect-[3/5] overflow-hidden bg-[#171719]">
+        <Image
+          src="/assets/nova/ab-slide/product-overview-dark-v1.webp"
+          alt="다크 스튜디오에 놓인 Nova AB Slide"
+          fill
+          sizes="860px"
+          className="object-cover object-center"
+        />
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-[25%]"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.48) 0%, rgba(0,0,0,0) 100%)",
+          }}
+          aria-hidden
+        />
+        <div className="absolute inset-x-0 top-28 z-10 text-center">
+          <h2 className="text-[70px] font-bold leading-none tracking-[-0.03em]">
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(105deg, #ffffff 0%, #d9e9f5 48%, #ffffff 100%)",
+                filter: "drop-shadow(0 2px 10px rgba(0,0,0,0.9))",
+              }}
+            >
+              Nova AB Slide.
+            </span>
+          </h2>
+          <p
+            className="mt-5 whitespace-nowrap text-[32px] font-medium tracking-[-0.01em] text-white"
+            style={{ textShadow: "0 2px 10px rgba(0,0,0,0.9)" }}
+          >
+            넓은 휠과 와이드 그립으로 시작하는 롤아웃.
+          </p>
+        </div>
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[16%]"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(245,245,247,0) 0%, #f5f5f7 100%)",
+          }}
+          aria-hidden
+        />
+      </section>
+
+      <OverviewMetrics />
+      <SimpleCoreSection />
+
+      <section className="bg-white px-10 py-36">
+        <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.03em]">
+          <span
+            className="bg-clip-text text-transparent"
+            style={{
+              backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
+            }}
+          >
+            Nova AB Slide
+          </span>
+          <br />
+          <span className="text-[61px]">나에게 맞는 이유.</span>
+        </h2>
+        <div className="mt-20 overflow-hidden rounded-[28px] border border-[#d2d2d7]">
+          <table className="w-full table-fixed border-collapse text-center">
+            <caption className="sr-only">
+              맨몸 운동, 대형 운동기구, Nova AB Slide 비교
+            </caption>
+            <thead>
+              <tr className="bg-[#f5f5f7]">
+                <th aria-label="비교 항목" className="w-[31%] px-3 py-7" />
+                <th className="border-l border-[#d2d2d7] px-2 py-7 text-[22px] font-bold leading-tight">
+                  맨몸 운동
+                </th>
+                <th className="border-l border-[#d2d2d7] px-2 py-7 text-[22px] font-bold leading-tight">
+                  대형
+                  <br />
+                  운동기구
+                </th>
+                <th className="border-l border-[#d2d2d7] bg-[#eef7ff] px-2 py-7 text-[22px] font-bold leading-tight text-[#0071e3]">
+                  Nova
+                  <br />
+                  AB Slide
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["코어 중심 운동", "O", "O", "O"],
+                ["작은 공간에서 사용", "O", "X", "O"],
+                ["별도 설치 없이 시작", "O", "X", "O"],
+                ["높은 운동 강도", "X", "O", "O"],
+                ["간편한 휴대·보관", "O", "X", "O"],
+              ].map(([label, bodyweight, machine, nova]) => (
+                <tr key={label} className="border-t border-[#d2d2d7]">
+                  <th className="bg-white px-3 py-7 text-center text-[22px] font-semibold leading-snug">
+                    {label}
+                  </th>
+                  {[bodyweight, machine, nova].map((value, index) => (
+                    <td
+                      key={`${label}-${index}`}
+                      className={`border-l border-[#d2d2d7] px-2 py-7 text-[34px] font-bold ${
+                        index === 2
+                          ? "bg-[#eef7ff] text-[#0071e3]"
+                          : value === "O"
+                            ? "bg-white text-[#0071e3]"
+                            : "bg-white text-[#86868b]"
+                      }`}
+                    >
+                      {value}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="bg-white px-12 py-36">
+        <FeatureBlock
+          title={
+            <>
+              밀어내는 순간,
+              <br />
+              코어와 상체가 함께 깨어납니다.
+            </>
+          }
+          imageSrc="/assets/nova/ab-slide/upper-core-rollout-closeup-v1.webp"
+          imageAlt="Nova AB Slide를 밀어내며 복부와 상체로 자세를 버티는 남성"
+          bodyAfterImage
+        >
+          휠이 앞으로 움직이는 동안 복부는 몸통이 무너지지 않도록 중심을
+          잡고, 어깨와 가슴, 팔은 자세를 지탱합니다. 한 번의 롤아웃으로
+          코어를 중심으로 상체까지 함께 연결해 움직여보세요.
+        </FeatureBlock>
+      </section>
+
+      <MuscleMapSection />
+
       {/* 기능 + 스토리 */}
       <section className="bg-white px-12 pb-36 pt-[8.8rem]">
         <div className="flex flex-col gap-48">
@@ -104,11 +245,15 @@ export default function NovaAbSlidePage() {
               <>
                 500g의 가벼움.
                 <br />
-                최대 100kg의 튼튼함.
+                <NovaGradient>최대 100kg의 튼튼함.</NovaGradient>
               </>
             }
-            imageSrc="/assets/nova/ab-slide/weight-500g.webp"
+            imageSrc="/assets/nova/ab-slide/weight-500g-v2.webp"
             imageAlt="디지털 저울에서 약 500g으로 측정된 AB 슬라이드"
+            metrics={[
+              ["500g", "제품 무게"],
+              ["100kg", "최대 하중"],
+            ]}
             bodyAfterImage
           >
             약 500g의 가벼운 무게와 컴팩트한 크기로 어디에나 간편하게 보관하고,
@@ -138,7 +283,7 @@ export default function NovaAbSlidePage() {
               <>
                 좌우 흔들림을 줄이는,
                 <br />
-                폭 9cm · 지름 16.5cm 휠.
+                <NovaGradient>폭 9cm · 지름 16.5cm 휠.</NovaGradient>
               </>
             }
             imageSrcs={[
@@ -150,6 +295,10 @@ export default function NovaAbSlidePage() {
                 src: "/assets/nova/ab-slide/wheel-diameter-16-5cm.webp",
                 alt: "지름 16.5cm 치수가 표시된 AB 슬라이드 휠",
               },
+            ]}
+            metrics={[
+              ["9cm", "휠 폭"],
+              ["16.5cm", "휠 지름"],
             ]}
             noBackground
             bodyAfterImage
@@ -164,11 +313,12 @@ export default function NovaAbSlidePage() {
               <>
                 두 손의 힘을 고르게,
                 <br />
-                30cm 와이드 그립.
+                <NovaGradient>30cm 와이드 그립.</NovaGradient>
               </>
             }
             imageSrc="/assets/nova/ab-slide/grip-width-30cm.webp"
             imageAlt="전체 폭 30cm 치수가 표시된 AB 슬라이드 와이드 그립"
+            metrics={[["30cm", "손잡이 끝에서 끝까지"]]}
             bodyAfterImage
           >
             손잡이 끝에서 끝까지 약 30cm. 양손으로 제품을 잡고 힘을 고르게
@@ -299,132 +449,6 @@ export default function NovaAbSlidePage() {
         </div>
       </section>
 
-      {/* 자극 부위 — AB 슬라이드 동작에 쓰이는 근육 */}
-      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
-        <h2
-          className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
-          style={{
-            backgroundImage: "linear-gradient(90deg, #8F2F1B, #E4572A)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            color: "transparent",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          AB 슬라이드에 쓰이는 근육.
-        </h2>
-        <p
-          className="mx-auto mt-8 max-w-[680px] text-center text-[26px] font-medium leading-[1.6] tracking-[-0.01em]"
-          style={{ color: "#6e6e73" }}
-        >
-          <span className="whitespace-nowrap">무릎 롤아웃에 쓰이는 주요 근육을</span>
-          <br />
-          <span className="whitespace-nowrap">상대적 참여도 1–5로 나눠 표시했습니다.</span>
-        </p>
-
-        <div className="mx-auto mt-20 max-w-[760px]">
-          <div className="grid grid-cols-2 gap-5">
-            {[
-              {
-                label: "앞면",
-                src: "/assets/nova/ab-slide/muscle-map/man-front.svg",
-                alt: "복부와 어깨 앞쪽을 강조한 남성 인체 근육도",
-              },
-              {
-                label: "뒷면",
-                src: "/assets/nova/ab-slide/muscle-map/man-back.svg",
-                alt: "등과 어깨 주변을 강조한 남성 인체 후면 근육도",
-              },
-            ].map(({ label, src, alt }) => (
-              <figure
-                key={label}
-                className="rounded-[28px] border border-[#f0ddd5] bg-white px-7 pb-7 pt-8 text-center"
-              >
-                <object
-                  data={src}
-                  type="image/svg+xml"
-                  aria-label={alt}
-                  className="mx-auto h-[480px] w-full"
-                />
-                <figcaption
-                  className="mt-3 text-[20px] font-semibold tracking-[-0.01em]"
-                  style={{ color: "#6e6e73" }}
-                >
-                  {label}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-
-          <div className="mt-14 grid grid-cols-2 gap-x-12">
-            {[
-              {
-                level: 5,
-                title: "매우 많이 사용",
-                body: "복직근 · 대흉근",
-                color: "#C93D1B",
-              },
-              {
-                level: 4,
-                title: "많이 사용",
-                body: "외복사근 · 전면 삼각근",
-                color: "#E96843",
-              },
-              {
-                level: 3,
-                title: "함께 쓰이는 부위",
-                body: "광배근 · 상완삼두근",
-                color: "#EE967B",
-              },
-              {
-                level: 2,
-                title: "자세를 지탱하며 쓰이는 부위",
-                body: "승모근 · 둔근 · 전완",
-                color: "#F4C8B8",
-              },
-              {
-                level: 1,
-                title: "동작에 따라 달라지는 부위",
-                body: "대퇴사두근 · 햄스트링 · 종아리",
-                color: "#F8E7E0",
-              },
-            ].map(({ level, title, body, color }) => (
-              <div key={level} className="border-b border-[#d8e5ee] py-7 first:border-t [&:nth-child(2)]:border-t">
-                <div className="flex items-center gap-4">
-                  <span
-                    className="h-4 w-4 rounded-full"
-                    style={{ backgroundColor: color }}
-                    aria-hidden
-                  />
-                  <p
-                    className="text-[26px] font-bold tracking-[-0.02em]"
-                    style={{ color: "#1d1d1f" }}
-                  >
-                    {level}. {title}
-                  </p>
-                </div>
-                <p
-                  className="mt-3 pl-8 text-[19px] font-medium leading-[1.55] tracking-[-0.01em]"
-                  style={{ color: "#6e6e73" }}
-                >
-                  {body}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <p
-          className="mx-auto mt-12 max-w-[760px] text-center text-[17px] font-medium leading-[1.5] tracking-[-0.01em]"
-          style={{ color: "#86868b" }}
-        >
-          수치는 무릎 롤아웃의 상대적 참여도를 뜻하며, 가동 범위·자세·개인별
-          운동 경험에 따라 달라질 수 있습니다.
-        </p>
-      </section>
-
       {/* [신규] 이런 분께 — 고정형이 정답인 사람을 좁혀 주는 자리 */}
       <section className="bg-white px-12 pb-36 pt-32">
         <h2
@@ -512,70 +536,6 @@ export default function NovaAbSlidePage() {
         </div>
       </section>
 
-      {/* [신규] 3. 스펙 하이라이트 — 숫자를 문단에서 꺼내 크게 */}
-      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
-        <h2
-          className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
-          style={{
-            color: "#1d1d1f",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          한눈에 보는
-          <br />
-          <span
-            style={{
-              backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              color: "transparent",
-            }}
-          >
-            Nova AB Slide.
-          </span>
-        </h2>
-
-        <div className="mt-20 grid grid-cols-2 gap-6">
-          {[
-            { value: "500", unit: "g", label: "제품 무게" },
-            { value: "30", unit: "cm", label: "제품 가로" },
-            { value: "100", unit: "kg", label: "최대 하중" },
-            { value: "Black", unit: "", label: "블랙 단일 컬러" },
-          ].map(({ value, unit, label }) => (
-            <div
-              key={label}
-              className="flex flex-col items-center justify-center rounded-[28px] bg-white px-6 py-16 text-center"
-            >
-              <p
-                className="w-full text-center text-[84px] font-bold leading-none tracking-[-0.03em]"
-                style={{
-                  backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  color: "transparent",
-                  fontFamily:
-                    '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-                }}
-              >
-                {value}
-                <span className="ml-[0.08em] text-[38px] font-semibold">
-                  {unit}
-                </span>
-              </p>
-              <p
-                className="mt-7 w-full text-center text-[26px] font-semibold tracking-[-0.015em]"
-                style={{ color: "#1d1d1f" }}
-              >
-                {label}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* [신규] 4. 신뢰 배지 — 구매 직전 불안 제거 */}
       <section className="bg-white px-12 pb-32 pt-32">
         <div className="grid grid-cols-2 gap-x-10 gap-y-12">
@@ -626,67 +586,52 @@ export default function NovaAbSlidePage() {
         </div>
       </section>
 
-      {/* [신규] 5. 클로징 — 설득 파트의 마지막, 정보 파트로 넘어가기 전 */}
-      <section
-        className="px-12 pb-40 pt-36"
-        style={{
-          background: "linear-gradient(180deg, #ffffff, #e3f1f8 60%, #d8ebf5)",
-        }}
-      >
-        <h2
-          className="text-center text-[64px] font-bold leading-[1.18] tracking-[-0.028em]"
-          style={{
-            color: "#1d1d1f",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          짧게 밀고, 깊게 집중하다.
-        </h2>
-        <p
-          className="mx-auto mt-10 max-w-[680px] text-center text-[28px] font-medium leading-[1.6] tracking-[-0.01em]"
-          style={{
-            color: "#4a5a66",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          내 몸이 허락하는 오늘의 거리에서, 오늘의 한 번을.
-          <br />
-          멀리 갈 필요는 없습니다.
-        </p>
+      <CustomerReviews />
 
-        <PhotoSlot
-          label="사진 — 블랙 AB 슬라이드와 무릎 매트를 놓은 정돈된 홈트 공간 와이드 컷"
-          src="/assets/nova/ab-slide/closing-core-workout.webp"
-          alt="AB 슬라이드를 앞으로 밀며 코어 운동에 집중하는 모습"
-          aspect="1672 / 941"
+      {/* 5. 클로징 — 설득 파트의 마지막, 정보 파트로 넘어가기 전 */}
+      <section className="relative min-h-[1500px] overflow-hidden bg-[#111113] text-center">
+        <Image
+          src="/assets/nova/ab-slide/closing-core-workout-bg-v1.webp"
+          alt="Nova AB Slide를 앞으로 밀며 코어 운동에 집중하는 남성"
+          fill
+          sizes="860px"
+          className="object-cover object-center"
         />
-
-        <p
-          className="mt-20 text-center text-[52px] font-semibold leading-tight tracking-[-0.02em]"
-          style={{
-            backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            color: "transparent",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          Nova AB Slide
-        </p>
-        <p
-          className="mt-3 text-center text-[28px] font-normal leading-snug tracking-[-0.01em]"
-          style={{ color: "#6e7e8a" }}
-        >
-          코어에 집중하다.
-        </p>
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-[42%]"
+          style={{ background: "linear-gradient(180deg,#fff 0%,rgba(255,255,255,.78) 42%,rgba(255,255,255,.24) 76%,transparent 100%)" }}
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[38%]"
+          style={{ background: "linear-gradient(0deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.34) 52%,transparent 100%)" }}
+          aria-hidden
+        />
+        <div className="relative z-10 flex min-h-[1500px] flex-col px-12 pb-28 pt-36">
+          <h2 className="text-[72px] font-bold leading-[1.18] tracking-[-0.028em] text-[#1d1d1f]">
+            짧게 밀고,
+            <br />
+            깊게 집중하다.
+          </h2>
+          <div className="mt-auto">
+            <p
+              className="text-[52px] font-semibold leading-tight tracking-[-0.02em] text-white"
+              style={{ textShadow: "0 3px 20px rgba(0,0,0,0.95)" }}
+            >
+              Nova AB Slide
+            </p>
+            <p
+              className="mt-3 text-[28px] font-normal leading-snug tracking-[-0.01em] text-[#d9e9f5]"
+              style={{ textShadow: "0 2px 14px rgba(0,0,0,0.95)" }}
+            >
+              코어에 집중하다.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* 질문에 답해드립니다 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-40">
+      <section className="bg-white px-10 pb-36 pt-40">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -790,10 +735,22 @@ export default function NovaAbSlidePage() {
             className="h-full w-full object-cover"
           />
         </div>
+        <div className="mx-auto mt-8 grid max-w-[720px] grid-cols-3 gap-5">
+          {[
+            ["300mm", "전체 가로"],
+            ["165mm", "휠 지름"],
+            ["90mm", "휠 폭"],
+          ].map(([value, label]) => (
+            <div key={label} className="rounded-[22px] border border-[#dfe3e7] bg-[#f8fafc] px-4 py-7 text-center">
+              <p className="text-[31px] font-bold tracking-[-0.025em]"><NovaGradient>{value}</NovaGradient></p>
+              <p className="mt-3 text-[19px] font-semibold text-[#6e6e73]">{label}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* 구성품 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-32">
+      <section className="bg-white px-10 pb-36 pt-32">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -870,7 +827,7 @@ export default function NovaAbSlidePage() {
       </section>
 
       {/* 기타 안내 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-32">
+      <section className="bg-white px-10 pb-36 pt-32">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -1027,35 +984,215 @@ export default function NovaAbSlidePage() {
   );
 }
 
-/** 사진이 들어갈 자리를 눈에 보이게 잡아두는 카드 */
-function PhotoSlot({
-  label,
-  aspect = "3 / 2",
-  src,
-  alt = "",
-}: {
-  label: string;
-  aspect?: string;
-  src?: string;
-  alt?: string;
-}) {
+function CustomerReviews() {
+  const reviews = [
+    ["쿠팡 구매 고객", "생각보다 바퀴가 부드럽게 잘 굴러가고 흔들림도 적어요. 집에서 복근 운동하려고 샀는데 무릎 패드도 같이 있어서 편하게 쓰고 있습니다. 몇 번만 해도 배에 자극 제대로 오네요ㅋㅋ"],
+    ["쿠팡 구매 고객", "조립도 간단하고 전체적으로 튼튼합니다. 앞으로 밀었다가 당길 때 걸리는 느낌 없이 부드러워서 운동하기 좋아요. 공간도 많이 안 차지해서 집에 두고 꾸준히 쓰기 괜찮은 것 같아요."],
+    ["네이버 구매 고객", "진짜 잘 산 제품입니다!! 바퀴가 부드럽게 굴러가서 사용감이 좋고 생각보다 소음도 거의 없어서 집에서 운동하기 정말 좋네요. 작아서 보관하기도 편한데 운동할 때는 복근이랑 코어에 자극이 제대로 와서 만족스럽습니다. 간단한 홈트용으로 정말 추천합니다!"],
+    ["네이버 구매 고객", "생각보다 운동이 잘 됩니다. 복근에 자극도 확실하게 오고, 사용법도 간단해서 집에서 꾸준히 하기 좋은 것 같아요. 공간도 많이 차지하지 않아서 부담 없이 사용할 수 있고, 몇 세트만 해도 복근이 제대로 털리는 느낌입니다. 가성비 좋은 운동기구인 것 같아서 만족합니다."],
+  ] as const;
+
   return (
-    <div
-      className="mt-16 flex w-full items-center justify-center overflow-hidden rounded-[28px]"
-      style={{ aspectRatio: aspect, backgroundColor: "#f5f5f7" }}
+    <section className="bg-white px-10 pb-32 pt-40">
+      <div className="mx-auto max-w-[780px]">
+        <div className="flex items-center justify-center gap-4 text-[#1d1d1f]" aria-label="별점 5점, 평점 5.0">
+          <p className="text-[34px] font-bold tracking-[-0.02em]">5.0</p>
+          <p className="text-[36px] font-bold tracking-[0.12em] text-[#F5B700]">★★★★★</p>
+        </div>
+        <h2 className="mt-6 text-center text-[58px] font-bold leading-tight tracking-[-0.025em]">실제 구매자들의 솔직한 후기</h2>
+        <p className="mt-5 text-center text-[22px] font-medium text-[#6e6e73]">먼저 사용해 본 분들의 솔직한 후기입니다.</p>
+        <div className="mt-16 space-y-6">
+          {reviews.map(([source, review]) => (
+            <article key={review} className="rounded-[28px] border border-[#dfe3e7] bg-[#f5f5f7] px-8 py-8">
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <p className="text-[24px] font-bold text-[#1d1d1f]">5.0</p>
+                  <p className="text-[24px] font-bold tracking-[0.08em] text-[#F5B700]">★★★★★</p>
+                </div>
+                <p className="text-[18px] font-medium text-[#86868b]">{source}</p>
+              </div>
+              <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">{review}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SimpleCoreSection() {
+  const essentials = [
+    ["중심 집중", "넓은 휠이 흔들림을 줄여 동작에 집중하게 합니다", "border-[#d9e7f2] bg-[#f2f7fb]"],
+    ["안정적 그립", "30cm 와이드 그립이 양손을 안정적으로 받칩니다", "border-[#c9ddec] bg-[#e7f1f8]"],
+    ["가벼운 시작", "500g 무게로 간편하게 꺼내고 보관할 수 있습니다", "border-[#b8d1e4] bg-[#dcebf5]"],
+  ];
+
+  return (
+    <section className="bg-white px-12 py-40">
+      <p className="text-[21px] font-bold tracking-[0.14em] text-[#355f7f]">SIMPLE CORE</p>
+      <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">
+        코어를 위한 움직임,
+        <br />
+        <NovaGradient>하나의 휠에 담다.</NovaGradient>
+      </h2>
+      <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
+        <Image
+          src="/assets/nova/ab-slide/simple-core-v1.webp"
+          alt="밝은 스튜디오에서 정면으로 세워 놓은 Nova AB Slide"
+          fill
+          sizes="764px"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="mt-16 grid grid-cols-3 gap-5">
+        {essentials.map(([title, body, tone], index) => (
+          <article key={title} className={`rounded-[26px] border px-6 py-8 ${tone}`}>
+            <p className="text-[18px] font-bold tracking-[0.1em] text-[#35698f]">0{index + 1}</p>
+            <h3 className="mt-5 text-[25px] font-bold leading-[1.3]">{title}</h3>
+            <p className="mt-4 text-[18px] font-medium leading-[1.55] text-[#49677d]">{body}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function OverviewMetrics() {
+  const metrics = [
+    ["500", "g", "제품 무게"],
+    ["30", "cm", "제품 가로"],
+    ["100", "kg", "최대 하중"],
+    ["Black", "", "블랙 단일 컬러"],
+  ] as const;
+
+  return (
+    <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
+      <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]">
+        한눈에 보는<br /><NovaGradient>Nova AB Slide.</NovaGradient>
+      </h2>
+      <div className="mt-20 grid grid-cols-2 gap-6">
+        {metrics.map(([value, unit, label]) => (
+          <div key={label} className="flex flex-col items-center justify-center rounded-[28px] bg-white px-6 py-16 text-center">
+            <p className="w-full text-center text-[84px] font-bold leading-none tracking-[-0.03em]">
+              <NovaGradient>{value}<span className="ml-[0.08em] text-[38px] font-semibold">{unit}</span></NovaGradient>
+            </p>
+            <p className="mt-7 w-full text-center text-[26px] font-semibold tracking-[-0.015em]">{label}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function NovaGradient({ children }: { children: ReactNode }) {
+  return (
+    <span
+      className="bg-clip-text text-transparent"
+      style={{ backgroundImage: "linear-gradient(90deg, #022640, #5786AB)" }}
     >
-      {src ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={src} alt={alt} className="h-full w-full object-cover" />
-      ) : (
-        <span
-          className="px-10 text-center text-[22px] font-medium"
-          style={{ color: "#b8b8bd" }}
-        >
-          {label}
-        </span>
-      )}
-    </div>
+      {children}
+    </span>
+  );
+}
+
+function MuscleMapSection() {
+  const figures = [
+    {
+      label: "앞면",
+      src: "/assets/nova/ab-slide/muscle-map/man-front.svg",
+      alt: "복부와 어깨 앞쪽을 강조한 남성 인체 근육도",
+    },
+    {
+      label: "뒷면",
+      src: "/assets/nova/ab-slide/muscle-map/man-back.svg",
+      alt: "등과 어깨 주변을 강조한 남성 인체 후면 근육도",
+    },
+  ];
+  const levels = [
+    { level: 5, title: "매우 많이 사용", body: "복직근 · 대흉근", color: "#C93D1B" },
+    { level: 4, title: "많이 사용", body: "외복사근 · 전면 삼각근", color: "#E96843" },
+    { level: 3, title: "함께 쓰이는 부위", body: "광배근 · 상완삼두근", color: "#EE967B" },
+    { level: 2, title: "자세를 지탱하며 쓰이는 부위", body: "승모근 · 둔근 · 전완", color: "#F4C8B8" },
+    { level: 1, title: "동작에 따라 달라지는 부위", body: "대퇴사두근 · 햄스트링 · 종아리", color: "#F8E7E0" },
+  ];
+
+  return (
+    <section
+      className="px-12 pb-36 pt-32"
+      style={{
+        background:
+          "linear-gradient(180deg,#fff 0%,#f7f7f8 12%,#ececef 50%,#f7f7f8 88%,#fff 100%)",
+      }}
+    >
+      <h2
+        className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
+        style={{
+          backgroundImage: "linear-gradient(90deg, #8F2F1B, #E4572A)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          backgroundClip: "text",
+          color: "transparent",
+          fontFamily:
+            '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+        }}
+      >
+        AB 슬라이드에 쓰이는 근육.
+      </h2>
+      <p className="mx-auto mt-8 max-w-[680px] text-center text-[26px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">
+        <span className="whitespace-nowrap">무릎 롤아웃에 쓰이는 주요 근육을</span>
+        <br />
+        <span className="whitespace-nowrap">상대적 참여도 1–5로 나눠 표시했습니다.</span>
+      </p>
+
+      <div className="mx-auto mt-20 max-w-[760px]">
+        <div className="grid grid-cols-2 gap-5">
+          {figures.map(({ label, src, alt }) => (
+            <figure
+              key={label}
+              className="rounded-[28px] border border-[#f0ddd5] bg-white px-7 pb-7 pt-8 text-center"
+            >
+              <object
+                data={src}
+                type="image/svg+xml"
+                aria-label={alt}
+                className="mx-auto h-[480px] w-full"
+              />
+              <figcaption className="mt-3 text-[20px] font-semibold tracking-[-0.01em] text-[#6e6e73]">
+                {label}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+
+        <div className="mt-14 grid grid-cols-2 gap-x-12">
+          {levels.map(({ level, title, body, color }) => (
+            <div
+              key={level}
+              className="border-b border-[#d8e5ee] py-7 first:border-t [&:nth-child(2)]:border-t"
+            >
+              <div className="flex items-center gap-4">
+                <span
+                  className="h-4 w-4 rounded-full"
+                  style={{ backgroundColor: color }}
+                  aria-hidden
+                />
+                <p className="text-[26px] font-bold tracking-[-0.02em] text-[#1d1d1f]">
+                  {level}. {title}
+                </p>
+              </div>
+              <p className="mt-3 pl-8 text-[19px] font-medium leading-[1.55] tracking-[-0.01em] text-[#6e6e73]">
+                {body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <p className="mx-auto mt-12 max-w-[760px] text-center text-[17px] font-medium leading-[1.5] tracking-[-0.01em] text-[#86868b]">
+        수치는 무릎 롤아웃의 상대적 참여도를 뜻하며, 가동 범위·자세·개인별
+        운동 경험에 따라 달라질 수 있습니다.
+      </p>
+    </section>
   );
 }
 
@@ -1072,6 +1209,7 @@ function FeatureBlock({
   hideImage = false,
   bodyAfterImage = false,
   photoLabel,
+  metrics,
 }: {
   title: ReactNode;
   children?: ReactNode;
@@ -1085,6 +1223,7 @@ function FeatureBlock({
   hideImage?: boolean;
   bodyAfterImage?: boolean;
   photoLabel?: string;
+  metrics?: Array<[value: string, label: string]>;
 }) {
   const body =
     children != null && children !== "" ? (
@@ -1170,6 +1309,17 @@ function FeatureBlock({
     </div>
   ) : null;
 
+  const metricCards = metrics?.length ? (
+    <div className={`mt-8 grid gap-5 ${metrics.length === 1 ? "grid-cols-1" : "grid-cols-2"}`}>
+      {metrics.map(([value, label]) => (
+        <div key={label} className="rounded-[24px] border border-[#dfe3e7] bg-[#f8fafc] px-5 py-8 text-center">
+          <p className="text-[42px] font-bold tracking-[-0.03em]"><NovaGradient>{value}</NovaGradient></p>
+          <p className="mt-3 text-[20px] font-semibold text-[#6e6e73]">{label}</p>
+        </div>
+      ))}
+    </div>
+  ) : null;
+
   return (
     <div>
       <div
@@ -1194,12 +1344,14 @@ function FeatureBlock({
       {bodyAfterImage ? (
         <>
           {image}
+          {metricCards}
           {body}
         </>
       ) : (
         <>
           {body}
           {image}
+          {metricCards}
         </>
       )}
     </div>

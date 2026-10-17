@@ -1,4 +1,5 @@
 import { BrandFrame } from "@/components/product-detail/brand-frame";
+import { ReviewSection } from "@/components/product-detail/review-section";
 import type { ReactNode } from "react";
 import {
   Check,
@@ -45,7 +46,7 @@ export default function NovaPushupBarPage() {
             >
               Nova Push-Up Bar
             </p>
-            <h2
+            <h1
               className="mx-auto mt-2 whitespace-nowrap text-[85px] font-bold leading-[1.15] tracking-[-0.025em]"
               style={{
                 color: "#1d1d1f",
@@ -55,13 +56,13 @@ export default function NovaPushupBarPage() {
               }}
             >
               더 깊게, 더 제대로.
-            </h2>
+            </h1>
           </div>
           <div className="mt-16 flex h-[660px] justify-center overflow-hidden pb-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/assets/nova/pushup-bar/hihihi.webp"
-              alt="블랙 Nova 프리미엄 메탈 푸쉬업바 한 세트"
+              alt="푸쉬업 바"
               className="h-full w-full max-w-[1280px] origin-center object-cover"
               style={{
                 transform: "scale(1.06)",
@@ -93,6 +94,16 @@ export default function NovaPushupBarPage() {
           </p>
         </div>
       </section>
+
+      <ReviewSection
+        reviews={[
+          "맨손으로 할 때보다 손목이 편하고 몸을 더 깊게 내릴 수 있어서 운동이 잘 되는 느낌입니다. 손잡이도 안정적으로 잡혀 만족스러워요.",
+          "프레임이 튼튼해서 힘을 실어도 흔들림이 적습니다. 푸쉬업 자세를 잡기 편하고 집에서 운동할 때 공간도 많이 차지하지 않아요.",
+          "손목 부담 때문에 푸쉬업을 자주 못했는데 이걸 사용하고 나서는 훨씬 편하게 하고 있습니다. 그립감도 괜찮고 조립 없이 바로 쓸 수 있어 좋네요.",
+          "가슴과 어깨에 자극이 더 잘 오는 느낌이라 운동할 때 만족스럽습니다. 바닥에서 미끄러지지 않고 안정적으로 버텨줘서 믿음이 가요.",
+          "운동 도구를 많이 사봤는데 이건 보관이 간단하고 사용법도 직관적입니다. 집에서 꾸준히 푸쉬업 하려는 분들께 추천합니다.",
+        ]}
+      />
 
       {/* 기능 + 스토리 */}
       <section className="bg-white px-12 pb-36 pt-[8.8rem]">

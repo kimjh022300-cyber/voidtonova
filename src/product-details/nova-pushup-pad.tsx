@@ -19,106 +19,131 @@ export default function NovaPushupPadPage() {
   return (
     <BrandFrame brand="nova">
       {/* 1. 제품 히어로 */}
-      <section
-        className="relative overflow-hidden"
-        style={{
-          background:
-            "linear-gradient(180deg, #FFE2D5 0%, #FFECE4 58%, #FFF5F0 82%, #ffffff 100%)",
-        }}
-      >
-        <div className="relative px-4 pb-[4.4rem] pt-28">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/assets/nova/pushup-pad/hero.webp"
-            alt="그레이와 오렌지 색상의 Nova 푸쉬업 패드 한 세트"
-            className="mx-auto h-auto w-full max-w-[860px] object-contain"
+      <section className="relative min-h-[1440px] overflow-hidden bg-[#f2f0ed]">
+        <div className="relative flex min-h-[1440px] flex-col items-center px-8 pb-24 pt-24 text-center">
+          <Image
+            src="/assets/nova/pushup-pad/hero-lifestyle-v3.webp"
+            alt="햇살이 드는 실내에서 Nova Push-Up Pad로 푸쉬업하는 모습"
+            fill
+            preload
+            sizes="860px"
+            className="object-cover object-center"
+          />
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-[32%]"
             style={{
-              maxHeight: 700,
-              marginTop: 380,
-              filter: "drop-shadow(0 24px 48px rgba(29,29,31,0.18))",
-              transform: "scale(1.5) translateY(-48px)",
+              background:
+                "linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.1) 55%,transparent 100%)",
             }}
           />
           <div
-            className="pointer-events-none absolute inset-x-0 top-28 z-[1] px-8 text-center"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%]"
             style={{
-              fontFamily:
-                '"SF Pro KR", "SF Pro Display", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Helvetica Neue", Helvetica, Arial, sans-serif',
+              background:
+                "linear-gradient(0deg,rgba(40,25,16,.68) 0%,rgba(40,25,16,.22) 48%,transparent 100%)",
             }}
-          >
+          />
+          <div className="relative z-10">
             <p
-              className="mx-auto text-[41px] font-semibold leading-[1.25] tracking-[0.007em]"
-              style={{
-                backgroundImage:
-                  "linear-gradient(105deg, #2B201D 0%, #7F3826 50%, #2B201D 100%)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-                width: "fit-content",
-              }}
+              className="text-[39px] font-semibold text-[#493527] [text-shadow:0_2px_16px_rgba(255,255,255,.96),0_1px_3px_rgba(255,255,255,.96)]"
             >
               Nova Push-Up Pad
             </p>
-            <h2
-              className="mx-auto mt-2 whitespace-nowrap text-[85px] font-bold leading-[1.15] tracking-[-0.025em]"
-              style={{
-                color: "#1d1d1f",
-                fontFamily:
-                  '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-                width: "fit-content",
-              }}
+            <h1
+              className="mt-8 whitespace-nowrap text-[70px] font-bold leading-[1.04] tracking-[-0.045em] text-[#201a16] [text-shadow:0_2px_18px_rgba(255,255,255,.98),0_1px_4px_rgba(255,255,255,.98)]"
             >
-              손목 부담을 덜다.
-            </h2>
+              손목이 편해야, 한 번 더.
+            </h1>
           </div>
           <p
-            className="mx-auto mt-20 max-w-[780px] px-4 text-center text-[28px] font-normal leading-[1.5] tracking-[-0.01em]"
+            className="relative z-10 mt-auto text-[29px] font-medium leading-[1.6] text-[#fffaf5] [text-shadow:0_3px_18px_rgba(47,30,19,0.78),0_1px_3px_rgba(47,30,19,0.9)]"
+          >
+            넓은 면으로 손바닥을 받쳐 손목의 부담은 덜고,
+            <br />
+            푸쉬업의 동작에 집중하게 하는 양손 패드.
+          </p>
+        </div>
+      </section>
+
+      {/* 제품 소개 */}
+      <ProductOverview />
+      <Metrics />
+
+      <ProductPhilosophy />
+      <BeforeAfter />
+
+      <section className="bg-white px-10 py-36">
+        <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.03em]">
+          <span
+            className="bg-clip-text text-transparent"
             style={{
-              color: "#1d1d1f",
-              fontFamily:
-                '"SF Pro KR", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Helvetica Neue", Helvetica, Arial, sans-serif',
+              backgroundImage: "linear-gradient(90deg, #7F3826, #E4572A)",
             }}
           >
-            푸쉬업은 가장 단순한 운동이지만,
-            <br />
-            손목에는 생각보다 많은 부담이 쌓입니다. 바닥을
-            <br />
-            짚는 순간, 손목은 꺾이고 동작에 집중해야 할
-            <br />
-            시간은 짧아지죠. Nova Push-Up Pad는 손이 닿는 각도를
-            <br />
-            자연스럽게 받쳐, 손목의 부담은 덜고 푸쉬업에
-            <br />
-            온전히 집중할 수 있도록 돕습니다. 이제 손목을
-            <br />
-            걱정하기보다 한 번 더,
-            <br />
-            제대로 밀어보세요.
-          </p>
+            Nova Push-Up Pad
+          </span>
+          <br />
+          <span className="text-[61px]">나에게 맞는 이유.</span>
+        </h2>
+        <div className="mt-20 overflow-hidden rounded-[28px] border border-[#d2d2d7]">
+          <table className="w-full table-fixed border-collapse text-center">
+            <caption className="sr-only">
+              맨손 푸쉬업, 푸쉬업 바, Nova Push-Up Pad 비교
+            </caption>
+            <thead>
+              <tr className="bg-[#f5f5f7]">
+                <th aria-label="비교 항목" className="w-[31%] px-3 py-7" />
+                <th className="border-l border-[#d2d2d7] px-2 py-7 text-[22px] font-bold leading-tight">
+                  맨손
+                  <br />
+                  푸쉬업
+                </th>
+                <th className="border-l border-[#d2d2d7] px-2 py-7 text-[22px] font-bold leading-tight">
+                  푸쉬업 바
+                </th>
+                <th className="border-l border-[#d2d2d7] bg-[#fff3ed] px-2 py-7 text-[22px] font-bold leading-tight text-[#E4572A]">
+                  Nova
+                  <br />
+                  Push-Up Pad
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["손목 보호", "X", "O", "O"],
+                ["손바닥 쿠션", "X", "X", "O"],
+                ["넓은 면으로 지지", "O", "X", "O"],
+                ["바닥 소음 최소화", "O", "X", "O"],
+                ["간편한 휴대·보관", "O", "X", "O"],
+              ].map(([label, bareHands, pushupBar, nova]) => (
+                <tr key={label} className="border-t border-[#d2d2d7]">
+                  <th className="bg-white px-3 py-7 text-center text-[22px] font-semibold leading-snug">
+                    {label}
+                  </th>
+                  {[bareHands, pushupBar, nova].map((value, index) => (
+                    <td
+                      key={`${label}-${index}`}
+                      className={`border-l border-[#d2d2d7] px-2 py-7 text-[34px] font-bold ${
+                        index === 2
+                          ? "bg-[#fff3ed] text-[#E4572A]"
+                          : value === "O"
+                            ? "bg-white text-[#E4572A]"
+                            : "bg-white text-[#86868b]"
+                      }`}
+                    >
+                      {value}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
       {/* 2. 기능 + 스토리 */}
       <section className="bg-white px-12 pb-36 pt-[8.8rem]">
         <div className="flex flex-col gap-48">
-          {/* 문제 공감 */}
-          <FeatureBlock
-            title={
-              <>
-                푸쉬업을 멈추게 하는 건,
-                <br />
-                가슴이 아니라 손목이니까.
-              </>
-            }
-            photoLabel="사진 — 맨손 푸쉬업 중 손목이 부담스러워 잠시 멈춘 모습 (측면 클로즈업)"
-            photoSrc="/assets/nova/pushup-pad/pushup.webp"
-            photoAlt="맨손 푸쉬업 중 손목 통증을 느끼는 사람"
-          >
-            몇 세트만 해도 손목이 뻐근해지고, 자세가 무너지면 푸쉬업은 금방
-            미뤄집니다. 의지가 부족한 게 아닙니다. 손목이 버틸 수 있는 자세가
-            필요했을 뿐이죠.
-          </FeatureBlock>
-
           <FeatureBlock
             title={
               <>
@@ -178,111 +203,17 @@ export default function NovaPushupPadPage() {
             같은 푸쉬업만 반복하지 않아도 됩니다.
           </FeatureBlock>
 
-          <FeatureBlock
-            title={
-              <>
-                땀이 나도,
-                <br />
-                자세는 밀리지 않게.
-              </>
-            }
-            photoLabel="사진 — 상단 그립과 하단 논슬립 질감 비교"
-            photoSrc="/assets/nova/pushup-pad/sweat-grip-use.webp"
-            photoAlt="물기가 있는 손으로 푸쉬업 패드를 짚고 운동하는 모습"
-            aspect="8 / 5"
-            additionalPhotoSrc="/assets/nova/pushup-pad/wet-grip-detail.webp"
-            additionalPhotoAlt="물기가 맺힌 푸쉬업 패드의 상단 그립 표면"
-            additionalPhotoAspect="3 / 4"
-          >
-            손이 닿는 위쪽은 그립감 있게. 바닥에 닿는 아래쪽은 단단하게. 땀이
-            차도 손이 밀리지 않고, 마룻바닥이나 매트 위에서도 패드가 제자리를
-            지킵니다. 자세를 잡느라 힘을 빼지 마세요. 푸쉬업에만 집중하면
-            됩니다.
-          </FeatureBlock>
-
-          <FeatureBlock
-            title="손목 부담을 덜어주는 설계."
-            photoSrc="/assets/nova/pushup-pad/design-01.webp"
-            photoAlt="푸쉬업 패드 두 개가 겹쳐 놓인 제품 사진"
-            photoCaption="손목을 받치는 높이와 곡선"
-            additionalPhotoSrc="/assets/nova/pushup-pad/design-02.webp"
-            additionalPhotoAlt="푸쉬업 패드 두 개의 상단 그립면을 보여주는 사진"
-            additionalPhotoCaption="손이 닿는 면은 촘촘한 그립"
-            thirdPhotoSrc="/assets/nova/pushup-pad/design-03.webp"
-            thirdPhotoAlt="푸쉬업 패드 한 개의 측면 홈과 높이를 보여주는 사진"
-            thirdPhotoCaption="손가락이 자연스럽게 걸리는 측면 홈"
-            aspect="1 / 1"
-          >
-            손바닥이 닿는 면은 넓게, 손목이 놓이는 방향은 자연스럽게. 높이와
-            곡선을 함께 설계해 손목이 한쪽으로 과하게 꺽이지 않도록 돕습니다.
-            손가락은 측면 홈에 가볍게 걸리고, 패드는 손바닥 전체를 안정적으로
-            받칩니다.
-          </FeatureBlock>
-
-          <FeatureBlock
-            title={
-              <>
-                충격에 강한,
-                <br />
-                6cm 고밀도 쿠션.
-              </>
-            }
-            photoLabel="사진 — 패드 압축 전후, 푸쉬업 동작"
-            photoSrc="/assets/nova/pushup-pad/1.webp"
-            photoAlt="6cm 두께의 고밀도 쿠션 구조를 표현한 이미지"
-            additionalPhotoLabel="사진 — 6cm 고밀도 쿠션의 두께와 복원력을 보여주는 장면"
-            additionalPhotoSrc="/assets/nova/pushup-pad/cushion-material-gray.webp"
-            additionalPhotoAlt="그레이와 오렌지 입자로 푸쉬업 패드의 고밀도 소재를 표현한 이미지"
-            widePhotoSrc="/assets/nova/pushup-pad/cushion-side-grip.webp"
-            widePhotoAlt="손으로 잡은 푸쉬업 패드의 6cm 측면 두께"
-          >
-            6cm 고밀도 EVA 폼은 내려갈 때의 충격은 받아주고, 버텨야 할 때는
-            자세를 무너지지 않게 받칩니다. 너무 물러서 손이 가라앉는 쿠션이
-            아니라, 매 세트 같은 자세를 이어갈 수 있는 단단한 쿠션입니다.
-          </FeatureBlock>
-
-          <FeatureBlock
-            title={
-              <>
-                한 개 68g.
-                <br />
-                어디서든 가볍게.
-              </>
-            }
-            photoLabel="사진 — 가방·호텔·홈트 사용 장면"
-            photoSrc="/assets/nova/pushup-pad/무게.webp"
-            photoAlt="전자저울 위에 놓인 68g 푸쉬업 패드"
-            additionalPhotoSrc="/assets/nova/pushup-pad/portable-bag.webp"
-            additionalPhotoAlt="푸쉬업 패드를 운동 가방에 넣는 모습"
-            thirdPhotoSrc="/assets/nova/pushup-pad/lightweight-hand.webp"
-            thirdPhotoAlt="한 손으로 가볍게 들어 올린 푸쉬업 패드"
-          >
-            양손 한 세트여도 136g. 스마트폰보다 가볍게, 가방 한쪽에 들어갑니다.
-            거실 바닥에서. 출장 간 호텔에서. 사무실의 짧은 빈 시간에도. 공간이
-            없어서, 도구가 무거워서 운동을 미루는 일은 줄어듭니다.
-          </FeatureBlock>
-
-          <FeatureBlock
-            title={
-              <>
-운동이 끝난 뒤에도,
-                <br />
-공간에 남는 디자인.
-              </>
-            }
-            photoLabel="사진 — 그레이 패드 제품 단독 컷"
-            photoSrc="/assets/nova/pushup-pad/gray-lifestyle.webp"
-            photoAlt="차분한 공간에 놓인 그레이와 오렌지 컬러의 푸쉬업 패드"
-          >
-차분한 그레이에 선명한 오렌지 포인트를 더했습니다. 숨겨두어야 할 운동
-도구가 아니라, 어느 공간에 놓아도 자연스럽게 어우러지는 하나의 오브제. 눈에
-보이는 곳에 두고, 필요할 때 바로 다음 세트를 시작하세요.
-          </FeatureBlock>
         </div>
       </section>
 
-      {/* 3. 자극 부위 — 제품이 돕는 동작의 목적을 시각화 */}
-      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
+      {/* 운동 자극 부위 */}
+      <section
+        className="px-12 pb-36 pt-32"
+        style={{
+          background:
+            "linear-gradient(180deg,#fff 0%,#fff8f4 12%,#ffe7dc 50%,#fff8f4 88%,#fff 100%)",
+        }}
+      >
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -407,6 +338,113 @@ export default function NovaPushupPadPage() {
         </p>
       </section>
 
+      <section className="bg-white px-12 pb-36 pt-[8.8rem]">
+        <div className="flex flex-col gap-48">
+          <FeatureBlock
+            title={
+              <>
+                땀이 나도,
+                <br />
+                자세는 밀리지 않게.
+              </>
+            }
+            photoLabel="사진 — 상단 그립과 하단 논슬립 질감 비교"
+            photoSrc="/assets/nova/pushup-pad/sweat-grip-use-v2.webp"
+            photoAlt="물기가 있는 손으로 푸쉬업 패드를 짚고 운동하는 모습"
+            aspect="8 / 5"
+            additionalPhotoSrc="/assets/nova/pushup-pad/wet-grip-detail-v2.webp"
+            additionalPhotoAlt="물기가 맺힌 푸쉬업 패드의 상단 그립 표면"
+            additionalPhotoAspect="3 / 4"
+          >
+            손이 닿는 위쪽은 그립감 있게. 바닥에 닿는 아래쪽은 단단하게. 땀이
+            차도 손이 밀리지 않고, 마룻바닥이나 매트 위에서도 패드가 제자리를
+            지킵니다. 자세를 잡느라 힘을 빼지 마세요. 푸쉬업에만 집중하면
+            됩니다.
+          </FeatureBlock>
+
+          <FeatureBlock
+            title={
+              "손목 부담을 덜어주는 설계."
+            }
+            photoSrc="/assets/nova/pushup-pad/design-01.webp"
+            photoAlt="푸쉬업 패드 두 개가 겹쳐 놓인 제품 사진"
+            photoCaption="손목을 받치는 높이와 곡선"
+            additionalPhotoSrc="/assets/nova/pushup-pad/design-02.webp"
+            additionalPhotoAlt="푸쉬업 패드 두 개의 상단 그립면을 보여주는 사진"
+            additionalPhotoCaption="손이 닿는 면은 촘촘한 그립"
+            thirdPhotoSrc="/assets/nova/pushup-pad/design-03.webp"
+            thirdPhotoAlt="푸쉬업 패드 한 개의 측면 그루브와 높이를 보여주는 사진"
+            thirdPhotoCaption="손가락이 자연스럽게 걸리는 측면 홈"
+            aspect="1 / 1"
+          >
+            손바닥이 닿는 면은 넓게, 손목이 놓이는 방향은 자연스럽게. 높이와
+            곡선을 함께 설계해 손목이 한쪽으로 과하게 꺾이지 않도록 돕습니다.
+            손가락은 그루브에 가볍게 걸리고, 패드는 손바닥 전체를 안정적으로
+            받칩니다.
+          </FeatureBlock>
+
+          <FeatureBlock
+            title={
+              <>
+                충격에 강한,
+                <br />
+                6cm 고밀도 쿠션.
+              </>
+            }
+            photoLabel="사진 — 패드 압축 전후, 푸쉬업 동작"
+            photoSrc="/assets/nova/pushup-pad/1.webp"
+            photoAlt="6cm 두께의 고밀도 쿠션 구조를 표현한 이미지"
+            additionalPhotoLabel="사진 — 6cm 고밀도 쿠션의 두께와 복원력을 보여주는 장면"
+            additionalPhotoSrc="/assets/nova/pushup-pad/cushion-material-gray.webp"
+            additionalPhotoAlt="그레이와 오렌지 입자로 푸쉬업 패드의 고밀도 소재를 표현한 이미지"
+            widePhotoSrc="/assets/nova/pushup-pad/cushion-side-grip.webp"
+            widePhotoAlt="손으로 잡은 푸쉬업 패드의 6cm 측면 두께"
+          >
+            6cm 고밀도 EVA 폼은 내려갈 때의 충격은 받아주고, 버텨야 할 때는
+            자세를 무너지지 않게 받칩니다. 너무 물러서 손이 가라앉는 쿠션이
+            아니라, 매 세트 같은 자세를 이어갈 수 있는 단단한 쿠션입니다.
+          </FeatureBlock>
+
+          <FeatureBlock
+            title={
+              <>
+                한 개 68g.
+                <br />
+                어디서든 가볍게.
+              </>
+            }
+            photoLabel="사진 — 가방·호텔·홈트 사용 장면"
+            photoSrc="/assets/nova/pushup-pad/무게.webp"
+            photoAlt="전자저울 위에 놓인 68g 푸쉬업 패드"
+            additionalPhotoSrc="/assets/nova/pushup-pad/portable-bag.webp"
+            additionalPhotoAlt="푸쉬업 패드를 운동 가방에 넣는 모습"
+            thirdPhotoSrc="/assets/nova/pushup-pad/lightweight-hand.webp"
+            thirdPhotoAlt="한 손으로 가볍게 들어 올린 푸쉬업 패드"
+          >
+            양손 한 세트여도 136g. 스마트폰보다 가볍게, 가방 한쪽에 들어갑니다.
+            거실 바닥에서. 출장 간 호텔에서. 사무실의 짧은 빈 시간에도. 공간이
+            없어서, 도구가 무거워서 운동을 미루는 일은 줄어듭니다.
+          </FeatureBlock>
+
+          <FeatureBlock
+            title={
+              <>
+운동이 끝난 뒤에도,
+                <br />
+공간에 남는 디자인.
+              </>
+            }
+            photoLabel="사진 — 그레이 패드 제품 단독 컷"
+            photoSrc="/assets/nova/pushup-pad/gray-lifestyle.webp"
+            photoAlt="차분한 공간에 놓인 그레이와 오렌지 컬러의 푸쉬업 패드"
+          >
+차분한 그레이에 선명한 오렌지 포인트를 더했습니다. 숨겨두어야 할 운동
+도구가 아니라, 어느 공간에 놓아도 자연스럽게 어우러지는 하나의 오브제. 눈에
+보이는 곳에 두고, 필요할 때 바로 다음 세트를 시작하세요.
+          </FeatureBlock>
+        </div>
+      </section>
+
       {/* 4. 이런 분께 — 푸쉬업을 미루는 이유를 좁혀 주는 자리 */}
       <section className="bg-white px-12 pb-36 pt-32">
         <h2
@@ -508,7 +546,7 @@ export default function NovaPushupPadPage() {
       </section>
 
       {/* 4. 스펙 하이라이트 — 숫자를 문단에서 꺼내 크게 */}
-      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
+      <section className="hidden bg-[#f5f5f7] px-12 pb-36 pt-32" aria-hidden>
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -631,69 +669,119 @@ export default function NovaPushupPadPage() {
         </div>
       </section>
 
+      {/* 실사용 후기 */}
++      <section className="bg-white px-10 pb-32 pt-40">
+        <div className="mx-auto max-w-[780px]">
+          <div
+            className="flex items-center justify-center gap-4 text-[#E4572A]"
+            aria-label="별점 5점, 평점 5.0"
+          >
+            <p className="text-[34px] font-bold tracking-[-0.02em]">5.0</p>
+            <p className="text-[36px] font-bold tracking-[0.12em]">★★★★★</p>
+          </div>
+          <h2
+            className="mt-6 text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
+            style={{
+              color: "#1d1d1f",
+              fontFamily:
+                '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+            }}
+          >
+            실제 구매자들의 솔직한 후기
+          </h2>
+          <div className="mt-5 text-center">
+            <p className="text-[22px] font-medium text-[#6e6e73]">
+              먼저 사용해 본 분들의 솔직한 후기입니다.
+            </p>
+          </div>
+
+          <div className="mt-16 space-y-6">
+            <article className="rounded-[28px] border border-[#F1DED5] bg-[#FFF8F4] px-8 py-8">
+              <div className="flex items-center gap-3">
+                <p className="text-[24px] font-bold text-[#1d1d1f]">5.0</p>
+                <p className="text-[24px] font-bold tracking-[0.08em] text-[#E4572A]">★★★★★</p>
+                <p className="ml-auto text-[18px] font-medium text-[#86868b]">네이버 구매 고객</p>
+              </div>
+              <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">
+                집에서 푸쉬업할 때 손목이 좀 불편했는데 이거 쓰니까 확실히 편하네요.
+                패드도 생각보다 두툼해서 손에 압박이 덜하고, 바닥에서도 크게 밀리지
+                않아서 운동하기 좋았어요. 크기도 부담스럽지 않아서 집에 두고 쓰기
+                괜찮습니다.
+              </p>
+            </article>
+
+            <article className="rounded-[28px] border border-[#F1DED5] bg-[#FFF8F4] px-8 py-8">
+              <div className="flex items-center gap-3">
+                <p className="text-[24px] font-bold text-[#1d1d1f]">5.0</p>
+                <p className="text-[24px] font-bold tracking-[0.08em] text-[#E4572A]">★★★★★</p>
+                <p className="ml-auto text-[18px] font-medium text-[#86868b]">네이버 구매 고객</p>
+              </div>
+              <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">
+                틈틈히 짬날때마다 운동하려고 구매했습니다. 전에 쓰던 건 일반적인
+                푸쉬업바였는데 들고다니기 좀 불편해서 패드로 사봤어요. 가벼워서
+                좋아요. 손목도 안 아프고 다른 푸쉬업 운동기구랑 다를 것 없이 운동도
+                잘되는 듯합니다.
+              </p>
+            </article>
+
+            <article className="rounded-[28px] border border-[#F1DED5] bg-[#FFF8F4] px-8 py-8">
+              <div className="flex items-center gap-3">
+                <p className="text-[24px] font-bold text-[#1d1d1f]">5.0</p>
+                <p className="text-[24px] font-bold tracking-[0.08em] text-[#E4572A]">★★★★★</p>
+                <p className="ml-auto text-[18px] font-medium text-[#86868b]">네이버 구매 고객</p>
+              </div>
+              <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">
+                푸쉬업 할 때 손목이 편해져서 정말 만족스럽습니다! 손잡이 그립감도
+                좋고 흔들림 없이 안정적으로 잡혀서 운동할 때 자세 잡기가 편하네요.
+                생각보다 튼튼하고 마감도 깔끔해서 오래 사용할 수 있을 것 같습니다.
+                집에서 운동하시는 분들께 적극 추천하고 싶어요!
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       {/* 6. 클로징 — 설득 파트의 마지막, 정보 파트로 넘어가기 전 */}
-      <section
-        className="px-12 pb-40 pt-36"
-        style={{
-          background: "linear-gradient(180deg, #ffffff, #FFE7DC 60%, #FFD8C7)",
-        }}
-      >
-        <h2
-          className="text-center text-[64px] font-bold leading-[1.18] tracking-[-0.028em]"
-          style={{
-            color: "#1d1d1f",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          푸쉬업의 안정감은,
-          <br />
-          손목에서 시작됩니다.
-        </h2>
-        <p
-          className="mx-auto mt-10 max-w-[680px] text-center text-[28px] font-medium leading-[1.6] tracking-[-0.01em]"
-          style={{
-            color: "#684238",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          운동 방식을 바꾸거나, 푸쉬업 횟수를 줄일 필요는 없습니다.
-          <br />
-          손목을 받치는 변화가, 동작의 안정감을 더합니다.
-        </p>
-
-        <PhotoSlot
-          label="사진 — 푸쉬업 패드에 손을 올리고 운동하는 장면"
-          aspect="16 / 10"
-          src="/assets/nova/pushup-pad/pushup_studio_product_light.webp"
-          alt="푸쉬업 패드에 손을 올리고 운동하는 모습"
+      <section className="relative min-h-[1440px] overflow-hidden bg-[#eee8e2] px-12 pb-40 pt-16">
+        <Image
+          src="/assets/nova/pushup-pad/hero-lifestyle-v3.webp"
+          alt="햇살이 드는 실내에서 Nova Push-Up Pad로 푸쉬업하는 모습"
+          fill
+          sizes="860px"
+          className="object-cover object-center"
         />
-
-        <p
-          className="mt-20 text-center text-[52px] font-semibold leading-tight tracking-[-0.02em]"
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-[42%]"
           style={{
-            backgroundImage: "linear-gradient(90deg, #8F2F1B, #E4572A)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            color: "transparent",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+            background:
+              "linear-gradient(180deg,#fff 0%,rgba(255,255,255,.62) 56%,transparent 100%)",
           }}
-        >
-          Nova Push-Up Pad
-        </p>
-        <p
-          className="mt-3 text-center text-[28px] font-normal leading-snug tracking-[-0.01em]"
-          style={{ color: "#74554C" }}
-        >
-          손목 부담을 덜다.
-        </p>
+        />
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%]"
+          style={{
+            background:
+              "linear-gradient(0deg,rgba(40,25,16,.62) 0%,rgba(40,25,16,.18) 48%,transparent 100%)",
+          }}
+        />
+        <div className="relative z-10 flex min-h-[1280px] flex-col pt-12 text-center">
+          <h2
+            className="bg-clip-text text-[68px] font-bold leading-[1.15] text-transparent"
+            style={{ backgroundImage: "linear-gradient(90deg,#7F3826,#E4572A)" }}
+          >
+            Nova Push-Up Pad
+          </h2>
+          <p className="mt-10 text-[28px] font-medium text-[#5f5a55]">
+            손목을 받치는 6cm, 한 번 더 이어지는 푸쉬업.
+          </p>
+          <p className="mt-auto whitespace-nowrap text-[36px] font-semibold leading-[1.4] text-[#fffaf5] [text-shadow:0_3px_18px_rgba(47,30,19,0.78),0_1px_3px_rgba(47,30,19,0.9)]">
+            당신의 움직임을 위한 첫 번째 변화
+          </p>
+        </div>
       </section>
 
       {/* 질문에 답해드립니다 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-40">
+      <section className="bg-white px-10 pb-36 pt-40">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -791,7 +879,7 @@ export default function NovaPushupPadPage() {
       </section>
 
       {/* 구성품 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-32">
+      <section className="bg-white px-10 pb-36 pt-32">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -806,15 +894,14 @@ export default function NovaPushupPadPage() {
         <figure className="mt-24 text-center">
           <div
             className="relative w-full overflow-hidden rounded-[28px] bg-white"
-            style={{ aspectRatio: "4 / 3" }}
+            style={{ aspectRatio: "3 / 4" }}
           >
             <Image
-              src="/assets/nova/pushup-pad/Photoroom_20260809_213220.webp"
-              alt="푸쉬업 패드 좌·우 1세트"
+              src="/assets/nova/pushup-pad/product-overview-v2.webp"
+              alt="햇살이 드는 테이블 위에 겹쳐 놓인 푸쉬업 패드 좌·우 1세트"
               fill
               sizes="(max-width: 768px) 100vw, 768px"
               className="object-cover"
-              style={{ objectPosition: "center 48%", transform: "scale(0.95)" }}
             />
           </div>
           <figcaption
@@ -874,7 +961,7 @@ export default function NovaPushupPadPage() {
       </section>
 
       {/* 기타 안내 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-32">
+      <section className="bg-white px-10 pb-36 pt-32">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -1032,6 +1119,183 @@ export default function NovaPushupPadPage() {
 }
 
 /** 사진이 들어갈 자리를 눈에 보이게 잡아두는 카드 */
+function ProductOverview() {
+  return (
+    <section className="relative aspect-[3/4] overflow-hidden bg-white">
+      <Image
+        src="/assets/nova/pushup-pad/product-overview-v2.webp"
+        alt="햇살이 드는 테이블 위에 겹쳐 놓인 Nova Push-Up Pad 한 쌍"
+        fill
+        sizes="860px"
+        className="object-cover object-center"
+      />
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[18%]"
+        style={{
+          background:
+            "linear-gradient(180deg,transparent 0%,rgba(248,247,245,.72) 58%,#f8f7f5 100%)",
+        }}
+      />
+      <div className="absolute inset-x-0 top-24 z-10 text-center">
+        <h2 className="text-[72px] font-bold tracking-[-0.04em]">
+          <span
+            className="bg-clip-text text-transparent"
+            style={{ backgroundImage: "linear-gradient(90deg, #7F3826, #E4572A)" }}
+          >
+            Nova Push-Up Pad.
+          </span>
+        </h2>
+        <p className="mt-5 text-[31px] font-semibold text-[#493527]">
+          손목과 바닥 사이, 작지만 분명한 변화.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function Metrics() {
+  const metrics = [
+    { value: "68g", label: "한 개 무게" },
+    { value: "136g", label: "양손 한 세트" },
+    { value: "6cm", label: "손목을 받치는 높이" },
+    { value: "20 × 13cm", label: "한 개 기준 크기" },
+  ];
+
+  return (
+    <section className="bg-[#f8f7f5] px-12 py-36">
+      <h2 className="text-center text-[60px] font-bold leading-[1.16] tracking-[-0.03em]">
+        한눈에 보는
+        <br />
+        <span
+          className="bg-clip-text text-transparent"
+          style={{ backgroundImage: "linear-gradient(90deg, #7F3826, #E4572A)" }}
+        >
+          Nova Push-Up Pad.
+        </span>
+      </h2>
+      <div className="mt-20 grid grid-cols-2 gap-6">
+        {metrics.map(({ value, label }) => (
+          <article
+            key={label}
+            className="rounded-[28px] border border-[#eadfd9] bg-white px-5 py-16 text-center shadow-[0_12px_34px_rgba(77,48,36,0.06)]"
+          >
+            <p className="whitespace-nowrap text-[58px] font-bold tracking-[-0.04em] text-[#744B3C]">
+              {value}
+            </p>
+            <p className="mt-7 text-[23px] font-semibold text-[#6e6e73]">{label}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ProductPhilosophy() {
+  const essentials = [
+    ["하중 분산", "넓은 면이 손바닥 전체로 힘을 나누어 받습니다", "border-[#f1d0c1] bg-[#fff3ed]"],
+    ["부담 완화", "6cm 높이가 손목의 꺾임을 덜어줍니다", "border-[#efc0ac] bg-[#ffe7dc]"],
+    ["가벼운 무게", "양손 한 세트 136g으로 가볍습니다", "border-[#e8aa8e] bg-[#ffd8c7]"],
+  ];
+
+  return (
+    <section className="bg-white px-12 py-40">
+      <p className="text-[21px] font-bold tracking-[0.14em] text-[#B54827]">SIMPLE SUPPORT</p>
+      <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">
+        손목을 위한 변화,
+        <br />
+        <span
+          className="bg-clip-text text-transparent"
+          style={{ backgroundImage: "linear-gradient(90deg, #7F3826, #E4572A)" }}
+        >
+          두 개의 패드에 담다.
+        </span>
+      </h2>
+      <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
+        <Image
+          src="/assets/nova/pushup-pad/simple-support-v2.webp"
+          alt="햇살이 드는 데스크 위에 겹쳐 놓인 Nova Push-Up Pad 한 쌍"
+          fill
+          sizes="764px"
+          className="object-cover"
+        />
+      </div>
+      <div className="mt-16 grid grid-cols-3 gap-5">
+        {essentials.map(([title, body, tone], index) => (
+          <article key={title} className={`rounded-[26px] border px-6 py-8 ${tone}`}>
+            <p className="text-[18px] font-bold tracking-[0.1em] text-[#E4572A]">0{index + 1}</p>
+            <h3 className="mt-5 text-[25px] font-bold leading-[1.3]">{title}</h3>
+            <p className="mt-4 text-[18px] font-medium leading-[1.55] text-[#684238]">{body}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function BeforeAfter() {
+  const scenes = [
+    {
+      eyebrow: "BEFORE",
+      title: "바닥을 직접 짚는 손",
+      body: "손목이 꺾이고 손바닥의 좁은 부위에 압력이 모이기 쉬운 상태",
+      image: "/assets/nova/pushup-pad/wrist-angle-before-v2.webp",
+      imageAlt: "바닥을 직접 짚어 손목에 부담이 집중된 모습",
+      accent: false,
+    },
+    {
+      eyebrow: "AFTER",
+      title: "패드 위에 놓인 손",
+      body: "손바닥이 높아져 손목과 전완이 한층 자연스럽게 이어지는 상태",
+      image: "/assets/nova/pushup-pad/wrist-angle-after-v2.webp",
+      imageAlt: "Nova Push-Up Pad를 잡아 손목을 받치는 모습",
+      accent: true,
+    },
+  ];
+
+  return (
+    <section className="bg-white px-10 py-36">
+      <h2 className="text-center text-[60px] font-bold leading-[1.16] tracking-[-0.03em]">
+        손바닥을 6cm 높이면,
+        <br />
+        <span
+          className="bg-clip-text text-transparent"
+          style={{ backgroundImage: "linear-gradient(90deg, #7F3826, #E4572A)" }}
+        >
+          손목이 자연스럽게 이어집니다.
+        </span>
+      </h2>
+      <div className="mt-20 grid grid-cols-2 gap-6">
+        {scenes.map(({ eyebrow, title, body, image, imageAlt, accent }) => (
+          <article
+            key={eyebrow}
+            className={`rounded-[28px] border p-7 ${
+              accent ? "border-[#e9c7b8] bg-[#fff3ed]" : "border-[#dedede] bg-[#f7f7f7]"
+            }`}
+          >
+            <p className={`text-[19px] font-bold tracking-[0.13em] ${accent ? "text-[#E4572A]" : "text-[#86868b]"}`}>
+              {eyebrow}
+            </p>
+            <div className="relative mt-8 aspect-[3/4] overflow-hidden rounded-[22px] bg-white">
+              <Image
+                src={image}
+                alt={imageAlt}
+                fill
+                sizes="370px"
+                className="object-cover object-center"
+              />
+            </div>
+            <h3 className="mt-7 text-[29px] font-bold tracking-[-0.02em]">{title}</h3>
+            <p className="mt-4 text-[21px] font-medium leading-[1.55] text-[#6e6e73]">{body}</p>
+          </article>
+        ))}
+      </div>
+      <p className="mx-auto mt-10 max-w-[720px] text-center text-[18px] font-medium leading-[1.55] text-[#86868b]">
+        이해를 돕기 위한 구조 표현이며, 실제 사용감과 손목 각도는 개인의 자세에 따라 달라질 수 있습니다.
+      </p>
+    </section>
+  );
+}
+
 function PhotoSlot({
   label,
   aspect = "3 / 2",
@@ -1290,10 +1554,7 @@ function FeatureBlock({
 
 function PhotoPoint({ children }: { children: ReactNode }) {
   return (
-    <p
-      className="mt-12 flex items-center gap-3 text-[24px] font-semibold tracking-[-0.01em]"
-      style={{ color: "#E4572A" }}
-    >
+    <p className="mt-12 flex items-center gap-3 text-[24px] font-semibold tracking-[-0.01em]" style={{ color: "#E4572A" }}>
       <Check className="h-6 w-6 shrink-0" strokeWidth={3} aria-hidden />
       <span>{children}</span>
     </p>

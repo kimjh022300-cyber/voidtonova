@@ -1,11 +1,15 @@
 type ReviewSectionProps = {
   reviews: string[];
   source?: string;
+  title?: string;
+  description?: string;
 };
 
 export function ReviewSection({
   reviews,
   source = "네이버 구매 고객",
+  title = "실제 구매자들의 솔직한 후기",
+  description = "먼저 사용해 본 분들의 솔직한 후기입니다.",
 }: ReviewSectionProps) {
   return (
     <section className="bg-white px-10 pb-32 pt-40">
@@ -25,10 +29,10 @@ export function ReviewSection({
               '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
           }}
         >
-          실제 구매자들의 솔직한 후기
+          {title}
         </h2>
         <p className="mt-5 text-center text-[22px] font-medium text-[#6e6e73]">
-          먼저 사용해 본 분들의 솔직한 후기입니다.
+          {description}
         </p>
 
         <div className="mt-16 space-y-6">

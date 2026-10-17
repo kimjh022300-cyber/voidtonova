@@ -1,5 +1,5 @@
 import { BrandFrame } from "@/components/product-detail/brand-frame";
-import { getProductDetailFacts } from "@/data/product-detail-facts";
+import { ReviewSection } from "@/components/product-detail/review-section";
 import type { ReactNode } from "react";
 import {
   Check,
@@ -11,13 +11,10 @@ import {
 } from "lucide-react";
 
 /**
- * VOID · 노트북 거치대 휴대용 (v2 — 설득 구조 실험본)
- * 원본: void-laptop-portable.tsx
+ * VOID · 노트북 거치대 휴대용
  * 아이콘: Lucide (https://lucide.dev) — 앞으로 전부 여기 사용
  */
 export default function VoidLaptopPortableV2Page() {
-  const facts = getProductDetailFacts("void-portable-laptop-stand")!;
-
   return (
     <BrandFrame brand="void">
       {/* 1. 제품 히어로 — Apple MacBook Air 스타일 */}
@@ -31,7 +28,7 @@ export default function VoidLaptopPortableV2Page() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/void/laptop-portable/hero-2.webp"
-            alt="노트북이 올려진 검정색 Void 휴대용 노트북 거치대"
+            alt="VOID Laptop Stand"
             className="mx-auto h-auto w-full max-w-[860px] object-contain"
             style={{
               maxHeight: 780,
@@ -59,7 +56,7 @@ export default function VoidLaptopPortableV2Page() {
             >
               Void Laptop Stand
             </p>
-            <h2
+            <h1
               className="mx-auto mt-2 text-[91px] font-semibold leading-[1.09] tracking-[0em]"
               style={{
                 backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
@@ -70,7 +67,7 @@ export default function VoidLaptopPortableV2Page() {
               }}
             >
               가볍지만. 강력하다.
-            </h2>
+            </h1>
             <p
               className="mt-4 text-[46px] font-normal leading-[1.24] tracking-[-0.022em]"
               style={{ color: "#bf4800" }}
@@ -108,6 +105,16 @@ export default function VoidLaptopPortableV2Page() {
           </p>
         </div>
       </section>
+
+      <ReviewSection
+        reviews={[
+          "노트북 받침대를 찾다가 구매했는데 생각보다 훨씬 튼튼합니다. 타이핑할 때 흔들림이 적고 화면 높이가 올라가서 목이 편해졌어요.",
+          "6단계로 각도를 조절할 수 있어서 자세에 맞춰 쓰기 좋습니다. 노트북으로 오래 작업하는 분들에게 정말 유용할 것 같아요.",
+          "180g이라 가방에 넣어도 부담이 거의 없습니다. 접으면 얇아져서 회사와 집을 오가며 사용하기 편해요.",
+          "알루미늄이라 마감이 깔끔하고 책상 위에 올려두면 디자인도 괜찮습니다. 노트북을 안정적으로 받쳐줘서 만족스럽습니다.",
+          "영상 볼 때도 타이핑할 때도 각도만 바꿔서 사용할 수 있어 편합니다. 가볍고 보관하기 쉬운 거치대를 찾는 분들께 추천해요.",
+        ]}
+      />
 
       {/* 기능 + 스토리 */}
       <section className="bg-white px-12 pb-36 pt-[8.8rem]">
@@ -557,7 +564,40 @@ export default function VoidLaptopPortableV2Page() {
         </h2>
 
         <ul className="mt-24">
-          {facts.faq.map(({ question: q, answer: a }) => (
+          {[
+            {
+              q: "몇 인치 노트북까지 올릴 수 있나요?",
+              a: "10~17인치 노트북과 태블릿까지 폭넓게 호환됩니다. 맥북 에어, 맥북 프로는 물론 대부분의 노트북에 사용하실 수 있어요.",
+            },
+            {
+              q: "일반 거치대와 무엇이 다른가요?",
+              a: "약 180g의 알루미늄 합금 구조에 20°부터 45°까지 6단계 각도 조절을 지원하며, 최대 10kg의 하중을 견딜 수 있도록 설계했습니다. 가볍게 휴대하면서도 노트북을 안정적으로 지지합니다.",
+            },
+            {
+              q: "각도 조절은 어떻게 하나요? 세밀하게 조절되나요?",
+              a: "20°부터 45°까지 6단계로 조절 가능합니다. 타이핑에 편한 낮은 각도부터, 화면 시야 확보에 좋은 높은 각도까지 상황에 맞게 선택하실 수 있어요.",
+            },
+            {
+              q: "미끄러지거나 흔들리지 않나요?",
+              a: "노트북과 바닥이 닿는 부분에 미끄럼 방지 실리콘 패드를 적용했습니다. 사용 중 움직임을 줄이고 안정적인 사용을 돕습니다.",
+            },
+            {
+              q: "오래 쓰면 노트북이 뜨거워지지 않나요?",
+              a: "노트북 하부를 가리지 않는 개방형 구조로 아래쪽 공기 흐름을 방해하지 않아 열 배출에 도움을 줍니다.",
+            },
+            {
+              q: "휴대하기 편한가요? 부피가 크지 않나요?",
+              a: "접으면 두께 1.5cm, 무게 180g(±5g)으로 가방에 넣어도 부담 없이 들고 다니실 수 있어요.",
+            },
+            {
+              q: "색상은 어떤 게 있나요?",
+              a: "고급스러운 느낌을 살린 블랙 색상 단일 라인으로 제작됩니다.",
+            },
+            {
+              q: "접었다 폈다 자주 해도 내구성에 문제없나요?",
+              a: "알루미늄 합금 소재로 제작되어 반복적인 접이식 사용에도 견고함을 유지합니다.",
+            },
+          ].map(({ q, a }) => (
             <li
               key={q}
               className="border-t border-[#d2d2d7] py-7 last:border-b"
@@ -611,7 +651,7 @@ export default function VoidLaptopPortableV2Page() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/void/laptop-portable/size.webp"
-            alt="Void 휴대용 노트북 거치대의 펼친 크기와 접힌 크기 안내"
+            alt="Laptop Stand 사이즈"
             className="block h-auto w-full"
           />
         </div>
@@ -665,7 +705,18 @@ export default function VoidLaptopPortableV2Page() {
         </h2>
 
         <dl className="mx-auto mt-24 max-w-[720px]">
-          {facts.productInformation.map(([label, value]) => (
+          {[
+            ["품명 및 모델명", "알루미늄 휴대용 노트북 거치대"],
+            ["재질", "알루미늄 합금"],
+            ["색상", "블랙"],
+            ["펼쳤을 때", "255 × 180 × 50~150 mm"],
+            ["접었을 때", "255 × 45 × 15 mm"],
+            ["중량", "180g (±5g)"],
+            ["제조자(수입자)", "보이드 투 노바"],
+            ["제조국", "중국"],
+            ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
+            ["A/S 책임자와 전화번호", "010-6393-0907"],
+          ].map(([label, value]) => (
             <div
               key={label}
               className="flex gap-8 border-b border-[#d2d2d7] py-6 first:border-t"

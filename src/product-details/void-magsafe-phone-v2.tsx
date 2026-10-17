@@ -10,8 +10,7 @@ import {
 } from "lucide-react";
 
 /**
- * VOID · 맥세이프 휴대폰 거치대 (v2 — 설득 구조 실험본)
- * 원본: void-magsafe-phone.tsx
+ * VOID · 맥세이프 휴대폰 거치대
  * 아이콘: Lucide (https://lucide.dev) — 앞으로 전부 여기 사용
  */
 export default function VoidMagsafePhoneV2Page() {
@@ -46,7 +45,7 @@ export default function VoidMagsafePhoneV2Page() {
             Magnetic Phone Stand
           </p>
 
-          <h2
+          <h1
             className="mx-auto mt-8 text-[134px] font-bold leading-[1.02] tracking-[-0.01em]"
             style={{
               backgroundImage:
@@ -58,12 +57,12 @@ export default function VoidMagsafePhoneV2Page() {
             }}
           >
             착. 붙다.
-          </h2>
+          </h1>
 
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/void/macsafe/69b13ad3-0dea-49ec-a54c-66986c1fbfbb-2.webp"
-            alt="블랙 Void 마그네틱 스마트폰 거치대"
+            alt="VOID Magnetic Phone Stand"
             className="mx-auto mt-16 h-auto w-full max-w-[936px] object-contain"
             style={{ maxHeight: 832 }}
           />
@@ -110,6 +109,55 @@ export default function VoidMagsafePhoneV2Page() {
             <br />
             더 자유롭게 붙여 볼까요?
           </p>
+        </div>
+      </section>
+
+      {/* 구매 고객 후기 — 히어로 직후 신뢰 형성 */}
+      <section className="bg-white px-10 pb-32 pt-40">
+        <div className="mx-auto max-w-[780px]">
+          <div className="flex items-center justify-center gap-4" aria-label="별점 5점, 평점 5.0">
+            <p className="text-[34px] font-bold tracking-[-0.02em] text-[#1d1d1f]">5.0</p>
+            <p className="text-[36px] font-bold tracking-[0.12em] text-[#F5B700]">★★★★★</p>
+          </div>
+          <h2
+            className="mt-6 text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
+            style={{
+              color: "#1d1d1f",
+              fontFamily:
+                '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+            }}
+          >
+            실제 구매자들의 솔직한 후기
+          </h2>
+          <p className="mt-5 text-center text-[22px] font-medium text-[#6e6e73]">
+            먼저 사용해 본 분들의 솔직한 후기입니다.
+          </p>
+
+          <div className="mt-16 space-y-6">
+            {[
+              "책상 위에서 영상 볼 때 쓰려고 샀는데 세로와 가로 방향을 바꾸기 편해서 만족스럽습니다. 각도도 원하는 대로 조절할 수 있어서 화상회의할 때 화면 맞추기도 좋아요.",
+              "생각보다 얇고 가벼워서 외출할 때 챙기기 부담이 없습니다. 접어두면 자리도 많이 차지하지 않고, 필요할 때 펼쳐서 바로 사용할 수 있어 편합니다.",
+              "휴대폰을 세워두고 레시피를 보거나 영상을 볼 때 정말 유용합니다. 책상 위에서 자리를 많이 차지하지 않으면서 화면이 안정적으로 보여서 자주 쓰게 됩니다.",
+              "360도 회전이 되고 180도 각도 조절도 돼서 보는 자세에 맞추기 쉽습니다. 가로로 돌려서 영상을 보다가 다시 세로로 바꾸는 것도 간단해요.",
+              "디자인이 깔끔하고 무광이라 책상 위에 둬도 튀지 않습니다. 휴대폰 거치대를 찾으면서 각도 조절과 휴대성을 중요하게 봤는데 두 가지 모두 만족스럽습니다.",
+            ].map((review) => (
+              <article
+                key={review}
+                className="rounded-[28px] border border-[#dfe3e7] bg-[#f5f5f7] px-8 py-8"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <div className="flex items-center gap-3">
+                    <p className="text-[24px] font-bold text-[#1d1d1f]">5.0</p>
+                    <p className="text-[24px] font-bold tracking-[0.08em] text-[#F5B700]">★★★★★</p>
+                  </div>
+                  <p className="text-[18px] font-medium text-[#86868b]">네이버 구매 고객</p>
+                </div>
+                <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">
+                  {review}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -640,7 +688,7 @@ export default function VoidMagsafePhoneV2Page() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/void/macsafe/Photoroom_20260725_125625.webp"
-            alt="Void 마그네틱 스마트폰 거치대의 접었을 때와 펼쳤을 때 치수"
+            alt="Magnetic Phone Stand 사이즈"
             className="mx-auto h-auto w-full object-contain"
           />
         </div>

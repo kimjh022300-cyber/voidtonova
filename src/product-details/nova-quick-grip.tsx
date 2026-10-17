@@ -111,12 +111,19 @@ export default function NovaQuickGripPage() {
             Nova Quick Grip.
           </span>
         </h2>
+        <p className="absolute inset-x-0 bottom-12 z-10 whitespace-nowrap text-center text-[28px] font-medium tracking-[-0.01em] text-[#3f3f42]">
+          손보다 목표한 부위에 더 오래 집중하도록.
+        </p>
         <div
           className="pointer-events-none absolute inset-x-0 bottom-0 h-[16%]"
-          style={{ background: "linear-gradient(180deg, rgba(255,255,255,0) 0%, #ffffff 100%)" }}
+          style={{ background: "linear-gradient(180deg, rgba(245,245,247,0) 0%, #f5f5f7 100%)" }}
           aria-hidden
         />
       </section>
+
+      <QuickFacts />
+      <QuickGripPhilosophy />
+      <QuickGripComparison />
 
       <section className="bg-white px-10 pb-32 pt-40">
         <div className="mx-auto max-w-[780px]">
@@ -128,7 +135,9 @@ export default function NovaQuickGripPage() {
                 '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
             }}
           >
-            운동의 불편함을 줄입니다.
+            <QuickGripGradient>Nova Quick Grip</QuickGripGradient>
+            <br />
+            <span className="text-[61px]">당신의 운동에 딱 맞는 이유.</span>
           </h2>
 
           <div className="mt-20 overflow-hidden rounded-[28px] border border-[#d2d2d7]">
@@ -188,17 +197,6 @@ export default function NovaQuickGripPage() {
           </div>
         </div>
       </section>
-
-      <ReviewSection
-        source="네XX 구매 고객"
-        reviews={[
-          "등 운동할 때 손에 힘이 먼저 빠져서 늘 아쉬웠는데, 퀵그립을 쓰고 나서는 마지막 세트까지 훨씬 안정적으로 당길 수 있었어요. 손보다 등에 집중되는 느낌이라 만족합니다.",
-          "줄 스트랩은 양손에 감는 과정이 번거로웠는데 이건 한 바퀴만 감으면 돼서 정말 편합니다. 세트 사이에 빠르게 착용할 수 있고 운동 흐름도 끊기지 않아요.",
-          "무게를 올리면 손바닥이 아프고 손목도 쓸렸는데 쿠션이 받쳐줘서 부담이 확실히 덜합니다. 오래 착용해도 불편하지 않고 그립도 안정적으로 잡혀요.",
-          "벨크로가 단단하게 고정되고 바를 감싼 부분도 쉽게 풀리지 않습니다. 랫풀다운이나 로우처럼 당기는 운동에서 악력 걱정이 줄어 운동에 더 집중하게 돼요.",
-          "처음 써봤는데 착용법이 어렵지 않고 한 손으로도 금방 감을 수 있었습니다. 손바닥 보호와 그립 보조를 함께 해줘서 데드리프트할 때도 유용하게 쓰고 있어요.",
-        ]}
-      />
 
       {/* 기능 + 스토리 */}
       <section className="bg-white px-12 pb-36 pt-[8.8rem]">
@@ -324,6 +322,10 @@ export default function NovaQuickGripPage() {
             }
             imageSrc="/assets/nova/quick-grip/size-guide.webp"
             imageAlt="Nova 퀵그립 상세 치수"
+            cards={[
+              { value: "17.5cm", label: "세로" },
+              { value: "8.5cm", label: "가로" },
+            ]}
             bodyAfterImage
           >
             손목 둘레에 맞춰 벨크로의 고정 위치를 조절할 수 있는 원 사이즈 제품입니다. 별도의 사이즈를 고를 필요 없이, 손목에 맞게 조여 안정적으로 착용할 수 있습니다.
@@ -339,12 +341,18 @@ export default function NovaQuickGripPage() {
             }
             imageSrc="/assets/nova/quick-grip/weight-85g.webp"
             imageAlt="전자저울에서 85g으로 측정된 Nova 퀵그립"
+            cards={[
+              { value: "85g", label: "1개 기준" },
+              { value: "170g", label: "좌·우 한 쌍" },
+            ]}
             bodyAfterImage
           >
             한쪽 기준 약 85g으로, 손목을 안정적으로 잡아주는 구조를 갖추고도 운동 가방에 부담 없이 챙길 수 있는 무게입니다. 헬스장은 물론 여행이나 외출 중에도 간편하게 휴대할 수 있습니다.
           </FeatureBlock>
         </div>
       </section>
+
+      <GripSupportLevels />
 
       {/* 사용 장면 */}
       <section className="bg-white px-12 pb-36 pt-32">
@@ -438,69 +446,7 @@ export default function NovaQuickGripPage() {
         </div>
       </section>
 
-      {/* 스펙 하이라이트 */}
-      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
-        <h2
-          className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
-          style={{
-            color: "#1d1d1f",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          한눈에 보는
-          <br />
-          <span
-            style={{
-              backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              color: "transparent",
-            }}
-          >
-            Nova Quick Grip.
-          </span>
-        </h2>
-
-        <div className="mt-20 grid grid-cols-2 gap-6">
-          {[
-            { value: "악력", unit: "보조", label: "목표 부위에 더 깊게 집중" },
-            { value: "한", unit: "바퀴", label: "한 손으로 빠르고 간편한 착용" },
-            { value: "전면", unit: "구조", label: "당길수록 밀착되어 풀림 감소" },
-            { value: "이중", unit: "보호", label: "손바닥 마찰과 손목 압박 완화" },
-          ].map(({ value, unit, label }) => (
-            <div
-              key={label}
-              className="flex flex-col items-center justify-center rounded-[28px] bg-white px-6 py-16 text-center"
-            >
-              <p
-                className="w-full text-center text-[70px] font-bold leading-none tracking-[-0.03em]"
-                style={{
-                  backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  color: "transparent",
-                  fontFamily:
-                    '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-                }}
-              >
-                {value}
-                <span className="ml-[0.08em] text-[70px] font-bold">
-                  {unit}
-                </span>
-              </p>
-              <p
-                className="mt-7 w-full text-center text-[26px] font-semibold tracking-[-0.015em]"
-                style={{ color: "#1d1d1f" }}
-              >
-                {label}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <QuickGripReviews />
 
       {/* 구매 전 한눈에 */}
       <section className="bg-white px-12 pb-32 pt-32">
@@ -594,7 +540,7 @@ export default function NovaQuickGripPage() {
             더 깊은 자극의 세계로.
           </h2>
 
-          <div className="mt-auto text-center">
+          <div className="mt-auto translate-y-16 text-center">
             <p
               className="text-[52px] font-semibold leading-tight tracking-[-0.02em] text-white"
               style={{ textShadow: "0 2px 18px rgba(0,0,0,0.75)" }}
@@ -937,6 +883,181 @@ export default function NovaQuickGripPage() {
   );
 }
 
+function QuickGripGradient({ children }: { children: ReactNode }) {
+  return (
+    <span
+      className="bg-clip-text text-transparent"
+      style={{ backgroundImage: "linear-gradient(90deg, #022640, #5786AB)" }}
+    >
+      {children}
+    </span>
+  );
+}
+
+function QuickFacts() {
+  const facts = [
+    ["85g", "1개 기준 무게"],
+    ["한 바퀴", "한 손으로 빠르고 간편한 착용"],
+    ["17.5cm", "세로 길이"],
+    ["8.5cm", "가로 너비"],
+    ["2개 구성", "왼손용 + 오른손용"],
+    ["ONE SIZE", "벨크로 조절 방식"],
+  ] as const;
+
+  return (
+    <section
+      className="px-12 pb-36 pt-32"
+      style={{ background: "linear-gradient(180deg, #f5f5f7 0%, #f5f5f7 72%, #ffffff 100%)" }}
+    >
+      <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em] text-[#1d1d1f]">
+        한눈에 보는
+        <br />
+        <QuickGripGradient>Nova Quick Grip.</QuickGripGradient>
+      </h2>
+      <div className="mt-20 grid grid-cols-2 gap-6">
+        {facts.map(([value, label]) => (
+          <article key={label} className="rounded-[28px] bg-white px-6 py-16 text-center">
+            <p className="whitespace-nowrap text-[64px] font-bold leading-none tracking-[-0.04em]">
+              <QuickGripGradient>{value}</QuickGripGradient>
+            </p>
+            <p className="mt-7 text-[24px] font-semibold leading-[1.35] tracking-[-0.015em] text-[#1d1d1f]">
+              {label}
+            </p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function QuickGripPhilosophy() {
+  const essentials = [
+    ["악력 부담 감소", "손과 전완이 먼저 지치는 부담을 덜어줍니다", "border-[#d7e6f1] bg-[#f4f8fb]"],
+    ["손바닥 보호", "넓은 그립 면이 바와 손 사이의 마찰을 줄입니다", "border-[#bdd8ea] bg-[#e9f3fa]"],
+    ["목표 부위 집중", "그립 걱정을 덜고 당기는 동작과 자극에 집중합니다", "border-[#a8cade] bg-[#dceef9]"],
+  ] as const;
+
+  return (
+    <section className="bg-white px-12 py-40">
+      <p className="text-[21px] font-bold tracking-[0.14em] text-[#416b8a]">PERFORMANCE SUPPORT</p>
+      <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em] text-[#1d1d1f]">
+        운동 효율을 높이는 변화,
+        <br />
+        <QuickGripGradient>두 개의 스트랩에 담다.</QuickGripGradient>
+      </h2>
+      <div className="mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] bg-[#f5f5f7]">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/nova/quick-grip/performance-support-pair.webp"
+          alt="헬스장 바닥에 나란히 놓인 Nova Quick Grip 한 쌍"
+          className="h-full w-full object-cover object-center"
+        />
+      </div>
+      <div className="mt-16 grid grid-cols-3 gap-5">
+        {essentials.map(([title, body, tone], index) => (
+          <article key={title} className={`rounded-[26px] border px-6 py-8 ${tone}`}>
+            <p className="text-[18px] font-bold tracking-[0.1em] text-[#0071e3]">0{index + 1}</p>
+            <h3 className="mt-5 text-[25px] font-bold leading-[1.3] text-[#1d1d1f]">{title}</h3>
+            <p className="mt-4 text-[18px] font-medium leading-[1.55] text-[#3f5668]">{body}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function QuickGripComparison() {
+  const scenes = [
+    {
+      eyebrow: "BEFORE",
+      title: "악력이 먼저 지치는 맨손",
+      body: "등과 하체에는 힘이 남아 있어도 손과 전완이 먼저 풀려 세트가 끝나는 상태",
+      image: "/assets/nova/quick-grip/grip-comparison-before.webp",
+      imageAlt: "퀵그립 없이 맨손으로 바벨을 잡아 악력이 지친 모습",
+      accent: false,
+    },
+    {
+      eyebrow: "AFTER",
+      title: "목표 부위에 집중하는 퀵그립",
+      body: "바를 쥐는 힘을 보조해 그립 걱정을 덜고 당기는 자세와 목표 부위의 수축에 집중하는 상태",
+      image: "/assets/nova/quick-grip/grip-comparison-after.webp",
+      imageAlt: "Nova Quick Grip을 착용하고 덤벨을 안정적으로 잡은 모습",
+      accent: true,
+    },
+  ] as const;
+
+  return (
+    <section className="bg-white px-10 py-36">
+      <h2 className="text-center text-[60px] font-bold leading-[1.16] tracking-[-0.03em] text-[#1d1d1f]">
+        손이 먼저 풀리지 않도록,
+        <br />
+        <QuickGripGradient>목표한 자극은 더 깊게.</QuickGripGradient>
+      </h2>
+      <div className="mt-20 grid grid-cols-2 gap-6">
+        {scenes.map(({ eyebrow, title, body, image, imageAlt, accent }) => (
+          <article
+            key={eyebrow}
+            className={`rounded-[28px] border p-7 ${accent ? "border-[#bdd8ea] bg-[#eef7ff]" : "border-[#dedede] bg-[#f7f7f7]"}`}
+          >
+            <p className={`text-[19px] font-bold tracking-[0.13em] ${accent ? "text-[#0071e3]" : "text-[#86868b]"}`}>
+              {eyebrow}
+            </p>
+            <div className="mt-8 aspect-[3/4] overflow-hidden rounded-[22px] bg-white">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={image} alt={imageAlt} className="h-full w-full object-cover object-center" />
+            </div>
+            <h3 className="mt-7 text-[29px] font-bold tracking-[-0.02em] text-[#1d1d1f]">{title}</h3>
+            <p className="mt-4 text-[21px] font-medium leading-[1.55] text-[#6e6e73]">{body}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function GripSupportLevels() {
+  const levels = [
+    { step: "01", title: "워밍업", motion: "먼저는 맨손으로", purpose: "오늘의 그립 감각 확인", background: "#f4f8fb" },
+    { step: "02", title: "본 운동", motion: "퀵그립으로 보조", purpose: "목표 부위에 더 집중", background: "#e9f3fa" },
+    { step: "03", title: "마지막 세트", motion: "악력이 풀리기 전에", purpose: "반복을 안정적으로 이어가기", background: "#dceef9" },
+  ] as const;
+
+  return (
+    <section className="bg-white px-12 py-36">
+      <h2 className="text-center text-[60px] font-bold leading-tight tracking-[-0.03em]">
+        <QuickGripGradient>세트에 맞춰 쓰는 그립 보조.</QuickGripGradient>
+      </h2>
+      <p className="mt-8 whitespace-nowrap text-center text-[26px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">필요한 순간에 사용해, 손보다 목표한 부위에 집중하세요.</p>
+      <div className="mt-20 grid grid-cols-3 gap-5">
+        {levels.map(({ step, title, motion, purpose, background }) => (
+          <article key={step} className="rounded-[28px] border border-[#cbdce8] px-7 py-9 text-center" style={{ backgroundColor: background }}>
+            <p className="text-[20px] font-bold tracking-[0.08em] text-[#0071e3]">{step}</p>
+            <h3 className="mt-5 text-[30px] font-bold tracking-[-0.02em] text-[#1d1d1f]">{title}</h3>
+            <p className="mt-7 text-[21px] font-semibold leading-[1.4] text-[#3f4f5b]">{motion}</p>
+            <div className="mx-auto mt-7 h-px w-12 bg-[#9dbdd3]" />
+            <p className="mt-6 text-[18px] font-medium leading-[1.45] text-[#6e6e73]">{purpose}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function QuickGripReviews() {
+  return (
+    <ReviewSection
+      source="네XX 구매 고객"
+      reviews={[
+        "등 운동할 때 손에 힘이 먼저 빠져서 늘 아쉬웠는데, 퀵그립을 쓰고 나서는 마지막 세트까지 훨씬 안정적으로 당길 수 있었어요. 손보다 등에 집중되는 느낌이라 만족합니다.",
+        "줄 스트랩은 양손에 감는 과정이 번거로웠는데 이건 한 바퀴만 감으면 돼서 정말 편합니다. 세트 사이에 빠르게 착용할 수 있고 운동 흐름도 끊기지 않아요.",
+        "무게를 올리면 손바닥이 아프고 손목도 쓸렸는데 쿠션이 받쳐줘서 부담이 확실히 덜합니다. 오래 착용해도 불편하지 않고 그립도 안정적으로 잡혀요.",
+        "벨크로가 단단하게 고정되고 바를 감싼 부분도 쉽게 풀리지 않습니다. 랫풀다운이나 로우처럼 당기는 운동에서 악력 걱정이 줄어 운동에 더 집중하게 돼요.",
+        "처음 써봤는데 착용법이 어렵지 않고 한 손으로도 금방 감을 수 있었습니다. 손바닥 보호와 그립 보조를 함께 해줘서 데드리프트할 때도 유용하게 쓰고 있어요.",
+      ]}
+    />
+  );
+}
+
 /** 사진이 들어갈 자리를 눈에 보이게 잡아두는 카드 */
 function PhotoSlot({
   label,
@@ -985,6 +1106,7 @@ function FeatureBlock({
   hideImage = false,
   bodyAfterImage = false,
   photoLabel,
+  cards,
 }: {
   title: ReactNode;
   children?: ReactNode;
@@ -999,6 +1121,7 @@ function FeatureBlock({
   hideImage?: boolean;
   bodyAfterImage?: boolean;
   photoLabel?: string;
+  cards?: readonly { value: string; label: string }[];
 }) {
   const body =
     children != null && children !== "" ? (
@@ -1067,6 +1190,22 @@ function FeatureBlock({
     </div>
   ) : null;
 
+  const detailCards = cards?.length ? (
+    <div className="mt-12 grid grid-cols-2 gap-5">
+      {cards.map(({ value, label }) => (
+        <article
+          key={label}
+          className="rounded-[28px] border border-[#d7e1e8] bg-white px-6 py-12 text-center shadow-[0_12px_34px_rgba(2,38,64,0.05)]"
+        >
+          <p className="whitespace-nowrap text-[50px] font-bold tracking-[-0.035em]">
+            <QuickGripGradient>{value}</QuickGripGradient>
+          </p>
+          <p className="mt-5 text-[21px] font-semibold text-[#6e6e73]">{label}</p>
+        </article>
+      ))}
+    </div>
+  ) : null;
+
   return (
     <div>
       <div
@@ -1092,10 +1231,12 @@ function FeatureBlock({
         <>
           {image}
           {body}
+          {detailCards}
         </>
       ) : (
         <>
           {body}
+          {detailCards}
           {image}
         </>
       )}

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/json-ld";
 import { ResponsiveDetailFrame } from "@/components/product-detail/responsive-detail-frame";
-import { getProductById, productsWithDetails } from "@/data/products";
+import { getProductById, productsWithDetails, type Product } from "@/data/products";
 import { getProductDetailFacts } from "@/data/product-detail-facts";
 import {
   createBreadcrumbStructuredData,
@@ -45,13 +45,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: SITE_NAME,
       title: `${product.name} | ${SITE_NAME}`,
       description: product.description,
-      images: [{ url: product.image, width: 1000, height: 1000, alt: product.imageAlt }],
+      images: product.image ? [{ url: product.image, alt: product.imageAlt }] : [],
     },
     twitter: {
       card: "summary_large_image",
       title: `${product.name} | ${SITE_NAME}`,
       description: product.description,
-      images: [product.image],
+      images: product.image ? [product.image] : [],
     },
   };
 }
@@ -83,7 +83,7 @@ export default async function ProductDetailPage({ params }: Props) {
             { name: product.name, path: product.detailPath },
           ]),
           createProductStructuredData(product, facts),
-          ...(facts ? [createFaqStructuredData(facts.faq)] : []),
+          ...(facts?.faq.length ? [createFaqStructuredData(facts.faq)] : []),
         ]}
       />
 
@@ -115,17 +115,11 @@ export default async function ProductDetailPage({ params }: Props) {
           </h1>
           <p className="product-detail-intro-copy">{product.description}</p>
         </div>
-        <a
-          className="product-purchase-link"
-          href={product.purchaseUrl}
-          target="_blank"
-          rel="noopener noreferrer external"
-        >
-          네이버에서 구매하기 <span aria-hidden="true">↗</span>
-        </a>
+        {product.purchaseUrl ? <PurchaseLinks product={product} /> : <p className="product-purchase-pending">구매 링크 준비 중</p>}
       </section>
 
       <section className="product-detail-body" aria-label={`${product.name} 상세 정보`}>
+        {!product.image ? <p className="product-detail-image-notice">제품 이미지는 준비 중입니다. 아래에서 상세 설명과 사양을 확인하실 수 있습니다.</p> : null}
         <ResponsiveDetailFrame>
           <DetailPage />
         </ResponsiveDetailFrame>
@@ -143,16 +137,9 @@ export default async function ProductDetailPage({ params }: Props) {
               </span>
             ))}
           </span>
-          <span className="product-detail-closing-channel">공식 구매 채널.</span>
+          <span className="product-detail-closing-channel">{product.purchaseUrl ? "공식 구매 채널." : "구매 링크 준비 중."}</span>
         </p>
-        <a
-          className="product-purchase-link"
-          href={product.purchaseUrl}
-          target="_blank"
-          rel="noopener noreferrer external"
-        >
-          네이버에서 구매하기 <span aria-hidden="true">↗</span>
-        </a>
+        {product.purchaseUrl ? <PurchaseLinks product={product} /> : null}
       </section>
 
       <footer className="landing-footer">
@@ -172,4 +159,27 @@ export default async function ProductDetailPage({ params }: Props) {
       </footer>
     </main>
   );
+}
+
+function PurchaseLinks({ product }: { product: Product }) {
+  const options = product.purchaseOptions ?? (
+    product.purchaseUrl ? [{ label: "네이버에서 구매하기", url: product.purchaseUrl }] : []
+  );
+  const links = options.map((option) => (
+    <a
+      key={option.url}
+      className="product-purchase-link"
+      href={option.url}
+      target="_blank"
+      rel="noopener noreferrer external"
+    >
+      {option.label} <span aria-hidden="true">↗</span>
+    </a>
+  ));
+
+  return product.purchaseOptions ? (
+    <div className="product-purchase-options" role="group" aria-label="노트북 파우치 크기별 구매">
+      {links}
+    </div>
+  ) : <>{links}</>;
 }

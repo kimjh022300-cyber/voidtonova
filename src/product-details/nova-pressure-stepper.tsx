@@ -1,4 +1,5 @@
 import { BrandFrame } from "@/components/product-detail/brand-frame";
+import { ReviewSection } from "@/components/product-detail/review-section";
 import type { ReactNode } from "react";
 import {
   Check,
@@ -10,7 +11,7 @@ import {
 } from "lucide-react";
 
 /**
- * NOVA · 지압 스텝퍼 (노트북 거치대 고정형 v2에서 분리한 작업본)
+ * NOVA · 지압 스태퍼 (노트북 거치대 고정형 v2에서 분리한 작업본)
  * 원본: void-laptop-fixed-v2.tsx — 이후 이 파일만 수정한다.
  * 아이콘: Lucide (https://lucide.dev) — 앞으로 전부 여기 사용
  */
@@ -46,7 +47,7 @@ export default function NovaPressureStepperPage() {
             >
               Nova Pressure Stepper
             </p>
-            <h2
+            <h1
               className="mx-auto mt-2 whitespace-nowrap text-[85px] font-bold leading-[1.15] tracking-[-0.025em]"
               style={{
                 color: "#1d1d1f",
@@ -56,13 +57,13 @@ export default function NovaPressureStepperPage() {
               }}
             >
               가벼운 움직임의 시작.
-            </h2>
+            </h1>
           </div>
           <div className="mt-12 flex justify-center overflow-visible pb-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/nova/pressure-stepper/hero.webp"
-              alt="퍼플 Nova 에어 지압 스텝퍼"
+              src="/assets/nova/pressure-stepper/보라색 돌기형 마사지 매트 제품 사진-2.webp"
+              alt="지압 스태퍼"
               className="h-auto w-full max-w-[1280px] origin-center object-contain"
               style={{
                 maxHeight: 1100,
@@ -96,6 +97,16 @@ export default function NovaPressureStepperPage() {
         </div>
       </section>
 
+      <ReviewSection
+        reviews={[
+          "운동을 시작하기 귀찮은 날에도 발만 올리면 돼서 부담 없이 사용하고 있습니다. 발바닥 자극도 적당하고 잠깐씩 하기 좋아요.",
+          "집에서 오래 앉아 있다가 틈틈이 사용하려고 샀는데 생각보다 만족스럽습니다. 공기 발판이 말랑해서 발에 무리가 덜하고 개운해요.",
+          "크기가 크지 않아 보관하기 편하고 디자인도 깔끔합니다. TV 보면서 몇 분씩 사용하기 좋고 꾸준히 움직이는 습관을 만드는 데 도움이 됩니다.",
+          "발바닥 돌기가 너무 아프지 않을까 걱정했는데 자극이 시원한 정도라 괜찮습니다. 신발을 벗고 바로 사용할 수 있어 편해요.",
+          "운동복을 따로 입지 않아도 집에서 가볍게 시작할 수 있는 점이 마음에 듭니다. 책상 아래 두고 생각날 때마다 사용하고 있어요.",
+        ]}
+      />
+
       {/* 기능 + 스토리 */}
       <section className="bg-white px-12 pb-36 pt-[8.8rem]">
         <div className="flex flex-col gap-48">
@@ -108,8 +119,8 @@ export default function NovaPressureStepperPage() {
               </>
             }
             imageSrc="/assets/nova/pressure-stepper/user-03-seated-use.webp"
-            imageAlt="의자에 앉아 양말을 신고 지압 스텝퍼를 사용하는 모습"
-            photoLabel="사진 — 오래 앉아 있다가 스텝퍼에 발을 올리는 장면"
+            imageAlt="의자에 앉아 양말을 신고 지압 스태퍼를 사용하는 모습"
+            photoLabel="사진 — 오래 앉아 있다가 스태퍼에 발을 올리는 장면"
             bodyAfterImage
           >
             운동복을 꺼내고, 영상을 고르고, 시간을 비워야 시작할 수 있는 운동은
@@ -126,11 +137,11 @@ export default function NovaPressureStepperPage() {
               </>
             }
             imageSrc="/assets/nova/pressure-stepper/user-05-standing-use.webp"
-            imageAlt="맨발로 지압 스텝퍼 위에 서서 사용하는 모습"
+            imageAlt="맨발로 지압 스태퍼 위에 서서 사용하는 모습"
             photoLabel="사진 — 거실에서 가볍게 스태핑하는 장면"
             bodyAfterImage
           >
-            Nova Pressure Stepper는 거창한 운동 루틴을 대신하는 제품이 아닙니다.
+            NOVA Pressure Stepper는 거창한 운동 루틴을 대신하는 제품이 아닙니다.
             움직임이 필요하다고 느낀 순간, 망설이지 않고 발을 올리게 만드는
             제품입니다. 씻기 전 3분, 회의 사이 1분, 영상 한 편을 보는 동안.
             발을 번갈아 디디며 오늘의 리듬을 다시 시작해보세요.
@@ -186,7 +197,7 @@ export default function NovaPressureStepperPage() {
             photoLabel="사진 — 입체 돌기와 에어 구조를 함께 보여주는 제품 컷"
             bodyAfterImage
           >
-            Nova Pressure Stepper는 공기를 채운 PVC 발판 위에 다양한 형태의
+            NOVA Pressure Stepper는 공기를 채운 PVC 발판 위에 다양한 형태의
             입체 돌기를 더했습니다. 발을 디디면 에어 구조가 체중을 부드럽게
             받아주고, 발바닥에는 돌기의 또렷한 감각이 전해집니다. 바닥면에는
             미끄럼 방지 패턴을 적용해 집에서도 안정적으로 사용할 수 있도록
@@ -202,7 +213,7 @@ export default function NovaPressureStepperPage() {
               </>
             }
             imageSrc="/assets/nova/pressure-stepper/user-09-alternating-feet.webp"
-            imageAlt="양발을 번갈아 디디는 지압 스텝퍼 사용 모습"
+            imageAlt="양발을 번갈아 디디는 지압 스태퍼 사용 모습"
             photoLabel="사진 — 양발 대칭 발판 위에 맨발을 올린 장면"
             bodyAfterImage
           >
@@ -220,7 +231,7 @@ export default function NovaPressureStepperPage() {
               </>
             }
             imageSrc="/assets/nova/pressure-stepper/user-01-bottom.webp"
-            imageAlt="미끄럼 방지 패턴이 보이는 지압 스텝퍼 바닥면"
+            imageAlt="미끄럼 방지 패턴이 보이는 지압 스태퍼 바닥면"
             photoLabel="사진 — 미끄럼 방지 바닥 패턴 클로즈업"
             bodyAfterImage
           >
@@ -239,7 +250,7 @@ export default function NovaPressureStepperPage() {
               </>
             }
             imageSrc="/assets/nova/pressure-stepper/user-08-late-night.webp"
-            imageAlt="늦은 밤 침실 옆에서 지압 스텝퍼를 사용하는 모습"
+            imageAlt="늦은 밤 침실 옆에서 지압 스태퍼를 사용하는 모습"
             photoLabel="사진 — 조용한 저녁 거실에서 스태핑하는 장면"
             bodyAfterImage
           >
@@ -257,8 +268,8 @@ export default function NovaPressureStepperPage() {
               </>
             }
             imageSrc="/assets/nova/pressure-stepper/user-07-storage.webp"
-            imageAlt="거실 수납장 위에 세워 보관한 지압 스텝퍼"
-            photoLabel="사진 — 소파 옆 또는 침대 아래에 정리된 스텝퍼"
+            imageAlt="거실 수납장 위에 세워 보관한 지압 스태퍼"
+            photoLabel="사진 — 소파 옆 또는 침대 아래에 정리된 스태퍼"
             bodyAfterImage
           >
             운동 기구는 크면 멀어집니다. 눈에 보여도 꺼내기 귀찮고, 끝나면
@@ -493,7 +504,7 @@ export default function NovaPressureStepperPage() {
         </div>
       </section>
 
-      {/* 4. 스펙 하이라이트 — 지압 스텝퍼용으로 분리한 2×2 카드 */}
+      {/* 4. 스펙 하이라이트 — 지압 스태퍼용으로 분리한 2×2 카드 */}
       <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
@@ -640,9 +651,9 @@ export default function NovaPressureStepperPage() {
         </p>
 
         <PhotoSlot
-          label="사진 — 거실에서 지압 스텝퍼를 사용하는 완성 컷 (와이드)"
+          label="사진 — 거실에서 지압 스태퍼를 사용하는 완성 컷 (와이드)"
           imageSrc="/assets/nova/pressure-stepper/final-wide-storage.webp"
-          imageAlt="따뜻한 거실 조명 아래 세워 보관한 지압 스텝퍼"
+          imageAlt="따뜻한 거실 조명 아래 세워 보관한 지압 스태퍼"
           aspect="16 / 10"
         />
 
@@ -685,7 +696,7 @@ export default function NovaPressureStepperPage() {
           {[
             {
               q: "이거 회전 운동 기구인가요?",
-              a: "아닙니다. 몸을 비트는 회전 운동 기구가 아니라, 두 발을 올리고 번갈아 디디는 에어 지압 스텝퍼입니다. 복잡한 동작 없이 발을 올리고 내 리듬대로 천천히 시작할 수 있습니다.",
+              a: "아닙니다. 몸을 비트는 회전 운동 기구가 아니라, 두 발을 올리고 번갈아 디디는 에어 지압 스태퍼입니다. 복잡한 동작 없이 발을 올리고 내 리듬대로 천천히 시작할 수 있습니다.",
             },
             {
               q: "운동을 잘하지 못해도 사용할 수 있나요?",
@@ -764,7 +775,7 @@ export default function NovaPressureStepperPage() {
         <ul className="mt-24">
           {[
             {
-              label: "에어 지압 스텝퍼 본체 x1 · 공기 주입 펌프 x1",
+              label: "에어 지압 스태퍼 본체 x1 · 공기 주입 펌프 x1",
               src: "/assets/nova/pressure-stepper/components.webp",
             },
           ].map(({ label, src }) => (
@@ -773,7 +784,7 @@ export default function NovaPressureStepperPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={src}
-                alt="에어 지압 스텝퍼 본체와 공기 주입 펌프"
+                alt="에어 지압 스태퍼 본체와 공기 주입 펌프"
                 className="mx-auto block h-auto w-full rounded-[28px]"
               />
               <p
@@ -802,7 +813,7 @@ export default function NovaPressureStepperPage() {
 
         <dl className="mx-auto mt-24 max-w-[720px]">
           {[
-            ["품명 및 모델명", "Nova 에어 지압 스텝퍼"],
+            ["품명 및 모델명", "NOVA 에어 지압 스태퍼"],
             ["재질", "PVC"],
             ["색상", "퍼플"],
             ["크기", "39 × 33 × 5cm"],

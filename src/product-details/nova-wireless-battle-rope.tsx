@@ -114,22 +114,16 @@ export default function NovaWirelessBattleRopePage() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-[16%]"
         style={{
           background:
-            "linear-gradient(180deg, rgba(255,255,255,0) 0%, #ffffff 100%)",
+            "linear-gradient(180deg, rgba(245,245,247,0) 0%, #f5f5f7 100%)",
         }}
         aria-hidden
       />
     </section>
 
-    <ReviewSection
-      source="네XX 구매 고객"
-      reviews={[
-        "헬스 끝나고 유산소까지 하기는 귀찮아서 마무리용으로 샀어요. 처음엔 이걸 흔드는 게 운동이 되나 싶었는데 속도 좀 올리니까 어깨랑 팔이 바로 타는 느낌이고 숨도 금방 차네요ㅋㅋ 짧게 해도 운동한 느낌이 확실합니다.",
-        "가볍게 워밍업하려고 시작했다가 생각보다 강도가 있어서 놀랐어요. 양손을 빠르게 번갈아 흔들면 전완이랑 어깨가 계속 긴장되고 심박수도 쭉 올라갑니다. 웨이트 쉬는 날에는 이것만 몇 세트 해도 땀이 꽤 나요.",
-        "팔 운동만 될 줄 알았거든요. 그런데 반동 때문에 몸이 흔들리지 않게 버티다 보니 배에 계속 힘이 들어가고 옆구리까지 자극이 옵니다. 상체 쓰면서 코어까지 같이 잡는 느낌이라 단순한 팔 운동은 아니네요.",
-        "처음에는 천천히 하다가 익숙해져서 점점 크게 흔들고 있는데 강도 차이가 꽤 큽니다. 빠르게 할수록 어깨랑 팔이 버티기 힘들어지고 호흡도 확 올라와요. 따로 무게를 바꾸지 않아도 제 체력에 맞춰 할 수 있어서 좋습니다.",
-        "스쿼트하면서 같이 흔들어봤는데 이건 진짜 전신 운동이네요. 팔이랑 어깨는 계속 움직이고 하체는 버텨야 하고, 자세 안 무너지게 배에도 힘을 줘야 해서 한 세트 끝나면 온몸이 힘들어요. 짧고 굵게 홈트할 때 잘 쓰고 있습니다.",
-      ]}
-    />
+    <section className="px-12 py-36" style={{background:"linear-gradient(180deg, #f5f5f7 0%, #f5f5f7 72%, #ffffff 100%)"}}><Title>한눈에 보는<br /><Gradient>Nova Battle Rope.</Gradient></Title><div className="mt-20 grid grid-cols-2 gap-6">{[["약 50cm","개당 길이"],["약 1kg","한 쌍 무게"],["2개 구성","양손 운동"],["충전 없음","잡고 바로 시작"]].map(([v,l])=><article key={l} className="rounded-[28px] bg-white px-6 py-16 text-center"><p className="whitespace-nowrap text-[70px] font-bold leading-none tracking-[-0.03em]"><Gradient>{v}</Gradient></p><p className="mt-7 text-[26px] font-semibold tracking-[-0.015em]">{l}</p></article>)}</div></section>
+
+    <BattleRopePhilosophy />
+    <RopeComparison />
 
     <section className="bg-white px-10 py-36">
       <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.03em]"><span className="bg-clip-text text-transparent" style={{backgroundImage:"linear-gradient(90deg, #022640, #5786AB)"}}>Nova Battle Rope</span><br /><span className="text-[61px]">나에게 맞는 이유.</span></h2>
@@ -181,12 +175,13 @@ export default function NovaWirelessBattleRopePage() {
       </div>
     </section>
 
-    <section className="bg-[#f5f5f7] px-12 py-36">
-      <Title>내가 정하는 운동 강도.</Title>
+    <section className="bg-white px-12 py-36">
+      <Title><Gradient>내가 정하는 운동 강도.</Gradient></Title>
+      <p className="mt-8 whitespace-nowrap text-center text-[26px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">속도와 움직임의 크기로, 운동 강도를 직접 조절하세요.</p>
       <div className="mt-20 grid grid-cols-3 gap-5">
         {[
-          {step:"01",title:"초보자",motion:"천천히, 작게",purpose:"리듬부터 익히기",background:"#ffffff"},
-          {step:"02",title:"중급자",motion:"빠르게, 크게",purpose:"운동 강도 높이기",background:"#edf6fc"},
+          {step:"01",title:"초보자",motion:"천천히, 작게",purpose:"리듬부터 익히기",background:"#f4f8fb"},
+          {step:"02",title:"중급자",motion:"빠르게, 크게",purpose:"운동 강도 높이기",background:"#e9f3fa"},
           {step:"03",title:"숙련자",motion:"스쿼트·런지와 함께",purpose:"전신으로 확장하기",background:"#dceef9"},
         ].map(({step,title,motion,purpose,background})=><article key={step} className="rounded-[28px] border border-[#d2d2d7] px-7 py-9 text-center" style={{backgroundColor:background}}><p className="text-[20px] font-bold tracking-[0.08em] text-[#0071e3]">{step}</p><h3 className="mt-5 text-[32px] font-bold tracking-[-0.02em]">{title}</h3><p className="mt-7 text-[22px] font-semibold leading-[1.4] text-[#3f4f5b]">{motion}</p><div className="mx-auto mt-7 h-px w-12 bg-[#9dbdd3]"/><p className="mt-6 text-[19px] font-medium text-[#6e6e73]">{purpose}</p></article>)}
       </div>
@@ -295,7 +290,16 @@ export default function NovaWirelessBattleRopePage() {
       </div>
     </section>
 
-    <section className="bg-[#f5f5f7] px-12 py-36"><Title>한눈에 보는<br /><Gradient>Nova Battle Rope.</Gradient></Title><div className="mt-20 grid grid-cols-2 gap-6">{[["약 50cm","개당 길이"],["약 1kg","한 쌍 무게"],["2개 구성","양손 운동"],["충전 없음","잡고 바로 시작"]].map(([v,l])=><article key={l} className="rounded-[28px] bg-white px-6 py-16 text-center"><p className="whitespace-nowrap text-[70px] font-bold leading-none tracking-[-0.03em]"><Gradient>{v}</Gradient></p><p className="mt-7 text-[26px] font-semibold tracking-[-0.015em]">{l}</p></article>)}</div></section>
+    <ReviewSection
+      source="네XX 구매 고객"
+      reviews={[
+        "헬스 끝나고 유산소까지 하기는 귀찮아서 마무리용으로 샀어요. 처음엔 이걸 흔드는 게 운동이 되나 싶었는데 속도 좀 올리니까 어깨랑 팔이 바로 타는 느낌이고 숨도 금방 차네요ㅋㅋ 짧게 해도 운동한 느낌이 확실합니다.",
+        "가볍게 워밍업하려고 시작했다가 생각보다 강도가 있어서 놀랐어요. 양손을 빠르게 번갈아 흔들면 전완이랑 어깨가 계속 긴장되고 심박수도 쭉 올라갑니다. 웨이트 쉬는 날에는 이것만 몇 세트 해도 땀이 꽤 나요.",
+        "팔 운동만 될 줄 알았거든요. 그런데 반동 때문에 몸이 흔들리지 않게 버티다 보니 배에 계속 힘이 들어가고 옆구리까지 자극이 옵니다. 상체 쓰면서 코어까지 같이 잡는 느낌이라 단순한 팔 운동은 아니네요.",
+        "처음에는 천천히 하다가 익숙해져서 점점 크게 흔들고 있는데 강도 차이가 꽤 큽니다. 빠르게 할수록 어깨랑 팔이 버티기 힘들어지고 호흡도 확 올라와요. 따로 무게를 바꾸지 않아도 제 체력에 맞춰 할 수 있어서 좋습니다.",
+        "스쿼트하면서 같이 흔들어봤는데 이건 진짜 전신 운동이네요. 팔이랑 어깨는 계속 움직이고 하체는 버텨야 하고, 자세 안 무너지게 배에도 힘을 줘야 해서 한 세트 끝나면 온몸이 힘들어요. 짧고 굵게 홈트할 때 잘 쓰고 있습니다.",
+      ]}
+    />
 
     <Trust />
     <section className="relative min-h-[1500px] overflow-hidden bg-[#111113] text-center">
@@ -307,13 +311,18 @@ export default function NovaWirelessBattleRopePage() {
         className="object-cover object-center"
       />
       <div
-        className="pointer-events-none absolute inset-0"
-        style={{background:"linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.08) 34%, rgba(0,0,0,0.08) 66%, rgba(0,0,0,0.9) 100%)"}}
+        className="pointer-events-none absolute inset-x-0 top-0 h-[42%]"
+        style={{background:"linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.78) 42%, rgba(255,255,255,0.24) 76%, transparent 100%)"}}
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[38%]"
+        style={{background:"linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.34) 52%, transparent 100%)"}}
         aria-hidden
       />
       <div className="relative z-10 flex min-h-[1500px] flex-col px-12 pb-28 pt-28">
-        <h2 className="text-[64px] font-bold leading-[1.18] tracking-[-0.028em] text-white" style={{textShadow:"0 3px 24px rgba(0,0,0,0.95)"}}>
-          <span className="text-[#d9e9f5]">Nova</span>와 함께,<br />오늘의 운동을 더 밀도 있게.
+        <h2 className="text-[64px] font-bold leading-[1.18] tracking-[-0.028em] text-[#1d1d1f]">
+          <span className="text-[#416b8a]">Nova</span>와 함께,<br />오늘의 운동을 더 밀도 있게.
         </h2>
         <div className="mt-auto">
           <p className="text-[52px] font-semibold leading-tight tracking-[-0.02em] text-white" style={{textShadow:"0 3px 20px rgba(0,0,0,0.95)"}}>Nova Battle Rope</p>
@@ -329,13 +338,105 @@ export default function NovaWirelessBattleRopePage() {
   </BrandFrame>;
 }
 
+function BattleRopePhilosophy() {
+  const essentials = [
+    ["반복 저항", "흔들 때마다 스프링의 반발력이 되돌아옵니다", "border-[#d7e6f1] bg-[#f4f8fb]"],
+    ["작은 공간", "개당 약 50cm로 긴 로프를 펼칠 필요가 없습니다", "border-[#bdd8ea] bg-[#e9f3fa]"],
+    ["바로 시작", "고정과 충전 없이 두 손에 쥐면 준비가 끝납니다", "border-[#a8cade] bg-[#dceef9]"],
+  ];
+
+  return (
+    <section className="bg-white px-12 py-40">
+      <p className="text-[21px] font-bold tracking-[0.14em] text-[#416b8a]">COMPACT RESISTANCE</p>
+      <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">
+        긴 로프의 운동감,
+        <br />
+        <Gradient>두 개의 스프링에 담다.</Gradient>
+      </h2>
+      <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] bg-[#f5f5f7]">
+        <Image
+          src="/assets/nova/battle-rope/compact-resistance-pair.webp"
+          alt="밝은 빛이 드는 배경에 나란히 놓인 Nova Battle Rope 한 쌍"
+          fill
+          sizes="764px"
+          className="object-cover"
+        />
+      </div>
+      <div className="mt-16 grid grid-cols-3 gap-5">
+        {essentials.map(([title, body, tone], index) => (
+          <article key={title} className={`rounded-[26px] border px-6 py-8 ${tone}`}>
+            <p className="text-[18px] font-bold tracking-[0.1em] text-[#0071e3]">0{index + 1}</p>
+            <h3 className="mt-5 text-[25px] font-bold leading-[1.3]">{title}</h3>
+            <p className="mt-4 text-[18px] font-medium leading-[1.55] text-[#3f5668]">{body}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function RopeComparison() {
+  const scenes = [
+    {
+      eyebrow: "BEFORE",
+      title: "바닥에 펼치는 긴 로프",
+      body: "넓은 공간과 고정 지점이 필요하고 바닥 충격이 반복되는 방식",
+      image: "/assets/nova/battle-rope/comparison-before-long-rope.webp",
+      imageAlt: "긴 배틀로프를 바닥에 펼쳐 웨이브 운동을 하는 모습",
+      accent: false,
+    },
+    {
+      eyebrow: "AFTER",
+      title: "두 손에 쥐는 배틀로프",
+      body: "설치 없이 작은 공간에서 바로 흔들며 반복 저항을 만드는 방식",
+      image: "/assets/nova/battle-rope/comparison-after-compact-rope.webp",
+      imageAlt: "두 손에 Nova Battle Rope를 쥐고 스프링을 흔드는 모습",
+      accent: true,
+    },
+  ];
+
+  return (
+    <section className="bg-white px-10 py-36">
+      <h2 className="text-center text-[60px] font-bold leading-[1.16] tracking-[-0.03em]">
+        긴 로프를 걷어내면,
+        <br />
+        <Gradient>운동은 더 가까워집니다.</Gradient>
+      </h2>
+      <div className="mt-20 grid grid-cols-2 gap-6">
+        {scenes.map(({ eyebrow, title, body, image, imageAlt, accent }) => (
+          <article
+            key={eyebrow}
+            className={`rounded-[28px] border p-7 ${accent ? "border-[#bdd8ea] bg-[#eef7ff]" : "border-[#dedede] bg-[#f7f7f7]"}`}
+          >
+            <p className={`text-[19px] font-bold tracking-[0.13em] ${accent ? "text-[#0071e3]" : "text-[#86868b]"}`}>
+              {eyebrow}
+            </p>
+            <div className="relative mt-8 aspect-[3/4] overflow-hidden rounded-[22px] bg-white">
+              <Image
+                src={image}
+                alt={imageAlt}
+                fill
+                sizes="370px"
+                className="object-cover object-center"
+              />
+            </div>
+            <h3 className="mt-7 text-[29px] font-bold tracking-[-0.02em]">{title}</h3>
+            <p className="mt-4 text-[21px] font-medium leading-[1.55] text-[#6e6e73]">{body}</p>
+          </article>
+        ))}
+      </div>
+      <p className="mx-auto mt-10 max-w-[720px] text-center text-[18px] font-medium leading-[1.55] text-[#86868b]">일반적인 긴 배틀로프와의 사용 방식 차이를 보여주기 위한 이미지입니다.</p>
+    </section>
+  );
+}
+
 function MuscleMap(){const levels=[
   {level:5,title:"매우 많이 사용",body:"삼각근 · 전완근 · 악력",color:"#C93D1B"},
   {level:4,title:"많이 사용",body:"이두근 · 삼두근 · 승모근 · 극하근",color:"#E96843"},
   {level:3,title:"보통 사용",body:"복직근 · 외복사근 · 광배근",color:"#EE967B"},
   {level:2,title:"보조적으로 사용",body:"대흉근 · 둔근",color:"#F4C8B8"},
   {level:1,title:"자세를 안정시키며 사용",body:"대퇴사두근 · 햄스트링 · 종아리",color:"#F8E7E0"},
-];return <section className="bg-[#f5f5f7] px-12 py-36"><Title><span className="text-[#c93d1b]">배틀로프에 쓰이는 근육.</span></Title><p className="mt-8 text-center text-[26px] leading-[1.6] text-[#6e6e73]">기본 웨이브 동작을 기준으로, 반복해서 움직이는 상체 근육과<br/>자세를 지탱하는 근육의 상대적 참여도를 표시했습니다.</p><div className="mt-20 grid grid-cols-2 gap-5">{[["앞면","man-front.svg"],["뒷면","man-back.svg"]].map(([l,f])=><figure key={l} className="rounded-[28px] border border-[#f0ddd5] bg-white p-7 text-center"><object data={`/assets/nova/battle-rope/muscle-map/${f}`} type="image/svg+xml" aria-label={`${l} 근육도`} className="h-[480px] w-full"/><figcaption className="text-[20px] font-semibold text-[#6e6e73]">{l}</figcaption></figure>)}</div><div className="mt-16 grid grid-cols-2 gap-x-10">{levels.map(({level,title,body,color})=><div key={level} className="border-b border-[#ecdcd5] py-7 first:border-t [&:nth-child(2)]:border-t"><div className="flex items-center gap-4"><span className="h-4 w-4 shrink-0 rounded-full" style={{backgroundColor:color}} aria-hidden/><p className="text-[26px] font-bold tracking-[-0.02em]">{level}. {title}</p></div><p className="mt-3 pl-8 text-[19px] font-medium leading-[1.55] tracking-[-0.01em] text-[#6e6e73]">{body}</p></div>)}</div><p className="mx-auto mt-12 max-w-[760px] text-center text-[17px] font-medium leading-[1.5] tracking-[-0.01em] text-[#86868b]">숫자는 기본 웨이브 동작의 상대적 참여도를 뜻하며, 속도·동작 범위·개인별 자세에 따라 달라질 수 있습니다.</p></section>}
+];return <section className="px-12 py-36" style={{background:"linear-gradient(180deg, #ffffff 0%, #f5f5f7 14%, #f5f5f7 86%, #ffffff 100%)"}}><Title><span className="text-[#c93d1b]">배틀로프에 쓰이는 근육.</span></Title><p className="mt-8 text-center text-[26px] leading-[1.6] text-[#6e6e73]">기본 웨이브 동작을 기준으로, 반복해서 움직이는 상체 근육과<br/>자세를 지탱하는 근육의 상대적 참여도를 표시했습니다.</p><div className="mt-20 grid grid-cols-2 gap-5">{[["앞면","man-front.svg"],["뒷면","man-back.svg"]].map(([l,f])=><figure key={l} className="rounded-[28px] border border-[#f0ddd5] bg-white p-7 text-center"><object data={`/assets/nova/battle-rope/muscle-map/${f}`} type="image/svg+xml" aria-label={`${l} 근육도`} className="h-[480px] w-full"/><figcaption className="text-[20px] font-semibold text-[#6e6e73]">{l}</figcaption></figure>)}</div><div className="mt-16 grid grid-cols-2 gap-x-10">{levels.map(({level,title,body,color})=><div key={level} className="border-b border-[#ecdcd5] py-7 first:border-t [&:nth-child(2)]:border-t"><div className="flex items-center gap-4"><span className="h-4 w-4 shrink-0 rounded-full" style={{backgroundColor:color}} aria-hidden/><p className="text-[26px] font-bold tracking-[-0.02em]">{level}. {title}</p></div><p className="mt-3 pl-8 text-[19px] font-medium leading-[1.55] tracking-[-0.01em] text-[#6e6e73]">{body}</p></div>)}</div><p className="mx-auto mt-12 max-w-[760px] text-center text-[17px] font-medium leading-[1.5] tracking-[-0.01em] text-[#86868b]">숫자는 기본 웨이브 동작의 상대적 참여도를 뜻하며, 속도·동작 범위·개인별 자세에 따라 달라질 수 있습니다.</p></section>}
 function Feature({title,children,imageSrc,imageAlt="",imageAspect="3 / 4"}:{title:ReactNode;children:ReactNode;imageSrc?:string;imageAlt?:string;imageAspect?:string}){return <div><div className="flex h-[72px] w-[72px] items-center justify-center rounded-full border-[3px] border-[#0071e3]"><Check className="h-9 w-9 text-[#0071e3]"/></div><h2 className="mt-10 text-[63px] font-bold leading-[1.15] tracking-[-0.025em]">{title}</h2>{imageSrc?<div className="relative mt-24 overflow-hidden rounded-[28px] bg-[#f5f5f7]" style={{aspectRatio:imageAspect}}><Image src={imageSrc} alt={imageAlt} fill sizes="764px" className="object-cover"/></div>:<Photo aspect="3 / 4" className="mt-24"/>}<p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">{children}</p></div>}
 function Title({children}:{children:ReactNode}){return <h2 className="text-center text-[60px] font-bold leading-tight tracking-[-0.03em]">{children}</h2>}
 function Photo({aspect,className=""}:{aspect:string;className?:string}){return <div aria-label="사진 자리" className={`w-full rounded-[28px] bg-[#f5f5f7] ${className}`} style={{aspectRatio:aspect}}/>}
@@ -359,7 +460,7 @@ function Faq(){const q=[
   ["크기와 구성은 어떻게 되나요?","개당 길이는 약 50cm이며 한 쌍의 무게는 약 1kg입니다. 좌우 한 쌍으로 사용할 수 있도록 스프링 배틀로프 2개가 함께 구성되며, 운동 후에는 침대 밑이나 옷장, 운동용품 수납함 등에 보관하기 좋습니다."],
 ];return <section className="bg-white px-10 pb-36 pt-40"><h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]">질문에 답해드립니다.</h2><ul className="mt-24">{q.map(([a,b])=><li key={a} className="border-t border-[#d2d2d7] py-7 last:border-b"><div className="flex items-start justify-between gap-6"><p className="text-[28px] font-semibold leading-[1.35] tracking-[-0.015em]">{a}</p><ChevronDown className="mt-1.5 h-7 w-7 shrink-0 text-[#86868b]" strokeWidth={2.5} aria-hidden/></div><p className="mt-4 pr-12 text-[22px] font-medium leading-[1.5] tracking-[-0.01em] text-[#6e6e73]">{b}</p></li>)}</ul></section>}
 function InfoSection({title,children}:{title:string;children:ReactNode}){return <section className="bg-white px-10 pb-36 pt-32"><h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]">{title}</h2>{children}</section>}
-function ProductInfo(){const r=[["품명 및 모델명","Nova Battle Rope"],["제품 유형","스프링 반발식 무선 배틀로프"],["재질","강철 · PP"],["색상","블랙"],["크기","개당 약 50cm"],["중량","한 쌍 약 1kg"],["사용 용도","상체 근지구력 및 전신 컨디셔닝 운동"],["구성품","스프링 배틀로프 2개"],["제조자(수입자)","보이드 투 노바"],["품질보증기준","관련 법령 및 소비자분쟁해결기준에 따름"],["A/S 책임자와 전화번호","010-6393-0907"]];return <InfoSection title="제품 정보"><dl className="mx-auto mt-24 max-w-[720px]">{r.map(([a,b])=><div key={a} className="flex gap-8 border-b border-[#d2d2d7] py-6 first:border-t"><dt className="w-[200px] shrink-0 text-[22px] font-semibold tracking-[-0.01em]">{a}</dt><dd className="flex-1 text-[22px] font-medium leading-snug tracking-[-0.01em] text-[#6e6e73]">{b}</dd></div>)}</dl></InfoSection>}
+function ProductInfo(){const r=[["품명 및 모델명","Nova Battle Rope"],["제품 유형","스프링 반발식 무선 배틀로프"],["재질","강철 · PP"],["색상","블랙"],["크기","개당 약 50cm"],["중량","한 쌍 약 1kg"],["사용 용도","상체 근지구력 및 전신 컨디셔닝 운동"],["구성품","스프링 배틀로프 2개"],["제조자(수입자)","보이드 투 노바"],["제조국","확인 후 업데이트 예정"],["품질보증기준","관련 법령 및 소비자분쟁해결기준에 따름"],["A/S 책임자와 전화번호","010-6393-0907"]];return <InfoSection title="제품 정보"><dl className="mx-auto mt-24 max-w-[720px]">{r.map(([a,b])=><div key={a} className="flex gap-8 border-b border-[#d2d2d7] py-6 first:border-t"><dt className="w-[200px] shrink-0 text-[22px] font-semibold tracking-[-0.01em]">{a}</dt><dd className="flex-1 text-[22px] font-medium leading-snug tracking-[-0.01em] text-[#6e6e73]">{b}</dd></div>)}</dl></InfoSection>}
 function Notices(){const blocks=[
   {title:"취급 시 주의사항",bullets:["주변 사람과 가구에 부딪히지 않도록 충분한 안전거리를 확보해 주세요.","운동 전 손목 스트랩을 착용하고 손잡이를 단단히 쥐어 주세요.","처음에는 작은 동작과 느린 속도로 시작하고, 익숙해진 뒤 강도를 높여 주세요.","제품과 손목 스트랩에 손상이나 풀림이 없는지 운동 전에 확인해 주세요.","통증이나 어지러움이 느껴지면 즉시 사용을 중단해 주세요."]},
   {title:"관리 방법",body:"사용 후 땀과 먼지를 마른 천으로 닦고 습기와 직사광선을 피해 보관해 주세요."},

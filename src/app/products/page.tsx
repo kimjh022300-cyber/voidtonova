@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
-import { productGroups, productsByLine } from "@/data/products";
+import { productGroups, products, productsByLine } from "@/data/products";
 import { createPageMetadata } from "@/lib/metadata";
 import {
   createBreadcrumbStructuredData,
@@ -9,7 +9,7 @@ import {
   productListStructuredData,
 } from "@/lib/structured-data";
 
-const description = "집중과 움직임을 위한 Void to Nova의 11가지 도구와 공식 구매 채널을 확인하세요.";
+const description = `집중과 움직임을 위한 Void to Nova의 ${products.length}가지 도구와 제품 상세 정보를 확인하세요.`;
 
 export const metadata = createPageMetadata({
   title: "제품",
@@ -54,13 +54,20 @@ export default function ProductsPage() {
               <article className="product-card-placeholder" id={product.id} key={product.id}>
                 <Link
                   className="product-card-live"
-                  href={product.detailPath ?? product.purchaseUrl}
+                  href={product.detailPath ?? product.purchaseUrl ?? "/products"}
                   target={product.detailPath ? undefined : "_blank"}
                   rel={product.detailPath ? undefined : "noopener noreferrer external"}
                   aria-label={product.detailPath ? `${product.name} 자세히 보기` : `${product.name} 네이버 스마트스토어에서 보기`}
                 >
                   <div className="product-card-image product-card-image-filled">
-                    <Image src={product.image} alt={product.imageAlt} fill sizes="(max-width: 699px) 100vw, 50vw" />
+                    {product.image ? (
+                      <Image src={product.image} alt={product.imageAlt} fill sizes="(max-width: 699px) 100vw, 50vw" />
+                    ) : (
+                      <div className="product-image-pending">
+                        <span>{product.line}</span>
+                        <p>제품 이미지 준비 중</p>
+                      </div>
+                    )}
                   </div>
                   <div className="product-card-info">
                     <span>{group.name}</span>

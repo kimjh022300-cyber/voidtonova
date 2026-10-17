@@ -10,24 +10,24 @@ import {
 } from "lucide-react";
 
 /**
- * VOID · 노트북 거치대 고정형 (v2 — 설득 구조 실험본)
- * 원본: void-laptop-fixed.tsx
+ * VOID · 노트북 거치대 고정형
  * 아이콘: Lucide (https://lucide.dev) — 앞으로 전부 여기 사용
  */
 export default function VoidLaptopFixedV2Page() {
   return (
     <BrandFrame brand="void">
-      {/* 1. 제품 히어로 — Apple MacBook Air 스타일 */}
-      <section
-        className="relative overflow-x-hidden"
-        style={{
-          background:
-            "linear-gradient(180deg, #d2d2d7 0%, #e8e8ed 42%, #f5f5f7 72%, #ffffff 100%)",
-        }}
-      >
-        <div className="relative px-4 pb-[4.4rem] pt-28">
+      {/* 1. 제품 히어로 */}
+      <section className="relative min-h-[1500px] overflow-hidden bg-[#ece9e5]">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/void/laptop-fixed/hero-fixed-rear-view-v1.webp"
+          alt="고정형 노트북 거치대를 사용해 작업하는 사람의 뒷모습"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(245,243,240,0.82)_0%,rgba(245,243,240,0.26)_27%,rgba(10,12,14,0.02)_58%,rgba(10,12,14,0.78)_100%)]" />
+        <div className="relative z-10 flex min-h-[1500px] flex-col justify-between px-10 pb-24 pt-24">
           <div
-            className="px-8 text-center"
+            className="text-center"
             style={{
               fontFamily:
                 '"SF Pro KR", "SF Pro Display", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -36,45 +36,28 @@ export default function VoidLaptopFixedV2Page() {
             <p
               className="mx-auto text-[41px] font-semibold leading-[1.25] tracking-[0.007em]"
               style={{
-                backgroundImage:
-                  "linear-gradient(105deg, #1d1d1f 0%, #2a3d4a 45%, #3d5a6e 70%, #1d1d1f 100%)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-                width: "fit-content",
+                color: "#1d1d1f",
+                textShadow: "0 1px 18px rgba(255,255,255,0.7)",
               }}
             >
               Void Laptop Stand
             </p>
-            <h2
+            <h1
               className="mx-auto mt-2 whitespace-nowrap text-[85px] font-bold leading-[1.15] tracking-[-0.025em]"
               style={{
                 color: "#1d1d1f",
                 fontFamily:
                   '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-                width: "fit-content",
+                textShadow: "0 2px 24px rgba(255,255,255,0.72)",
               }}
             >
               단순하게, 단단하게.
-            </h2>
-          </div>
-          <div className="mt-24 flex justify-center overflow-visible pb-12">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/void/laptop-fixed/95ae0ab5-d6ce-44d1-bcf0-e203986f1c3d-2.webp"
-              alt="블랙 고정형 VOID 노트북 거치대"
-              className="h-auto w-full max-w-[1280px] origin-center object-contain"
-              style={{
-                maxHeight: 1100,
-                transform: "scale(1.18)",
-                filter: "drop-shadow(0 24px 48px rgba(29,29,31,0.18))",
-              }}
-            />
+            </h1>
           </div>
           <p
-            className="mx-auto mt-20 max-w-[780px] px-4 text-center text-[28px] font-normal leading-[1.5] tracking-[-0.01em]"
+            className="mx-auto max-w-[780px] text-center text-[28px] font-medium leading-[1.5] tracking-[-0.01em] text-white"
             style={{
-              color: "#1d1d1f",
+              textShadow: "0 2px 22px rgba(0,0,0,0.7)",
               fontFamily:
                 '"SF Pro KR", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Helvetica Neue", Helvetica, Arial, sans-serif',
             }}
@@ -95,6 +78,167 @@ export default function VoidLaptopFixedV2Page() {
             <br />
             이제 책상 위, 더 안정적인 작업을 시작해볼까요?
           </p>
+        </div>
+      </section>
+
+      {/* 제품 소개 — 고정형 구조를 한눈에 */}
+      <section className="relative aspect-[3/5] overflow-hidden bg-[#eee9e3]">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/void/laptop-fixed/product-overview-light-v1.webp"
+          alt="밝은 작업 공간에 놓인 고정형 노트북 거치대"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-x-0 top-0 z-10 px-10 pt-24 text-center">
+          <h2
+            className="text-[76px] font-bold leading-[1.06] tracking-[-0.035em]"
+            style={{
+              backgroundImage: "linear-gradient(105deg, #111 0%, #55555a 50%, #111 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              color: "transparent",
+              fontFamily:
+                '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+            }}
+          >
+            Void Fixed
+            <br />
+            Laptop Stand.
+          </h2>
+        </div>
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%]"
+          style={{
+            background: "linear-gradient(180deg, rgba(255,255,255,0) 0%, #ffffff 100%)",
+          }}
+          aria-hidden
+        />
+      </section>
+
+      {/* 구매 고객 후기 — 히어로 직후 신뢰 형성 */}
+      <section className="bg-white px-10 pb-32 pt-40">
+        <div className="mx-auto max-w-[780px]">
+          <div
+            className="flex items-center justify-center gap-4 text-[#1d1d1f]"
+            aria-label="별점 5점, 평점 5.0"
+          >
+            <p className="text-[34px] font-bold tracking-[-0.02em]">5.0</p>
+            <p className="text-[36px] font-bold tracking-[0.12em] text-[#F5B700]">★★★★★</p>
+          </div>
+          <h2
+            className="mt-6 text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
+            style={{
+              color: "#1d1d1f",
+              fontFamily:
+                '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+            }}
+          >
+            실제 구매자들의 솔직한 후기
+          </h2>
+          <p className="mt-5 text-center text-[22px] font-medium text-[#6e6e73]">
+            먼저 사용해 본 분들의 솔직한 후기입니다.
+          </p>
+
+          <div className="mt-16 space-y-6">
+            {[
+              {
+                source: "네이버 구매 고객",
+                review:
+                  "노트북을 올려두고 타이핑해도 흔들림이 거의 없어서 정말 만족스럽습니다. 높이와 각도 조절도 편하고 화면이 눈높이에 가까워지니까 목과 어깨가 훨씬 편해졌어요. 책상 위가 깔끔해지는 것도 마음에 듭니다.",
+              },
+              {
+                source: "네이버 구매 고객",
+                review:
+                  "생각보다 훨씬 튼튼하고 안정적이에요. 노트북을 올려둔 상태에서도 밀리거나 흔들리지 않고, 각도 조절이 부드러워서 작업할 때 편합니다. 디자인도 심플해서 집이나 사무실 어디에 둬도 잘 어울려요.",
+              },
+              {
+                source: "쿠팡 구매 고객",
+                review:
+                  "책상 공간이 좁아서 노트북을 둘 자리가 늘 아쉬웠는데 거치대를 쓰고 나니 책상이 훨씬 넓어 보입니다. 타이핑할 때 화면이 떨리지 않고 묵직하게 잡아줘서 좋고, 오래 사용해도 불편함이 적어요.",
+              },
+              {
+                source: "쿠팡 구매 고객",
+                review:
+                  "노트북으로 일하는 시간이 길어서 구매했는데 확실히 자세가 편해졌습니다. 높이 맞춰두고 사용하니 고개를 덜 숙이게 되고, 거치대 자체가 단단해서 믿음이 가요. 깔끔하고 튼튼한 거치대 찾는 분들께 추천합니다.",
+              },
+            ].map(({ source, review }) => (
+              <article
+                key={review}
+                className="rounded-[28px] border border-[#dfe3e7] bg-[#f5f5f7] px-8 py-8"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <div className="flex items-center gap-3">
+                    <p className="text-[24px] font-bold text-[#1d1d1f]">5.0</p>
+                    <p className="text-[24px] font-bold tracking-[0.08em] text-[#F5B700]">★★★★★</p>
+                  </div>
+                  <p className="text-[18px] font-medium text-[#86868b]">{source}</p>
+                </div>
+                <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">
+                  {review}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 비교표 — 고정형 거치대가 필요한 이유 */}
+      <section className="bg-white px-12 pb-36 pt-36">
+        <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.03em]">
+          <span
+            className="bg-clip-text text-transparent"
+            style={{ backgroundImage: "linear-gradient(90deg, #022640, #5786ab)" }}
+          >
+            Void Laptop Stand
+          </span>
+          <br />
+          <span className="text-[61px]">나에게 맞는 이유.</span>
+        </h2>
+        <div className="mt-20 overflow-hidden rounded-[28px] border border-[#d2d2d7] bg-white">
+          <table className="w-full table-fixed border-collapse text-center">
+            <caption className="sr-only">
+              책상 위에 노트북을 직접 놓고 사용할 때와 Void Laptop Stand 사용 비교
+            </caption>
+            <thead>
+              <tr className="bg-[#f5f5f7]">
+                <th className="w-[27%] px-4 py-7 text-[25px] font-bold text-[#1d1d1f]">
+                  비교 항목
+                </th>
+                <th className="border-l border-[#d2d2d7] px-4 py-7 text-[23px] font-bold leading-tight text-[#1d1d1f]">
+                  책상 위
+                  <br />
+                  직접 사용
+                </th>
+                <th className="border-l border-[#d2d2d7] bg-[#e8f4fb] px-4 py-7 text-[24px] font-bold leading-tight text-[#0071e3]">
+                  Void
+                  <br />
+                  Laptop Stand
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["시선 높이", "낮은 화면", "원하는 높이로"],
+                ["높이·각도", "조절 불가", "자유롭게 조절"],
+                ["발열 관리", "바닥과 밀착", "오픈형 방열 구조"],
+                ["데스크 공간", "그대로 차지", "하부 공간 활용"],
+                ["장시간 안정감", "자세가 쉽게 무너짐", "단단하게 지지"],
+              ].map(([label, desk, stand]) => (
+                <tr key={label} className="border-t border-[#d2d2d7]">
+                  <th className="px-4 py-8 text-[23px] font-semibold leading-snug text-[#1d1d1f]">
+                    {label}
+                  </th>
+                  <td className="border-l border-[#d2d2d7] px-4 py-8 text-[21px] font-semibold leading-snug text-[#86868b]">
+                    {desk}
+                  </td>
+                  <td className="border-l border-[#d2d2d7] bg-[#eef7ff] px-4 py-8 text-[22px] font-bold leading-snug text-[#0071e3]">
+                    {stand}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -460,63 +604,66 @@ export default function VoidLaptopFixedV2Page() {
         </div>
       </section>
 
-      {/* [신규] 5. 클로징 — 설득 파트의 마지막, 정보 파트로 넘어가기 전 */}
-      <section
-        className="px-12 pb-40 pt-36"
-        style={{
-          background: "linear-gradient(180deg, #ffffff, #D4EAF6 60%, #cfe6f4)",
-        }}
-      >
-        <h2
-          className="text-center text-[64px] font-bold leading-[1.18] tracking-[-0.028em]"
-          style={{
-            color: "#1d1d1f",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          하루 종일, 흔들림 없이
-        </h2>
-        <p
-          className="mx-auto mt-10 max-w-[680px] text-center text-[28px] font-medium leading-[1.6] tracking-[-0.01em]"
-          style={{
-            color: "#4a5a66",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          화면이 떨릴 때마다 집중도 함께 흔들립니다.
-          <br />
-          단단하게 받쳐주는 것, 거치대가 할 일은 사실 그것뿐입니다.
-        </p>
-
-        <PhotoSlot
-          label="사진 — 거치대에 노트북 올린 완성된 데스크 (정면 와이드 컷)"
-          aspect="16 / 10"
-          imageSrc="/assets/void/laptop-fixed/closing-wide-v2.webp"
-          imageAlt="밝은 공간에 놓인 고정형 노트북 거치대"
+      {/* 클로징 — 이미지 전체 배경 */}
+      <section className="relative min-h-[1500px] overflow-hidden bg-white text-center">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/void/laptop-fixed/product-overview-light-v1.webp"
+          alt="밝은 데스크 위 고정형 노트북 거치대"
+          className="absolute inset-0 h-full w-full object-cover object-center"
         />
-
-        <p
-          className="mt-20 text-center text-[52px] font-semibold leading-tight tracking-[-0.02em]"
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-[48%]"
           style={{
-            backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            color: "transparent",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+            background:
+              "linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.96) 28%, rgba(255,255,255,0) 100%)",
           }}
-        >
-          Void Fixed Laptop Stand
-        </p>
-        <p
-          className="mt-3 text-center text-[28px] font-normal leading-snug tracking-[-0.01em]"
-          style={{ color: "#6e7e8a" }}
-        >
-          단순하게, 단단하게.
-        </p>
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%]"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(12,14,16,0) 0%, rgba(12,14,16,0.82) 100%)",
+          }}
+          aria-hidden
+        />
+        <div className="relative z-10 flex min-h-[1500px] flex-col px-12 pb-28 pt-28">
+          <div>
+            <h2
+              className="text-[64px] font-bold leading-[1.18] tracking-[-0.028em] text-[#1d1d1f]"
+              style={{
+                textShadow: "0 2px 24px rgba(255,255,255,0.72)",
+                fontFamily:
+                  '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+              }}
+            >
+              하루 종일, 흔들림 없이
+            </h2>
+            <p
+              className="mx-auto mt-9 max-w-[720px] text-[28px] font-medium leading-[1.6] tracking-[-0.01em] text-[#4a4a4f]"
+              style={{ textShadow: "0 1px 18px rgba(255,255,255,0.82)" }}
+            >
+              화면이 떨릴 때마다 집중도 함께 흔들립니다.
+              <br />
+              단단하게 받쳐주는 것, 거치대가 할 일은 사실 그것뿐입니다.
+            </p>
+          </div>
+          <div className="mt-auto">
+            <p
+              className="text-[54px] font-semibold leading-tight tracking-[-0.025em] text-white"
+              style={{ textShadow: "0 2px 24px rgba(0,0,0,0.65)" }}
+            >
+              Void Fixed Laptop Stand
+            </p>
+            <p
+              className="mt-4 text-[29px] font-medium leading-snug tracking-[-0.01em] text-white/90"
+              style={{ textShadow: "0 2px 18px rgba(0,0,0,0.65)" }}
+            >
+              단순하게, 단단하게.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* 질문에 답해드립니다 */}
