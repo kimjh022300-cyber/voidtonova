@@ -59,7 +59,7 @@ export default function VoidTabletStandV2Page() {
 
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/tablet-stand/hero.webp"
+            src="/assets/sync-2026-10-29/void/tablet-stand/hero.webp"
             alt="VOID Tablet Stand"
             className="mx-auto mt-2 h-auto w-full max-w-[980px] object-contain"
             style={{
@@ -165,7 +165,7 @@ export default function VoidTabletStandV2Page() {
                 팔이 먼저 지치죠.
               </>
             }
-            imageSrc="/assets/void/tablet-stand/holding-in-bed.webp"
+            imageSrc="/assets/sync-2026-10-29/void/tablet-stand/holding-in-bed.webp"
             imageAlt="침대에서 태블릿을 손으로 들고 보는 모습"
             bodyAfterImage
           >
@@ -179,7 +179,7 @@ export default function VoidTabletStandV2Page() {
 
           <FeatureBlock
             title="들지 않아도 되는 편안함."
-            imageSrc="/assets/void/tablet-stand/comfort-without-holding.webp"
+            imageSrc="/assets/sync-2026-10-29/void/tablet-stand/comfort-without-holding.webp"
             imageAlt="침대에 누워 태블릿 거치대의 화면을 편안하게 바라보는 모습"
             bodyAfterImage
           >
@@ -191,7 +191,7 @@ export default function VoidTabletStandV2Page() {
 
           <FeatureBlock
             title="원하는 높이와 거리까지."
-            imageSrc="/assets/void/tablet-stand/height-distance.webp"
+            imageSrc="/assets/sync-2026-10-29/void/tablet-stand/height-distance.webp"
             imageAlt="2단 관절 암을 접고 펼쳐 태블릿의 높이와 거리를 조절하는 모습"
             bodyAfterImage
           >
@@ -211,11 +211,11 @@ export default function VoidTabletStandV2Page() {
             }
             imageSrcs={[
               {
-                src: "/assets/void/tablet-stand/rotation-landscape.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/rotation-landscape.webp",
                 alt: "힌지를 접어 태블릿 암의 움직임을 조절하는 모습",
               },
               {
-                src: "/assets/void/tablet-stand/rotation-portrait.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/rotation-portrait.webp",
                 alt: "2단 힌지가 태블릿 암을 안정적으로 지지하는 모습",
               },
             ]}
@@ -231,11 +231,11 @@ export default function VoidTabletStandV2Page() {
             title="한 손으로도 쉬운 조절."
             imageSrcs={[
               {
-                src: "/assets/void/tablet-stand/one-hand-adjustment-1.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/one-hand-adjustment-1.webp",
                 alt: "한 손으로 태블릿의 방향을 조절하는 모습",
               },
               {
-                src: "/assets/void/tablet-stand/one-hand-adjustment-2.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/one-hand-adjustment-2.webp",
                 alt: "한 손으로 태블릿의 각도를 조절하는 모습",
               },
             ]}
@@ -256,15 +256,15 @@ export default function VoidTabletStandV2Page() {
             }
             imageSrcs={[
               {
-                src: "/assets/void/tablet-stand/weight-1-86kg.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/weight-1-86kg.webp",
                 alt: "태블릿 거치대 베이스의 무게가 1.86kg으로 표시된 모습",
               },
               {
-                src: "/assets/void/tablet-stand/stability-focus.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/stability-focus.webp",
                 alt: "암을 끝까지 펼친 상태에서도 안정적으로 서 있는 태블릿 거치대",
               },
               {
-                src: "/assets/void/tablet-stand/stability-full-height.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/stability-full-height.webp",
                 alt: "지지봉과 베이스를 포함한 태블릿 거치대 전체 모습",
               },
             ]}
@@ -288,7 +288,7 @@ export default function VoidTabletStandV2Page() {
                 섬세한 디테일.
               </>
             }
-            imageSrc="/assets/void/tablet-stand/tablet-protection-detail.webp"
+            imageSrc="/assets/sync-2026-10-29/void/tablet-stand/tablet-protection-detail.webp"
             imageAlt="태블릿 거치대의 클램프 보호 패드를 확대한 모습"
             bodyAfterImage
           >
@@ -299,7 +299,7 @@ export default function VoidTabletStandV2Page() {
 
           <FeatureBlock
             title="스마트폰부터 태블릿까지."
-            imageSrc="/assets/void/tablet-stand/phone-to-tablet.webp"
+            imageSrc="/assets/sync-2026-10-29/void/tablet-stand/phone-to-tablet.webp"
             imageAlt="스마트폰부터 태블릿까지 고정할 수 있는 거치대 클램프"
             bodyAfterImage
           >
@@ -312,35 +312,35 @@ export default function VoidTabletStandV2Page() {
             title="쉽고 빠른 조립."
             imageSrcs={[
               {
-                src: "/assets/void/tablet-stand/assembly-01.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/assembly-01.webp",
                 alt: "태블릿 거치대 조립 전 구성품",
               },
               {
-                src: "/assets/void/tablet-stand/assembly-02.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/assembly-02.webp",
                 alt: "태블릿 거치대 베이스에 부품을 연결하는 모습",
                 caption:
                   "1. 스탠드에 볼트와 너트를 체결하고, 뒷면에 보호 패드를 부착합니다.",
               },
               {
-                src: "/assets/void/tablet-stand/assembly-03.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/assembly-03.webp",
                 alt: "태블릿 거치대 베이스에 지지봉을 연결한 모습",
                 caption:
                   "2. 지지봉을 베이스에 연결한 뒤, 양쪽 나사산이 있는 연결 볼트를 사용해 다음 지지봉을 연결합니다.",
               },
               {
-                src: "/assets/void/tablet-stand/assembly-04.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/assembly-04.webp",
                 alt: "태블릿 거치대 클램프 부품을 조립하는 모습",
                 caption:
                   "3. 태블릿 거치대 뒷면의 고정 링을 풀어 분리합니다.",
               },
               {
-                src: "/assets/void/tablet-stand/assembly-05.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/assembly-05.webp",
                 alt: "태블릿 거치대 암과 클램프를 연결한 모습",
                 caption:
                   "4. 고정 링을 먼저 끼운 뒤, 태블릿 거치대와 암을 결합하고 고정 링을 돌려 단단히 잠급니다.",
               },
               {
-                src: "/assets/void/tablet-stand/assembly-06.webp",
+                src: "/assets/sync-2026-10-29/void/tablet-stand/assembly-06.webp",
                 alt: "조립이 완성된 태블릿 거치대",
                 caption:
                   "5. 2단 관절 암을 지지봉에 끼워 넣어 조립을 마무리합니다.",
@@ -361,7 +361,7 @@ export default function VoidTabletStandV2Page() {
                 완성한 세련됨.
               </>
             }
-            imageSrc="/assets/void/tablet-stand/deep-black-finish.webp"
+            imageSrc="/assets/sync-2026-10-29/void/tablet-stand/deep-black-finish.webp"
             imageAlt="깊이 있는 블랙 컬러의 태블릿 거치대 전체 모습"
             bodyAfterImage
           >
@@ -397,28 +397,28 @@ export default function VoidTabletStandV2Page() {
             {
               scene: "침대에서",
               line: "누운 자세 위로 화면을 내려 두세요. 팔을 들고 있을 필요가 없습니다.",
-              imageSrc: "/assets/void/tablet-stand/bedside-view.webp",
+              imageSrc: "/assets/sync-2026-10-29/void/tablet-stand/bedside-view.webp",
               imageAlt: "침대 옆에 세워 누워서 보는 모습",
               photo: null,
             },
             {
               scene: "주방에서",
               line: "손에 물이 묻어 있어도 레시피는 눈앞에 그대로 떠 있습니다.",
-              imageSrc: "/assets/void/tablet-stand/kitchen-recipe.webp",
+              imageSrc: "/assets/sync-2026-10-29/void/tablet-stand/kitchen-recipe.webp",
               imageAlt: "주방 조리대 옆에서 레시피를 보는 모습",
               photo: null,
             },
             {
               scene: "책상에서",
               line: "노트북 옆 세컨드 스크린으로. 자료를 띄워두고 작업하세요.",
-              imageSrc: "/assets/void/tablet-stand/desk-second-screen.webp",
+              imageSrc: "/assets/sync-2026-10-29/void/tablet-stand/desk-second-screen.webp",
               imageAlt: "모니터 옆에 나란히 둔 태블릿 거치 모습",
               photo: null,
             },
             {
               scene: "홈트할 때",
               line: "따라 하기 영상을 눈높이에 맞춰 두세요. 바닥에 눕혀 둘 필요가 없습니다.",
-              imageSrc: "/assets/void/tablet-stand/home-workout.webp",
+              imageSrc: "/assets/sync-2026-10-29/void/tablet-stand/home-workout.webp",
               imageAlt: "홈트 영상을 보며 운동하는 모습",
               photo: null,
             },
@@ -611,7 +611,7 @@ export default function VoidTabletStandV2Page() {
         <PhotoSlot
           label=""
           aspect="16 / 10"
-          imageSrc="/assets/void/tablet-stand/closing-bedside.webp"
+          imageSrc="/assets/sync-2026-10-29/void/tablet-stand/closing-bedside.webp"
           imageAlt="침대에 누워 태블릿 거치대의 화면을 바라보는 모습"
         />
 
@@ -813,7 +813,7 @@ export default function VoidTabletStandV2Page() {
           {[
             {
               label: "태블릿 거치대 본체 x1 (조립식)",
-              src: "/assets/void/tablet-stand/hero.webp",
+              src: "/assets/sync-2026-10-29/void/tablet-stand/hero.webp",
             },
           ].map(({ label, src }) => (
             <li key={label} className="mx-auto w-full max-w-[780px] text-center">
@@ -856,7 +856,7 @@ export default function VoidTabletStandV2Page() {
         <div className="mx-auto mt-24 max-w-[780px] overflow-hidden rounded-[28px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/tablet-stand/size.webp"
+            src="/assets/sync-2026-10-29/void/tablet-stand/size.webp"
             alt="Tablet Stand 사이즈"
             className="block h-auto w-full"
           />

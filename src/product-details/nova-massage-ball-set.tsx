@@ -51,14 +51,14 @@ export default function NovaMassageBallSetPage() {
 
       <Feature
         title={<>원하는 한 곳을,<br /><Gradient>싱글볼로 정확하게.</Gradient></>}
-        src="/assets/nova/massage-ball-set/feature-single.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/feature-single.webp"
         label="벽과 어깨 사이에 싱글볼을 두고 원하는 지점을 찾는 장면"
         body="둥근 공 하나가 몸과 벽 사이에서 원하는 지점을 찾습니다. 어깨 주변이나 둔부, 종아리처럼 위치를 조금씩 옮겨가며 한 곳에 집중하고 싶을 때 사용하기 좋습니다."
       />
 
       <Feature
         title={<>몸의 가운데는 비우고,<br /><Gradient>더블볼로 양옆을 함께.</Gradient></>}
-        src="/assets/nova/massage-ball-set/feature-double.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/feature-double.webp"
         label="등 중앙을 피해 더블볼의 두 구가 양옆에 닿는 장면"
         body="두 개의 공 사이에 생긴 홈을 몸의 중앙에 맞추면 목 뒤와 등, 허리 주변의 양옆을 함께 받칠 수 있습니다. 척추나 뼈 위를 직접 누르지 말고 천천히 움직여 주세요."
       />
@@ -89,7 +89,7 @@ function Hero() {
   return (
     <section className="relative min-h-[1440px] overflow-hidden bg-[#f3f6f8]">
       <Image
-        src="/assets/nova/massage-ball-set/hero-usage.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/hero-usage.webp"
         alt="밝은 벽 앞에서 싱글 마사지볼을 어깨에 대는 모습"
         fill
         preload
@@ -131,7 +131,7 @@ function ProductOverview() {
   return (
     <section className="relative aspect-[3/4] overflow-hidden bg-white">
       <Image
-        src="/assets/nova/massage-ball-set/product-overview.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/product-overview.webp"
         alt="밝은 배경 위에 놓인 Nova 싱글 마사지볼과 더블 마사지볼"
         fill
         sizes="860px"
@@ -190,7 +190,7 @@ function CoreStory() {
       </h2>
       <StoryImage
         className="mt-24"
-        src="/assets/nova/massage-ball-set/two-shapes.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/two-shapes.webp"
         alt="두 손에 각각 든 Nova 싱글볼과 더블볼"
       />
       <p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">
@@ -211,14 +211,14 @@ function ShapeGuide() {
         <Scene
           eyebrow="SINGLE BALL"
           title="한 곳을 짚는 싱글볼"
-          src="/assets/nova/massage-ball-set/single-product.webp"
+          src="/assets/sync-2026-10-29/nova/massage-ball-set/single-product.webp"
           label="블랙 싱글볼 단독 제품 컷"
           body="지름 8cm · 15g — 어깨 주변, 둔부, 종아리처럼 한 지점을 찾을 때"
         />
         <Scene
           eyebrow="DOUBLE BALL"
           title="양옆을 받치는 더블볼"
-          src="/assets/nova/massage-ball-set/double-product.webp"
+          src="/assets/sync-2026-10-29/nova/massage-ball-set/double-product.webp"
           label="블랙 더블볼 단독 제품 컷"
           body="8×16cm · 30g — 목 뒤와 등처럼 중앙을 비우고 양옆에 닿을 때"
         />
@@ -412,7 +412,7 @@ function BodyGuide() {
       <div className="mt-20 grid grid-cols-2 gap-5">
         <figure className="relative overflow-hidden rounded-[28px] border border-[#dedede] bg-[#f7f7f7] p-7 text-center">
           <object
-            data="/assets/nova/battle-rope/muscle-map/man-front.svg"
+            data="/assets/sync-2026-10-29/nova/battle-rope/muscle-map/man-front.svg"
             type="image/svg+xml"
             aria-label="마사지볼 사용 부위 앞면 인체도"
             className="h-[480px] w-full grayscale opacity-45"
@@ -425,7 +425,7 @@ function BodyGuide() {
         </figure>
         <figure className="relative overflow-hidden rounded-[28px] border border-[#dedede] bg-[#f7f7f7] p-7 text-center">
           <object
-            data="/assets/nova/battle-rope/muscle-map/man-back.svg"
+            data="/assets/sync-2026-10-29/nova/battle-rope/muscle-map/man-back.svg"
             type="image/svg+xml"
             aria-label="마사지볼 사용 부위 뒷면 인체도"
             className="h-[480px] w-full grayscale opacity-45"
@@ -494,9 +494,9 @@ function BodyDot({
 
 function UsageGuide() {
   const steps = [
-    ["01", "모양 고르기", "/assets/nova/massage-ball-set/routine-select.webp", "손으로 싱글볼을 고르는 장면"],
-    ["02", "몸에 놓기", "/assets/nova/massage-ball-set/routine-single.webp", "벽과 어깨 사이에 싱글볼을 놓는 장면"],
-    ["03", "천천히 움직이기", "/assets/nova/massage-ball-set/routine-double.webp", "더블볼을 등 중앙에 수평으로 놓는 장면"],
+    ["01", "모양 고르기", "/assets/sync-2026-10-29/nova/massage-ball-set/routine-select.webp", "손으로 싱글볼을 고르는 장면"],
+    ["02", "몸에 놓기", "/assets/sync-2026-10-29/nova/massage-ball-set/routine-single.webp", "벽과 어깨 사이에 싱글볼을 놓는 장면"],
+    ["03", "천천히 움직이기", "/assets/sync-2026-10-29/nova/massage-ball-set/routine-double.webp", "더블볼을 등 중앙에 수평으로 놓는 장면"],
   ] as const;
 
   return (
@@ -533,7 +533,7 @@ function MaterialStory() {
       </h2>
       <StoryImage
         className="mt-24"
-        src="/assets/nova/massage-ball-set/epp-macro.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/epp-macro.webp"
         alt="검은색 EPP 알갱이 표면을 확대한 모습"
       />
       <p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">
@@ -556,7 +556,7 @@ function LightweightStory() {
       </h2>
       <div className="mt-24 overflow-hidden rounded-[28px] border border-[#d8e2ea] bg-white">
         <Image
-          src="/assets/nova/massage-ball-set/weight.webp"
+          src="/assets/sync-2026-10-29/nova/massage-ball-set/weight.webp"
           alt="저울 위에서 각각 15g과 30g을 표시하는 싱글볼과 더블볼"
           width={971}
           height={1619}
@@ -730,7 +730,7 @@ function Closing() {
   return (
     <section className="relative min-h-[1440px] overflow-hidden bg-[#e8edf1] px-12 pb-36 pt-20">
       <Image
-        src="/assets/nova/massage-ball-set/hero.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/hero.webp"
         alt="밝은 운동 공간에 놓인 Nova 싱글 마사지볼과 더블 마사지볼"
         fill
         sizes="860px"
@@ -811,7 +811,7 @@ function Size() {
       <InfoTitle>사이즈</InfoTitle>
       <StoryImage
         className="mt-24"
-        src="/assets/nova/massage-ball-set/size-guide.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/size-guide.webp"
         alt="싱글볼 지름 8cm와 더블볼 8 × 16cm 크기 안내"
       />
       <Rows rows={rows} />
@@ -825,7 +825,7 @@ function Components() {
       <InfoTitle>구성품</InfoTitle>
       <StoryImage
         className="mt-24"
-        src="/assets/nova/massage-ball-set/components.webp"
+        src="/assets/sync-2026-10-29/nova/massage-ball-set/components.webp"
         alt="Nova 싱글 마사지볼 1개와 더블 마사지볼 1개"
       />
       <p className="mt-7 text-center text-[28px] font-semibold tracking-[-0.01em] text-[#111827]">
@@ -846,7 +846,6 @@ function ProductInfo() {
     ["재질", "EPP"],
     ["구성품", "싱글볼 1개 · 더블볼 1개"],
     ["제조자(수입자)", "보이드 투 노바"],
-    ["제조국", "확인 후 업데이트 예정"],
     ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
     ["A/S 책임자와 전화번호", "010-6393-0907"],
   ];

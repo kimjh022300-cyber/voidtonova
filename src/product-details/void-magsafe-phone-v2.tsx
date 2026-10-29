@@ -61,7 +61,7 @@ export default function VoidMagsafePhoneV2Page() {
 
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/macsafe/69b13ad3-0dea-49ec-a54c-66986c1fbfbb-2.webp"
+            src="/assets/sync-2026-10-29/void/macsafe/69b13ad3-0dea-49ec-a54c-66986c1fbfbb-2.webp"
             alt="VOID Magnetic Phone Stand"
             className="mx-auto mt-16 h-auto w-full max-w-[936px] object-contain"
             style={{ maxHeight: 832 }}
@@ -173,7 +173,7 @@ export default function VoidMagsafePhoneV2Page() {
                 늘 마땅치 않죠.
               </>
             }
-            imageSrc="/assets/void/macsafe/1.webp"
+            imageSrc="/assets/sync-2026-10-29/void/macsafe/1.webp"
             imageAlt="주방 벽에 휴대폰을 기대 세워둔 모습"
             bodyAfterImage
           >
@@ -186,7 +186,7 @@ export default function VoidMagsafePhoneV2Page() {
 
           <FeatureBlock
             title="양면 자석으로 고민 끝."
-            imageSrc="/assets/void/macsafe/double-magnetic.webp"
+            imageSrc="/assets/sync-2026-10-29/void/macsafe/double-magnetic.webp"
             imageAlt="앞면과 뒷면에 자석이 적용된 맥세이프 휴대폰 거치대"
             bodyAfterImage
           >
@@ -203,7 +203,7 @@ export default function VoidMagsafePhoneV2Page() {
                 원하는 각도 그대로.
               </>
             }
-            imageSrc="/assets/void/macsafe/rotation-360-angle-180.webp"
+            imageSrc="/assets/sync-2026-10-29/void/macsafe/rotation-360-angle-180.webp"
             imageAlt="휴대폰에 부착한 거치대의 360도 회전과 180도 각도 조절 기능"
             bodyAfterImage
           >
@@ -220,7 +220,7 @@ export default function VoidMagsafePhoneV2Page() {
                 붙잡는 힘.
               </>
             }
-            imageSrc="/assets/void/macsafe/magnetic-strength.webp"
+            imageSrc="/assets/sync-2026-10-29/void/macsafe/magnetic-strength.webp"
             imageAlt="스마트폰에 강하게 부착된 맥세이프 휴대폰 거치대"
             bodyAfterImage
           >
@@ -235,7 +235,7 @@ export default function VoidMagsafePhoneV2Page() {
 
           <FeatureBlock
             title="돌리고, 기울이고."
-            imageSrc="/assets/void/macsafe/rotation-angle.webp"
+            imageSrc="/assets/sync-2026-10-29/void/macsafe/rotation-angle.webp"
             imageAlt="가로와 세로로 거치하고 각도를 조절한 맥세이프 휴대폰 거치대"
             bodyAfterImage
           >
@@ -253,8 +253,8 @@ export default function VoidMagsafePhoneV2Page() {
               </>
             }
             imageSrc={[
-              "/assets/void/macsafe/folded-slim.webp",
-              "/assets/void/macsafe/pocket-portability.webp",
+              "/assets/sync-2026-10-29/void/macsafe/folded-slim.webp",
+              "/assets/sync-2026-10-29/void/macsafe/pocket-portability.webp",
             ]}
             imageAlt="접힌 맥세이프 휴대폰 거치대와 주머니에 휴대하는 모습"
             imageLayout="stacked"
@@ -272,7 +272,7 @@ export default function VoidMagsafePhoneV2Page() {
                 어디든 함께.
               </>
             }
-            imageSrc="/assets/void/macsafe/weight-50g.webp"
+            imageSrc="/assets/sync-2026-10-29/void/macsafe/weight-50g.webp"
             imageAlt="전자저울 위에서 50g으로 측정된 맥세이프 휴대폰 거치대"
             bodyAfterImage
           >
@@ -290,8 +290,8 @@ export default function VoidMagsafePhoneV2Page() {
               </>
             }
             imageSrc={[
-              "/assets/void/macsafe/metaling-iphone.webp",
-              "/assets/void/macsafe/metaling-galaxy.webp",
+              "/assets/sync-2026-10-29/void/macsafe/metaling-iphone.webp",
+              "/assets/sync-2026-10-29/void/macsafe/metaling-galaxy.webp",
             ]}
             imageAlt="메탈링을 부착한 아이폰 케이스와 갤럭시 케이스"
             bodyAfterImage
@@ -309,7 +309,7 @@ export default function VoidMagsafePhoneV2Page() {
                 완성한 세련됨.
               </>
             }
-            imageSrc="/assets/void/macsafe/black-finish.webp"
+            imageSrc="/assets/sync-2026-10-29/void/macsafe/black-finish.webp"
             imageAlt="블랙 아이폰에 부착된 무광 블랙 맥세이프 휴대폰 거치대"
             bodyAfterImage
           >
@@ -469,7 +469,7 @@ export default function VoidMagsafePhoneV2Page() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/macsafe/closing-stand.webp"
+            src="/assets/sync-2026-10-29/void/macsafe/closing-stand.webp"
             alt="책상 위에 세워진 맥세이프 휴대폰 거치대"
             className="h-full w-full object-cover"
           />
@@ -633,11 +633,11 @@ export default function VoidMagsafePhoneV2Page() {
           {[
             {
               label: "마그네틱 휴대폰 거치대 x1",
-              src: "/assets/void/macsafe/Photoroom_20260725_124017.webp",
+              src: "/assets/sync-2026-10-29/void/macsafe/Photoroom_20260725_124017.webp",
             },
             {
               label: "메탈링 x2",
-              src: "/assets/void/macsafe/e15c76b5-c4ce-47d7-a4f9-4d62ec9c43a4-2.webp",
+              src: "/assets/sync-2026-10-29/void/macsafe/e15c76b5-c4ce-47d7-a4f9-4d62ec9c43a4-2.webp",
             },
           ].map(({ label, src }) => (
             <li key={label} className="text-center">
@@ -687,7 +687,7 @@ export default function VoidMagsafePhoneV2Page() {
         <div className="mx-auto mt-24 flex max-w-[780px] items-center justify-center overflow-hidden rounded-[28px] bg-white px-8 py-12">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/macsafe/Photoroom_20260725_125625.webp"
+            src="/assets/sync-2026-10-29/void/macsafe/Photoroom_20260725_125625.webp"
             alt="Magnetic Phone Stand 사이즈"
             className="mx-auto h-auto w-full object-contain"
           />

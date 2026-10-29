@@ -13,25 +13,25 @@ const features = [
   {
     title: <>헤드폰은 위로.<br />작은 것들은 아래로.</>,
     label: "헤드폰은 상단에 걸고 무선 이어폰과 케이블은 하부 트레이에 정리한 사진",
-    imageSrc: "/assets/void/headphone-stand/feature-tray.webp",
+    imageSrc: "/assets/sync-2026-10-29/void/headphone-stand/feature-tray.webp",
     body: "헤드폰은 상단 받침에, 무선 이어폰과 충전 케이블처럼 흩어지기 쉬운 작은 소품은 하부 트레이에 모아두세요. 하나의 스탠드로 두 개의 정리 공간을 완성합니다.",
   },
   {
     title: <>넓게 받치고,<br />자연스럽게 걸다.</>,
     label: "이중 곡면 목재 받침이 헤드밴드를 넓게 지지하는 사진",
-    imageSrc: "/assets/void/headphone-stand/feature-curved-rest-v2.webp",
+    imageSrc: "/assets/sync-2026-10-29/void/headphone-stand/feature-curved-rest-v2.webp",
     body: "좁은 모서리에 걸치는 대신, 헤드밴드의 곡선을 따라 설계한 넓은 이중 곡면 받침이 자연스럽게 지지합니다. 접촉이 한곳에 집중되는 것을 줄여 사용 후에도 헤드폰을 편안하게 걸어둘 수 있습니다.",
   },
   {
     title: <>넓은 원목 베이스.<br />원하는 자리에 가볍게.</>,
     label: "넓은 원목 베이스의 형태와 넓이를 보여주는 사진",
-    imageSrc: "/assets/void/headphone-stand/feature-wide-base.webp",
+    imageSrc: "/assets/sync-2026-10-29/void/headphone-stand/feature-wide-base.webp",
     body: "넓은 사각형 원목 베이스가 헤드폰 거치대의 하부를 받쳐줍니다. 평소에는 보호필름을 떼지 않고 책상과 선반 위 원하는 자리에 놓아 사용하세요.",
   },
   {
     title: <>필요한 순간에만,<br />네 곳을 단단하게.</>,
     label: "원목 베이스 하부에 보호필름이 붙은 4점 고정 패드 사진",
-    imageSrc: "/assets/void/headphone-stand/feature-optional-fix.webp",
+    imageSrc: "/assets/sync-2026-10-29/void/headphone-stand/feature-optional-fix.webp",
     body: "헤드폰을 한 손으로 자주 꺼내거나 더 단단한 고정이 필요하다면, 하부 네 곳의 보호필름을 떼고 책상에 부착하세요. 고정이 필요하지 않을 때는 보호필름을 유지한 채로 사용할 수 있습니다.",
   },
 ] as const;
@@ -41,7 +41,7 @@ export default function VoidHeadphoneStandPage() {
     <BrandFrame brand="void">
       <section className="relative min-h-[1440px] overflow-hidden bg-[#f2f1ef]">
         <Image
-          src="/assets/void/headphone-stand/hero.webp"
+          src="/assets/sync-2026-10-29/void/headphone-stand/hero.webp"
           alt="햇살이 드는 책상 위 월넛 우드 헤드폰 거치대와 화이트 헤드폰"
           fill
           preload
@@ -70,7 +70,7 @@ export default function VoidHeadphoneStandPage() {
 
       <section className="relative aspect-[3/4] overflow-hidden bg-white">
         <Image
-          src="/assets/void/headphone-stand/product-overview.webp"
+          src="/assets/sync-2026-10-29/void/headphone-stand/product-overview.webp"
           alt="햇살이 드는 책상 위에 놓인 월넛 우드 헤드폰 거치대"
           fill
           sizes="860px"
@@ -122,7 +122,7 @@ export default function VoidHeadphoneStandPage() {
 
       <section className="relative min-h-[1440px] overflow-hidden bg-[#f1eeea] px-12 pb-40 pt-16">
         <Image
-          src="/assets/void/headphone-stand/hero.webp"
+          src="/assets/sync-2026-10-29/void/headphone-stand/hero.webp"
           alt="햇살이 드는 책상 위 월넛 우드 헤드폰 거치대와 화이트 헤드폰"
           fill
           sizes="860px"
@@ -187,7 +187,7 @@ function BeforeAfter() {
         <article>
           <div className="relative aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-[#e5e1dc]">
             <Image
-              src="/assets/void/headphone-stand/before-desk.webp"
+              src="/assets/sync-2026-10-29/void/headphone-stand/before-desk.webp"
               alt="햇살이 드는 책상 위에 헤드폰을 눌혀둔 사용 전 모습"
               fill
               sizes="370px"
@@ -200,7 +200,7 @@ function BeforeAfter() {
         <article>
           <div className="relative aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-[#e5e1dc]">
             <Image
-              src="/assets/void/headphone-stand/after-stand.webp"
+              src="/assets/sync-2026-10-29/void/headphone-stand/after-stand.webp"
               alt="월넛 우드 거치대에 헤드폰을 걸어 정돈한 사용 후 모습"
               fill
               sizes="370px"
@@ -281,7 +281,7 @@ function Compatibility() {
       </Title>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-[#e5e1dc]">
         <Image
-          src="/assets/void/headphone-stand/headphone-compatibility.webp"
+          src="/assets/sync-2026-10-29/void/headphone-stand/headphone-compatibility.webp"
           alt="월넛 우드 거치대에 화이트 오버이어 헤드폰을 걸어둔 모습"
           fill
           sizes="764px"
@@ -309,19 +309,19 @@ function Compatibility() {
 function DesignDetails() {
   const touchDetails = [
     {
-      src: "/assets/void/headphone-stand/feature-curved-rest-v2.webp",
+      src: "/assets/sync-2026-10-29/void/headphone-stand/feature-curved-rest-v2.webp",
       alt: "헤드밴드를 넓게 받치는 이중 곡면 원목 받침",
     },
     {
-      src: "/assets/void/headphone-stand/feature-wide-base.webp",
+      src: "/assets/sync-2026-10-29/void/headphone-stand/feature-wide-base.webp",
       alt: "둥글게 마감한 월넛 톤 원목 트레이 모서리",
     },
     {
-      src: "/assets/void/headphone-stand/design-wood-metal.webp",
+      src: "/assets/sync-2026-10-29/void/headphone-stand/design-wood-metal.webp",
       alt: "원목 받침과 베이스 사이를 잇는 블랙 알루미늄 지지봉",
     },
     {
-      src: "/assets/void/headphone-stand/feature-optional-fix.webp",
+      src: "/assets/sync-2026-10-29/void/headphone-stand/feature-optional-fix.webp",
       alt: "베이스 하부 네 곳에 부착한 선택형 고정 패드",
     },
   ];
@@ -341,7 +341,7 @@ function DesignDetails() {
         </h2>
         <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-[#e5e1dc]">
           <Image
-            src="/assets/void/headphone-stand/design-walnut-desk.webp"
+            src="/assets/sync-2026-10-29/void/headphone-stand/design-walnut-desk.webp"
             alt="월넛 톤 데스크 액세서리로 구성한 따뜻한 작업 공간"
             fill
             sizes="764px"
@@ -376,7 +376,7 @@ function DesignDetails() {
         </h2>
         <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-[#e5e1dc]">
           <Image
-            src="/assets/void/headphone-stand/design-wood-metal.webp"
+            src="/assets/sync-2026-10-29/void/headphone-stand/design-wood-metal.webp"
             alt="월넛 톤 목재 받침과 베이스, 블랙 알루미늄 지지봉의 소재 대비"
             fill
             sizes="764px"
@@ -452,28 +452,28 @@ function RecommendedFor() {
       scene: "책상을 깔끔하게 정리하고 싶은 분",
       line: "헤드폰과 작은 소품이 책상 위에 흩어지는 것을 줄이고 싶은 분께 잘 맞습니다.",
       label: "헤드폰과 작은 소품이 정돈된 책상 장면",
-      imageSrc: "/assets/void/headphone-stand/recommended-organized-desk.webp",
+      imageSrc: "/assets/sync-2026-10-29/void/headphone-stand/recommended-organized-desk.webp",
       objectPosition: "center",
     },
     {
       scene: "게이밍 데스크를 완성하고 싶은 분",
       line: "게이밍 헤드셋의 자리를 만들고 장비의 위치를 정돈하고 싶은 분께 잘 맞습니다.",
       label: "게이밍 데스크에서 헤드셋을 거치한 장면",
-      imageSrc: "/assets/void/headphone-stand/recommended-gaming-desk.webp",
+      imageSrc: "/assets/sync-2026-10-29/void/headphone-stand/recommended-gaming-desk.webp",
       objectPosition: "82% center",
     },
     {
       scene: "헤드폰을 매일 사용하는 분",
       line: "자주 사용하는 헤드폰을 손이 닿기 쉬운 일정한 자리에 보관하고 싶은 분께 잘 맞습니다.",
       label: "매일 사용하는 헤드폰을 스탠드에 거는 장면",
-      imageSrc: "/assets/void/headphone-stand/recommended-daily-headphones.webp",
+      imageSrc: "/assets/sync-2026-10-29/void/headphone-stand/recommended-daily-headphones.webp",
       objectPosition: "center",
     },
     {
       scene: "우드 톤의 책상을 좋아하는 분",
       line: "기능뿐 아니라 서재와 데스크테리어에 자연스럽게 어울리는 디자인을 원하는 분께 잘 맞습니다.",
       label: "우드 톤 서재에 놓인 헤드폰 스탠드 장면",
-      imageSrc: "/assets/void/headphone-stand/recommended-wood-desk.webp",
+      imageSrc: "/assets/sync-2026-10-29/void/headphone-stand/recommended-wood-desk.webp",
       objectPosition: "center",
     },
   ];
@@ -656,7 +656,7 @@ function Size() {
       <InfoTitle>사이즈</InfoTitle>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-[#e5e1dc]">
         <Image
-          src="/assets/void/headphone-stand/size-guide.webp"
+          src="/assets/sync-2026-10-29/void/headphone-stand/size-guide.webp"
           alt="Void Headphone Stand 가로 17.5cm, 세로 9.5cm, 높이 30cm, 상단 받침 너비 10cm 실측 안내"
           fill
           sizes="780px"
@@ -682,7 +682,7 @@ function Components() {
       <InfoTitle>구성품</InfoTitle>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-[#e5e1dc]">
         <Image
-          src="/assets/void/headphone-stand/components.webp"
+          src="/assets/sync-2026-10-29/void/headphone-stand/components.webp"
           alt="상단 원목 받침, 원목 베이스, 블랙 지지봉, 나사 네 개와 조립용 드라이버로 구성된 Void Headphone Stand 구성품"
           fill
           sizes="780px"

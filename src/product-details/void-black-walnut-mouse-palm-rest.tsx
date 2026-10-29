@@ -31,7 +31,7 @@ export default function VoidBlackWalnutMousePalmRestPage() {
 
       <section className="relative aspect-[3/4] overflow-hidden bg-white">
         <Image
-          src="/assets/void/mouse-palm-rest/product-overview.webp"
+          src="/assets/sync-2026-10-29/void/mouse-palm-rest/product-overview.webp"
           alt="밝은 데스크 위에 놓인 블랙월넛 마우스 레스트의 전체 형태"
           fill
           sizes="860px"
@@ -53,7 +53,7 @@ export default function VoidBlackWalnutMousePalmRestPage() {
         </p>
       </section>
 
-      <section className="bg-[#f8f7f5] px-12 py-36">
+      <section className="px-12 py-36" style={{ background: "linear-gradient(180deg, #f8f7f5 0%, #f8f7f5 calc(100% - 240px), #ffffff 100%)" }}>
         <Title>한눈에 보는<br /><Gradient>Void Mouse Rest.</Gradient></Title>
         <div className="mt-20 grid grid-cols-2 gap-6">
           {metrics.map(([value, label]) => <Metric key={label} value={value} label={label} />)}
@@ -64,7 +64,7 @@ export default function VoidBlackWalnutMousePalmRestPage() {
         eyebrow="WHY PALM REST"
         title={<>마우스는 계속 움직이는데,<br /><Gradient>손목은 머물 곳이 없습니다.</Gradient></>}
         label="마우스를 사용하는 손목이 책상 모서리에 닿는 측면 사진"
-        image="/assets/void/mouse-palm-rest/why-palm-rest.webp"
+        image="/assets/sync-2026-10-29/void/mouse-palm-rest/why-palm-rest.webp"
         imageAlt="블랙월넛 마우스 레스트에 손목을 올리고 마우스를 사용하는 측면 모습"
       >
         클릭하고 스크롤하는 동안 손목은 책상 위를 오가거나 모서리에 직접 닿습니다.
@@ -74,10 +74,10 @@ export default function VoidBlackWalnutMousePalmRestPage() {
       <section className="bg-white px-10 py-36">
         <Title>손목이 머물 자리가 생기면,<br /><Gradient>마우스 사용도 한결 안정적으로.</Gradient></Title>
         <div className="mt-20 grid grid-cols-2 gap-6">
-          <Scene title="책상에 바로 닿는 손목" label="팜레스트 없이 마우스를 사용하는 손목 측면" image="/assets/void/mouse-palm-rest/wrist-without-rest.webp" imageAlt="팜레스트 없이 마우스를 사용해 손목이 책상에 직접 닿는 모습">
+          <Scene title="책상에 바로 닿는 손목" label="팜레스트 없이 마우스를 사용하는 손목 측면" image="/assets/sync-2026-10-29/void/mouse-palm-rest/wrist-without-rest.webp" imageAlt="팜레스트 없이 마우스를 사용해 손목이 책상에 직접 닿는 모습">
             손목이 책상 표면이나 모서리에 직접 닿는 상태
           </Scene>
-          <Scene title="손목을 위한 작은 받침" label="블랙월넛 팜레스트와 함께 마우스를 사용하는 손목 측면" image="/assets/void/mouse-palm-rest/wrist-with-rest.webp" imageAlt="블랙월넛 마우스 레스트에 손목을 올리고 흰색 마우스를 사용하는 측면 모습" accent>
+          <Scene title="손목을 위한 작은 받침" label="블랙월넛 팜레스트와 함께 마우스를 사용하는 손목 측면" image="/assets/sync-2026-10-29/void/mouse-palm-rest/wrist-with-rest.webp" imageAlt="블랙월넛 마우스 레스트에 손목을 올리고 흰색 마우스를 사용하는 측면 모습" accent>
             마우스를 움직이다 손목을 잠시 내려놓을 자리가 생긴 상태
           </Scene>
         </div>
@@ -86,7 +86,7 @@ export default function VoidBlackWalnutMousePalmRestPage() {
       <Feature
         title={<>마우스 옆에 필요한 만큼,<br /><Gradient>작고 안정적인 크기.</Gradient></>}
         label="마우스 옆에 16cm 팜레스트를 배치한 위쪽 사진"
-        image="/assets/void/mouse-palm-rest/compact-size.webp"
+        image="/assets/sync-2026-10-29/void/mouse-palm-rest/compact-size.webp"
         imageAlt="블랙 마우스 옆에 놓인 16cm 블랙월넛 마우스 레스트"
         body="약 16 × 7.8cm의 컴팩트한 크기로 마우스 옆의 공간을 과하게 차지하지 않습니다. 손목을 받칠 면적은 확보하면서 마우스의 이동 공간과 책상 위 동선을 깔끔하게 나눕니다."
         extra={<div className="mt-14 grid grid-cols-2 gap-5"><Metric value="16cm" label="팜레스트 길이" /><Metric value="7.8cm" label="손목을 받치는 폭" /></div>}
@@ -94,7 +94,7 @@ export default function VoidBlackWalnutMousePalmRestPage() {
       <Feature
         title={<>평평한 나무 한 장이 아닌,<br /><Gradient>손목이 놓이는 곡면.</Gradient></>}
         label="손목이 닿는 중앙부의 완만한 곡면과 측면 높이 사진"
-        image="/assets/void/mouse-palm-rest/curved-surface.webp"
+        image="/assets/sync-2026-10-29/void/mouse-palm-rest/curved-surface.webp"
         imageAlt="중앙이 완만하게 낮아지는 블랙월넛 마우스 레스트의 곡면"
         body="손목이 닿는 위치를 따라 상단을 부드러운 곡면으로 다듬었습니다. 손목이 한 지점에만 닿지 않도록 넓은 면으로 받치고, 마우스를 잡은 손이 잠시 쉬어갈 안정적인 자리를 제공합니다."
       />
@@ -104,14 +104,14 @@ export default function VoidBlackWalnutMousePalmRestPage() {
       <Feature
         title={<>모양보다 먼저 느껴지는,<br /><Gradient>부드러운 라운드 마감.</Gradient></>}
         label="전면과 측면의 둥글게 다듬은 모서리 클로즈업"
-        image="/assets/void/mouse-palm-rest/rounded-edge.webp"
+        image="/assets/sync-2026-10-29/void/mouse-palm-rest/rounded-edge.webp"
         imageAlt="부드럽게 둥글게 다듬은 블랙월넛 마우스 레스트의 모서리와 전면 마감"
         body="손목과 손바닥 가장자리가 닿는 전면과 네 귀퉁이를 둥글게 정리했습니다. 상단 곡면부터 측면까지 매끄럽게 다듬어 원목의 단단함은 유지하고 날카롭게 닿는 느낌은 줄였습니다."
       />
       <Feature
         title={<>손은 움직여도,<br /><Gradient>팜레스트는 제자리에서.</Gradient></>}
         label="제품을 뒤집어 네 모서리의 미끄럼 방지 패드를 보여주는 사진"
-        image="/assets/void/mouse-palm-rest/anti-slip-pads.webp"
+        image="/assets/sync-2026-10-29/void/mouse-palm-rest/anti-slip-pads.webp"
         imageAlt="블랙월넛 마우스 레스트 바닥 네 모서리의 원형 미끄럼 방지 패드"
         body="바닥 네 모서리의 미끄럼 방지 패드가 책상과의 마찰력을 높입니다. 마우스를 움직이고 손목을 다시 올려놓을 때 받침이 쉽게 밀리는 움직임을 줄이고, 원목과 책상의 직접 마찰도 덜어줍니다."
       />
@@ -127,7 +127,7 @@ export default function VoidBlackWalnutMousePalmRestPage() {
           tone="chapter"
           title={<>짙은 색보다 깊은,<br /><Gradient>블랙월넛의 표정.</Gradient></>}
           label="빛에 따라 깊은 브라운 나뭇결이 드러나는 블랙월넛 매크로 사진"
-          image="/assets/void/mouse-palm-rest/black-walnut-expression.webp"
+          image="/assets/sync-2026-10-29/void/mouse-palm-rest/black-walnut-expression.webp"
           imageAlt="따뜻한 햇빛 아래 깊은 브라운 색과 나뭇결이 드러나는 블랙월넛 마우스 레스트"
         >
           빛을 머금은 블랙월넛은 단순한 짙은 갈색에 머물지 않습니다. 보는 각도에 따라 결의 흐름과
@@ -139,7 +139,7 @@ export default function VoidBlackWalnutMousePalmRestPage() {
           <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">같은 블랙월넛,<br /><Gradient>서로 다른 하나의 결.</Gradient></h2>
           <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
             <Image
-              src="/assets/void/mouse-palm-rest/natural-grain-variations.webp"
+              src="/assets/sync-2026-10-29/void/mouse-palm-rest/natural-grain-variations.webp"
               alt="서로 다른 색 농도와 나뭇결을 지닌 세 개의 블랙월넛 마우스 레스트"
               fill
               sizes="764px"
@@ -171,7 +171,7 @@ function Hero() {
   return (
     <section className="relative min-h-[1440px] overflow-hidden bg-[#f2f0ed]">
       <Image
-        src="/assets/void/mouse-palm-rest/hero.webp"
+        src="/assets/sync-2026-10-29/void/mouse-palm-rest/hero.webp"
         alt="밝은 데스크에서 블랙월넛 마우스 레스트에 손목을 올리고 마우스를 사용하는 모습"
         fill
         preload
@@ -240,9 +240,9 @@ function DeskStyles() {
       <Title>마우스가 달라도,<br /><Gradient>책상의 분위기는 자연스럽게.</Gradient></Title>
       <div className="mt-20 grid grid-cols-3 gap-5">
         {[
-          ["WHITE", "화이트 마우스", "/assets/void/mouse-palm-rest/desk-white-mouse.webp"],
-          ["BLACK", "블랙 마우스", "/assets/void/mouse-palm-rest/desk-black-mouse.webp"],
-          ["VERTICAL", "버티컬 마우스", "/assets/void/mouse-palm-rest/desk-vertical-mouse.webp"],
+          ["WHITE", "화이트 마우스", "/assets/sync-2026-10-29/void/mouse-palm-rest/desk-white-mouse.webp"],
+          ["BLACK", "블랙 마우스", "/assets/sync-2026-10-29/void/mouse-palm-rest/desk-black-mouse.webp"],
+          ["VERTICAL", "버티컬 마우스", "/assets/sync-2026-10-29/void/mouse-palm-rest/desk-vertical-mouse.webp"],
         ].map(([key, title, image]) => (
           <div key={key}>
             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-[28px]">
@@ -264,25 +264,25 @@ function Recommended() {
     {
       title: "마우스를 오래 사용하는 분",
       body: "업무와 작업 중 마우스를 자주 사용하고, 손목을 잠시 내려놓을 작은 자리가 필요한 분께 잘 맞습니다.",
-      image: "/assets/void/mouse-palm-rest/hero.webp",
+      image: "/assets/sync-2026-10-29/void/mouse-palm-rest/hero.webp",
       alt: "블랙월넛 마우스 레스트에 손목을 올리고 마우스를 사용하는 장면",
     },
     {
       title: "단단한 받침을 선호하는 분",
       body: "푹 꺼지는 쿠션보다 형태를 일정하게 유지하는 원목 받침을 선호하는 분께 잘 맞습니다.",
-      image: "/assets/void/mouse-palm-rest/wrist-with-rest.webp",
+      image: "/assets/sync-2026-10-29/void/mouse-palm-rest/wrist-with-rest.webp",
       alt: "한 손목을 블랙월넛 마우스 레스트에 올려놓은 장면",
     },
     {
       title: "간편한 관리를 원하는 분",
       body: "먼지와 보풀이 신경 쓰이는 패브릭 대신 매끄러운 표면을 간편하게 관리하고 싶은 분께 잘 맞습니다.",
-      image: "/assets/void/mouse-palm-rest/care-guide.webp",
+      image: "/assets/sync-2026-10-29/void/mouse-palm-rest/care-guide.webp",
       alt: "부드러운 마른 천으로 블랙월넛 마우스 레스트를 닦는 장면",
     },
     {
       title: "우드톤 데스크를 좋아하는 분",
       body: "기능적인 데스크 액세서리도 책상의 소재와 분위기에 맞춰 고르고 싶은 분께 잘 맞습니다.",
-      image: "/assets/void/mouse-palm-rest/closing-desk.webp",
+      image: "/assets/sync-2026-10-29/void/mouse-palm-rest/closing-desk.webp",
       alt: "블랙월넛 데스크 액세서리와 마우스 레스트로 꾸민 따뜻한 작업 공간",
     },
   ];
@@ -370,7 +370,7 @@ function Care() {
       <Eyebrow>CARE GUIDE</Eyebrow><h2 className="mt-9 text-[64px] font-bold leading-[1.16]">오래 곁에 두기 위한,<br /><Gradient>간단한 관리.</Gradient></h2>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
         <Image
-          src="/assets/void/mouse-palm-rest/care-guide.webp"
+          src="/assets/sync-2026-10-29/void/mouse-palm-rest/care-guide.webp"
           alt="부드러운 마른 천으로 블랙월넛 마우스 레스트를 닦는 모습"
           fill
           sizes="764px"
@@ -386,7 +386,7 @@ function Closing() {
   return (
     <section className="relative min-h-[1440px] overflow-hidden bg-[#eee8e2] px-12 pb-40 pt-8">
       <Image
-        src="/assets/void/mouse-palm-rest/closing-desk.webp"
+        src="/assets/sync-2026-10-29/void/mouse-palm-rest/closing-desk.webp"
         alt="우드톤 데스크에서 키보드와 마우스 팜레스트를 함께 사용하며 작업하는 모습"
         fill
         sizes="860px"
@@ -426,7 +426,7 @@ function Size() {
       <InfoTitle>사이즈</InfoTitle>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
         <Image
-          src="/assets/void/mouse-palm-rest/size-guide.webp"
+          src="/assets/sync-2026-10-29/void/mouse-palm-rest/size-guide.webp"
           alt="Void Mouse Rest 가로 16cm, 세로 7.8cm 실측 안내"
           fill
           sizes="780px"
@@ -444,7 +444,7 @@ function Components() {
       <InfoTitle>구성품</InfoTitle>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
         <Image
-          src="/assets/void/mouse-palm-rest/components.webp"
+          src="/assets/sync-2026-10-29/void/mouse-palm-rest/components.webp"
           alt="Void Mouse Rest 본체 구성품"
           fill
           sizes="780px"
@@ -469,7 +469,6 @@ function Notices() {
         <Notice title="취급 시 주의사항" bullets={["평평하고 흔들림 없는 책상 위에서 사용해 주세요.", "제품을 던지거나 강한 충격을 가하지 마세요.", "원목 표면에 날카로운 물건이 직접 닿지 않도록 주의해 주세요.", "물기와 화기, 직사광선 및 높은 온도에 가까이 두지 마세요.", "본 제품은 의료기기가 아니며 개인의 체형과 자세에 따라 사용감이 다를 수 있습니다."]} />
         <Notice title="관리 방법" body="부드러운 마른 천으로 가볍게 닦아 주세요. 물이나 알코올, 강한 화학 세제 사용은 피하고 실리콘 패드에 먼지나 이물질이 쌓이지 않도록 관리해 주세요." />
         <Notice title="색상 및 무늬 안내" body="사용하시는 화면과 촬영 환경에 따라 실제 색상이 다소 다르게 보일 수 있습니다. 천연 원목의 나뭇결과 색 농도, 무늬의 방향은 제품마다 자연스러운 차이가 있을 수 있습니다." />
-        <Notice title="사양 안내" body="현재 표기된 치수와 기능은 판매자 제공 자료를 바탕으로 작성되었습니다. 실물 검수와 측정 결과에 따라 소재, 크기, 중량 및 마감 방식이 변경될 수 있습니다." />
         <Notice title="A/S 안내" body="제품 초기 불량은 수령 후 7일 이내 확인해 주시면 교환 도와드립니다. 문의는 스토어 고객센터를 통해 접수해 주세요." />
         <Notice title="배송 안내" bullets={["배송기간 — 평균 배송기간은 2~5일 (일부 품목은 출고지 및 반품지 주소가 다를 수 있음)", "발송 마감시간 — 평일 기준 당일 오후 4시 이전 주문건까지 당일 발송 (일부품목 제외). 오후 4시 이후 주문건은 +1일 이후 발송 (평일기준)", "제주도·도서산간 지역배송비 — 제주도/도서산간 지역의 경우 배송비가 추가됩니다. (해당 지역마다 배송비가 다를 수 있음)"]} />
         <ExchangeGuide />

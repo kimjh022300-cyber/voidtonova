@@ -30,7 +30,7 @@ export default function VoidBlackWalnutPalmRestSetPage() {
 
       <section className="relative aspect-[3/4] overflow-hidden bg-white">
         <Image
-          src="/assets/void/palm-rest-set/product-overview-v2.webp"
+          src="/assets/sync-2026-10-29/void/palm-rest-set/product-overview-v2.webp"
           alt="밝은 데스크 위에 키보드용과 마우스용 블랙월넛 팜레스트를 함께 놓은 모습"
           fill
           sizes="860px"
@@ -48,7 +48,7 @@ export default function VoidBlackWalnutPalmRestSetPage() {
         </p>
       </section>
 
-      <section className="bg-[#f8f7f5] px-12 py-36">
+      <section className="px-12 py-36" style={{ background: "linear-gradient(180deg, #f8f7f5 0%, #f8f7f5 calc(100% - 240px), #ffffff 100%)" }}>
         <Title>한눈에 보는<br /><Gradient>Void Walnut Duo.</Gradient></Title>
         <div className="mt-20 grid grid-cols-2 gap-6">
           {metrics.map(([value, label]) => <Metric key={label} value={value} label={label} />)}
@@ -60,7 +60,7 @@ export default function VoidBlackWalnutPalmRestSetPage() {
         title={<>손이 머무는 책상 위에,<br /><Gradient>두 개의 블랙월넛.</Gradient></>}
         label="키보드용과 마우스용 블랙월넛 팜레스트를 함께 놓고 타이핑하는 장면"
         images={[
-          { src: "/assets/void/palm-rest-set/why-duo-v2.webp", alt: "흰 키보드 앞에서 양손을 키보드용 팜레스트에 올린 채 타이핑하고, 오른쪽에 마우스용 팜레스트가 놓인 모습" },
+          { src: "/assets/sync-2026-10-29/void/palm-rest-set/why-duo-v2.webp", alt: "흰 키보드 앞에서 양손을 키보드용 팜레스트에 올린 채 타이핑하고, 오른쪽에 마우스용 팜레스트가 놓인 모습" },
         ]}
       >
         긴 받침이 키보드 앞 양 손목을 받치고, 작은 받침이 마우스 곁에 자리를 지킵니다. 타이핑하다가 마우스로 손을 옮길 때도 같은 블랙월넛이 이어집니다.
@@ -70,7 +70,7 @@ export default function VoidBlackWalnutPalmRestSetPage() {
 
       <section className="bg-white px-12 py-40">
         <Title>서로 다른 두 움직임을,<br /><Gradient>하나의 세트로.</Gradient></Title>
-        <Photo className="mt-24" label="키보드와 마우스 앞에 두 팜레스트를 나란히 배치한 전체 사용 사진" src="/assets/void/palm-rest-set/source/duo-black-setup.webp" alt="블랙 키보드와 마우스 앞에 두 블랙월넛 팜레스트를 함께 배치한 모습" />
+        <Photo className="mt-24" label="키보드와 마우스 앞에 두 팜레스트를 나란히 배치한 전체 사용 사진" src="/assets/sync-2026-10-29/void/palm-rest-set/source/duo-black-setup.webp" alt="블랙 키보드와 마우스 앞에 두 블랙월넛 팜레스트를 함께 배치한 모습" />
         <div className="mt-10 grid grid-cols-2 gap-6">
           <Role eyebrow="KEYBOARD" title="타이핑이 시작되는 자리" body="36cm 길이가 텐키리스 키보드 앞을 따라가며 양손을 위한 넓은 받침 공간을 만듭니다." />
           <Role eyebrow="MOUSE" title="움직임이 이어지는 자리" body="16cm의 작은 받침이 마우스를 사용하는 손목 곁에 필요한 만큼의 자리를 만듭니다." accent />
@@ -80,14 +80,14 @@ export default function VoidBlackWalnutPalmRestSetPage() {
       <Feature
         title={<>36cm와 16cm,<br /><Gradient>필요한 곳에 필요한 만큼.</Gradient></>}
         label="키보드용 36cm와 마우스용 16cm 팜레스트 크기 비교 사진"
-        images={[{ src: "/assets/void/palm-rest-set/size-comparison-v2.webp", alt: "36cm 키보드용과 16cm 마우스용 블랙월넛 팜레스트의 크기 차이" }]}
+        images={[{ src: "/assets/sync-2026-10-29/void/palm-rest-set/size-comparison-v2.webp", alt: "36cm 키보드용과 16cm 마우스용 블랙월넛 팜레스트의 크기 차이" }]}
         body="키보드 앞에는 양손을 위한 긴 받침을, 마우스 옆에는 한 손목을 위한 작은 받침을 배치했습니다. 책상 공간을 과하게 차지하지 않으면서 각 사용 영역을 분명하게 나눕니다."
         extra={<div className="mt-14 grid grid-cols-2 gap-5"><Metric value="36 × 8cm" label="텐키리스 키보드용" /><Metric value="16 × 7.8cm" label="마우스용" /></div>}
       />
 
       <section className="bg-white px-10 py-36">
         <Title>각각 놓아도 좋지만,<br /><Gradient>함께 놓을 때 완성되는 이유.</Gradient></Title>
-        <Photo className="mt-20" label="같은 블랙월넛 소재로 맞춘 키보드용과 마우스용 팜레스트" src="/assets/void/palm-rest-set/source/duo-light-setup.webp" alt="화이트 키보드 곁에 키보드용과 마우스용 블랙월넛 팜레스트를 함께 놓은 모습" />
+        <Photo className="mt-20" label="같은 블랙월넛 소재로 맞춘 키보드용과 마우스용 팜레스트" src="/assets/sync-2026-10-29/void/palm-rest-set/source/duo-light-setup.webp" alt="화이트 키보드 곁에 키보드용과 마우스용 블랙월넛 팜레스트를 함께 놓은 모습" />
         <div className="mt-20 grid grid-cols-3 gap-5">
           {[
             ["01", "이어지는 높이", "키보드와 마우스를 오갈 때 비슷한 높이의 받침이 손목 곁을 이어줍니다."],
@@ -107,8 +107,8 @@ export default function VoidBlackWalnutPalmRestSetPage() {
         title={<>평평한 나무 두 장이 아닌,<br /><Gradient>손목을 따라 흐르는 곡면.</Gradient></>}
         label="두 팜레스트의 완만한 상단 곡면을 나란히 보여주는 측면 사진"
         images={[
-          { src: "/assets/void/keyboard-palm-rest/curved-surface-6deg.webp", alt: "키보드용 팜레스트의 완만한 곡면" },
-          { src: "/assets/void/mouse-palm-rest/curved-surface.webp", alt: "마우스용 팜레스트의 완만한 곡면" },
+          { src: "/assets/sync-2026-10-29/void/keyboard-palm-rest/curved-surface-6deg.webp", alt: "키보드용 팜레스트의 완만한 곡면" },
+          { src: "/assets/sync-2026-10-29/void/mouse-palm-rest/curved-surface.webp", alt: "마우스용 팜레스트의 완만한 곡면" },
         ]}
         body="두 제품 모두 손목이 닿는 위치를 따라 상단을 완만한 곡면으로 다듬었습니다. 키보드와 마우스를 오갈 때도 일관된 원목의 촉감과 안정적인 받침을 경험할 수 있습니다."
       />
@@ -119,8 +119,8 @@ export default function VoidBlackWalnutPalmRestSetPage() {
         title={<>손이 닿는 모든 가장자리까지,<br /><Gradient>부드러운 라운드 마감.</Gradient></>}
         label="키보드용과 마우스용 팜레스트의 둥근 모서리 클로즈업"
         images={[
-          { src: "/assets/void/keyboard-palm-rest/rounded-edge.webp", alt: "키보드용 팜레스트의 둥글게 다듬은 모서리" },
-          { src: "/assets/void/mouse-palm-rest/rounded-edge.webp", alt: "마우스용 팜레스트의 둥글게 다듬은 모서리" },
+          { src: "/assets/sync-2026-10-29/void/keyboard-palm-rest/rounded-edge.webp", alt: "키보드용 팜레스트의 둥글게 다듬은 모서리" },
+          { src: "/assets/sync-2026-10-29/void/mouse-palm-rest/rounded-edge.webp", alt: "마우스용 팜레스트의 둥글게 다듬은 모서리" },
         ]}
         body="손목과 손바닥 가장자리가 닿는 전면과 네 귀퉁이를 둥글게 정리했습니다. 곡면부터 측면까지 매끄럽게 다듬어 원목의 단단함은 유지하고 날카롭게 닿는 느낌은 줄였습니다."
       />
@@ -128,8 +128,8 @@ export default function VoidBlackWalnutPalmRestSetPage() {
         title={<>두 개의 받침 모두,<br /><Gradient>움직임은 적게.</Gradient></>}
         label="키보드용 양쪽 패드와 마우스용 네 모서리 패드를 보여주는 사진"
         images={[
-          { src: "/assets/void/keyboard-palm-rest/anti-slip-pad.webp", alt: "키보드용 팜레스트 바닥의 미끄럼 방지 패드" },
-          { src: "/assets/void/mouse-palm-rest/anti-slip-pads.webp", alt: "마우스용 팜레스트 바닥 네 모서리의 미끄럼 방지 패드" },
+          { src: "/assets/sync-2026-10-29/void/keyboard-palm-rest/anti-slip-pad.webp", alt: "키보드용 팜레스트 바닥의 미끄럼 방지 패드" },
+          { src: "/assets/sync-2026-10-29/void/mouse-palm-rest/anti-slip-pads.webp", alt: "마우스용 팜레스트 바닥 네 모서리의 미끄럼 방지 패드" },
         ]}
         body="키보드용 바닥 양쪽과 마우스용 바닥 네 모서리의 미끄럼 방지 패드가 책상과의 마찰력을 높입니다. 타이핑하거나 마우스를 움직인 뒤 손목을 다시 올려놓을 때 받침이 쉽게 밀리는 움직임을 줄여줍니다."
       />
@@ -141,7 +141,7 @@ export default function VoidBlackWalnutPalmRestSetPage() {
           title={<>두 개의 형태를 잇는,<br /><Gradient>하나의 블랙월넛.</Gradient></>}
           label="두 팜레스트의 깊은 브라운 나뭇결이 함께 보이는 매크로 사진"
           images={[
-            { src: "/assets/void/palm-rest-set/black-walnut-duo-macro.webp", alt: "하나의 블랙월넛 소재로 이어지는 키보드용과 마우스용 팜레스트의 나뭇결 클로즈업" },
+            { src: "/assets/sync-2026-10-29/void/palm-rest-set/black-walnut-duo-macro.webp", alt: "하나의 블랙월넛 소재로 이어지는 키보드용과 마우스용 팜레스트의 나뭇결 클로즈업" },
           ]}
         >
           차분한 브라운과 자연스러운 결이 키보드와 마우스 영역을 하나의 소재로 연결합니다. 기능을 위한 두 개의 받침이면서, 사용하지 않을 때도 책상 위 균형을 잡아주는 한 쌍의 원목 오브제입니다.
@@ -167,7 +167,7 @@ function Hero() {
   return (
     <section className="relative min-h-[1440px] overflow-hidden bg-[#f2f0ed]">
       <Image
-        src="/assets/void/keyboard-palm-rest/closing-typing-desk.webp"
+        src="/assets/sync-2026-10-29/void/keyboard-palm-rest/closing-typing-desk.webp"
         alt="키보드용과 마우스용 블랙월넛 팜레스트를 함께 사용하는 따뜻한 데스크"
         fill
         preload
@@ -201,13 +201,13 @@ function BeforeAfter() {
       <Title>책상에 바로 닿던 손목에서,<br /><Gradient>팜레스트 위에 머무는 손목으로.</Gradient></Title>
       <div className="mt-20 grid grid-cols-2 gap-6">
         <article className="rounded-[28px] border border-[#dedede] bg-[#f7f7f7] p-5">
-          <Photo label="팜레스트 없이 키보드를 사용하는 손목" src="/assets/void/keyboard-palm-rest/posture-without-rest.webp" alt="팜레스트 없이 키보드를 사용해 손목이 책상에 직접 닿는 모습" />
+          <Photo label="팜레스트 없이 키보드를 사용하는 손목" src="/assets/sync-2026-10-29/void/keyboard-palm-rest/posture-without-rest.webp" alt="팜레스트 없이 키보드를 사용해 손목이 책상에 직접 닿는 모습" />
           <p className="mt-7 text-[16px] font-bold tracking-[0.12em] text-[#86868b]">BEFORE · 사용 전</p>
           <h3 className="mt-4 text-[29px] font-bold">책상에 바로 닿는 손목</h3>
           <p className="mt-4 text-[20px] font-medium leading-[1.55] text-[#6e6e73]">키보드와 마우스를 사용할 때 손목이 책상 표면이나 모서리에 직접 닿는 상태</p>
         </article>
         <article className="rounded-[28px] border border-[#ddd4cc] bg-[#f4f1ed] p-5">
-          <Photo label="팜레스트를 사용해 손목을 받치는 모습" src="/assets/void/keyboard-palm-rest/posture-with-rest.webp" alt="키보드용 팜레스트 위에 손목을 올리고 타이핑하는 모습" />
+          <Photo label="팜레스트를 사용해 손목을 받치는 모습" src="/assets/sync-2026-10-29/void/keyboard-palm-rest/posture-with-rest.webp" alt="키보드용 팜레스트 위에 손목을 올리고 타이핑하는 모습" />
           <p className="mt-7 text-[16px] font-bold tracking-[0.12em] text-[#8a6246]">AFTER · 사용 후</p>
           <h3 className="mt-4 text-[29px] font-bold">손목을 받치는 안정적인 자리</h3>
           <p className="mt-4 text-[20px] font-medium leading-[1.55] text-[#6e6e73]">키보드와 마우스 앞에 팜레스트를 놓아 손목이 잠시 머물 공간을 만든 상태</p>
@@ -232,32 +232,32 @@ function Comparison() {
 
 function Grain() {
   const images: ImageSpec[] = [
-    { src: "/assets/void/keyboard-palm-rest/natural-grain-variations.webp", alt: "서로 다른 결을 가진 키보드용 블랙월넛 팜레스트" },
-    { src: "/assets/void/mouse-palm-rest/natural-grain-variations.webp", alt: "서로 다른 결을 가진 마우스용 블랙월넛 팜레스트" },
+    { src: "/assets/sync-2026-10-29/void/keyboard-palm-rest/natural-grain-variations.webp", alt: "서로 다른 결을 가진 키보드용 블랙월넛 팜레스트" },
+    { src: "/assets/sync-2026-10-29/void/mouse-palm-rest/natural-grain-variations.webp", alt: "서로 다른 결을 가진 마우스용 블랙월넛 팜레스트" },
   ];
   return <section className="bg-transparent px-12 py-40"><Eyebrow>NATURAL GRAIN</Eyebrow><h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">같은 블랙월넛,<br /><Gradient>서로 다른 하나의 결.</Gradient></h2><div className="mt-24 space-y-6">{images.map((image) => <Photo key={image.src} label={image.alt} src={image.src} alt={image.alt} />)}</div><p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">하나의 블랙월넛이라도 나무가 자란 시간과 부위에 따라 결의 흐름과 색의 깊이가 달라집니다. 똑같은 무늬가 반복되지 않아, 받아보는 제품마다 하나뿐인 표정을 갖습니다. 세트의 두 제품 사이에서도 결은 서로 다를 수 있습니다.</p></section>;
 }
 
 function Care() {
   const items = [["01", "마른 천으로", "두 제품 모두 가볍게 닦아 주세요."], ["02", "물기는 바로", "젖었을 때는 즉시 닦아 주세요."], ["03", "강한 세제 없이", "알코올과 강한 세제는 피해주세요."], ["04", "고온을 피해", "직사광선과 화기 가까이에 두지 마세요."]];
-  return <section className="bg-transparent px-12 py-40"><Eyebrow>CARE GUIDE</Eyebrow><h2 className="mt-9 text-[64px] font-bold leading-[1.16]">오래 곁에 두기 위한,<br /><Gradient>간단한 관리.</Gradient></h2><Photo className="mt-24" label="블랙월넛 팜레스트 관리 방법" src="/assets/void/keyboard-palm-rest/care-guide.webp" alt="키보드용 블랙월넛 팜레스트를 마른 천으로 닦는 모습" /><div className="mt-14 grid grid-cols-2 gap-5">{items.map(([step, title, body]) => <article key={step} className="rounded-[26px] border border-[#e1d6cc] bg-white p-8"><p className="text-[18px] font-bold text-[#8a6246]">{step}</p><h3 className="mt-4 text-[25px] font-bold">{title}</h3><p className="mt-4 text-[19px] font-medium text-[#6e6e73]">{body}</p></article>)}</div></section>;
+  return <section className="bg-transparent px-12 py-40"><Eyebrow>CARE GUIDE</Eyebrow><h2 className="mt-9 text-[64px] font-bold leading-[1.16]">오래 곁에 두기 위한,<br /><Gradient>간단한 관리.</Gradient></h2><Photo className="mt-24" label="블랙월넛 팜레스트 관리 방법" src="/assets/sync-2026-10-29/void/keyboard-palm-rest/care-guide.webp" alt="키보드용 블랙월넛 팜레스트를 마른 천으로 닦는 모습" /><div className="mt-14 grid grid-cols-2 gap-5">{items.map(([step, title, body]) => <article key={step} className="rounded-[26px] border border-[#e1d6cc] bg-white p-8"><p className="text-[18px] font-bold text-[#8a6246]">{step}</p><h3 className="mt-4 text-[25px] font-bold">{title}</h3><p className="mt-4 text-[19px] font-medium text-[#6e6e73]">{body}</p></article>)}</div></section>;
 }
 
 function DeskStyles() {
   const items = [
-    { key: "LIGHT", title: "밝은 데스크", src: "/assets/void/palm-rest-set/source/duo-light-setup.webp" },
-    { key: "DARK", title: "블랙 셋업", src: "/assets/void/palm-rest-set/source/duo-black-setup.webp" },
-    { key: "WOOD", title: "우드 데스크", src: "/assets/void/keyboard-palm-rest/recommended-wood-desk.webp" },
+    { key: "LIGHT", title: "밝은 데스크", src: "/assets/sync-2026-10-29/void/palm-rest-set/source/duo-light-setup.webp" },
+    { key: "DARK", title: "블랙 셋업", src: "/assets/sync-2026-10-29/void/palm-rest-set/source/duo-black-setup.webp" },
+    { key: "WOOD", title: "우드 데스크", src: "/assets/sync-2026-10-29/void/keyboard-palm-rest/recommended-wood-desk.webp" },
   ];
   return <section className="bg-white px-12 py-40"><Title>어떤 셋업에서도,<br /><Gradient>두 자리는 하나처럼.</Gradient></Title><div className="mt-20 grid grid-cols-3 gap-5">{items.map(({ key, title, src }) => <div key={key}><Photo label={title + "에 배치한 블랙월넛 팜레스트 세트"} src={src} alt={title + "에 놓인 블랙월넛 팜레스트"} /><article className="mt-5 rounded-[24px] border border-[#e3ddd7] bg-[#faf8f6] px-5 py-6 text-center"><p className="text-[16px] font-bold tracking-[0.12em] text-[#8a6246]">{key}</p><h3 className="mt-3 whitespace-nowrap text-[22px] font-bold">{title}</h3></article></div>)}</div></section>;
 }
 
 function Recommended() {
   const items = [
-    { title: "키보드·마우스 사용자", body: "두 작업 영역을 오가며 손목을 내려놓을 자리가 모두 필요한 분께 잘 맞습니다.", src: "/assets/void/keyboard-palm-rest/closing-typing-desk.webp" },
-    { title: "단단한 받침을 선호하는 분", body: "푹 꺼지는 쿠션보다 형태를 유지하는 원목 받침을 선호하는 분께 잘 맞습니다.", src: "/assets/void/mouse-palm-rest/wrist-with-rest.webp" },
-    { title: "깔끔한 관리를 원하는 분", body: "패브릭의 먼지와 보풀 대신 매끄러운 표면을 간편하게 관리하고 싶은 분께 잘 맞습니다.", src: "/assets/void/keyboard-palm-rest/care-guide.webp" },
-    { title: "완성된 데스크를 원하는 분", body: "기능뿐 아니라 소재와 색감까지 하나의 톤으로 맞추고 싶은 분께 잘 맞습니다.", src: "/assets/void/palm-rest-set/source/duo-black-setup.webp" },
+    { title: "키보드·마우스 사용자", body: "두 작업 영역을 오가며 손목을 내려놓을 자리가 모두 필요한 분께 잘 맞습니다.", src: "/assets/sync-2026-10-29/void/keyboard-palm-rest/closing-typing-desk.webp" },
+    { title: "단단한 받침을 선호하는 분", body: "푹 꺼지는 쿠션보다 형태를 유지하는 원목 받침을 선호하는 분께 잘 맞습니다.", src: "/assets/sync-2026-10-29/void/mouse-palm-rest/wrist-with-rest.webp" },
+    { title: "깔끔한 관리를 원하는 분", body: "패브릭의 먼지와 보풀 대신 매끄러운 표면을 간편하게 관리하고 싶은 분께 잘 맞습니다.", src: "/assets/sync-2026-10-29/void/keyboard-palm-rest/care-guide.webp" },
+    { title: "완성된 데스크를 원하는 분", body: "기능뿐 아니라 소재와 색감까지 하나의 톤으로 맞추고 싶은 분께 잘 맞습니다.", src: "/assets/sync-2026-10-29/void/palm-rest-set/source/duo-black-setup.webp" },
   ];
   return <section className="bg-white px-12 py-40"><Title>이런 분께 잘 맞습니다.</Title><p className="mx-auto mt-8 max-w-[700px] text-center text-[26px] font-medium leading-[1.6] text-[#6e6e73]">손목이 놓이는 자리와 책상 위 분위기를 함께 바꾸고 싶은 분들입니다.</p><div className="mt-20 grid grid-cols-2 gap-x-6 gap-y-16">{items.map(({ title, body, src }) => <article key={title}><Photo label={title} src={src} alt={title} /><h3 className="mt-7 whitespace-nowrap text-[28px] font-bold leading-[1.3] tracking-[-0.02em]">{title}</h3><p className="mt-3 text-[20px] font-medium leading-[1.55] text-[#6e6e73]">{body}</p></article>)}</div></section>;
 }
@@ -268,7 +268,7 @@ function Reviews() {
 }
 
 function Closing() {
-  return <section className="relative min-h-[1440px] overflow-hidden bg-[#eee8e2] px-12 pb-40 pt-16"><Photo fill label="블랙월넛 팜레스트 세트가 완성한 우드 데스크 클로징 사진" src="/assets/void/palm-rest-set/source/duo-black-setup.webp" alt="블랙 키보드와 마우스 곁에 두 블랙월넛 팜레스트를 함께 놓은 데스크" /><Fade /><div className="relative z-10 flex min-h-[1160px] flex-col text-center"><h2 className="text-[68px] font-bold leading-[1.15]">Void Walnut Duo</h2><p className="mt-10 text-[28px] font-medium text-[#5f5a55]">두 개의 움직임, 하나의 데스크.</p></div></section>;
+  return <section className="relative min-h-[1440px] overflow-hidden bg-[#eee8e2] px-12 pb-40 pt-16"><Photo fill label="블랙월넛 팜레스트 세트가 완성한 우드 데스크 클로징 사진" src="/assets/sync-2026-10-29/void/palm-rest-set/source/duo-black-setup.webp" alt="블랙 키보드와 마우스 곁에 두 블랙월넛 팜레스트를 함께 놓은 데스크" /><Fade /><div className="relative z-10 flex min-h-[1160px] flex-col text-center"><h2 className="text-[68px] font-bold leading-[1.15]">Void Walnut Duo</h2><p className="mt-10 text-[28px] font-medium text-[#5f5a55]">두 개의 움직임, 하나의 데스크.</p></div></section>;
 }
 
 function Faq() {
@@ -276,11 +276,11 @@ function Faq() {
 }
 
 function Size() {
-  return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>사이즈</InfoTitle><Photo className="mt-24" label="키보드용 팜레스트 실측 안내" src="/assets/void/keyboard-palm-rest/size-guide.webp" alt="키보드용 팜레스트 가로 36cm 세로 8cm 안내" /><h3 className="mx-auto mt-16 max-w-[720px] text-[28px] font-bold">키보드용 팜레스트</h3><Rows rows={[["가로", "36cm"], ["세로", "8cm"], ["높이", "약 1.9cm"], ["권장 배열", "텐키리스"]]} /><Photo className="mt-24" label="마우스용 팜레스트 실측 안내" src="/assets/void/mouse-palm-rest/size-guide.webp" alt="마우스용 팜레스트 가로 16cm 세로 7.8cm 안내" /><h3 className="mx-auto mt-16 max-w-[720px] text-[28px] font-bold">마우스용 팜레스트</h3><Rows rows={[["가로", "16cm"], ["세로", "7.8cm"], ["높이", "약 2cm"], ["제품 중량", "100g"]]} /></section>;
+  return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>사이즈</InfoTitle><Photo className="mt-24" label="키보드용 팜레스트 실측 안내" src="/assets/sync-2026-10-29/void/keyboard-palm-rest/size-guide.webp" alt="키보드용 팜레스트 가로 36cm 세로 8cm 안내" /><h3 className="mx-auto mt-16 max-w-[720px] text-[28px] font-bold">키보드용 팜레스트</h3><Rows rows={[["가로", "36cm"], ["세로", "8cm"], ["높이", "약 1.9cm"], ["권장 배열", "텐키리스"]]} /><Photo className="mt-24" label="마우스용 팜레스트 실측 안내" src="/assets/sync-2026-10-29/void/mouse-palm-rest/size-guide.webp" alt="마우스용 팜레스트 가로 16cm 세로 7.8cm 안내" /><h3 className="mx-auto mt-16 max-w-[720px] text-[28px] font-bold">마우스용 팜레스트</h3><Rows rows={[["가로", "16cm"], ["세로", "7.8cm"], ["높이", "약 2cm"], ["제품 중량", "100g"]]} /></section>;
 }
 
 function Components() {
-  return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>구성품</InfoTitle><Photo className="mt-24" label="Void Walnut Duo 전체 구성품" src="/assets/void/palm-rest-set/source/duo-product-only.webp" alt="키보드용과 마우스용 블랙월넛 팜레스트 구성품" /><div className="mx-auto mt-8 grid max-w-[720px] grid-cols-2 gap-5"><div className="rounded-[22px] border border-[#e3ddd7] bg-[#faf8f6] p-6 text-center text-[23px] font-semibold">키보드용 본체 ×1</div><div className="rounded-[22px] border border-[#e3ddd7] bg-[#faf8f6] p-6 text-center text-[23px] font-semibold">마우스용 본체 ×1</div></div></section>;
+  return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>구성품</InfoTitle><Photo className="mt-24" label="Void Walnut Duo 전체 구성품" src="/assets/sync-2026-10-29/void/palm-rest-set/source/duo-product-only.webp" alt="키보드용과 마우스용 블랙월넛 팜레스트 구성품" /><div className="mx-auto mt-8 grid max-w-[720px] grid-cols-2 gap-5"><div className="rounded-[22px] border border-[#e3ddd7] bg-[#faf8f6] p-6 text-center text-[23px] font-semibold">키보드용 본체 ×1</div><div className="rounded-[22px] border border-[#e3ddd7] bg-[#faf8f6] p-6 text-center text-[23px] font-semibold">마우스용 본체 ×1</div></div></section>;
 }
 
 function ProductInfo() {

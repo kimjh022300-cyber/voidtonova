@@ -1,3 +1,4 @@
+import NovaDualMassageBarPage from "./nova-dual-massage-bar";
 import type { ComponentType } from "react";
 import VoidLaptopFixedV2Page from "./void-laptop-fixed-v2";
 import VoidLaptopPortableV2Page from "./void-laptop-portable-v2";
@@ -23,6 +24,7 @@ import NovaMassageBallSetPage from "./nova-massage-ball-set";
 
 /** 만든 상세페이지 등록표. 새 상품 만들면 여기에 한 줄 추가 */
 export const PRODUCT_DETAIL_PAGES: Record<string, ComponentType> = {
+  "nova-dual-massage-bar": NovaDualMassageBarPage,
   "void-portable-laptop-stand": VoidLaptopPortableV2Page,
   "void-fixed-laptop-stand": VoidLaptopFixedV2Page,
   "void-360-laptop-stand": VoidLaptopSwivelV2Page,

@@ -17,18 +17,18 @@ export default function VoidLaptopSwivelV2Page() {
   return (
     <BrandFrame brand="void">
       {/* 1. 제품 히어로 */}
-      <section className="relative min-h-[1500px] overflow-hidden bg-[#ece9e5]">
+      <section className="relative min-h-[1500px] overflow-hidden bg-[#e8edf3]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/assets/void/laptop-swivel/hero-swivel-sunlit-wide-v3.webp"
-          alt="햇살이 드는 책상 위에 노트북과 함께 올려진 블랙 회전형 노트북 거치대"
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          src="/assets/sync-2026-10-29/void/laptop-swivel/hero-swivel-neutral-v1.webp"
+          alt="밝은 중성 회색 배경의 빈 책상 위에 노트북과 함께 올려진 블랙 회전형 노트북 거치대"
+          className="brightness-[0.93] absolute inset-0 h-full w-full object-cover object-center scale-[1.1]"
         />
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 30%, rgba(0,0,0,0.04) 58%, rgba(0,0,0,0.78) 100%)",
+              "linear-gradient(180deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 38%, rgba(0,0,0,0) 68%, rgba(0,0,0,0.48) 100%)",
           }}
           aria-hidden
         />
@@ -44,7 +44,7 @@ export default function VoidLaptopSwivelV2Page() {
               className="mx-auto text-[41px] font-semibold leading-[1.25] tracking-[0.007em]"
               style={{
                 backgroundImage:
-                  "linear-gradient(105deg, #1d1d1f 0%, #55616a 48%, #1d1d1f 100%)",
+                  "linear-gradient(105deg, #285780 0%, #6395b8 48%, #285780 100%)",
                 WebkitBackgroundClip: "text",
                 backgroundClip: "text",
                 color: "transparent",
@@ -84,12 +84,12 @@ export default function VoidLaptopSwivelV2Page() {
       </section>
 
       {/* 히어로 직후 제품 오버뷰 */}
-      <section className="relative aspect-[3/5] overflow-hidden bg-[#eee9e3]">
+      <section className="relative aspect-[2/3] overflow-hidden bg-[#edf1f6]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/assets/void/laptop-swivel/product-overview-front-v3.webp"
-          alt="햇살이 드는 책상 위에 정면으로 펼쳐진 블랙 회전형 노트북 거치대"
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          src="/assets/sync-2026-10-29/void/laptop-swivel/product-overview-front-neutral-v1.webp"
+          alt="밝은 중성 회색 배경에 정면으로 펼쳐진 블랙 회전형 노트북 거치대"
+          className="brightness-[0.93] absolute inset-x-0 top-0 h-auto w-full"
         />
         <div className="absolute inset-x-0 top-32 z-10 px-8 text-center">
           <h2 className="text-[68px] font-bold leading-[1.05] tracking-[-0.035em]">
@@ -97,18 +97,18 @@ export default function VoidLaptopSwivelV2Page() {
               className="bg-clip-text text-transparent"
               style={{
                 backgroundImage:
-                  "linear-gradient(105deg, #111111 0%, #55555a 50%, #111111 100%)",
+                  "linear-gradient(105deg, #285780 0%, #6395b8 50%, #285780 100%)",
               }}
             >
               Void Laptop Stand
             </span>
           </h2>
-          <p className="mt-6 text-[26px] font-medium tracking-[-0.015em] text-[#4f4f53]">
+          <p className="mt-6 text-[26px] font-medium tracking-[-0.015em] text-[#3d5a6e]">
             높이와 각도, 방향까지 자유롭게.
           </p>
         </div>
         <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%]"
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[10%]"
           style={{
             background:
               "linear-gradient(180deg, rgba(245,245,247,0) 0%, rgba(245,245,247,0.72) 58%, #f5f5f7 100%)",
@@ -118,7 +118,7 @@ export default function VoidLaptopSwivelV2Page() {
       </section>
 
       {/* 히어로 직후 한눈에 보는 핵심 스펙 */}
-      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
+      <section className="bg-[#f5f5f7] px-12 pb-36 pt-12">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -132,7 +132,7 @@ export default function VoidLaptopSwivelV2Page() {
           <span
             className="bg-clip-text text-transparent"
             style={{
-              backgroundImage: "linear-gradient(90deg, #493527, #9a775d)",
+              backgroundImage: "linear-gradient(90deg, #285780, #6395b8)",
             }}
           >
             Void Laptop Stand
@@ -146,18 +146,18 @@ export default function VoidLaptopSwivelV2Page() {
             { prefix: "", value: "1", unit: "kg", label: "본체 무게" },
             { prefix: "", value: "10–17", unit: "인치", label: "호환 기기 크기" },
             { prefix: "", value: "5–30", unit: "cm", label: "높이 조절 범위" },
-            { prefix: "", value: "24×21", unit: "cm", label: "베이스 크기" },
+            { prefix: "", value: "24×19", unit: "cm", label: "베이스 크기" },
           ].map(({ prefix, value, unit, label }) => (
             <div
               key={label}
-              className="flex flex-col items-center justify-center rounded-[28px] bg-white px-8 py-16 text-center"
+              className="flex flex-col items-center justify-center rounded-[20px] border border-[#dbe5ed] bg-white px-8 py-16 text-center"
             >
               <p
                 className={`inline-flex h-[84px] w-full items-baseline justify-center whitespace-nowrap text-center font-bold leading-none tracking-[-0.03em] ${
                   value.length >= 6 ? "text-[48px]" : "text-[76px]"
                 }`}
                 style={{
-                  backgroundImage: "linear-gradient(90deg, #493527, #9a775d)",
+                  backgroundImage: "linear-gradient(90deg, #285780, #6395b8)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -187,13 +187,127 @@ export default function VoidLaptopSwivelV2Page() {
         </div>
       </section>
 
+      {/* 제품 포커스 — 구조와 실루엣 */}
+      <section
+        className="px-12 py-40"
+        style={{
+          background: "linear-gradient(180deg, #f5f5f7 0%, #ffffff 320px)",
+        }}
+      >
+        <p className="text-[21px] font-bold tracking-[0.14em] text-[#35658b]">
+          FORM FOLLOWS FUNCTION
+        </p>
+        <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em] text-[#1d1d1f]">
+          필요한 기능만,
+          <br />
+          <span
+            className="bg-clip-text text-transparent"
+            style={{ backgroundImage: "linear-gradient(90deg, #285780, #6395b8)" }}
+          >
+            단단하게 담았습니다.
+          </span>
+        </h2>
+        <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/sync-2026-10-29/void/laptop-swivel/product-focus-neutral-v1.webp"
+            alt="밝은 중성 회색 배경에서 받침판과 관절 구조가 선명하게 보이는 블랙 회전형 노트북 거치대"
+            className="brightness-[0.93] h-full w-full object-cover"
+          />
+        </div>
+        <div className="mt-16 grid grid-cols-3 gap-5">
+          {[
+            ["넓은 받침판", "넓게 받치는 오픈형 구조", "border-[#dbe5ed] bg-[#f5f8fb]"],
+            ["듀얼 암", "높이와 각도를 단단히 유지", "border-[#ccdfed] bg-[#eaf3fa]"],
+            ["회전 베이스", "제자리에서 방향 전환", "border-[#bad4e8] bg-[#dcecf8]"],
+          ].map(([title, body, tone], index) => (
+            <article
+              key={title}
+              className={`rounded-[26px] border px-6 py-8 ${tone}`}
+            >
+              <p className="text-[18px] font-bold tracking-[0.1em] text-[#35658b]">
+                0{index + 1}
+              </p>
+              <h3 className="mt-5 text-[25px] font-bold leading-[1.3] text-[#1d1d1f]">
+                {title}
+              </h3>
+              <p className="mt-4 text-[18px] font-medium leading-[1.55] text-[#3d5a6e]">
+                {body}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* 자세 비교 — 기존 사진의 위·아래 장면을 좌우 카드로 표시 */}
+      <section className="bg-white px-12 py-24">
+        <h2 className="whitespace-nowrap text-center text-[58px] font-bold leading-[1.16] tracking-[-0.03em] text-[#1d1d1f]">
+          높이가 달라지면, 자세도 달라집니다.
+        </h2>
+        <div className="mt-16 grid grid-cols-2 gap-6">
+          {[
+            { key: "BEFORE", title: "책상에 바로 놓았을 때", body: "낮은 화면을 향해 내려가는 시선", position: "top-0", tone: "border-[#e2e5e9] bg-[#f8f9fa]" },
+            { key: "AFTER", title: "거치대로 높였을 때", body: "눈높이에 가까워진 화면", position: "bottom-0", tone: "border-[#bad4e8] bg-[#e8f4fb]" },
+          ].map(({ key, title, body, position, tone }) => (
+            <article key={key} className={`rounded-[24px] border p-5 ${tone}`}>
+              <p className="text-[18px] font-bold tracking-[0.12em] text-[#35658b]">
+                {key}
+              </p>
+              <div className="relative mt-6 aspect-[8/5] overflow-hidden rounded-[18px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/sync-2026-10-29/void/laptop-swivel/posture-neutral-v1.webp"
+                  alt={title}
+                  className={`absolute inset-x-0 ${position} h-[200%] w-full object-cover brightness-[0.93]`}
+                />
+              </div>
+              <h3 className="mt-6 text-[25px] font-bold leading-[1.3] tracking-[-0.025em] text-[#1d1d1f]">
+                {title}
+              </h3>
+              <p className="mt-3 text-[19px] font-medium leading-[1.5] text-[#6e6e73]">
+                {body}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* 기능 + 스토리 */}
+      <section className="bg-white px-12 pb-0 pt-[8.8rem]">
+        <div className="flex flex-col gap-48">
+          <FeatureBlock
+            title={
+              <>
+                360°로 도는
+                <br />
+                자유로운 시선.
+              </>
+            }
+            imageSrc="/assets/sync-2026-10-29/void/laptop-swivel/rotation-360-neutral-v1.webp"
+            imageZoom={1.08}
+            imageAlt="회전 베이스 위에 360도 회전 방향이 표시된 노트북 거치대"
+            bodyAfterImage
+            supporting={
+              <FeatureSupport
+                items={[
+                  ["360°", "원하는 방향으로 자유 회전"],
+                  ["제자리", "노트북을 들지 않고 화면 공유"],
+                ]}
+              />
+            }
+          >
+            360° 자유 회전으로 화면을 원하는 방향으로 부드럽게 돌릴 수
+            있습니다. 노트북을 들어 옮기지 않아도 혼자 작업할 때는 물론,
+            회의와 협업까지 더욱 자연스럽게 이어집니다.
+          </FeatureBlock>
+
       {/* 책상 위 직접 사용 비교 */}
-      <section className="bg-white px-12 pb-36 pt-36">
+      <section className="bg-white">
         <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.03em]">
           <span
             className="bg-clip-text text-transparent"
             style={{
-              backgroundImage: "linear-gradient(90deg, #493527, #9a775d)",
+              backgroundImage: "linear-gradient(90deg, #285780, #6395b8)",
             }}
           >
             Void Laptop Stand
@@ -201,7 +315,7 @@ export default function VoidLaptopSwivelV2Page() {
           <br />
           <span className="text-[61px]">나에게 맞는 이유.</span>
         </h2>
-        <div className="mt-20 overflow-hidden rounded-[28px] border border-[#d2d2d7] bg-white">
+        <div className="mt-20 overflow-hidden rounded-[20px] border border-[#d2d2d7] bg-white">
           <table className="w-full table-fixed border-collapse text-center">
             <caption className="sr-only">
               책상 위에 노트북을 직접 놓고 사용할 때와 Void Laptop Stand 사용 비교
@@ -216,7 +330,7 @@ export default function VoidLaptopSwivelV2Page() {
                   <br />
                   직접 사용
                 </th>
-                <th className="border-l border-[#d2d2d7] bg-[#f3ebe4] px-4 py-7 text-[24px] font-bold leading-tight text-[#6b513f]">
+                <th className="border-l border-[#d2d2d7] bg-[#e8f4fb] px-4 py-7 text-[24px] font-bold leading-tight text-[#35658b]">
                   Void
                   <br />
                   Laptop Stand
@@ -238,7 +352,7 @@ export default function VoidLaptopSwivelV2Page() {
                   <td className="border-l border-[#d2d2d7] px-4 py-8 text-[21px] font-semibold leading-snug text-[#86868b]">
                     {desk}
                   </td>
-                  <td className="border-l border-[#d2d2d7] bg-[#f8f3ef] px-4 py-8 text-[22px] font-bold leading-snug text-[#6b513f]">
+                  <td className="border-l border-[#d2d2d7] bg-[#eef7ff] px-4 py-8 text-[22px] font-bold leading-snug text-[#35658b]">
                     {stand}
                   </td>
                 </tr>
@@ -248,148 +362,9 @@ export default function VoidLaptopSwivelV2Page() {
         </div>
       </section>
 
-      {/* 제품 포커스 — 구조와 실루엣 */}
-      <section className="overflow-hidden bg-white px-12 py-40 text-center">
-        <p className="text-[20px] font-bold tracking-[0.14em] text-[#8a6246]">
-          FORM FOLLOWS FUNCTION
-        </p>
-        <h2 className="mt-8 text-[64px] font-bold leading-[1.15] tracking-[-0.035em] text-[#1d1d1f]">
-          필요한 기능만,
-          <br />
-          단단하게 담았습니다.
-        </h2>
-        <p className="mx-auto mt-8 max-w-[690px] text-[27px] font-medium leading-[1.65] text-[#6e6e73]">
-          넓은 받침판과 듀얼 암, 회전 베이스.
-          <br />
-          매일 쓰는 구조만 남겨 하나의 단정한 실루엣으로 완성했습니다.
-        </p>
-        <div className="mx-auto mt-20 flex aspect-[3/4] max-w-[780px] items-center justify-center overflow-hidden rounded-[32px] border border-[#e5e5e7] bg-white shadow-[0_18px_50px_rgba(0,0,0,0.06)]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/assets/void/laptop-swivel/product-focus-sunlit-v4.webp"
-            alt="햇살이 드는 책상 위에 펼쳐진 블랙 회전형 노트북 거치대"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="mt-8 grid grid-cols-3 gap-5">
-          {[
-            ["넓은 받침판", "기기를 넓게 받치는 오픈형 구조"],
-            ["듀얼 암", "높이와 각도를 단단히 유지"],
-            ["회전 베이스", "본체를 옮기지 않고 방향 전환"],
-          ].map(([title, body]) => (
-            <div
-              key={title}
-              className="rounded-[24px] border border-[#e5ddd6] bg-white/80 px-5 py-8"
-            >
-              <p className="text-[24px] font-bold text-[#1d1d1f]">{title}</p>
-              <p className="mt-3 text-[18px] font-medium leading-[1.5] text-[#6e6e73]">
-                {body}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 작업 흐름에 맞는 세 가지 모드 */}
-      <section className="bg-white px-12 py-36">
-        <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.03em] text-[#1d1d1f]">
-          한 대로 이어지는,
-          <br />
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "linear-gradient(90deg, #493527, #9a775d)",
-            }}
-          >
-            세 가지 작업 모드.
-          </span>
-        </h2>
-        <p className="mx-auto mt-8 max-w-[680px] text-center text-[25px] font-medium leading-[1.6] text-[#6e6e73]">
-          노트북을 옮기지 않고 높이와 각도, 방향만 바꾸어
-          집중부터 공유까지 자연스럽게 전환합니다.
-        </p>
-        <div className="mt-20 grid grid-cols-3 gap-5">
-          {[
-            ["01", "집중 모드", "정면으로 단단하게", "타이핑 · 문서 작업"],
-            ["02", "공유 모드", "화면만 360° 회전", "회의 · 협업"],
-            ["03", "시청 모드", "높이와 각도를 편안하게", "영상 · 화상 통화"],
-          ].map(([step, title, position, use], index) => (
-            <article
-              key={step}
-              className="rounded-[28px] border border-[#dfe5e9] px-5 py-9 text-center"
-              style={{
-                backgroundColor:
-                  index === 0 ? "#fbfaf8" : index === 1 ? "#f4eee8" : "#ede3da",
-              }}
-            >
-              <p className="text-[19px] font-bold tracking-[0.1em] text-[#8a6246]">
-                {step}
-              </p>
-              <h3 className="mt-5 text-[29px] font-bold text-[#1d1d1f]">
-                {title}
-              </h3>
-              <p className="mt-7 text-[20px] font-semibold leading-[1.45] text-[#493527]">
-                {position}
-              </p>
-              <div className="mx-auto mt-7 h-px w-12 bg-[#bca58f]" />
-              <p className="mt-6 text-[17px] font-medium text-[#6e6e73]">
-                {use}
-              </p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {/* 기능 + 스토리 */}
-      <section className="bg-white px-12 pb-36 pt-[8.8rem]">
-        <div className="flex flex-col gap-48">
           <FeatureBlock
-            title={
-              <>
-                360°로 도는
-                <br />
-                자유로운 시선.
-              </>
-            }
-            imageSrc="/assets/void/laptop-swivel/rotation-360-sunlit-v3.webp"
-            imageAlt="회전 베이스 위에 360도 회전 방향이 표시된 노트북 거치대"
-            bodyAfterImage
-            supporting={
-              <FeatureSupport
-                items={[
-                  ["360°", "원하는 방향으로 자유 회전"],
-                  ["제자리", "노트북을 들지 않고 화면 공유"],
-                ]}
-              />
-            }
-          >
-            360° 자유 회전으로 화면을 원하는 방향으로 부드럽게 돌릴 수
-            있습니다. 노트북을 들어 옮기지 않아도 혼자 작업할 때는 물론,
-            회의와 협업까지 더욱 자연스럽게 이어집니다.
-          </FeatureBlock>
-
-          <FeatureBlock
-            title="여기에, 편안한 자세까지."
-            imageSrc="/assets/void/laptop-portable/posture.webp"
-            imageAlt="거치대 사용 전후 자세 비교"
-            bodyAfterImage
-            supporting={
-              <FeatureSupport
-                items={[
-                  ["BEFORE", "낮은 화면을 향하는 시선"],
-                  ["AFTER", "눈높이에 가까워진 화면"],
-                ]}
-              />
-            }
-          >
-            화면을 눈높이에 가깝게 올리는 것만으로도 시선은 자연스러워지고, 목과
-            어깨의 부담은 줄어듭니다. 작은 높이의 차이가 더욱 편안한 작업
-            환경을 만들어줍니다.
-          </FeatureBlock>
-
-          <FeatureBlock
-            title="높이와 각도도 자유롭죠."
-            imageSrc="/assets/void/laptop-swivel/height-angle-stages-sunlit-v3.webp"
+            title="내 눈높이에 맞춰, 높이도 각도도."
+            imageSrc="/assets/sync-2026-10-29/void/laptop-swivel/height-angle-stages-neutral-v1.webp"
             imageAlt="낮은 위치부터 높은 위치까지 노트북 거치대의 높이와 각도 조절 단계"
             bodyAfterImage
             supporting={
@@ -409,8 +384,9 @@ export default function VoidLaptopSwivelV2Page() {
           </FeatureBlock>
 
           <FeatureBlock
-            title="흔들림 없는 안정감."
-            imageSrc="/assets/void/laptop-swivel/weight-1000g-sunlit-v3.webp"
+            title="묵직한 바디로, 단단하게 받치다."
+            imageSrc="/assets/sync-2026-10-29/void/laptop-swivel/weight-1000g-neutral-v1.webp"
+            imageZoom={1.08}
             imageAlt="전자저울 위에서 1000g으로 측정된 회전형 노트북 거치대"
             bodyAfterImage
             supporting={
@@ -423,14 +399,14 @@ export default function VoidLaptopSwivelV2Page() {
             }
             afterImage={
               <div
-                className="mt-16 w-full overflow-hidden rounded-[28px]"
+                className="mt-16 w-full overflow-hidden rounded-[20px]"
                 style={{ aspectRatio: "3 / 4" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-swivel/load-test-sunlit-v3.webp"
+                  src="/assets/sync-2026-10-29/void/laptop-swivel/load-test-neutral-v1.webp"
                   alt="여러 대의 노트북 하중을 지지하는 회전형 노트북 거치대"
-                  className="h-full w-full object-cover"
+                  className="brightness-[0.93] h-full w-full object-cover scale-[1.08]"
                 />
               </div>
             }
@@ -443,12 +419,10 @@ export default function VoidLaptopSwivelV2Page() {
           <FeatureBlock
             title={
               <>
-                성능을 유지하는
-                <br />
-                가장 단순한 방법.
+                열이 빠져나갈 공간까지.
               </>
             }
-            imageSrc="/assets/void/laptop-swivel/cooling-airflow-sunlit-v3.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-swivel/cooling-airflow-neutral-v1.webp"
             imageAlt="노트북 하단의 열을 빼내는 공기 흐름이 표시된 회전형 노트북 거치대"
             bodyAfterImage
             supporting={
@@ -473,7 +447,7 @@ export default function VoidLaptopSwivelV2Page() {
                 섬세한 디테일.
               </>
             }
-            imageSrc="/assets/void/laptop-swivel/silicone-protection-sunlit-v3.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-swivel/silicone-protection-neutral-v1.webp"
             imageAlt="노트북이 닿는 실리콘 보호 부위를 표시한 회전형 노트북 거치대"
             aspect="3 / 4"
             bodyAfterImage
@@ -494,8 +468,25 @@ export default function VoidLaptopSwivelV2Page() {
           </FeatureBlock>
 
           <FeatureBlock
+            title={
+              <>
+                책상과 닿는 바닥까지,
+                <br />
+                미끄러짐을 줄인 설계.
+              </>
+            }
+            imageSrc="/assets/sync-2026-10-29/void/laptop-swivel/underside-neutral-v1.webp"
+            imageAlt="거치대 바닥 네 모서리의 원형 미끄럼 방지 패드"
+            aspect="3 / 4"
+            bodyAfterImage
+          >
+            바닥 네 모서리에 미끄럼 방지 패드를 더했습니다.
+            책상 위에서 밀리는 움직임과 바닥의 직접적인 마찰을 줄여줍니다.
+          </FeatureBlock>
+
+          <FeatureBlock
             title="태블릿부터 노트북까지."
-            imageSrc="/assets/void/laptop-swivel/tablet-compatibility-sunlit-v3.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-swivel/tablet-compatibility-neutral-v1.webp"
             imageAlt="회전형 거치대에 태블릿을 가로로 올려 영상을 시청하는 모습"
             bodyAfterImage
             supporting={
@@ -508,14 +499,14 @@ export default function VoidLaptopSwivelV2Page() {
             }
             afterImage={
               <div
-                className="mt-16 w-full overflow-hidden rounded-[28px]"
+                className="mt-16 w-full overflow-hidden rounded-[20px]"
                 style={{ aspectRatio: "3 / 4" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-swivel/laptop-compatibility-sunlit-v3.webp"
+                  src="/assets/sync-2026-10-29/void/laptop-swivel/laptop-compatibility-neutral-v1.webp"
                   alt="회전형 거치대에 노트북을 올려 작업하는 모습"
-                  className="h-full w-full object-cover"
+                  className="brightness-[0.93] h-full w-full object-cover"
                 />
               </div>
             }
@@ -525,34 +516,152 @@ export default function VoidLaptopSwivelV2Page() {
             사용부터 집중이 필요한 작업까지 폭넓게 함께합니다.
           </FeatureBlock>
 
-          <FeatureBlock
-            title="데스크를 완성하는 블랙."
-            imageSrc="/assets/void/laptop-swivel/black-desk-sunlit-v3.webp"
-            imageAlt="블랙 조명과 컵이 놓인 책상 위의 블랙 회전형 노트북 거치대"
-            bodyAfterImage
-            afterImage={
-              <div
-                className="mt-16 w-full overflow-hidden rounded-[28px]"
-                style={{ aspectRatio: "4 / 3" }}
+          {/* 작업 흐름에 맞는 세 가지 모드 */}
+          <section className="bg-white">
+            <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.03em] text-[#1d1d1f]">
+              한 대로 이어지는,
+              <br />
+              <span
+                className="bg-clip-text text-transparent"
+                style={{
+                  backgroundImage: "linear-gradient(90deg, #285780, #6395b8)",
+                }}
               >
+                세 가지 작업 모드.
+              </span>
+            </h2>
+            <p className="mx-auto mt-8 max-w-[680px] text-center text-[25px] font-medium leading-[1.6] text-[#6e6e73]">
+              노트북을 옮기지 않고 높이와 각도, 방향만 바꾸어
+              집중부터 공유까지 자연스럽게 전환합니다.
+            </p>
+            <div className="mt-20 grid grid-cols-3 gap-5">
+              {[
+                ["01", "집중 모드", "정면으로 단단하게", "타이핑 · 문서 작업"],
+                ["02", "공유 모드", "화면만 360° 회전", "회의 · 협업"],
+                ["03", "시청 모드", "높이와 각도를 편안하게", "영상 · 화상 통화"],
+              ].map(([step, title, position, use], index) => (
+                <article
+                  key={step}
+                  className="rounded-[20px] border border-[#dbe5ed] px-5 py-9 text-center"
+                  style={{
+                    backgroundColor:
+                      index === 0 ? "#f5f8fb" : index === 1 ? "#eaf3fa" : "#dcecf8",
+                  }}
+                >
+                  <p className="text-[19px] font-bold tracking-[0.1em] text-[#35658b]">
+                    {step}
+                  </p>
+                  <h3 className="mt-5 text-[29px] font-bold text-[#1d1d1f]">
+                    {title}
+                  </h3>
+                  <p className="mt-7 text-[20px] font-semibold leading-[1.45] text-[#35658b]">
+                    {position}
+                  </p>
+                  <div className="mx-auto mt-7 h-px w-12 bg-[#bad4e8]" />
+                  <p className="mt-6 text-[17px] font-medium text-[#6e6e73]">
+                    {use}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* 블랙의 형태 — 세 섹션을 하나의 챕터로 연결 */}
+          <div
+            className="-mx-12"
+            style={{
+              background:
+                "linear-gradient(180deg, #ffffff 0%, #f5f6f7 5%, #f5f6f7 95%, #ffffff 100%)",
+            }}
+          >
+            <section className="px-12 py-40">
+              <p className="text-[21px] font-bold tracking-[0.14em] text-[#35658b]">
+                BLACK IN FORM
+              </p>
+              <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em] text-[#1d1d1f]">
+                데스크를 완성하는,
+                <br />
+                <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(90deg, #285780, #6395b8)" }}>
+                  단정한 블랙.
+                </span>
+              </h2>
+              <div className="mt-24 aspect-[3/4] overflow-hidden rounded-[28px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-swivel/black-desk-working-sunlit-v3.webp"
-                  alt="블랙 회전형 노트북 거치대를 사용해 책상에서 타이핑하는 모습"
-                  className="h-full w-full object-cover"
+                  src="/assets/sync-2026-10-29/void/laptop-swivel/black-desk-neutral-v1.webp"
+                  alt="밝은 중성 회색 책상 위의 블랙 회전형 노트북 거치대"
+                  className="brightness-[0.93] h-full w-full object-cover"
                 />
               </div>
-            }
-          >
-            고급스러운 블랙 컬러가 어떤 공간에도 자연스럽게 어우러집니다.
-            단순한 거치대를 넘어, 작업 공간의 완성도를 높여주는 하나의
-            오브제로 자리합니다.
-          </FeatureBlock>
+              <p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">
+                넓은 받침판과 두 개의 지지대, 낮게 자리한 회전 베이스.
+                단정한 블랙 실루엣이 매일 사용하는 작업 공간에 자연스럽게 어우러집니다.
+              </p>
+            </section>
+
+            <section className="px-12 py-40">
+              <p className="text-[21px] font-bold tracking-[0.14em] text-[#35658b]">
+                FOLDED FORM
+              </p>
+              <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em] text-[#1d1d1f]">
+                쓰지 않을 때는,
+                <br />
+                <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(90deg, #285780, #6395b8)" }}>
+                  낮고 간결하게.
+                </span>
+              </h2>
+              <div className="mt-24 aspect-[3/4] overflow-hidden rounded-[28px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/sync-2026-10-29/void/laptop-swivel/folding-top-neutral-v1.webp"
+                  alt="지지대를 접어 받침판 아래로 정리한 거치대의 정면 모습"
+                  className="brightness-[0.93] h-full w-full object-cover"
+                />
+              </div>
+              <p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">
+                사용을 마치면 지지대를 접어 낮은 형태로 정리할 수 있습니다.
+                펼쳤을 때의 구조를 받침판 아래에 담아, 보관할 때도 단정합니다.
+              </p>
+            </section>
+
+            <section className="px-12 pb-[140px] pt-40">
+              <p className="text-[21px] font-bold tracking-[0.14em] text-[#35658b]">
+                ADJUST TO YOUR DAY
+              </p>
+              <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em] text-[#1d1d1f]">
+                펼치고, 낮추고,
+                <br />
+                <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(90deg, #285780, #6395b8)" }}>
+                  필요한 모습으로.
+                </span>
+              </h2>
+              <div className="mt-24 grid grid-cols-2 gap-6">
+                {[
+                  ["펼쳤을 때", "/assets/sync-2026-10-29/void/laptop-swivel/angle-raised-neutral-v1.webp", "지지대를 펼쳐 높인 거치대의 측면"],
+                  ["접었을 때", "/assets/sync-2026-10-29/void/laptop-swivel/angle-folded-neutral-v1.webp", "지지대를 낮게 접은 거치대의 측면"],
+                ].map(([label, image, alt]) => (
+                  <figure key={label}>
+                    <div className="aspect-square overflow-hidden rounded-[24px]">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={image} alt={alt} className="brightness-[0.93] h-full w-full object-cover" />
+                    </div>
+                    <figcaption className="mt-6 text-center text-[24px] font-semibold text-[#3d5a6e]">
+                      {label}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+              <p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">
+                작업할 때는 높이와 각도를 맞추고, 쉬어갈 때는 낮게 접어두세요.
+                두 관절을 움직여 사용과 보관에 맞는 형태로 바꿀 수 있습니다.
+              </p>
+            </section>
+          </div>
         </div>
       </section>
 
       {/* [신규] 사용 상황 — 회전이 필요한 순간들 */}
-      <section className="bg-white px-12 pb-36 pt-32">
+      <section className="bg-white px-12 pb-36 pt-[140px]">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -575,35 +684,35 @@ export default function VoidLaptopSwivelV2Page() {
             {
               scene: "옆자리 동료에게",
               line: "자료를 보여줄 때 노트북을 들지 않습니다. 손끝으로 돌리면 끝입니다.",
-              imageSrc: "/assets/void/laptop-swivel/colleague-share.webp",
+              imageSrc: "/assets/sync-2026-10-29/void/laptop-swivel/colleague-share-neutral-v1.webp",
               imageAlt: "옆자리 동료 쪽으로 화면을 돌려 보여주는 모습",
               photo: null,
             },
             {
               scene: "고객 앞에서",
               line: "마주 앉은 채로 화면만 넘겨 보여주세요. 자리를 옮길 필요가 없습니다.",
-              imageSrc: "/assets/void/laptop-swivel/client-share.webp",
+              imageSrc: "/assets/sync-2026-10-29/void/laptop-swivel/client-share-neutral-v1.webp",
               imageAlt: "마주 앉은 상대에게 화면을 돌려 설명하는 모습",
               photo: null,
             },
             {
               scene: "둘이서 볼 때",
               line: "가운데 두고 각도만 맞추면 두 사람 모두 편한 시선이 나옵니다.",
-              imageSrc: "/assets/void/laptop-swivel/together-view.webp",
+              imageSrc: "/assets/sync-2026-10-29/void/laptop-swivel/together-view-neutral-v1.webp",
               imageAlt: "두 사람이 함께 화면을 보는 모습",
               photo: null,
             },
             {
               scene: "혼자 집중할 때",
               line: "정면으로 돌려 두면 그냥 단단한 거치대입니다. 흔들림도 없고요.",
-              imageSrc: "/assets/void/laptop-swivel/solo-focus.webp",
+              imageSrc: "/assets/sync-2026-10-29/void/laptop-swivel/solo-focus-neutral-v1.webp",
               imageAlt: "정면 거치 상태로 혼자 작업하는 모습",
               photo: null,
             },
           ].map(({ scene, line, imageSrc, imageAlt, photo }) => (
             <div key={scene}>
               <div
-                className="flex w-full items-center justify-center overflow-hidden rounded-[24px] bg-[#f5f5f7]"
+                className="flex w-full items-center justify-center overflow-hidden rounded-[16px] bg-[#f5f5f7]"
                 style={{ aspectRatio: "4 / 5" }}
               >
                 {imageSrc ? (
@@ -616,7 +725,7 @@ export default function VoidLaptopSwivelV2Page() {
                 ) : (
                   <span
                     className="px-6 text-center text-[19px] font-medium leading-[1.5]"
-                    style={{ color: "#b8b8bd" }}
+                    style={{ color: "#94a3b8" }}
                   >
                     {photo}
                   </span>
@@ -670,7 +779,7 @@ export default function VoidLaptopSwivelV2Page() {
           ].map(({ Icon, title, body }) => (
             <div key={title} className="flex gap-6">
               <Icon
-                className="mt-1 h-12 w-12 shrink-0 text-[#8a6246]"
+                className="mt-1 h-12 w-12 shrink-0 text-[#0071e3]"
                 strokeWidth={2}
                 aria-hidden
               />
@@ -697,23 +806,23 @@ export default function VoidLaptopSwivelV2Page() {
       <section className="bg-white px-10 pb-32 pt-40">
         <div className="mx-auto max-w-[780px]">
           <div
-            className="flex items-center justify-center gap-4 text-[#3d5a6e]"
+            className="flex items-center justify-center gap-4 text-[#d4a62a]"
             aria-label="별점 5점, 평점 5.0"
           >
-            <p className="text-[34px] font-bold tracking-[-0.02em] text-[#1d1d1f]">5.0</p>
-            <p className="text-[36px] font-bold tracking-[0.12em] text-[#F5B700]">★★★★★</p>
+            <p className="text-[34px] font-bold tracking-[-0.02em] text-[#20252b]">5.0</p>
+            <p className="text-[36px] font-bold tracking-[0.12em] text-[#d4a62a]">★★★★★</p>
           </div>
           <h2
             className="mt-6 text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
             style={{
-              color: "#1d1d1f",
+              color: "#20252b",
               fontFamily:
                 '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
             }}
           >
             실제 구매자들의 솔직한 후기
           </h2>
-          <p className="mt-5 text-center text-[22px] font-medium text-[#6e6e73]">
+          <p className="mt-5 text-center text-[22px] font-medium text-[#5f6670]">
             먼저 사용해 본 분들의 솔직한 후기입니다.
           </p>
 
@@ -726,16 +835,16 @@ export default function VoidLaptopSwivelV2Page() {
             ].map((review) => (
               <article
                 key={review}
-                className="rounded-[28px] border border-[#e5ddd6] bg-[#faf7f3] px-8 py-8"
+                className="rounded-[20px] border border-[#e5e7eb] bg-[#f8f9fa] px-8 py-8"
               >
                 <div className="flex items-center justify-between gap-4">
                   <div className="flex items-center gap-3">
-                    <p className="text-[24px] font-bold text-[#1d1d1f]">5.0</p>
-                    <p className="text-[24px] font-bold tracking-[0.08em] text-[#F5B700]">★★★★★</p>
+                    <p className="text-[24px] font-bold text-[#20252b]">5.0</p>
+                    <p className="text-[24px] font-bold tracking-[0.08em] text-[#d4a62a]">★★★★★</p>
                   </div>
-                  <p className="text-[18px] font-medium text-[#86868b]">네이버 구매 고객</p>
+                  <p className="text-[18px] font-medium text-[#858b93]">네이버 구매 고객</p>
                 </div>
-                <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#6e6e73]">
+                <p className="mt-6 text-[24px] font-medium leading-[1.6] tracking-[-0.01em] text-[#5f6670]">
                   {review}
                 </p>
               </article>
@@ -748,9 +857,9 @@ export default function VoidLaptopSwivelV2Page() {
       <section className="relative min-h-[1500px] overflow-hidden bg-white text-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/assets/void/laptop-swivel/product-overview-light-v1.webp"
-          alt="밝은 홈오피스 데스크 위의 Void 회전형 노트북 거치대"
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          src="/assets/sync-2026-10-29/void/laptop-swivel/closing-neutral-v1.webp"
+          alt="밝은 중성 회색 배경에 놓인 Void 회전형 노트북 거치대"
+          className="brightness-[0.93] absolute inset-0 h-full w-full object-cover object-center"
         />
         <div
           className="pointer-events-none absolute inset-x-0 top-0 h-[48%]"
@@ -764,7 +873,7 @@ export default function VoidLaptopSwivelV2Page() {
           className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%]"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,14,16,0) 0%, rgba(12,14,16,0.82) 100%)",
+              "linear-gradient(180deg, rgba(12,14,16,0) 0%, rgba(12,14,16,0.48) 100%)",
           }}
           aria-hidden
         />
@@ -777,7 +886,7 @@ export default function VoidLaptopSwivelV2Page() {
               그 자리에서, 360°
             </h2>
             <p
-              className="mx-auto mt-8 max-w-[690px] text-[27px] font-medium leading-[1.55] tracking-[-0.01em] text-[#4a4a4f]"
+              className="mx-auto mt-8 max-w-[690px] text-[27px] font-medium leading-[1.55] tracking-[-0.01em] text-[#3d5a6e]"
               style={{ textShadow: "0 1px 18px rgba(255,255,255,0.82)" }}
             >
               화면을 보여주려고 노트북을 들어 올리지 않아도 됩니다.
@@ -793,7 +902,7 @@ export default function VoidLaptopSwivelV2Page() {
               Void Laptop Stand
             </p>
             <p
-              className="mt-3 text-[28px] font-normal leading-snug tracking-[-0.01em] text-[#f0e4d8]"
+              className="mt-3 text-[28px] font-normal leading-snug tracking-[-0.01em] text-[#dce8f7]"
               style={{ textShadow: "0 2px 14px rgba(0,0,0,0.92)" }}
             >
               회전, 그 이상의 자유.
@@ -900,12 +1009,12 @@ export default function VoidLaptopSwivelV2Page() {
         </h2>
 
         <div
-          className="mx-auto mt-24 flex max-w-[780px] items-center justify-center overflow-hidden rounded-[28px] px-6 py-10"
+          className="mx-auto mt-24 flex max-w-[780px] items-center justify-center overflow-hidden rounded-[20px] px-6 py-10"
           style={{ backgroundColor: "#f5f5f7" }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/laptop-swivel/size.webp"
+            src="/assets/sync-2026-10-29/void/laptop-swivel/size.webp"
             alt="Laptop Stand 사이즈"
             className="block h-auto w-full"
           />
@@ -929,16 +1038,16 @@ export default function VoidLaptopSwivelV2Page() {
           {[
             {
               label: "회전형 거치대 본체 x1",
-              src: "/assets/void/laptop-swivel/package-contents-studio-v2.webp",
+              src: "/assets/sync-2026-10-29/void/laptop-swivel/package-contents-studio-v2.webp",
             },
           ].map(({ label, src }) => (
             <li key={label} className="mx-auto w-full max-w-[780px] text-center">
-              <div className="flex items-center justify-center overflow-hidden rounded-[28px] bg-white px-6 py-10">
+              <div className="flex items-center justify-center overflow-hidden rounded-[20px] bg-white px-6 py-10">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={src}
                   alt={label}
-                  className="h-auto w-full origin-center object-contain"
+                  className="brightness-[0.93] h-auto w-full origin-center object-contain"
                   style={{
                     transform: "scale(1.2)",
                     maxHeight: 560,
@@ -1173,7 +1282,7 @@ function PhotoSlot({
 }) {
   return (
     <div
-      className="mt-16 flex w-full items-center justify-center overflow-hidden rounded-[28px]"
+      className="mt-16 flex w-full items-center justify-center overflow-hidden rounded-[20px]"
       style={{ aspectRatio: aspect, backgroundColor: "#f5f5f7" }}
     >
       {imageSrc ? (
@@ -1181,12 +1290,12 @@ function PhotoSlot({
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="h-full w-full object-cover"
+          className="brightness-[0.93] h-full w-full object-cover"
         />
       ) : (
         <span
           className="px-10 text-center text-[22px] font-medium"
-          style={{ color: "#b8b8bd" }}
+          style={{ color: "#94a3b8" }}
         >
           {label}
         </span>
@@ -1202,6 +1311,7 @@ function FeatureBlock({
   imageAlt = "",
   aspect = "3 / 4",
   imageScale,
+  imageZoom,
   framePy,
   noBackground = false,
   hideImage = false,
@@ -1216,6 +1326,7 @@ function FeatureBlock({
   imageAlt?: string;
   aspect?: string;
   imageScale?: number;
+  imageZoom?: number;
   framePy?: number;
   noBackground?: boolean;
   hideImage?: boolean;
@@ -1240,7 +1351,7 @@ function FeatureBlock({
 
   const image = !hideImage ? (
     <div
-      className={`mt-24 w-full rounded-[28px] ${
+      className={`mt-24 w-full rounded-[20px] ${
         !imageSrc && photoLabel ? "flex items-center justify-center" : ""
       }`}
       style={{
@@ -1257,14 +1368,20 @@ function FeatureBlock({
           src={imageSrc}
           alt={imageAlt}
           className={
-            framePy ? "mx-auto block w-full" : "h-full w-full object-cover"
+            framePy
+              ? "mx-auto block w-full brightness-[0.93]"
+              : "h-full w-full object-cover brightness-[0.93]"
           }
-          style={imageScale ? { transform: `scale(${imageScale})` } : undefined}
+          style={
+            imageScale || imageZoom
+              ? { transform: `scale(${imageScale ?? imageZoom})` }
+              : undefined
+          }
         />
       ) : photoLabel ? (
         <span
           className="px-10 text-center text-[22px] font-medium"
-          style={{ color: "#b8b8bd" }}
+          style={{ color: "#94a3b8" }}
         >
           {photoLabel}
         </span>
@@ -1276,10 +1393,10 @@ function FeatureBlock({
     <div>
       <div
         className="flex h-[72px] w-[72px] items-center justify-center rounded-full"
-        style={{ border: "3px solid #8a6246" }}
+        style={{ border: "3px solid #0071e3" }}
         aria-hidden
       >
-        <Check className="h-9 w-9 text-[#8a6246]" strokeWidth={3.5} />
+        <Check className="h-9 w-9 text-[#0071e3]" strokeWidth={3.5} />
       </div>
 
       <h3
@@ -1325,7 +1442,7 @@ function FeatureSupport({
       {items.map(([value, label]) => (
         <div
           key={`${value}-${label}`}
-          className="rounded-[24px] border border-[#e5ddd6] bg-[#faf7f3] px-5 py-8 text-center"
+          className="rounded-[16px] border border-[#dbe5ed] bg-[#f5f8fb] px-5 py-8 text-center"
         >
           <p className="text-[24px] font-bold tracking-[-0.02em] text-[#1d1d1f]">
             {value}

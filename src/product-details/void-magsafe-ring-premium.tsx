@@ -22,7 +22,7 @@ export default function VoidMagsafeRingPremiumPage() {
       {/* 히어로 */}
       <section className="relative min-h-[1440px] overflow-hidden bg-[#f3f4f6]">
         <Image
-          src="/assets/void/magsafe-ring-premium/hero-magnetic-ring-v4.webp"
+          src="/assets/sync-2026-10-29/void/magsafe-ring-premium/hero-magnetic-ring-v4.webp"
           alt="Void Magnetic Ring을 부착한 블랙 스마트폰"
           fill
           priority
@@ -41,12 +41,12 @@ export default function VoidMagsafeRingPremiumPage() {
           className="pointer-events-none absolute inset-x-0 bottom-0 h-[42%]"
           style={{
             background:
-              "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.82) 78%, #ffffff 100%)",
+              "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.62) 78%, rgba(0,0,0,0.82) 100%)",
           }}
           aria-hidden
         />
         <div
-          className="relative z-10 flex min-h-[1440px] flex-col items-center px-4 pb-[4.4rem] pt-28 text-center"
+          className="relative z-10 flex min-h-[1440px] flex-col items-center px-4 pb-[4.4rem] pt-20 text-center"
           style={{
             fontFamily:
               '"SF Pro KR", "SF Pro Display", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -82,7 +82,7 @@ export default function VoidMagsafeRingPremiumPage() {
           <div className="mt-auto">
             <p
               className="mx-auto max-w-[780px] px-4 text-center text-[28px] font-normal leading-[1.5] tracking-[-0.01em]"
-              style={{ color: "#1d1d1f" }}
+              style={{ color: "#ffffff", textShadow: "0 2px 12px rgba(0,0,0,0.7)" }}
             >
               손에 걸어 잡고, 책상 위에 세우고, 필요한 곳에는 가볍게 착.
               <br />
@@ -94,11 +94,11 @@ export default function VoidMagsafeRingPremiumPage() {
 
       <section className="relative aspect-[3/4] overflow-hidden bg-white">
         <Image
-          src="/assets/void/magsafe-ring-premium/product-overview-fridge.webp"
-          alt="냉장고에 부착한 Void Magnetic Ring과 스마트폰"
+          src="/assets/sync-2026-10-29/void/magsafe-ring-premium/product-overview-sunlit.webp"
+          alt="햇살이 드는 책상 위에 펼쳐 놓은 블랙 마그네틱 링"
           fill
           sizes="860px"
-          className="object-cover object-center"
+          className="scale-[1.15] object-cover object-center"
         />
         <div
           className="pointer-events-none absolute inset-x-0 top-0 h-[32%]"
@@ -119,11 +119,19 @@ export default function VoidMagsafeRingPremiumPage() {
             Void Magnetic Ring.
           </span>
         </h2>
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%]"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(255,255,255,0) 0%, #ffffff 100%)",
+          }}
+          aria-hidden
+        />
         <div className="absolute inset-x-0 bottom-24 z-10 text-center">
           <p
-            className="mx-auto text-[46px] font-bold leading-[1.24] tracking-[-0.022em] text-white"
+            className="mx-auto text-[46px] font-bold leading-[1.24] tracking-[-0.022em] text-[#1d1d1f]"
             style={{
-              textShadow: "0 2px 18px rgba(0,0,0,0.72)",
+              textShadow: "0 2px 18px rgba(255,255,255,0.72)",
               width: "fit-content",
             }}
           >
@@ -132,16 +140,85 @@ export default function VoidMagsafeRingPremiumPage() {
         </div>
       </section>
 
-      <ReviewSection
-        source="네XX 구매 고객"
-        reviews={[
-          "접었을 때 동그랗고 깔끔해서 휴대폰에 붙여둬도 거슬리지 않아요. 금속 느낌도 괜찮고 기존에 쓰던 제품보다 전체적으로 마감이 고급스럽게 느껴집니다.",
-          "손가락을 걸어 그립으로 쓰다가 영상 볼 때 바로 펼쳐 세울 수 있어서 편합니다. 가로와 세로 방향을 바꾸기도 쉬워서 생각보다 자주 사용하게 돼요.",
-          "냉장고에 붙여 레시피를 보거나 책상에서는 스탠드로 쓰고 있습니다. 액세서리를 여러 개 챙길 필요 없이 하나로 해결돼서 만족스러워요.",
-          "헬스장에서 운동기구에 붙여 타이머를 보거나 자세를 촬영할 때 유용합니다. 붙이고 각도만 맞추면 돼서 준비 과정도 간단해요.",
-          "합금 제품인데도 무겁다는 느낌이 크지 않고 접으면 부피가 작아 휴대하기 좋습니다. 디자인과 실용성을 둘 다 중요하게 보는 분들에게 잘 맞을 것 같아요.",
-        ]}
-      />
+      {/* 핵심 수치 */}
+      <section
+        className="px-12 pb-36 pt-32"
+        style={{
+          background:
+            "linear-gradient(180deg, #ffffff 0%, #f5f5f7 16%, #f5f5f7 84%, #ffffff 100%)",
+        }}
+      >
+        <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em] text-[#1d1d1f]">
+          한눈에 보는
+          <br />
+          <GradientText>Void Magnetic Ring.</GradientText>
+        </h2>
+        <div className="mt-20 grid grid-cols-2 gap-6">
+          {[
+            { value: "45", unit: "g", label: "합금 바디의 비교적 가벼운 무게" },
+            { value: "2", unit: "면", label: "앞뒤를 활용하는 양면 마그네틱" },
+            { value: "360", unit: "°", label: "가로와 세로를 오가는 자유 회전" },
+            { value: "3", unit: "in 1", label: "그립·스탠드·마그네틱 거치" },
+            { value: "4", unit: "mm", label: "접었을 때 두께" },
+            { value: "12", unit: "cm", label: "펼쳤을 때 길이" },
+          ].map(({ value, unit, label }) => (
+            <article
+              key={label}
+              className="flex flex-col items-center justify-center rounded-[28px] bg-white px-8 py-16 text-center"
+            >
+              <p className="text-[82px] font-bold leading-none tracking-[-0.035em]">
+                <GradientText>
+                  {value}
+                  <span className="ml-2 text-[36px] font-semibold">{unit}</span>
+                </GradientText>
+              </p>
+              <p className="mt-7 text-[25px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">
+                {label}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* 제품 핵심 소개 */}
+      <section className="bg-white px-12 py-40">
+        <p className="text-[21px] font-bold tracking-[0.14em] text-[#0071e3]">
+          SIMPLE ESSENTIALS
+        </p>
+        <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em] text-[#1d1d1f]">
+          일상의 편리함,
+          <br />
+          <GradientText>하나의 링에 담다.</GradientText>
+        </h2>
+        <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] bg-[#f5f5f7]">
+          <Image
+            src="/assets/sync-2026-10-29/void/magsafe-ring-premium/simple-essentials-studio-v2.webp"
+            alt="밝은 배경의 스마트폰에 부착한 블랙 마그네틱 링"
+            fill
+            sizes="764px"
+            className="object-cover"
+          />
+        </div>
+        <div className="mt-16 grid grid-cols-3 gap-5">
+          {[
+            ["한 손 그립", "손가락을 걸어 편안하게", "border-[#dbe5ed] bg-[#f5f8fb]"],
+            ["스탠드", "펼쳐서 원하는 각도로", "border-[#ccdfed] bg-[#eaf3fa]"],
+            ["마그네틱 거치", "금속 표면에 간편하게", "border-[#bad4e8] bg-[#dcecf8]"],
+          ].map(([title, body, tone], index) => (
+            <article key={title} className={`rounded-[26px] border px-6 py-8 ${tone}`}>
+              <p className="text-[18px] font-bold tracking-[0.1em] text-[#0071e3]">
+                0{index + 1}
+              </p>
+              <h3 className="mt-5 text-[25px] font-bold leading-[1.3] text-[#1d1d1f]">
+                {title}
+              </h3>
+              <p className="mt-4 text-[18px] font-medium leading-[1.55] text-[#3d5a6e]">
+                {body}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
 
       {/* 3-in-1 비교 */}
       <section className="bg-white px-12 pb-36 pt-36">
@@ -215,7 +292,7 @@ export default function VoidMagsafeRingPremiumPage() {
                 늘 마땅치 않죠.
               </>
             }
-            imageSrc="/assets/void/magsafe-ring-premium/kitchen-wall-stand.webp"
+            imageSrc="/assets/sync-2026-10-29/void/magsafe-ring-premium/kitchen-wall-stand.webp"
             imageAlt="주방 벽면에 스마트폰을 세워 둔 모습"
           >
             요리하다 레시피를 보려고 폰을 벽에 기대 세워 본 적, 있으실 겁니다.
@@ -225,7 +302,7 @@ export default function VoidMagsafeRingPremiumPage() {
 
           <FeatureBlock
             title="양면 자석으로 고민 끝."
-            imageSrc="/assets/void/magsafe-ring-premium/dual-sided-magnet.webp"
+            imageSrc="/assets/sync-2026-10-29/void/magsafe-ring-premium/dual-sided-magnet.webp"
             imageAlt="양면 자석으로 휴대폰을 금속 표면에 거치한 모습"
           >
             한쪽은 휴대폰에, 다른 한쪽은 금속 표면에. 양면이 모두 자석이라
@@ -235,7 +312,7 @@ export default function VoidMagsafeRingPremiumPage() {
 
           <FeatureBlock
             title="마감까지, 정교하게."
-            imageSrc="/assets/void/magsafe-ring-premium/refined-finish.webp"
+            imageSrc="/assets/sync-2026-10-29/void/magsafe-ring-premium/refined-finish.webp"
             imageAlt="Void Magnetic Ring의 정교한 표면과 관절 마감"
           >
             휴대폰에 늘 붙어 있는 액세서리는 기능만큼 디자인과 손에 닿는 감각도
@@ -250,7 +327,7 @@ export default function VoidMagsafeRingPremiumPage() {
         <div className="flex flex-col gap-48">
           <FeatureBlock
             title="접으면, 하나의 원."
-            imageSrc="/assets/void/magsafe-ring-premium/folded-circle.webp"
+            imageSrc="/assets/sync-2026-10-29/void/magsafe-ring-premium/folded-circle.webp"
             imageAlt="하나의 원형으로 접힌 Void Magnetic Ring"
           >
             사용하지 않을 때는 링을 접어 하나의 슬림한 원형으로 정리됩니다.
@@ -267,8 +344,8 @@ export default function VoidMagsafeRingPremiumPage() {
               </>
             }
             imageSrc={[
-              "/assets/void/magsafe-ring-premium/slim-profile-angle.webp",
-              "/assets/void/magsafe-ring-premium/slim-profile-side.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/slim-profile-angle.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/slim-profile-side.webp",
             ]}
             imageAlt={[
               "휴대폰에 밀착된 Void Magnetic Ring의 슬림한 측면",
@@ -284,8 +361,8 @@ export default function VoidMagsafeRingPremiumPage() {
           <FeatureBlock
             title="360°로 자유롭게."
             imageSrc={[
-              "/assets/void/magsafe-ring-premium/rotate-360-portrait.webp",
-              "/assets/void/magsafe-ring-premium/rotate-360-landscape.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/rotate-360-portrait.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/rotate-360-landscape.webp",
             ]}
             imageAlt={[
               "세로 방향으로 자유롭게 각도를 조절한 Void Magnetic Ring",
@@ -301,9 +378,9 @@ export default function VoidMagsafeRingPremiumPage() {
           <FeatureBlock
             title="잡고, 붙이고, 세우고."
             imageSrc={[
-              "/assets/void/magsafe-ring-premium/use-grip.webp",
-              "/assets/void/magsafe-ring-premium/use-magnetic-mount.webp",
-              "/assets/void/magsafe-ring-premium/use-stand.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/use-grip.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/use-magnetic-mount.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/use-stand.webp",
             ]}
             imageAlt={[
               "링에 손가락을 걸어 휴대폰을 잡은 모습",
@@ -325,7 +402,7 @@ export default function VoidMagsafeRingPremiumPage() {
                 어디든 함께.
               </>
             }
-            imageSrc="/assets/void/magsafe-ring-premium/weight-45g.webp"
+            imageSrc="/assets/sync-2026-10-29/void/magsafe-ring-premium/weight-45g.webp"
             imageAlt="저울에 표시된 Void Magnetic Ring의 45g 무게"
           >
             합금 바디를 사용하면서도 무게는 약 45g으로 줄였습니다. 기존 판매
@@ -342,8 +419,8 @@ export default function VoidMagsafeRingPremiumPage() {
               </>
             }
             imageSrc={[
-              "/assets/void/magsafe-ring-premium/metal-ring-compatible.webp",
-              "/assets/void/magsafe-ring-premium/metal-ring-galaxy.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/metal-ring-compatible.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/metal-ring-galaxy.webp",
             ]}
             imageAlt={[
               "메탈링을 부착한 아이폰 케이스",
@@ -365,8 +442,8 @@ export default function VoidMagsafeRingPremiumPage() {
               </>
             }
             imageSrc={[
-              "/assets/void/magsafe-ring-premium/deep-black-standing.webp",
-              "/assets/void/magsafe-ring-premium/deep-black-open.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/deep-black-standing.webp",
+              "/assets/sync-2026-10-29/void/magsafe-ring-premium/deep-black-open.webp",
             ]}
             imageAlt={[
               "깊이 있는 무광 블랙 색상의 Void Magnetic Ring",
@@ -379,38 +456,6 @@ export default function VoidMagsafeRingPremiumPage() {
             과장하지 않아도 충분히 완성도 있게 느껴집니다.
           </FeatureBlock>
 
-        </div>
-      </section>
-
-      {/* 핵심 수치 */}
-      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
-        <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em] text-[#1d1d1f]">
-          숫자로 보는
-          <br />
-          <GradientText>Void Magnetic Ring.</GradientText>
-        </h2>
-        <div className="mt-20 grid grid-cols-2 gap-6">
-          {[
-            { value: "45", unit: "g", label: "합금 바디의 비교적 가벼운 무게" },
-            { value: "2", unit: "면", label: "앞뒤를 활용하는 양면 마그네틱" },
-            { value: "360", unit: "°", label: "가로와 세로를 오가는 자유 회전" },
-            { value: "3", unit: "in 1", label: "그립·스탠드·마그네틱 거치" },
-          ].map(({ value, unit, label }) => (
-            <article
-              key={label}
-              className="flex flex-col items-center justify-center rounded-[28px] bg-white px-8 py-16 text-center"
-            >
-              <p className="text-[82px] font-bold leading-none tracking-[-0.035em]">
-                <GradientText>
-                  {value}
-                  <span className="ml-2 text-[36px] font-semibold">{unit}</span>
-                </GradientText>
-              </p>
-              <p className="mt-7 text-[25px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">
-                {label}
-              </p>
-            </article>
-          ))}
         </div>
       </section>
 
@@ -458,10 +503,21 @@ export default function VoidMagsafeRingPremiumPage() {
         </div>
       </section>
 
+      <ReviewSection
+        source="네XX 구매 고객"
+        reviews={[
+          "접었을 때 동그랗고 깔끔해서 휴대폰에 붙여둬도 거슬리지 않아요. 금속 느낌도 괜찮고 기존에 쓰던 제품보다 전체적으로 마감이 고급스럽게 느껴집니다.",
+          "손가락을 걸어 그립으로 쓰다가 영상 볼 때 바로 펼쳐 세울 수 있어서 편합니다. 가로와 세로 방향을 바꾸기도 쉬워서 생각보다 자주 사용하게 돼요.",
+          "냉장고에 붙여 레시피를 보거나 책상에서는 스탠드로 쓰고 있습니다. 액세서리를 여러 개 챙길 필요 없이 하나로 해결돼서 만족스러워요.",
+          "헬스장에서 운동기구에 붙여 타이머를 보거나 자세를 촬영할 때 유용합니다. 붙이고 각도만 맞추면 돼서 준비 과정도 간단해요.",
+          "합금 제품인데도 무겁다는 느낌이 크지 않고 접으면 부피가 작아 휴대하기 좋습니다. 디자인과 실용성을 둘 다 중요하게 보는 분들에게 잘 맞을 것 같아요.",
+        ]}
+      />
+
       {/* 클로징 */}
       <section className="relative min-h-[1440px] overflow-hidden bg-white px-12 pb-40 pt-12">
         <Image
-          src="/assets/void/magsafe-ring-premium/closing-fridge.webp"
+          src="/assets/sync-2026-10-29/void/magsafe-ring-premium/closing-fridge.webp"
           alt="냉장고에 부착한 Void Magnetic Ring과 스마트폰"
           fill
           sizes="764px"
@@ -475,14 +531,13 @@ export default function VoidMagsafeRingPremiumPage() {
           }}
           aria-hidden
         />
-        <div className="relative z-10 flex min-h-[1160px] flex-col">
+        <div className="relative z-10 flex min-h-[1240px] flex-col">
           <div>
             <h2 className="text-center text-[64px] font-bold leading-[1.18] tracking-[-0.028em] text-[#1d1d1f]">
               이제, 아무 데나 붙이세요
             </h2>
             <p className="mx-auto mt-10 max-w-[680px] text-center text-[28px] font-medium leading-[1.6] tracking-[-0.01em] text-[#4a5a66]">
-              냉장고 문에도, 사물함에도, 책상 위에도. 붙일 곳을 고르는 순간
-              거치대가 생깁니다.
+              붙이는 곳이 곧 거치대가 됩니다.
             </p>
           </div>
           <div className="mt-auto text-center">
@@ -581,7 +636,7 @@ export default function VoidMagsafeRingPremiumPage() {
         <PhotoCard
           className="mt-24"
           aspect="3 / 4"
-          src="/assets/void/magsafe-ring-premium/size-guide.webp"
+          src="/assets/sync-2026-10-29/void/magsafe-ring-premium/size-guide.webp"
           alt="Void Magnetic Ring의 전체 길이와 링별 크기 안내"
         />
       </section>
@@ -594,7 +649,7 @@ export default function VoidMagsafeRingPremiumPage() {
         <PhotoCard
           className="mt-24"
           aspect="3 / 4"
-          src="/assets/void/magsafe-ring-premium/package-contents.webp"
+          src="/assets/sync-2026-10-29/void/magsafe-ring-premium/package-contents.webp"
           alt="Void Magnetic Ring과 부착용 메탈링 구성품"
         />
         <p className="mt-7 text-center text-[28px] font-semibold text-[#1d1d1f]">
@@ -621,7 +676,6 @@ export default function VoidMagsafeRingPremiumPage() {
             ["지원 기기", "MagSafe 지원 스마트폰 및 MagSafe 호환 케이스"],
             ["구성품", "마그네틱 링 1개 · 부착용 메탈링 1개"],
             ["제조자(수입자)", "보이드 투 노바"],
-            ["제조국", "확인 후 업데이트 예정"],
             ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
             ["A/S 책임자와 전화번호", "010-6393-0907"],
           ].map(([label, value]) => (

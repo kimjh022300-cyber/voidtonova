@@ -8,54 +8,54 @@ const features = [
   {
     title: <>최대 20cm까지.<br />화면을 시선 가까이.</>,
     label: "다관절 구조를 펼쳐 화면 높이를 조절하는 사진",
-    image: "/assets/void/phone-stand/height-20cm.webp",
+    image: "/assets/sync-2026-10-29/void/phone-stand/height-20cm.webp",
     body: "약 4~20cm 범위로 높이를 조절해 책상 가까이에 머물던 화면을 시선 가까이 올려보세요. 영상 시청부터 업무와 화상회의까지 사용하는 자세에 맞춰 화면 위치를 바꿀 수 있습니다.",
     metrics: [["4~20cm", "제품 높이"], ["약 16cm", "높이 조절 폭"]],
   },
   {
     title: <>360°로 돌리고,<br />세 관절로 세밀하게.</>,
     label: "360도 회전 베이스와 세 관절의 조절 범위 사진",
-    image: "/assets/void/phone-stand/rotation-joints.webp",
+    image: "/assets/sync-2026-10-29/void/phone-stand/rotation-joints.webp",
     body: "원형 베이스를 돌려 화면 방향을 바꾸고 세 개의 관절로 높이와 전후 각도를 조절하세요. 기기를 들어 옮기지 않아도 필요한 방향과 시야각을 빠르게 만들 수 있습니다.",
     metrics: [["360°", "원형 베이스 회전"], ["3 × 180°", "세 관절 각도 조절"]],
   },
   {
     title: <>거치한 그대로,<br />충전은 끊김 없이.</>,
     label: "Void 360 Phone Stand에 거치한 채 충전 케이블을 연결한 사진",
-    image: "/assets/void/phone-stand/charging-access.webp",
+    image: "/assets/sync-2026-10-29/void/phone-stand/charging-access.webp",
     body: "스마트폰 하단을 가리지 않는 오픈 구조로 설계했습니다. 거치 중에도 충전 케이블을 간편하게 연결해 영상 시청과 업무를 끊김 없이 이어갈 수 있습니다.",
   },
   {
     title: <>이중 탄소강 암.<br />움직인 뒤에도 단단하게.</>,
     label: "이중 탄소강 지지 암과 댐핑 관절 사진",
-    image: "/assets/void/phone-stand/dual-arm.webp",
+    image: "/assets/sync-2026-10-29/void/phone-stand/dual-arm.webp",
     body: "두꺼운 이중 탄소강 암과 고저항 댐핑 관절이 기기를 단단하게 받쳐줍니다. 화면을 원하는 위치에 맞춘 뒤에도 쉽게 처지거나 흔들리지 않도록 지지 구조를 강화했습니다.",
     metrics: [["DUAL ARM", "이중 지지 구조"], ["DAMPING", "고저항 관절"]],
   },
   {
     title: <>넓은 원형 베이스.<br />터치할 때도 안정적으로.</>,
     label: "넓은 원형 탄소강 베이스와 회전부 사진",
-    image: "/assets/void/phone-stand/wide-base.webp",
+    image: "/assets/sync-2026-10-29/void/phone-stand/wide-base.webp",
     body: "약 9.7cm 원형 탄소강 베이스가 책상 위에서 무게 중심을 잡아줍니다. 화면을 터치하거나 방향을 바꿀 때 생기는 밀림과 흔들림을 줄여 보다 편안하게 사용할 수 있습니다.",
     metrics: [["약 9.7cm", "원형 베이스 지름"]],
   },
   {
     title: <>기기에 닿는 곳마다,<br />실리콘으로 세심하게.</>,
     label: "기기가 닿는 거치 홈의 실리콘 패드 사진",
-    image: "/assets/void/phone-stand/device-silicone.webp",
+    image: "/assets/sync-2026-10-29/void/phone-stand/device-silicone.webp",
     body: "스마트폰과 태블릿이 닿는 거치 홈에 실리콘 패드를 배치했습니다. 기기를 안정적으로 받쳐주고 사용 중 생길 수 있는 스크래치와 마찰을 줄여줍니다.",
   },
   {
     title: <>책상에 닿는 하단까지,<br />미끄러지지 않도록.</>,
     label: "베이스 하단의 미끄럼 방지 실리콘 패드 사진",
-    image: "/assets/void/phone-stand/base-silicone.webp",
+    image: "/assets/sync-2026-10-29/void/phone-stand/base-silicone.webp",
     body: "책상과 맞닿는 베이스 하단에 실리콘 패드를 적용했습니다. 화면을 터치하거나 방향을 바꿀 때 생기는 미끄러짐을 줄이고 책상 표면도 보호합니다.",
     metrics: [["SILICONE", "베이스 하단 패드"], ["NON-SLIP", "미끄럼 방지"]],
   },
   {
     title: <>접으면 작게.<br />필요한 자리로 가볍게.</>,
     label: "접은 거치대를 가방과 서랍에 보관하는 사진",
-    image: "/assets/void/phone-stand/folded.webp",
+    image: "/assets/sync-2026-10-29/void/phone-stand/folded.webp",
     body: "사용이 끝나면 패널과 지지 암을 접어 슬림하게 정리하세요. 가방이나 서랍에 넣기 쉬워 집과 사무실을 오갈 때도 간편하게 휴대할 수 있습니다.",
     metrics: [["FOLDABLE", "완전 접이식 구조"]],
   },
@@ -65,7 +65,7 @@ export default function Void360PhoneStandPage() {
   return <BrandFrame brand="void">
     <section className="relative min-h-[1440px] overflow-hidden bg-[#edf5fa]">
       <Image
-        src="/assets/void/phone-stand/hero-v2.webp"
+        src="/assets/sync-2026-10-29/void/phone-stand/hero-v2.webp"
         alt="햇살이 드는 책상 위 Void 360 Phone Stand"
         fill
         preload
@@ -86,7 +86,7 @@ export default function Void360PhoneStandPage() {
 
     <section className="relative aspect-[3/4] overflow-hidden bg-white">
       <Image
-        src="/assets/void/phone-stand/product-overview-v2.webp"
+        src="/assets/sync-2026-10-29/void/phone-stand/product-overview-v2.webp"
         alt="햇살이 드는 책상 위에 놓인 Void 360 Phone Stand"
         fill
         sizes="860px"
@@ -122,7 +122,7 @@ export default function Void360PhoneStandPage() {
       </h2>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
         <Image
-          src="/assets/void/phone-stand/daily-modes-v2.webp"
+          src="/assets/sync-2026-10-29/void/phone-stand/daily-modes-v2.webp"
           alt="햇살이 드는 책상 위 Void 360 Phone Stand"
           fill
           sizes="764px"
@@ -144,8 +144,8 @@ export default function Void360PhoneStandPage() {
       <Title>책상에 눕혀 보던 화면에서,<br /><Gradient>시선에 맞춰 움직이는 화면으로.</Gradient></Title>
       <p className="mx-auto mt-8 max-w-[700px] text-center text-[25px] font-medium leading-[1.6] text-[#6e6e73]">그대로 세워두는 데서 끝나지 않습니다. 화면의 높이와 방향을 내 자세에 맞춰 더 편안한 시야를 만들어보세요.</p>
       <div className="mt-20 grid grid-cols-2 gap-6">
-        <article><CardImage src="/assets/void/phone-stand/before-desk.webp" alt="책상 위에 눕혀 사용하는 스마트폰 화면" /><p className="mt-7 text-center text-[19px] font-bold tracking-[0.12em] text-[#86868b]">BEFORE</p><h3 className="mt-3 text-center text-[29px] font-bold">책상에 눕혀 보는 화면</h3></article>
-        <article><CardImage src="/assets/void/phone-stand/with-void.webp" alt="Void 360 Phone Stand로 시선에 맞춘 스마트폰 화면" /><p className="mt-7 text-center text-[19px] font-bold tracking-[0.12em] text-[#2f6f9f]">WITH VOID</p><h3 className="mt-3 text-center text-[29px] font-bold">시선에 맞춰진 화면</h3></article>
+        <article><CardImage src="/assets/sync-2026-10-29/void/phone-stand/before-desk.webp" alt="책상 위에 눕혀 사용하는 스마트폰 화면" /><p className="mt-7 text-center text-[19px] font-bold tracking-[0.12em] text-[#86868b]">BEFORE</p><h3 className="mt-3 text-center text-[29px] font-bold">책상에 눕혀 보는 화면</h3></article>
+        <article><CardImage src="/assets/sync-2026-10-29/void/phone-stand/with-void.webp" alt="Void 360 Phone Stand로 시선에 맞춘 스마트폰 화면" /><p className="mt-7 text-center text-[19px] font-bold tracking-[0.12em] text-[#2f6f9f]">WITH VOID</p><h3 className="mt-3 text-center text-[29px] font-bold">시선에 맞춰진 화면</h3></article>
       </div>
     </section>
 
@@ -163,7 +163,7 @@ export default function Void360PhoneStandPage() {
 
     <section className="relative min-h-[1440px] overflow-hidden bg-[#edf5fa] px-12 pb-40 pt-16">
       <Image
-        src="/assets/void/phone-stand/hero-v2.webp"
+        src="/assets/sync-2026-10-29/void/phone-stand/hero-v2.webp"
         alt="햇살이 드는 책상 위 Void 360 Phone Stand"
         fill
         sizes="860px"
@@ -205,17 +205,17 @@ function UseCases() {
 
 function DesignDetails() {
   return <>
-    <section className="bg-white px-12 py-40"><p className="text-[23px] font-semibold tracking-[0.09em] text-[#0071e3]">DESIGN DETAIL 01</p><h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">빛을 낮춘,<br /><Gradient>차분한 블랙 메탈.</Gradient></h2><div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]"><Image src="/assets/void/phone-stand/black-metal.webp" alt="햇살이 드는 책상 위 Void 360 Phone Stand의 블랙 메탈 마감" fill sizes="764px" className="object-cover" /></div><p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">차분한 블랙 메탈 마감이 견고한 구조를 선명하게 보여줍니다. 밝은 책상부터 어두운 데스크까지 자연스럽게 어우러집니다.</p></section>
-    <section className="bg-white px-12 py-40"><p className="text-[23px] font-semibold tracking-[0.09em] text-[#0071e3]">DESIGN DETAIL 02</p><h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">보이는 면보다,<br /><Gradient>손이 닿는 곳까지.</Gradient></h2><div className="mt-24 grid grid-cols-2 gap-6"><CardImage src="/assets/void/phone-stand/device-silicone.webp" alt="기기를 보호하는 거치 홈 실리콘 패드" /><CardImage src="/assets/void/phone-stand/base-silicone.webp" alt="책상을 보호하는 베이스 하단 실리콘 패드" /><CardImage src="/assets/void/phone-stand/dual-arm.webp" alt="Void 360 Phone Stand의 금속 관절과 이중 지지 암" /><CardImage src="/assets/void/phone-stand/charging-access.webp" alt="스마트폰을 거치한 채 케이블을 연결하는 충전 구조" /></div><p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">기기를 받치는 홈과 책상에 닿는 하부, 반복해서 움직이는 관절까지 실제 사용이 이어지는 모든 부분을 세심하게 다듬었습니다.</p></section>
+    <section className="bg-white px-12 py-40"><p className="text-[23px] font-semibold tracking-[0.09em] text-[#0071e3]">DESIGN DETAIL 01</p><h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">빛을 낮춘,<br /><Gradient>차분한 블랙 메탈.</Gradient></h2><div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]"><Image src="/assets/sync-2026-10-29/void/phone-stand/black-metal.webp" alt="햇살이 드는 책상 위 Void 360 Phone Stand의 블랙 메탈 마감" fill sizes="764px" className="object-cover" /></div><p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">차분한 블랙 메탈 마감이 견고한 구조를 선명하게 보여줍니다. 밝은 책상부터 어두운 데스크까지 자연스럽게 어우러집니다.</p></section>
+    <section className="bg-white px-12 py-40"><p className="text-[23px] font-semibold tracking-[0.09em] text-[#0071e3]">DESIGN DETAIL 02</p><h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">보이는 면보다,<br /><Gradient>손이 닿는 곳까지.</Gradient></h2><div className="mt-24 grid grid-cols-2 gap-6"><CardImage src="/assets/sync-2026-10-29/void/phone-stand/device-silicone.webp" alt="기기를 보호하는 거치 홈 실리콘 패드" /><CardImage src="/assets/sync-2026-10-29/void/phone-stand/base-silicone.webp" alt="책상을 보호하는 베이스 하단 실리콘 패드" /><CardImage src="/assets/sync-2026-10-29/void/phone-stand/dual-arm.webp" alt="Void 360 Phone Stand의 금속 관절과 이중 지지 암" /><CardImage src="/assets/sync-2026-10-29/void/phone-stand/charging-access.webp" alt="스마트폰을 거치한 채 케이블을 연결하는 충전 구조" /></div><p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">기기를 받치는 홈과 책상에 닿는 하부, 반복해서 움직이는 관절까지 실제 사용이 이어지는 모든 부분을 세심하게 다듬었습니다.</p></section>
   </>;
 }
 
 function RecommendedFor() {
   const people = [
-    { scene: "휴대폰으로 영상을 자주 보는 분", line: "손으로 들지 않고 편안한 높이와 각도로 화면을 보고 싶은 분께 잘 맞습니다.", label: "휴대폰 영상 시청 장면", image: "/assets/void/phone-stand/with-void.webp" },
-    { scene: "화상회의와 영상 통화가 잦은 분", line: "카메라를 시선 가까이에 두고 자연스럽게 대화하고 싶은 분께 잘 맞습니다.", label: "Void 360 Phone Stand로 화상 통화하는 장면", image: "/assets/void/phone-stand/recommended-video-call.webp" },
-    { scene: "책상 위 멀티태스킹이 필요한 분", line: "업무 화면 옆에 스마트폰을 세워 알림과 자료를 함께 확인하고 싶은 분께 잘 맞습니다.", label: "데스크에서 화면을 함께 활용하는 장면", image: "/assets/void/tablet-stand/desk-second-screen.webp" },
-    { scene: "거치대를 자주 옮겨 사용하는 분", line: "사용 후 접어서 가방에 넣고 집과 사무실을 오가며 사용하고 싶은 분께 잘 맞습니다.", label: "접은 Void 360 Phone Stand를 가방에 넣는 장면", image: "/assets/void/phone-stand/recommended-portable.webp" },
+    { scene: "휴대폰으로 영상을 자주 보는 분", line: "손으로 들지 않고 편안한 높이와 각도로 화면을 보고 싶은 분께 잘 맞습니다.", label: "휴대폰 영상 시청 장면", image: "/assets/sync-2026-10-29/void/phone-stand/with-void.webp" },
+    { scene: "화상회의와 영상 통화가 잦은 분", line: "카메라를 시선 가까이에 두고 자연스럽게 대화하고 싶은 분께 잘 맞습니다.", label: "Void 360 Phone Stand로 화상 통화하는 장면", image: "/assets/sync-2026-10-29/void/phone-stand/recommended-video-call.webp" },
+    { scene: "책상 위 멀티태스킹이 필요한 분", line: "업무 화면 옆에 스마트폰을 세워 알림과 자료를 함께 확인하고 싶은 분께 잘 맞습니다.", label: "데스크에서 화면을 함께 활용하는 장면", image: "/assets/sync-2026-10-29/void/tablet-stand/desk-second-screen.webp" },
+    { scene: "거치대를 자주 옮겨 사용하는 분", line: "사용 후 접어서 가방에 넣고 집과 사무실을 오가며 사용하고 싶은 분께 잘 맞습니다.", label: "접은 Void 360 Phone Stand를 가방에 넣는 장면", image: "/assets/sync-2026-10-29/void/phone-stand/recommended-portable.webp" },
   ];
   return <section className="bg-white px-12 py-40"><Title>이런 분께 잘 맞습니다.</Title><p className="mx-auto mt-8 max-w-[700px] text-center text-[26px] font-medium leading-[1.6] text-[#6e6e73]">매일 보는 작은 화면을 더 편안한 자리에서 사용하고 싶은 분들입니다.</p><div className="mt-20 grid grid-cols-2 gap-x-6 gap-y-16">{people.map(({ scene, line, label, image }) => <article key={scene}>{image ? <CardImage src={image} alt={label} /> : <Photo label={label} />}<h3 className="mt-7 text-[29px] font-bold leading-[1.3]">{scene}</h3><p className="mt-3 text-[21px] font-medium leading-[1.55] text-[#6e6e73]">{line}</p></article>)}</div></section>;
 }
@@ -242,8 +242,8 @@ const questions = [
 function Faq() { return <section className="bg-white px-10 pb-36 pt-40"><InfoTitle>질문에 답해드립니다.</InfoTitle><ul className="mt-24">{questions.map(([question, answer]) => <li key={question} className="border-t border-[#d2d2d7] py-7 last:border-b"><div className="flex items-start justify-between gap-6"><p className="text-[28px] font-semibold leading-[1.35]">{question}</p><ChevronDown className="mt-1.5 h-7 w-7 shrink-0 text-[#86868b]" /></div><p className="mt-4 pr-12 text-[22px] font-medium leading-[1.55] text-[#6e6e73]">{answer}</p></li>)}</ul></section>; }
 
 const sizes = [["제품 높이", "약 4~20cm"], ["높이 조절 폭", "약 16cm"], ["원형 베이스", "지름 약 9.7cm"], ["베이스 회전", "360°"], ["관절 조절", "3축 · 각 180°"], ["호환 범위", "스마트폰 · 태블릿"]];
-function Size() { return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>사이즈</InfoTitle><div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]"><Image src="/assets/void/phone-stand/size-guide.webp" alt="Void 360 Phone Stand 전체 실측 사이즈 안내" fill sizes="780px" className="object-cover" /></div><Rows rows={sizes} /></section>; }
-function Components() { return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>구성품</InfoTitle><div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]"><Image src="/assets/void/phone-stand/components.webp" alt="Void 360 Phone Stand 본체 구성품" fill sizes="780px" className="object-cover" /></div><p className="mt-7 text-center text-[28px] font-semibold">Void 360 Phone Stand 본체 x1</p></section>; }
+function Size() { return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>사이즈</InfoTitle><div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]"><Image src="/assets/sync-2026-10-29/void/phone-stand/size-guide.webp" alt="Void 360 Phone Stand 전체 실측 사이즈 안내" fill sizes="780px" className="object-cover" /></div><Rows rows={sizes} /></section>; }
+function Components() { return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>구성품</InfoTitle><div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]"><Image src="/assets/sync-2026-10-29/void/phone-stand/components.webp" alt="Void 360 Phone Stand 본체 구성품" fill sizes="780px" className="object-cover" /></div><p className="mt-7 text-center text-[28px] font-semibold">Void 360 Phone Stand 본체 x1</p></section>; }
 
 const info = [["품명 및 모델명", "Void 360 Phone Stand"], ["제품 유형", "탁상용 스마트폰·태블릿 거치대"], ["색상", "블랙"], ["소재", "탄소강 · 실리콘"], ["구조", "이중 지지 암 · 3축 댐핑 관절"], ["호환 기기", "스마트폰 · 태블릿"], ["회전 범위", "원형 베이스 360° · 관절 각 180°"], ["조절 방식", "높이 조절 · 전후 각도 조절 · 가로·세로 거치"], ["주요 기능", "충전 중 사용 · 실리콘 미끄럼 방지 · 완전 접이식 보관"], ["A/S 책임자와 전화번호", "010-6393-0907"]];
 function ProductInfo() { return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>제품 정보</InfoTitle><Rows rows={info} /></section>; }

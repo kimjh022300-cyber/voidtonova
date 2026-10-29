@@ -1,0 +1,193 @@
+{
+  "products": [
+    {
+      "id": "void-portable-laptop-stand",
+      "slug": "void-laptop-portable-v2",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-21T06:24:19.721Z"
+    },
+    {
+      "id": "void-fixed-laptop-stand",
+      "slug": "void-laptop-fixed-v2",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T10:19:14.565Z"
+    },
+    {
+      "id": "void-360-laptop-stand",
+      "slug": "void-laptop-swivel-v2",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-27T07:30:00.656Z"
+    },
+    {
+      "id": "void-magnetic-phone-stand",
+      "slug": "void-magsafe-phone-v2",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-10-08T13:43:22.897Z"
+    },
+    {
+      "id": "void-magsafe-ring-premium",
+      "slug": "void-magsafe-ring-premium",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T10:00:46.846Z"
+    },
+    {
+      "id": "void-book-stand",
+      "slug": "void-book-stand",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T11:04:30.968Z"
+    },
+    {
+      "id": "void-black-walnut-keyboard-palm-rest",
+      "slug": "void-black-walnut-keyboard-palm-rest",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T11:06:39.938Z"
+    },
+    {
+      "id": "void-black-walnut-mouse-palm-rest",
+      "slug": "void-black-walnut-mouse-palm-rest",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T11:06:39.938Z"
+    },
+    {
+      "id": "void-black-walnut-palm-rest-set",
+      "slug": "void-black-walnut-palm-rest-set",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T11:06:39.938Z"
+    },
+    {
+      "id": "void-walnut-todo",
+      "slug": "void-walnut-todo",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T11:06:39.938Z"
+    },
+    {
+      "id": "void-headphone-stand",
+      "slug": "void-headphone-stand",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-10-12T08:22:50.211Z"
+    },
+    {
+      "id": "void-360-phone-stand",
+      "slug": "void-360-phone-stand",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-10-13T11:32:42.083Z"
+    },
+    {
+      "id": "void-laptop-stand-sleeve",
+      "slug": "void-laptop-stand-sleeve",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-10-11T23:14:33.602Z"
+    },
+    {
+      "id": "void-tablet-floor-stand",
+      "slug": "void-tablet-stand-v2",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-10-08T13:43:22.926Z"
+    },
+    {
+      "id": "nova-pushup-pads",
+      "slug": "nova-pushup-pad",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-10-13T06:32:23.972Z"
+    },
+    {
+      "id": "nova-air-acupressure-stepper",
+      "slug": "nova-pressure-stepper",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-20T12:07:26.319Z"
+    },
+    {
+      "id": "nova-quick-grip",
+      "slug": "nova-quick-grip",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-10-14T11:53:22.238Z"
+    },
+    {
+      "id": "nova-wireless-battle-rope",
+      "slug": "nova-wireless-battle-rope",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T10:06:52.764Z"
+    },
+    {
+      "id": "nova-premium-metal-pushup-bars",
+      "slug": "nova-pushup-bar",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-09-04T06:46:30.437Z"
+    },
+    {
+      "id": "nova-quiet-ab-slide",
+      "slug": "nova-ab-slide",
+      "changed": true,
+      "added": false,
+      "contentChanged": false,
+      "sourceUpdatedAt": "2026-10-13T07:01:34.119Z"
+    },
+    {
+      "id": "nova-massage-ball-set",
+      "slug": "nova-massage-ball-set",
+      "changed": true,
+      "added": false,
+      "contentChanged": true,
+      "sourceUpdatedAt": "2026-10-18T10:06:52.765Z"
+    },
+    {
+      "id": "nova-dual-massage-bar",
+      "slug": "nova-dual-massage-bar",
+      "changed": true,
+      "added": true,
+      "sourceUpdatedAt": "2026-10-29T03:45:01.723Z"
+    }
+  ],
+  "assetCount": 449,
+  "assetBytes": 39077159,
+  "syncedOn": "2026-10-29",
+  "source": "/Users/kimjihoon/코딩/product-pages",
+  "unavailablePurchaseLinks": [
+    "nova-dual-massage-bar"
+  ],
+  "missingProductPhotos": [],
+  "excludedProducts": [
+    "nova-protein-shaker",
+    "nova-protein-shaker-clear",
+    "void-magnetic-arm",
+    "void-tablet-desktop-stand"
+  ]
+}

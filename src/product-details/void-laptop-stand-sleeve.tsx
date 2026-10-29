@@ -30,7 +30,7 @@ export default function VoidLaptopStandSleevePage() {
 
       <section className="relative aspect-[3/4] overflow-hidden bg-white">
         <Image
-          src="/assets/void/laptop-stand-sleeve/product-overview-v2.webp"
+          src="/assets/sync-2026-10-29/void/laptop-stand-sleeve/product-overview-v2.webp"
           alt="블랙 노트북 파우치에 맥북을 넣는 데스크 위 모습"
           fill
           sizes="860px"
@@ -66,7 +66,7 @@ export default function VoidLaptopStandSleevePage() {
         eyebrow="WHY 2-IN-1"
         title={<>노트북과 거치대,<br /><Gradient>두 개를 하나에 담다.</Gradient></>}
         label="노트북 파우치를 스탠드로 펼쳐 맥북을 올려둔 모습"
-        imageSrc="/assets/void/laptop-stand-sleeve/why-two-in-one.webp"
+        imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/why-two-in-one.webp"
       >
         노트북을 보호할 파우치와 화면을 올릴 거치대를 각각 챙기면 가방 속 부피와 준비물이 늘어납니다. 이동 중에는 노트북을 감싸고, 자리에 앉으면 곧바로 스탠드가 되는 하나의 구조로 휴대와 사용 사이의 과정을 줄였습니다.
       </Story>
@@ -79,14 +79,14 @@ export default function VoidLaptopStandSleevePage() {
       <Feature
         title={<>바닥에 바로 놓이던 화면을,<br /><Gradient>가볍게 들어 올리는 각도.</Gradient></>}
         label="파우치를 스탠드로 접어 맥북 뒤쪽을 들어 올린 측면 사진"
-        imageSrc="/assets/void/laptop-stand-sleeve/raised-angle.webp"
+        imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/raised-angle.webp"
         body="파우치를 접어 만든 삼각 지지 구조가 노트북 뒤쪽을 받쳐줍니다. 화면은 조금 더 높아지고 키보드에는 완만한 기울기가 생겨, 별도의 거치대 없이도 작업하기 좋은 각도를 만듭니다."
       />
 
       <Feature
         title={<>열고 닫는 동작까지,<br /><Gradient>간결한 마그네틱 플랩.</Gradient></>}
         label="블랙 파우치 플랩의 마그네틱 잠금 위치를 보여주는 클로즈업"
-        imageSrc="/assets/void/laptop-stand-sleeve/magnetic-flap.webp"
+        imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/magnetic-flap.webp"
         photoAspect="aspect-[1/2]"
         body="플랩을 덮으면 자석이 맞닿아 파우치의 입구를 간결하게 정돈합니다. 외부로 돌출된 버클이나 지퍼 없이 부드러운 봉투형 실루엣을 유지하며, 꺼내고 수납하는 동작도 단순합니다."
       />
@@ -94,14 +94,14 @@ export default function VoidLaptopStandSleevePage() {
       <Feature
         title={<>부드럽게 감싸는,<br /><Gradient>안쪽의 섬세한 촉감.</Gradient></>}
         label="노트북이 닿는 부드러운 내부 안감의 확대 사진"
-        imageSrc="/assets/void/laptop-stand-sleeve/soft-lining.webp"
+        imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/soft-lining.webp"
         body="노트북이 직접 닿는 내부에는 부드러운 안감을 적용했습니다. 이동 중 기기와 파우치 안쪽이 맞닿을 때 생기는 마찰을 줄이고, 외부의 단단한 레더 텍스처와는 다른 부드러운 촉감을 제공합니다."
       />
 
       <Feature
         title={<>가방 속에는 얇게,<br /><Gradient>필요한 순간에는 든든하게.</Gradient></>}
         label="블랙 파우치를 가방에 넣는 장면과 옆면 두께 사진"
-        imageSrc="/assets/void/laptop-stand-sleeve/slim-carry.webp"
+        imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/slim-carry.webp"
         body="두 옵션 모두 제품 두께는 약 1cm입니다. 13.3형은 230g, 15.4형은 290g으로 별도의 금속 거치대를 추가로 챙기지 않고 파우치 하나로 휴대할 수 있습니다."
         extra={<div className="mt-14 grid grid-cols-2 gap-5"><Metric value="230g" label="13.3형" /><Metric value="290g" label="15.4형" /></div>}
       />
@@ -113,7 +113,7 @@ export default function VoidLaptopStandSleevePage() {
           eyebrow="DESIGN DETAIL 01"
           title={<>빛을 낮춘 블랙,<br /><Gradient>매끄러운 레더 텍스처.</Gradient></>}
           label="블랙 PU 레더 표면의 미세한 질감 확대 사진"
-          imageSrc="/assets/void/laptop-stand-sleeve/leather-texture.webp"
+          imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/leather-texture.webp"
         >
           잔잔한 엠보가 느껴지는 블랙 PU 표면이 단정한 인상을 만듭니다. 노트북을 넣었을 때는 슬림한 봉투형 케이스로, 펼쳤을 때는 책상 위에 자연스럽게 어우러지는 블랙 스탠드로 남습니다.
         </DesignStory>
@@ -121,7 +121,7 @@ export default function VoidLaptopStandSleevePage() {
           eyebrow="DESIGN DETAIL 02"
           title={<>끝선까지 정돈한,<br /><Gradient>라운드와 스티치.</Gradient></>}
           label="둥근 모서리와 가장자리 스티치를 보여주는 디테일 사진"
-          imageSrc="/assets/void/laptop-stand-sleeve/edge-stitch.webp"
+          imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/edge-stitch.webp"
         >
           모서리는 부드러운 곡선으로 정리하고 외곽을 따라 스티치를 이어 형태를 단정하게 마감했습니다. 자주 손이 닿는 플랩의 끝선과 파우치 가장자리까지 하나의 검정 톤으로 정돈했습니다.
         </DesignStory>
@@ -144,7 +144,7 @@ function Hero() {
   return (
     <section className="relative min-h-[1440px] overflow-hidden bg-[#f6f1ea]">
       <Image
-        src="/assets/void/laptop-stand-sleeve/hero-v2.webp"
+        src="/assets/sync-2026-10-29/void/laptop-stand-sleeve/hero-v2.webp"
         alt="블랙 노트북 파우치를 펼쳐 맥북 스탠드로 사용하는 데스크"
         fill
         preload
@@ -170,8 +170,8 @@ function BeforeAfter() {
     <section className="bg-white px-10 py-36">
       <Title>사용하기 전과 후,<br /><Gradient>두 가지가 달라집니다.</Gradient></Title>
       <div className="mt-20 grid grid-cols-2 gap-6">
-        <Scene eyebrow="BEFORE" title="그대로 넣는 노트북" label="보호 파우치 없이 노트북을 가방에 넣는 모습" imageSrc="/assets/void/laptop-stand-sleeve/before-unprotected.webp" body="가방 속 다른 물건과 직접 맞닿는 표면" />
-        <Scene eyebrow="AFTER" title="단정하게 감싸는 파우치" label="블랙 노트북 파우치에 맥북을 수납한 모습" imageSrc="/assets/void/laptop-stand-sleeve/after-protected.webp" body="이동할 때는 생활 마찰을 줄이고, 꺼낸 뒤에는 스탠드로" accent />
+        <Scene eyebrow="BEFORE" title="그대로 넣는 노트북" label="보호 파우치 없이 노트북을 가방에 넣는 모습" imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/before-unprotected.webp" body="가방 속 다른 물건과 직접 맞닿는 표면" />
+        <Scene eyebrow="AFTER" title="단정하게 감싸는 파우치" label="블랙 노트북 파우치에 맥북을 수납한 모습" imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/after-protected.webp" body="이동할 때는 생활 마찰을 줄이고, 꺼낸 뒤에는 스탠드로" accent />
       </div>
     </section>
   );
@@ -184,7 +184,7 @@ function PouchFirst() {
       <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">
         꼭 필요한 것만,<br /><Gradient>단정하게 담았습니다.</Gradient>
       </h2>
-      <Photo className="mt-24" label="장식을 덜어낸 블랙 노트북 파우치의 단정한 전체 모습" imageSrc="/assets/void/laptop-stand-sleeve/simply-essential.webp" />
+      <Photo className="mt-24" label="장식을 덜어낸 블랙 노트북 파우치의 단정한 전체 모습" imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/simply-essential.webp" />
       <p className="mt-10 text-[29px] font-semibold leading-[1.7] text-[#86868b]">
         눈에 띄는 장식과 복잡한 여밈은 덜어내고, 노트북을 부드럽게 감싸는 구조와 매일 들어도 부담 없는 단정한 형태에 집중했습니다. 오래 보아도 질리지 않는 심플함, 그것이 Void가 생각한 파우치의 기본입니다.
       </p>
@@ -216,9 +216,9 @@ function Comparison() {
 
 function Transform() {
   const items = [
-    ["01", "넣고 닫기", "블랙 노트북 파우치의 플랩을 닫는 모습", "/assets/void/laptop-stand-sleeve/transform-step-1.webp"],
-    ["02", "꺼내고 접기", "블랙 노트북 파우치의 플랩을 접는 모습", "/assets/void/laptop-stand-sleeve/transform-step-2.webp"],
-    ["03", "올리고 사용하기", "펼친 블랙 파우치 위에 맥북을 올려 사용하는 모습", "/assets/void/laptop-stand-sleeve/transform-step-3.webp"],
+    ["01", "넣고 닫기", "블랙 노트북 파우치의 플랩을 닫는 모습", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/transform-step-1.webp"],
+    ["02", "꺼내고 접기", "블랙 노트북 파우치의 플랩을 접는 모습", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/transform-step-2.webp"],
+    ["03", "올리고 사용하기", "펼친 블랙 파우치 위에 맥북을 올려 사용하는 모습", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/transform-step-3.webp"],
   ];
   return (
     <section className="bg-white px-12 py-40">
@@ -237,8 +237,8 @@ function Feature({ title, label, body, imageSrc, photoAspect, extra }: { title: 
 
 function FitGuide() {
   const options = [
-    { size: "13.3형", dimensions: "25 × 35 × 1cm", weight: "230g", label: "가로 35cm, 세로 25cm인 13.3형 블랙 노트북 파우치", imageSrc: "/assets/void/laptop-stand-sleeve/fit-guide-13-3-v1.webp" },
-    { size: "15.4형", dimensions: "약 39 × 27 × 1cm", weight: "290g", label: "가로 39cm, 세로 27cm인 15.4형 블랙 노트북 파우치", imageSrc: "/assets/void/laptop-stand-sleeve/fit-guide-15-4-v1.webp" },
+    { size: "13.3형", dimensions: "25 × 35 × 1cm", weight: "230g", label: "가로 35cm, 세로 25cm인 13.3형 블랙 노트북 파우치", imageSrc: "/assets/sync-2026-10-29/void/laptop-stand-sleeve/fit-guide-13-3-v1.webp" },
+    { size: "15.4형", dimensions: "약 39 × 27 × 1cm", weight: "290g", label: "가로 39cm, 세로 27cm인 15.4형 블랙 노트북 파우치", imageSrc: "/assets/sync-2026-10-29/void/laptop-stand-sleeve/fit-guide-15-4-v1.webp" },
   ];
   return (
     <section className="bg-white px-12 py-40">
@@ -257,20 +257,20 @@ function DesignStory({ eyebrow, title, label, imageSrc, children }: { eyebrow: s
 
 function DetailGrid() {
   const items = [
-    ["MAGNETIC FLAP", "매끄럽게 닫히는 플랩", "/assets/void/laptop-stand-sleeve/detail-magnetic-flap.webp"],
-    ["SOFT LINING", "기기가 닿는 부드러운 안감", "/assets/void/laptop-stand-sleeve/soft-lining.webp"],
-    ["EDGE STITCH", "외곽을 따라 이어진 스티치", "/assets/void/laptop-stand-sleeve/edge-stitch.webp"],
-    ["FOLDING BASE", "삼각형으로 접히는 지지 구조", "/assets/void/laptop-stand-sleeve/raised-angle.webp"],
+    ["MAGNETIC FLAP", "매끄럽게 닫히는 플랩", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/detail-magnetic-flap.webp"],
+    ["SOFT LINING", "기기가 닿는 부드러운 안감", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/soft-lining.webp"],
+    ["EDGE STITCH", "외곽을 따라 이어진 스티치", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/edge-stitch.webp"],
+    ["FOLDING BASE", "삼각형으로 접히는 지지 구조", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/raised-angle.webp"],
   ];
   return <section className="bg-transparent px-12 py-40"><Eyebrow>DESIGN DETAIL 03</Eyebrow><h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">보이는 면부터,<br /><Gradient>접히는 구조 안쪽까지.</Gradient></h2><div className="mt-24 grid grid-cols-2 gap-6">{items.map(([title, body, imageSrc]) => <article key={title}><Photo label={body + " 디테일 사진"} imageSrc={imageSrc} /><div className="mt-5 rounded-[24px] border border-[#ddd0c3] bg-[#f1eae2] p-7"><p className="text-[20px] font-bold text-[#72533d]">{title}</p><p className="mt-3 text-[18px] font-medium text-[#6e6e73]">{body}</p></div></article>)}</div></section>;
 }
 
 function Recommended() {
   const items = [
-    ["맥북을 자주 들고 다니는 분", "보호용 파우치와 노트북 스탠드를 하나로 챙기고 싶은 분께 잘 맞습니다.", "맥북과 휴대용 액세서리를 함께 들고 이동하는 모습", "/assets/void/laptop-stand-sleeve/recommended-carry.webp"],
-    ["카페와 사무실을 오가는 분", "자리를 옮길 때마다 별도의 거치대를 꺼내고 정리하는 과정을 줄이고 싶은 분께 잘 맞습니다.", "카페에서 맥북으로 작업하는 모습", "/assets/void/laptop-stand-sleeve/recommended-cafe-office.webp"],
-    ["가방을 가볍게 정리하고 싶은 분", "여러 액세서리보다 얇고 단순한 하나의 제품으로 휴대 구성을 줄이고 싶은 분께 잘 맞습니다.", "얇고 단정한 블랙 노트북 파우치", "/assets/void/laptop-stand-sleeve/slim-carry.webp"],
-    ["블랙 액세서리를 선호하는 분", "맥북과 함께 사용할 케이스도 색과 형태가 단정한 블랙으로 고르고 싶은 분께 잘 맞습니다.", "블랙 노트북과 액세서리로 구성한 데스크", "/assets/void/laptop-stand-sleeve/recommended-black-accessories.webp"],
+    ["맥북을 자주 들고 다니는 분", "보호용 파우치와 노트북 스탠드를 하나로 챙기고 싶은 분께 잘 맞습니다.", "맥북과 휴대용 액세서리를 함께 들고 이동하는 모습", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/recommended-carry.webp"],
+    ["카페와 사무실을 오가는 분", "자리를 옮길 때마다 별도의 거치대를 꺼내고 정리하는 과정을 줄이고 싶은 분께 잘 맞습니다.", "카페에서 맥북으로 작업하는 모습", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/recommended-cafe-office.webp"],
+    ["가방을 가볍게 정리하고 싶은 분", "여러 액세서리보다 얇고 단순한 하나의 제품으로 휴대 구성을 줄이고 싶은 분께 잘 맞습니다.", "얇고 단정한 블랙 노트북 파우치", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/slim-carry.webp"],
+    ["블랙 액세서리를 선호하는 분", "맥북과 함께 사용할 케이스도 색과 형태가 단정한 블랙으로 고르고 싶은 분께 잘 맞습니다.", "블랙 노트북과 액세서리로 구성한 데스크", "/assets/sync-2026-10-29/void/laptop-stand-sleeve/recommended-black-accessories.webp"],
   ];
   return <section className="bg-white px-12 py-40"><Title>이런 분께 잘 맞습니다.</Title><p className="mx-auto mt-8 whitespace-nowrap text-center text-[26px] font-medium leading-[1.6] text-[#6e6e73]">맥북의 이동과 책상 위 사용을 하나의 제품으로 연결하고 싶은 분들입니다.</p><div className="mt-20 grid grid-cols-2 gap-x-6 gap-y-16">{items.map(([title, body, label, imageSrc]) => <article key={title}><Photo label={label} imageSrc={imageSrc} /><h3 className="mt-7 whitespace-nowrap text-[28px] font-bold">{title}</h3><p className="mt-3 text-[20px] font-medium leading-[1.55] text-[#6e6e73]">{body}</p></article>)}</div></section>;
 }
@@ -281,7 +281,7 @@ function Reviews() {
 }
 
 function Closing() {
-  return <section className="relative min-h-[1440px] overflow-hidden bg-[#f6f1ea] px-12 pb-40 pt-16"><Photo fill label="햇빛이 드는 배경 위에 놓인 블랙 노트북 파우치" imageSrc="/assets/void/laptop-stand-sleeve/closing.webp" /><Fade /><div className="relative z-10 flex min-h-[1160px] flex-col text-center"><h2 className="text-[68px] font-bold leading-[1.15]">이동할 때는 단정하게,<br />펼치는 순간 더 편안하게.</h2><div className="mt-auto translate-y-24"><p className="text-[58px] font-semibold text-[#72533d]">Void Laptop Pouch</p><p className="mt-4 text-[27px] font-medium text-[#74645a]">Carry. Fold. Work.</p></div></div></section>;
+  return <section className="relative min-h-[1440px] overflow-hidden bg-[#f6f1ea] px-12 pb-40 pt-16"><Photo fill label="햇빛이 드는 배경 위에 놓인 블랙 노트북 파우치" imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/closing.webp" /><Fade /><div className="relative z-10 flex min-h-[1160px] flex-col text-center"><h2 className="text-[68px] font-bold leading-[1.15]">이동할 때는 단정하게,<br />펼치는 순간 더 편안하게.</h2><div className="mt-auto translate-y-24"><p className="text-[58px] font-semibold text-[#72533d]">Void Laptop Pouch</p><p className="mt-4 text-[27px] font-medium text-[#74645a]">Carry. Fold. Work.</p></div></div></section>;
 }
 
 function Faq() {
@@ -295,7 +295,7 @@ function Size() {
       <Photo
         className="mt-24"
         label="가로 35cm, 세로 25cm인 13.3형 Void Laptop Pouch 실측 안내"
-        imageSrc="/assets/void/laptop-stand-sleeve/size-13-3-v2.webp"
+        imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/size-13-3-v2.webp"
         aspect="aspect-square"
       />
       <h3 className="mx-auto mt-16 max-w-[720px] text-[28px] font-bold">13.3형</h3>
@@ -303,7 +303,7 @@ function Size() {
       <Photo
         className="mt-24"
         label="가로 39cm, 세로 27cm인 15.4형 Void Laptop Pouch 실측 안내"
-        imageSrc="/assets/void/laptop-stand-sleeve/size-15-4-v2.webp"
+        imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/size-15-4-v2.webp"
         aspect="aspect-square"
       />
       <h3 className="mx-auto mt-16 max-w-[720px] text-[28px] font-bold">15.4형</h3>
@@ -313,7 +313,7 @@ function Size() {
 }
 
 function Components() {
-  return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>구성품</InfoTitle><Photo className="mt-24" label="Void Laptop Pouch 전체 구성품 사진" imageSrc="/assets/void/laptop-stand-sleeve/package-contents.webp" /><p className="mt-7 text-center text-[28px] font-semibold">Void Laptop Pouch 본체 ×1</p></section>;
+  return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>구성품</InfoTitle><Photo className="mt-24" label="Void Laptop Pouch 전체 구성품 사진" imageSrc="/assets/sync-2026-10-29/void/laptop-stand-sleeve/package-contents.webp" /><p className="mt-7 text-center text-[28px] font-semibold">Void Laptop Pouch 본체 ×1</p></section>;
 }
 
 function ProductInfo() {

@@ -332,6 +332,18 @@ export const products: Product[] = [
     "imageAlt": "Nova 마사지볼 세트 대표 이미지",
     "detailPath": "/products/nova-massage-ball-set",
     "detailTitleCompact": true
+  },
+  {
+    "id": "nova-dual-massage-bar",
+    "line": "Nova",
+    "name": "Nova 듀얼 마사지 바",
+    "category": "마사지 도구",
+    "description": "긴 회전 롤러로 넓게, 탈착형 포인트 링으로 좁게 마사지하는 수동 마사지 스틱.",
+    "purchaseUrl": null,
+    "image": "/assets/sync-2026-10-29/nova/massage-stick/generated/overview-v2.webp",
+    "imageAlt": "Nova 듀얼 마사지 바 제품 이미지",
+    "detailPath": "/products/nova-dual-massage-bar",
+    "detailTitleCompact": true
   }
 ];
 

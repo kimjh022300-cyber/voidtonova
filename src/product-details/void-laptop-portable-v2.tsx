@@ -3,7 +3,6 @@ import { ReviewSection } from "@/components/product-detail/review-section";
 import type { ReactNode } from "react";
 import {
   Check,
-  ChevronDown,
   PackageCheck,
   RefreshCw,
   ShieldCheck,
@@ -17,104 +16,195 @@ import {
 export default function VoidLaptopPortableV2Page() {
   return (
     <BrandFrame brand="void">
-      {/* 1. 제품 히어로 — Apple MacBook Air 스타일 */}
-      <section
-        className="relative overflow-hidden"
-        style={{
-          background: "linear-gradient(180deg, #D4EAF6, #ffffff 70%, #ffffff)",
-        }}
-      >
-        <div className="relative px-4 pb-[4.4rem] pt-28">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/assets/void/laptop-portable/hero-2.webp"
-            alt="VOID Laptop Stand"
-            className="mx-auto h-auto w-full max-w-[860px] object-contain"
-            style={{
-              maxHeight: 780,
-              marginTop: 380,
-              filter: "drop-shadow(0 24px 48px rgba(29,29,31,0.18))",
-            }}
-          />
-          <div
-            className="pointer-events-none absolute inset-x-0 top-28 z-[1] px-8 text-center"
-            style={{
-              fontFamily:
-                '"SF Pro KR", "SF Pro Display", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Helvetica Neue", Helvetica, Arial, sans-serif',
-            }}
-          >
-            <p
-              className="mx-auto text-[41px] font-semibold leading-[1.25] tracking-[0.007em]"
-              style={{
-                backgroundImage:
-                  "linear-gradient(105deg, #1d1d1f 0%, #2a3d4a 45%, #3d5a6e 70%, #1d1d1f 100%)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-                width: "fit-content",
-              }}
-            >
-              Void Laptop Stand
-            </p>
-            <h1
-              className="mx-auto mt-2 text-[91px] font-semibold leading-[1.09] tracking-[0em]"
-              style={{
-                backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-                width: "fit-content",
-              }}
-            >
-              가볍지만. 강력하다.
-            </h1>
-            <p
-              className="mt-4 text-[46px] font-normal leading-[1.24] tracking-[-0.022em]"
-              style={{ color: "#bf4800" }}
-            >
-              <strong className="font-semibold">얇고 강력한 알루미늄 설계</strong>
-            </p>
+      <div className="[&_p]:break-keep [&_p]:text-pretty [&_h2]:break-keep [&_h3]:break-keep [&_li]:break-keep [&_dt]:break-keep [&_dd]:break-keep [&_th]:break-keep [&_td]:break-keep">
+      {/* 제품 히어로 — 전체 배경 사진 위에 카피 배치 */}
+      <section className="relative min-h-[1500px] overflow-hidden bg-[#e5eef4]">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/assets/sync-2026-10-29/void/laptop-portable/closing-premium-blue-v1.webp" alt="닫힌 노트북과 파우치 옆에 슬림하게 접어 둔 블랙 휴대용 노트북 거치대" className="absolute inset-0 h-full w-full object-cover object-center" />
+        <div className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.82) 0%, rgba(245,250,255,0.42) 14%, transparent 36%, transparent 65%, rgba(8,28,45,0.76) 100%)" }} aria-hidden />
+        <div className="relative z-10 flex min-h-[1500px] flex-col px-12 pb-24 pt-20 text-center">
+          <div style={{ textShadow: "0 2px 18px rgba(255,255,255,0.65)" }}>
+            <p className="text-[41px] font-semibold leading-[1.25] tracking-[0.007em] text-[#3d5a6e]">Void Laptop Stand</p>
+            <h1 className="mx-auto mt-2 w-fit whitespace-nowrap text-[85px] font-bold leading-[1.15] tracking-[-0.025em] text-[#022640]">가볍지만. 강력하다.</h1>
           </div>
-          <p
-            className="mx-auto mt-20 max-w-[780px] px-4 text-center text-[28px] font-normal leading-[1.5] tracking-[-0.01em]"
-            style={{
-              color: "#1d1d1f",
-              fontFamily:
-                '"SF Pro KR", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Helvetica Neue", Helvetica, Arial, sans-serif',
-            }}
-          >
-            알루미늄 합금으로 완성해 더욱 견고하고
-            <br />
-            안정적인 사용감을 선사하는 노트북 거치대.
-            <br />
-            6단계 각도 조절로 타이핑부터 영상 시청까지,
-            <br />
-            <span className="whitespace-nowrap">
-              어떤 자세에서도 최적의 작업 환경을 만들어 줍니다.
-            </span>
-            <br />
-            여기에 180g의 놀랍도록 가벼운 무게와
-            <br />
-            1.5cm까지 접히는 폴딩 디자인까지,
-            <br />
-            어디든 부담 없이 휴대할 준비가 되어 있죠.
-            <br />
-            이제 책상 위, 더 편안한 자세로
-            <br />
-            날아올라 볼까요?
+          <p className="mx-auto mt-auto max-w-[780px] text-[28px] font-medium leading-[1.5] tracking-[-0.01em] text-white" style={{ textShadow: "0 2px 12px rgba(8,28,45,0.8)" }}>
+            펼치면 편안하게, 접으면 가볍게.<br />
+            180g의 알루미늄 바디와 6단계 각도 조절로<br />
+            어디서든 나에게 맞는 작업 환경을.
           </p>
         </div>
       </section>
 
-      <ReviewSection
-        reviews={[
-          "노트북 받침대를 찾다가 구매했는데 생각보다 훨씬 튼튼합니다. 타이핑할 때 흔들림이 적고 화면 높이가 올라가서 목이 편해졌어요.",
-          "6단계로 각도를 조절할 수 있어서 자세에 맞춰 쓰기 좋습니다. 노트북으로 오래 작업하는 분들에게 정말 유용할 것 같아요.",
-          "180g이라 가방에 넣어도 부담이 거의 없습니다. 접으면 얇아져서 회사와 집을 오가며 사용하기 편해요.",
-          "알루미늄이라 마감이 깔끔하고 책상 위에 올려두면 디자인도 괜찮습니다. 노트북을 안정적으로 받쳐줘서 만족스럽습니다.",
-          "영상 볼 때도 타이핑할 때도 각도만 바꿔서 사용할 수 있어 편합니다. 가볍고 보관하기 쉬운 거치대를 찾는 분들께 추천해요.",
-        ]}
-      />
+      {/* 제품 오버뷰 — 제품 구조가 보이는 전체 배경 사진 */}
+      <section className="relative aspect-[3/5] overflow-hidden bg-[#edf6fb]">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/assets/sync-2026-10-29/void/laptop-portable/product-overview-premium-blue-v1.webp" alt="블루 그레이 공간에 펼쳐진 휴대용 거치대의 X자 구조와 실리콘 패드" className="absolute inset-0 h-full w-full object-cover object-center" />
+        <div className="absolute inset-x-0 top-32 z-10 px-8 text-center" style={{ textShadow: "0 2px 18px rgba(255,255,255,0.7)" }}>
+          <h2 className="text-[68px] font-bold leading-[1.05] tracking-[-0.035em]"><span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(105deg, #022640 0%, #5786AB 50%, #022640 100%)", textShadow: "none" }}>Void Laptop Stand</span></h2>
+          <p className="mt-6 text-[26px] font-medium tracking-[-0.015em] text-[#3d5a6e]">휴대용 노트북 거치대 · 가볍게 접어 어디든.</p>
+        </div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%]" style={{ background: "linear-gradient(180deg, rgba(245,245,247,0) 0%, #f5f5f7 100%)" }} aria-hidden />
+      </section>
+
+      {/* 한눈에 보는 핵심 사양 */}
+      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
+        <h2
+          className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
+          style={{
+            color: "#1d1d1f",
+            fontFamily:
+              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+          }}
+        >
+          한눈에 보는<br /><span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(90deg, #022640, #5786AB)" }}>Void Laptop Stand</span>
+        </h2>
+
+        <div className="mt-20 grid grid-cols-2 gap-6">
+          {[
+            { value: "180", unit: "g", label: "무게" },
+            { value: "10", unit: "kg", label: "최대 하중" },
+            { value: "6", unit: "단계", label: "각도 조절" },
+            { value: "1.5", unit: "cm", label: "접힘 두께" },
+            { value: "20–45", unit: "°", label: "각도 조절 범위" },
+            { value: "10–17", unit: "인치", label: "호환 기기 크기" },
+          ].map(({ value, unit, label }) => (
+            <div
+              key={label}
+              className="flex flex-col items-center justify-center rounded-[28px] bg-white px-8 py-16 text-center"
+            >
+              <p
+                className={`inline-flex h-[84px] w-full items-baseline justify-center whitespace-nowrap text-center font-bold leading-none tracking-[-0.03em] ${value.length >= 5 ? "text-[60px]" : "text-[76px]"}`}
+                style={{
+                  backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  fontFamily:
+                    '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
+                }}
+              >
+                {value}
+                <span className="ml-[0.08em] text-[34px] font-semibold">
+                  {unit}
+                </span>
+              </p>
+              <p
+                className="mt-7 w-full text-center text-[26px] font-semibold tracking-[-0.015em]"
+                style={{ color: "#1d1d1f" }}
+              >
+                {label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 제품 포커스 — 구조와 실루엣 */}
+      <section
+        className="overflow-hidden px-12 py-40 text-center"
+        style={{
+          background: "linear-gradient(180deg, #f5f5f7 0px, #ffffff 320px)",
+        }}
+      >
+        <p className="text-[20px] font-bold tracking-[0.14em] text-[#0071e3]">
+          FORM FOLLOWS FUNCTION
+        </p>
+        <h2 className="mt-8 text-[64px] font-bold leading-[1.15] tracking-[-0.035em] text-[#1d1d1f]">
+          필요한 기능만,
+          <br />
+          가볍게 담았습니다.
+        </h2>
+        <p className="mx-auto mt-8 whitespace-nowrap text-[27px] font-medium leading-[1.65] text-[#6e6e73]">
+          각도 조절부터 기기 보호까지, 슬림한 바디 하나에.
+        </p>
+        <div className="mx-auto mt-20 flex aspect-[3/4] max-w-[780px] items-center justify-center overflow-hidden rounded-[32px] border border-[#e5e5e7] bg-white shadow-[0_18px_50px_rgba(0,0,0,0.06)]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/sync-2026-10-29/void/laptop-portable/product-focus-premium-blue-v1.webp"
+            alt="X자 연결부와 각도 조절 홈, 실리콘 패드가 선명하게 보이는 블랙 휴대용 노트북 거치대"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="mt-8 grid grid-cols-3 gap-5">
+          {[
+            ["접이식 바디", "접으면 두께 1.5cm"],
+            ["6단계 조절", "작업에 맞는 각도 선택"],
+            ["실리콘 패드", "기기 접촉부 보호"],
+          ].map(([title, body]) => (
+            <div
+              key={title}
+              className="rounded-[24px] border border-[#d5e5f1] bg-white/80 px-5 py-8"
+            >
+              <p className="text-[24px] font-bold text-[#1d1d1f]">{title}</p>
+              <p className="mt-3 text-[18px] font-medium leading-[1.5] text-[#6e6e73]">
+                {body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 책상 위 직접 사용 비교 */}
+      <section className="bg-white px-12 pb-36 pt-36">
+        <h2 className="text-center text-[58px] font-bold leading-tight tracking-[-0.03em]">
+          <span
+            className="bg-clip-text text-transparent"
+            style={{
+              backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
+            }}
+          >
+            Void Laptop Stand
+          </span>
+          <br />
+          <span className="text-[61px]">나에게 맞는 이유.</span>
+        </h2>
+        <div className="mt-20 overflow-hidden rounded-[28px] border border-[#d2d2d7] bg-white">
+          <table className="w-full table-fixed border-collapse text-center">
+            <caption className="sr-only">
+              책상 위에 노트북을 직접 놓고 사용할 때와 Void Laptop Stand 사용 비교
+            </caption>
+            <thead>
+              <tr className="bg-[#f5f5f7]">
+                <th className="w-[27%] px-4 py-7 text-[25px] font-bold text-[#1d1d1f]">
+                  비교 항목
+                </th>
+                <th className="border-l border-[#d2d2d7] px-4 py-7 text-[23px] font-bold leading-tight text-[#1d1d1f]">
+                  책상 위
+                  <br />
+                  직접 사용
+                </th>
+                <th className="border-l border-[#d2d2d7] bg-[#e3f0fa] px-4 py-7 text-[24px] font-bold leading-tight text-[#285875]">
+                  Void
+                  <br />
+                  Laptop Stand
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["시선 높이", "낮은 화면", "화면을 더 높게"],
+                ["각도 조절", "책상 위에 고정", "20°~45° 6단계"],
+                ["외부 작업", "책상 높이에 맞춰 사용", "휴대해 각도 조절"],
+                ["발열 관리", "바닥과 밀착", "오픈형 방열 구조"],
+                ["사용 후 보관", "그대로 놓아두기", "1.5cm로 슬림하게 접기"],
+              ].map(([label, desk, stand]) => (
+                <tr key={label} className="border-t border-[#d2d2d7]">
+                  <th className="px-4 py-8 text-[23px] font-semibold leading-snug text-[#1d1d1f]">
+                    {label}
+                  </th>
+                  <td className="border-l border-[#d2d2d7] px-4 py-8 text-[21px] font-semibold leading-snug text-[#86868b]">
+                    {desk}
+                  </td>
+                  <td className="border-l border-[#d2d2d7] bg-[#f0f7fc] px-4 py-8 text-[22px] font-bold leading-snug text-[#285875]">
+                    {stand}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       {/* 기능 + 스토리 */}
       <section className="bg-white px-12 pb-36 pt-[8.8rem]">
@@ -128,14 +218,13 @@ export default function VoidLaptopPortableV2Page() {
                 목 뒤가 뻐근해지는 이유.
               </>
             }
-            imageSrc="/assets/void/laptop-portable/neck-strain.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/neck-strain.webp"
             imageAlt="책상에서 고개 숙이고 노트북 보는 모습"
             bodyAfterImage
           >
-            노트북 화면은 늘 눈높이보다 아래에 있습니다. 그래서 하루 여덟 시간,
-            고개를 숙인 채로 일하게 됩니다.{" "}
+            낮은 노트북 화면을 보다 보면 고개도 함께 내려갑니다.{" "}
             <span style={{ color: "#1d1d1f" }}>
-              자세가 나쁜 게 아니라, 화면이 낮은 것뿐입니다.
+              더 편안한 작업을 위한 시작, 화면 높이부터 바꿔보세요.
             </span>
           </FeatureBlock>
 
@@ -147,21 +236,22 @@ export default function VoidLaptopPortableV2Page() {
                 목이 아닌 화면.
               </>
             }
-            imageSrc="/assets/void/laptop-portable/posture.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/posture.webp"
             imageAlt="거치대 사용 전후 자세 비교"
             bodyAfterImage
+            supporting={<FeatureSupport items={[["BEFORE", "낮은 화면을 향하는 시선"], ["AFTER", "화면을 올려 편안한 시선"]]} />}
           >
-            화면을 눈높이에 가깝게 올리는 것만으로도 시선은 자연스러워지고, 목과
-            어깨의 부담은 줄어듭니다. 작은 높이의 차이가 더욱 편안한 작업
-            환경을 만들어줍니다.
+            거치대로 화면을 올려, 고개를 깊이 숙이지 않아도 되는 위치를 찾아보세요.
+            책상과 의자 높이에 맞춰 각도를 조절하면 더 편안하게 작업할 수 있습니다.
           </FeatureBlock>
 
           <FeatureBlock
             title="20°~45° 6단계로."
-            imageSrc="/assets/void/laptop-portable/angle-stages-v2.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/angle-stages-v2.webp"
             imageAlt="20°~45° 6단계로 조절되는 휴대용 노트북 거치대"
             aspect="3 / 4"
             bodyAfterImage
+            supporting={<FeatureSupport items={[["20°–45°", "작업에 맞는 각도 범위"], ["6단계", "조절 홈에 맞춰 고정"]]} />}
             afterImage={
               <div
                 className="mt-16 w-full overflow-hidden rounded-[28px]"
@@ -169,36 +259,34 @@ export default function VoidLaptopPortableV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-portable/angle-adjustment-detail-v2.webp"
+                  src="/assets/sync-2026-10-29/void/laptop-portable/angle-adjustment-detail-v2.webp"
                   alt="6단계 각도 조절 홈 디테일"
                   className="h-full w-full object-cover"
                 />
               </div>
             }
           >
-            20°부터 45°까지, 6단계 각도 조절을 지원해 사용자의 자세와 작업
-            환경에 맞는 가장 편안한 높이를 선택할 수 있습니다. 앉아서 작업할
-            때도, 서서 사용할 때도 자연스러운 시선을 유지하며 더욱 편안한
-            작업 환경을 만들어줍니다.
+            타이핑할 때는 낮게, 영상을 볼 때는 더 높게.
+            지지대를 원하는 조절 홈에 끼워 20°부터 45°까지 6단계로 맞춰보세요.
           </FeatureBlock>
 
           <FeatureBlock
             title="가벼움과 견고함을 동시에."
-            imageSrc="/assets/void/laptop-portable/weight-180g-v2.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/weight-180g-v2.webp"
             imageAlt="전자저울 위에서 180g으로 측정된 휴대용 노트북 거치대"
             bodyAfterImage
+            supporting={<FeatureSupport items={[["약 180g", "가볍게 챙기는 알루미늄 바디"], ["최대 10kg", "제품의 최대 지지 하중"]]} />}
           >
-            약 180g, 아이패드 미니보다 가볍습니다. 그런데도 최대 10kg — 16인치
-            맥북 프로를 네 대 쌓아 올려도 버티는 하중을 견딥니다. 언제든 가볍게
-            들고 나갈 수 있지만, 사용할 때만큼은 흔들림 없이 단단하게 노트북을
-            지지합니다.
+            약 180g의 알루미늄 합금 바디로 이동할 때의 부담을 줄였습니다.
+            펼치면 X자 연결부와 양쪽 지지대가 노트북을 받쳐줍니다.
           </FeatureBlock>
 
           <FeatureBlock
             title="어디든 함께하는 작업 환경."
-            imageSrc="/assets/void/laptop-portable/backpack-portability-v2.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/backpack-portability-v2.webp"
             imageAlt="백팩 주머니에 휴대용 노트북 거치대를 넣은 모습"
             bodyAfterImage
+            supporting={<FeatureSupport items={[["1.5cm", "접었을 때의 두께"], ["접이식", "펼쳐 쓰고 슬림하게 보관"]]} />}
             afterImage={
               <div
                 className="mt-16 w-full overflow-hidden rounded-[28px]"
@@ -206,33 +294,32 @@ export default function VoidLaptopPortableV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-portable/cafe-portability-v2.webp"
+                  src="/assets/sync-2026-10-29/void/laptop-portable/cafe-portability-v2.webp"
                   alt="카페 테이블 위 노트북과 접힌 휴대용 노트북 거치대"
                   className="h-full w-full object-cover"
                 />
               </div>
             }
           >
-            접으면 두께 1.5cm. 노트북 파우치에 함께 넣어도 표가 나지 않는
-            두께입니다. 카페에서도, 출장지 호텔 책상에서도, 노트북을 펼칠 수
-            있는 공간이라면 어디든 같은 작업 환경을 만들 수 있습니다.
+            접으면 두께 1.5cm. 구성품인 휴대용 파우치에 넣어 가방에 챙기세요.
+            카페부터 출장지까지, 자리를 옮겨도 익숙한 각도로 작업할 수 있습니다.
           </FeatureBlock>
 
           <FeatureBlock
             title={
               <>
-                성능을 유지하는
+                노트북 아래,
                 <br />
-                가장 단순한 방법.
+                공기가 지나는 여유.
               </>
             }
-            imageSrc="/assets/void/laptop-portable/cooling-airflow-v2.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/cooling-airflow-v2.webp"
             imageAlt="노트북 아래 공기 흐름을 보여주는 휴대용 노트북 거치대"
             bodyAfterImage
+            supporting={<FeatureSupport items={[["OPEN", "하부를 열어둔 구조"], ["AIRFLOW", "기기 아래 공기 흐름 확보"]]} />}
           >
-            높아진 화면은 자세만 바꾸는 것이 아닙니다. 노트북 아래로 공기가
-            원활하게 흐르며 열을 보다 효과적으로 배출해 안정적인 작업 환경을
-            유지합니다.
+            두 개의 레일이 노트북을 받치고, 가운데는 열어두었습니다.
+            바닥과 기기 사이에 공간을 만들어 하부 공기 흐름을 돕습니다.
           </FeatureBlock>
 
           <FeatureBlock
@@ -243,20 +330,21 @@ export default function VoidLaptopPortableV2Page() {
                 섬세한 디테일.
               </>
             }
-            imageSrc="/assets/void/laptop-portable/silicone-protection-detail-v2.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/silicone-protection-detail-v2.webp"
             imageAlt="노트북 보호용 실리콘 패드가 적용된 휴대용 노트북 거치대"
             bodyAfterImage
+            supporting={<FeatureSupport columns={3} items={[["실리콘 패드", "기기 접촉부 보호"], ["전면 받침 턱", "노트북 하단을 받치는 구조"], ["바닥 패드", "책상 위 밀림 완화"]]} />}
           >
-            노트북이 닿는 부분에는 부드러운 실리콘 패드를 적용했습니다.
-            미끄러짐을 줄이고 스크래치를 방지해, 소중한 기기를 더욱 안정적이고
-            안전하게 보호합니다.
+            노트북이 닿는 레일과 전면 받침 턱에 부드러운 실리콘 패드를 더했습니다.
+            기기 표면을 보호하고, 사용 중 미끄러짐을 줄여줍니다.
           </FeatureBlock>
 
           <FeatureBlock
             title="태블릿부터 노트북까지."
-            imageSrc="/assets/void/laptop-portable/tablet-compatibility-v2.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/tablet-compatibility-v2.webp"
             imageAlt="휴대용 노트북 거치대에 세로로 놓인 태블릿"
             bodyAfterImage
+            supporting={<FeatureSupport items={[["10–17인치", "호환 기기 크기"], ["태블릿 · 노트북", "기기에 맞춰 함께 사용"]]} />}
             afterImage={
               <div
                 className="mt-16 w-full overflow-hidden rounded-[28px]"
@@ -264,21 +352,21 @@ export default function VoidLaptopPortableV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-portable/laptop-compatibility-v2.webp"
+                  src="/assets/sync-2026-10-29/void/laptop-portable/laptop-compatibility-v2.webp"
                   alt="휴대용 노트북 거치대에 놓인 노트북"
                   className="h-full w-full object-cover"
                 />
               </div>
             }
           >
-            Void Laptop Stand는 10~17인치까지 폭넓게 호환되어, 태블릿은 물론
-            다양한 디바이스에 맞춰 자연스러운 작업 높이를 만들어, 일상적인
-            사용부터 집중이 필요한 작업까지 폭넓게 함께합니다.
+            10~17인치 노트북은 물론 태블릿도 함께 사용할 수 있습니다.
+            기기의 두께와 하단 형태에 따라 거치 상태가 달라질 수 있으니,
+            양쪽 레일과 전면 턱에 안정적으로 놓이는지 확인해 주세요.
           </FeatureBlock>
 
           <FeatureBlock
             title="데스크를 완성하는 블랙."
-            imageSrc="/assets/void/laptop-portable/C025B579-A275-4E79-AC56-D78BD6D742AA.webp"
+            imageSrc="/assets/sync-2026-10-29/void/laptop-portable/C025B579-A275-4E79-AC56-D78BD6D742AA.webp"
             imageAlt="블랙 휴대용 노트북 거치대"
             bodyAfterImage
             afterImage={
@@ -288,16 +376,15 @@ export default function VoidLaptopPortableV2Page() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/void/laptop-portable/black-portable-carry-v2.webp"
+                  src="/assets/sync-2026-10-29/void/laptop-portable/black-portable-carry-v2.webp"
                   alt="노트북과 함께 든 블랙 휴대용 노트북 거치대"
                   className="h-full w-full object-cover"
                 />
               </div>
             }
           >
-            깊이 있는 블랙 컬러는 어떤 공간에도 자연스럽게 어우러집니다.
-            미니멀한 디자인과 프리미엄 알루미늄 소재가 만나 더욱 세련된 데스크
-            환경을 완성합니다.
+            차분한 블랙 컬러와 얇은 실루엣으로 책상 위를 단정하게.
+            펼쳐놓을 때도, 노트북과 함께 챙길 때도 자연스럽게 어울립니다.
           </FeatureBlock>
         </div>
       </section>
@@ -318,38 +405,38 @@ export default function VoidLaptopPortableV2Page() {
           className="mx-auto mt-8 max-w-[640px] text-center text-[26px] font-medium leading-[1.6] tracking-[-0.01em]"
           style={{ color: "#6e6e73" }}
         >
-          자리를 옮긴다고 목이 다시 숙여질 이유는 없습니다.
+          집에서도, 밖에서도 익숙한 작업 각도를 이어가세요.
         </p>
 
         <div className="mt-20 grid grid-cols-2 gap-x-6 gap-y-14">
           {[
             {
               scene: "집 책상에서",
-              line: "매일 앉는 자리에 펼쳐 두세요. 화면이 올라간 만큼 고개는 내려가지 않습니다.",
+              line: "매일 쓰는 책상에 펼쳐두고 나에게 맞는 각도를 찾아보세요.",
               imageSrc:
-                "/assets/void/laptop-portable/E05940D6-F169-4142-9134-1301D6592E7D.webp",
+                "/assets/sync-2026-10-29/void/laptop-portable/E05940D6-F169-4142-9134-1301D6592E7D.webp",
               imageAlt: "집 책상에 펼쳐 사용 중인 VOID 노트북 거치대",
             },
             {
               scene: "카페에서",
-              line: "낮은 테이블일수록 차이가 큽니다. 접힌 채로 가방에서 꺼내 바로 펼치면 끝.",
+              line: "가방에서 꺼내 펼치면, 작은 테이블에서도 화면 각도를 편하게.",
               imageSrc:
-                "/assets/void/laptop-portable/D21AE67D-9CCC-45F0-833D-4E3C62B6A870.webp",
+                "/assets/sync-2026-10-29/void/laptop-portable/D21AE67D-9CCC-45F0-833D-4E3C62B6A870.webp",
               imageAlt: "카페 테이블 위에서 사용 중인 VOID 노트북 거치대",
             },
             {
               scene: "사무실에서",
-              line: "회의실로 옮겨 앉아도 그대로 들고 갑니다. 180g이라 손에 든 줄도 모르죠.",
+              line: "회의실로 자리를 옮길 때도, 가볍게 접어 노트북과 함께.",
               imageSrc:
-                "/assets/void/laptop-portable/AFA6616D-02E5-4681-92F3-A1A783C8A20F.webp",
-              imageAlt: "노트북과 함께 들고 이동하는 VOID 노트북 거치대",
+                "/assets/sync-2026-10-29/void/laptop-portable/AFA6616D-02E5-4681-92F3-A1A783C8A20F.webp",
+              imageAlt: "회의실에서 휴대용 거치대와 노트북으로 작업하는 모습",
             },
             {
               scene: "출장지에서",
-              line: "호텔 책상은 늘 애매합니다. 파우치에 함께 넣어 두면 어디서든 같은 높이.",
+              line: "낯선 호텔 책상에서도 파우치에서 꺼내 익숙한 각도로 맞춰보세요.",
               imageSrc:
-                "/assets/void/laptop-portable/9C936CB0-3188-4007-8FC8-BB2B7EA6FB30.webp",
-              imageAlt: "파우치에서 꺼내 호텔 책상에서 사용하는 VOID 노트북 거치대",
+                "/assets/sync-2026-10-29/void/laptop-portable/9C936CB0-3188-4007-8FC8-BB2B7EA6FB30.webp",
+              imageAlt: "호텔 책상에서 휴대용 거치대에 노트북을 올려 작업하는 모습",
             },
           ].map(({ scene, line, imageSrc, imageAlt }) => (
             <div key={scene}>
@@ -385,58 +472,6 @@ export default function VoidLaptopPortableV2Page() {
         </div>
       </section>
 
-      {/* [신규] 3. 스펙 하이라이트 — 숫자를 문단에서 꺼내 크게 */}
-      <section className="bg-[#f5f5f7] px-12 pb-36 pt-32">
-        <h2
-          className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
-          style={{
-            color: "#1d1d1f",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          숫자로 보는 Void Stand.
-        </h2>
-
-        <div className="mt-20 grid grid-cols-2 gap-6">
-          {[
-            { value: "180", unit: "g", label: "무게" },
-            { value: "10", unit: "kg", label: "최대 하중" },
-            { value: "6", unit: "단계", label: "각도 조절" },
-            { value: "1.5", unit: "cm", label: "접힘 두께" },
-          ].map(({ value, unit, label }) => (
-            <div
-              key={label}
-              className="flex flex-col items-center justify-center rounded-[28px] bg-white px-8 py-16 text-center"
-            >
-              <p
-                className="w-full text-center text-[84px] font-bold leading-none tracking-[-0.03em]"
-                style={{
-                  backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  color: "transparent",
-                  fontFamily:
-                    '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-                }}
-              >
-                {value}
-                <span className="ml-[0.08em] text-[38px] font-semibold">
-                  {unit}
-                </span>
-              </p>
-              <p
-                className="mt-7 w-full text-center text-[26px] font-semibold tracking-[-0.015em]"
-                style={{ color: "#1d1d1f" }}
-              >
-                {label}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* [신규] 4. 신뢰 배지 — 구매 직전 불안 제거 */}
       <section className="bg-white px-12 pb-32 pt-32">
         <div className="grid grid-cols-2 gap-x-10 gap-y-12">
@@ -444,25 +479,25 @@ export default function VoidLaptopPortableV2Page() {
             {
               Icon: RefreshCw,
               title: "7일 이내 무상 교환",
-              body: "초기 불량은 수령 후 7일 이내 확인해 주시면 배송비 없이 교환해 드립니다.",
+              body: "수령 후 7일 이내 접수한 초기 불량은 배송비 없이 교환합니다.",
             },
             {
               Icon: ShieldCheck,
-              title: "10kg 하중 테스트",
-              body: "정격 하중 기준으로 반복 테스트를 거친 알루미늄 합금 구조입니다.",
+              title: "알루미늄 합금 바디",
+              body: "가볍게 휴대하면서 기기를 받치도록 설계한 접이식 구조입니다.",
             },
             {
               Icon: Wrench,
-              title: "판매자 직접 A/S",
-              body: "문의는 대행사를 거치지 않고 담당자가 직접 확인하고 답변드립니다.",
+              title: "스토어 고객센터",
+              body: "제품 문의와 초기 불량 접수는 스토어 고객센터에서 안내합니다.",
             },
             {
               Icon: PackageCheck,
               title: "당일 발송",
-              body: "평일 오후 4시 이전 주문은 당일 발송됩니다. (일부 품목 제외)",
+              body: "평일 오후 4시 이전 주문은 당일 발송합니다. 일부 품목은 제외됩니다.",
             },
           ].map(({ Icon, title, body }) => (
-            <div key={title} className="flex gap-6">
+            <div key={title} className="flex flex-col gap-5 rounded-[28px] border border-[#d5e5f1] bg-[#f0f7fc] px-7 py-9">
               <Icon
                 className="mt-1 h-12 w-12 shrink-0 text-[#0071e3]"
                 strokeWidth={2}
@@ -487,71 +522,38 @@ export default function VoidLaptopPortableV2Page() {
         </div>
       </section>
 
-      {/* [신규] 5. 클로징 — 설득 파트의 마지막, 정보 파트로 넘어가기 전 */}
-      <section
-        className="px-12 pb-40 pt-36"
-        style={{
-          background: "linear-gradient(180deg, #ffffff, #D4EAF6 60%, #cfe6f4)",
-        }}
-      >
-        <h2
-          className="text-center text-[64px] font-bold leading-[1.18] tracking-[-0.028em]"
-          style={{
-            color: "#1d1d1f",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          180g으로 바꾸는
-          <br />
-          하루 여덟 시간.
-        </h2>
-        <p
-          className="mx-auto mt-10 max-w-[680px] text-center text-[28px] font-medium leading-[1.6] tracking-[-0.01em]"
-          style={{
-            color: "#4a5a66",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Text", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          책상을 바꾸지 않아도, 의자를 바꾸지 않아도 됩니다. 화면 높이 하나만
-          올리면 오늘 저녁의 목 상태가 달라집니다.
-        </p>
+      <ReviewSection
+        reviews={[
+          "노트북 받침대를 찾다가 구매했는데 생각보다 훨씬 튼튼합니다. 타이핑할 때 흔들림이 적고 화면 높이가 올라가서 목이 편해졌어요.",
+          "6단계로 각도를 조절할 수 있어서 자세에 맞춰 쓰기 좋습니다. 노트북으로 오래 작업하는 분들에게 정말 유용할 것 같아요.",
+          "180g이라 가방에 넣어도 부담이 거의 없습니다. 접으면 얇아져서 회사와 집을 오가며 사용하기 편해요.",
+          "알루미늄이라 마감이 깔끔하고 책상 위에 올려두면 디자인도 괜찮습니다. 노트북을 안정적으로 받쳐줘서 만족스럽습니다.",
+          "영상 볼 때도 타이핑할 때도 각도만 바꿔서 사용할 수 있어 편합니다. 가볍고 보관하기 쉬운 거치대를 찾는 분들께 추천해요.",
+        ]}
+      />
 
-        <div className="mt-16 w-full" style={{ aspectRatio: "4 / 3" }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/assets/void/laptop-portable/hero-2.webp"
-            alt="노트북이 올려진 블랙 휴대용 노트북 거치대"
-            className="h-full w-full object-contain"
-            style={{ filter: "drop-shadow(0 24px 48px rgba(29,29,31,0.14))" }}
-          />
+      {/* 클로징 — 접힌 제품으로 휴대성을 보여주는 전체 배경 사진 */}
+      <section className="relative min-h-[1500px] overflow-hidden bg-[#e5eef4] text-center">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/assets/sync-2026-10-29/void/laptop-portable/closing-premium-blue-v1.webp" alt="닫힌 노트북과 파우치 옆에 슬림하게 접어 둔 블랙 휴대용 노트북 거치대" className="absolute inset-0 h-full w-full object-cover object-center" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-[45%]" style={{ background: "linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.96) 18%, rgba(255,255,255,0.62) 48%, rgba(255,255,255,0) 100%)" }} aria-hidden />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[34%]" style={{ background: "linear-gradient(180deg, rgba(8,28,45,0) 0%, rgba(8,28,45,0.85) 100%)" }} aria-hidden />
+        <div className="relative z-10 flex min-h-[1500px] flex-col px-12 pb-28 pt-28">
+          <div style={{ textShadow: "0 2px 24px rgba(255,255,255,0.75)" }}>
+            <h2 className="text-[64px] font-bold leading-[1.18] tracking-[-0.028em] text-[#022640]">180g으로 바꾸는<br />하루 여덟 시간.</h2>
+            <p className="mx-auto mt-8 whitespace-nowrap text-[27px] font-medium leading-[1.55] tracking-[-0.01em] text-[#3d5a6e]">
+              가볍게 챙겨, 어디서든 편안한 작업 환경을.
+            </p>
+          </div>
+          <div className="mt-auto" style={{ textShadow: "0 3px 20px rgba(8,28,45,0.9)" }}>
+            <p className="text-[52px] font-semibold leading-tight tracking-[-0.02em] text-white">Void Portable Laptop Stand</p>
+            <p className="mt-3 text-[28px] font-normal leading-snug tracking-[-0.01em] text-[#d4eaf6]">가볍지만. 강력하다.</p>
+          </div>
         </div>
-
-        <p
-          className="mt-20 text-center text-[52px] font-semibold leading-tight tracking-[-0.02em]"
-          style={{
-            backgroundImage: "linear-gradient(90deg, #022640, #5786AB)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            color: "transparent",
-            fontFamily:
-              '"SF Pro KR", "SF Pro Display", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif',
-          }}
-        >
-          Void Portable Laptop Stand
-        </p>
-        <p
-          className="mt-3 text-center text-[28px] font-normal leading-snug tracking-[-0.01em]"
-          style={{ color: "#6e7e8a" }}
-        >
-          가볍지만. 강력하다.
-        </p>
       </section>
 
       {/* 질문에 답해드립니다 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-40">
+      <section className="bg-white px-10 pb-36 pt-40">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -567,15 +569,15 @@ export default function VoidLaptopPortableV2Page() {
           {[
             {
               q: "몇 인치 노트북까지 올릴 수 있나요?",
-              a: "10~17인치 노트북과 태블릿까지 폭넓게 호환됩니다. 맥북 에어, 맥북 프로는 물론 대부분의 노트북에 사용하실 수 있어요.",
+              a: "10~17인치 노트북과 태블릿에 사용할 수 있습니다. 구매 전 기기 두께와 하단 형태를 확인하고, 양쪽 레일과 전면 턱에 안정적으로 놓이는지 확인해 주세요.",
             },
             {
               q: "일반 거치대와 무엇이 다른가요?",
               a: "약 180g의 알루미늄 합금 구조에 20°부터 45°까지 6단계 각도 조절을 지원하며, 최대 10kg의 하중을 견딜 수 있도록 설계했습니다. 가볍게 휴대하면서도 노트북을 안정적으로 지지합니다.",
             },
             {
-              q: "각도 조절은 어떻게 하나요? 세밀하게 조절되나요?",
-              a: "20°부터 45°까지 6단계로 조절 가능합니다. 타이핑에 편한 낮은 각도부터, 화면 시야 확보에 좋은 높은 각도까지 상황에 맞게 선택하실 수 있어요.",
+              q: "각도는 어떻게 조절하나요?",
+              a: "노트북을 내린 뒤 양쪽 지지대를 같은 단계의 홈에 끼워주세요. 20°부터 45°까지 6단계로 조절할 수 있으며, 사용 전 양쪽이 고정됐는지 확인해 주세요.",
             },
             {
               q: "미끄러지거나 흔들리지 않나요?",
@@ -590,12 +592,16 @@ export default function VoidLaptopPortableV2Page() {
               a: "접으면 두께 1.5cm, 무게 180g(±5g)으로 가방에 넣어도 부담 없이 들고 다니실 수 있어요.",
             },
             {
-              q: "색상은 어떤 게 있나요?",
-              a: "고급스러운 느낌을 살린 블랙 색상 단일 라인으로 제작됩니다.",
+              q: "타이핑할 때도 사용할 수 있나요?",
+              a: "직접 타이핑할 때는 낮은 각도로 맞춰보세요. 화면을 더 높게 두고 오래 작업할 때는 별도 키보드와 마우스를 함께 사용하면 편리합니다.",
             },
             {
-              q: "접었다 폈다 자주 해도 내구성에 문제없나요?",
-              a: "알루미늄 합금 소재로 제작되어 반복적인 접이식 사용에도 견고함을 유지합니다.",
+              q: "색상은 어떤 게 있나요?",
+              a: "블랙 한 가지 색상입니다.",
+            },
+            {
+              q: "접거나 펼칠 때 주의할 점이 있나요?",
+              a: "기기를 먼저 내리고 천천히 접거나 펼쳐주세요. 연결부에 손가락이 끼지 않도록 주의하고, 조절 홈과 지지대를 무리한 힘으로 누르지 마세요.",
             },
           ].map(({ q, a }) => (
             <li
@@ -613,14 +619,9 @@ export default function VoidLaptopPortableV2Page() {
                 >
                   {q}
                 </p>
-                <ChevronDown
-                  className="mt-1.5 h-7 w-7 shrink-0 text-[#86868b]"
-                  strokeWidth={2.5}
-                  aria-hidden
-                />
               </div>
               <p
-                className="mt-4 pr-12 text-[22px] font-medium leading-[1.5] tracking-[-0.01em]"
+                className="mt-4 text-[22px] font-medium leading-[1.5] tracking-[-0.01em]"
                 style={{
                   color: "#6e6e73",
                   fontFamily:
@@ -650,15 +651,15 @@ export default function VoidLaptopPortableV2Page() {
         <div className="mx-auto mt-24 max-w-[780px] overflow-hidden rounded-[28px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/void/laptop-portable/size.webp"
-            alt="Laptop Stand 사이즈"
+            src="/assets/sync-2026-10-29/void/laptop-portable/size.webp"
+            alt="펼친 크기 255 × 180 × 50~150mm, 접은 크기 255 × 45 × 15mm"
             className="block h-auto w-full"
           />
         </div>
       </section>
 
       {/* 구성품 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-32">
+      <section className="bg-white px-10 pb-36 pt-32">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -677,7 +678,7 @@ export default function VoidLaptopPortableV2Page() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/void/laptop-portable/included-components-v2.webp"
+              src="/assets/sync-2026-10-29/void/laptop-portable/included-components-v2.webp"
               alt="휴대용 노트북 거치대 본체와 휴대용 파우치 구성품"
               className="h-full w-full object-cover"
             />
@@ -686,7 +687,7 @@ export default function VoidLaptopPortableV2Page() {
             className="mt-6 text-[32px] font-semibold tracking-[-0.01em]"
             style={{ color: "#1d1d1f" }}
           >
-            알루미늄 거치대 본체 x1 · 휴대용 파우치 x1
+            알루미늄 거치대 본체 × 1 · 휴대용 파우치 × 1
           </p>
         </div>
       </section>
@@ -712,6 +713,9 @@ export default function VoidLaptopPortableV2Page() {
             ["펼쳤을 때", "255 × 180 × 50~150 mm"],
             ["접었을 때", "255 × 45 × 15 mm"],
             ["중량", "180g (±5g)"],
+            ["각도 조절", "20°~45°, 6단계"],
+            ["최대 하중", "10kg"],
+            ["호환 기기", "10~17인치 노트북·태블릿"],
             ["제조자(수입자)", "보이드 투 노바"],
             ["제조국", "중국"],
             ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"],
@@ -722,7 +726,7 @@ export default function VoidLaptopPortableV2Page() {
               className="flex gap-8 border-b border-[#d2d2d7] py-6 first:border-t"
             >
               <dt
-                className="w-[200px] shrink-0 text-[22px] font-semibold tracking-[-0.01em]"
+                className="w-[230px] shrink-0 text-[22px] font-semibold tracking-[-0.01em]"
                 style={{ color: "#1d1d1f" }}
               >
                 {label}
@@ -739,7 +743,7 @@ export default function VoidLaptopPortableV2Page() {
       </section>
 
       {/* 기타 안내 */}
-      <section className="bg-[#f5f5f7] px-10 pb-36 pt-32">
+      <section className="bg-white px-10 pb-36 pt-32">
         <h2
           className="text-center text-[58px] font-bold leading-tight tracking-[-0.025em]"
           style={{
@@ -891,6 +895,7 @@ export default function VoidLaptopPortableV2Page() {
           </div>
         </div>
       </section>
+      </div>
     </BrandFrame>
   );
 }
@@ -908,6 +913,7 @@ function FeatureBlock({
   bodyAfterImage = false,
   photoLabel,
   afterImage,
+  supporting,
 }: {
   title: ReactNode;
   children?: ReactNode;
@@ -921,6 +927,7 @@ function FeatureBlock({
   bodyAfterImage?: boolean;
   photoLabel?: string;
   afterImage?: ReactNode;
+  supporting?: ReactNode;
 }) {
   const body =
     children != null && children !== "" ? (
@@ -1004,6 +1011,27 @@ function FeatureBlock({
           {afterImage}
         </>
       )}
+      {supporting}
+    </div>
+  );
+}
+
+
+function FeatureSupport({
+  items,
+  columns = 2,
+}: {
+  items: readonly (readonly [string, string])[];
+  columns?: 2 | 3;
+}) {
+  return (
+    <div className={`mt-12 grid ${columns === 3 ? "grid-cols-3" : "grid-cols-2"} gap-5`}>
+      {items.map(([value, label]) => (
+        <div key={value} className="rounded-[24px] border border-[#d5e5f1] bg-[#f0f7fc] px-5 py-8 text-center">
+          <p className="text-[24px] font-bold tracking-[-0.02em] text-[#285875]">{value}</p>
+          <p className="mt-3 text-[18px] font-medium leading-[1.45] text-[#6e6e73]">{label}</p>
+        </div>
+      ))}
     </div>
   );
 }

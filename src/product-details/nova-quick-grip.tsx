@@ -21,7 +21,7 @@ export default function NovaQuickGripPage() {
       <section className="relative min-h-[1440px] overflow-hidden bg-[#111111]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/assets/nova/quick-grip/hero-lat-pulldown-v2.webp"
+          src="/assets/sync-2026-10-29/nova/quick-grip/hero-lat-pulldown-v2.webp"
           alt="Nova 퀴그립을 착용하고 랫풀다운을 하는 운동인"
           className="absolute inset-0 h-full w-full object-cover object-center opacity-80"
         />
@@ -97,7 +97,7 @@ export default function NovaQuickGripPage() {
       <section className="relative overflow-hidden" style={{ aspectRatio: "3 / 4" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/assets/nova/quick-grip/product-overview.webp"
+          src="/assets/sync-2026-10-29/nova/quick-grip/product-overview.webp"
           alt="Nova 퀵그립 좌우 한 쌍"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -209,7 +209,7 @@ export default function NovaQuickGripPage() {
                 손을 놓아버렸다면.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/grip-fatigue.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/grip-fatigue.webp"
             imageAlt="악력과 전완이 지쳐 던벨을 놓은 운동인"
             bodyAfterImage
           >
@@ -224,7 +224,7 @@ export default function NovaQuickGripPage() {
                 더 깊게 집중할 수 있도록.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/grip-support.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/grip-support.webp"
             imageAlt="헬스장에 놓인 Nova 퀵그립 한 쌍"
             bodyAfterImage
           >
@@ -239,7 +239,7 @@ export default function NovaQuickGripPage() {
                 풀림을 줄인 전면 구조.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/front-structure.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/front-structure.webp"
             imageAlt="바에 밀착되는 Nova 퀵그립의 전면 구조"
             bodyAfterImage
           >
@@ -254,7 +254,7 @@ export default function NovaQuickGripPage() {
                 손목은 편안하게.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/wrist-cushion.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/wrist-cushion.webp"
             imageAlt="손목 안쪽 쿠션을 강조한 Nova 퀵그립"
             aspect="3 / 4"
             bodyAfterImage
@@ -270,9 +270,9 @@ export default function NovaQuickGripPage() {
                 흔들림 없는 고정력.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/velcro-stitching.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/velcro-stitching.webp"
             imageAlt="Nova 퀵그립의 벨크로와 봉제 디테일"
-            imageSrc2="/assets/nova/quick-grip/stitching-detail.webp"
+            imageSrc2="/assets/sync-2026-10-29/nova/quick-grip/stitching-detail.webp"
             imageAlt2="Nova 퀵그립의 상하단 봉제 라인"
             bodyAfterImage
           >
@@ -287,7 +287,7 @@ export default function NovaQuickGripPage() {
                 물집 걱정도 덜도록.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/palm-protection.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/palm-protection.webp"
             imageAlt="손바닥을 넓게 덮는 Nova 퀵그립"
             bodyAfterImage
           >
@@ -302,9 +302,9 @@ export default function NovaQuickGripPage() {
                 바로 시작할 수 있게.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/one-wrap-step-1.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/one-wrap-step-1.webp"
             imageAlt="Nova 퀵그립을 바에 감기 전 동작"
-            imageSrc2="/assets/nova/quick-grip/one-wrap-step-2.webp"
+            imageSrc2="/assets/sync-2026-10-29/nova/quick-grip/one-wrap-step-2.webp"
             imageAlt2="Nova 퀵그립을 한 바퀴 감아 쥐 동작"
             aspect="1 / 1"
             bodyAfterImage
@@ -320,7 +320,7 @@ export default function NovaQuickGripPage() {
                 하나로 편안하게.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/size-guide.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/size-guide.webp"
             imageAlt="Nova 퀵그립 상세 치수"
             cards={[
               { value: "17.5cm", label: "세로" },
@@ -339,7 +339,7 @@ export default function NovaQuickGripPage() {
                 가볍게 휴대하도록.
               </>
             }
-            imageSrc="/assets/nova/quick-grip/weight-85g.webp"
+            imageSrc="/assets/sync-2026-10-29/nova/quick-grip/weight-85g.webp"
             imageAlt="전자저울에서 85g으로 측정된 Nova 퀵그립"
             cards={[
               { value: "85g", label: "1개 기준" },
@@ -380,28 +380,28 @@ export default function NovaQuickGripPage() {
             {
               scene: "랫풀다운",
               line: "전완이 먼저 지치기 쉬운 수직 당기기에서 등에 집중하도록 도와줍니다.",
-              imageSrc: "/assets/nova/quick-grip/exercise-lat-pulldown.webp",
+              imageSrc: "/assets/sync-2026-10-29/nova/quick-grip/exercise-lat-pulldown.webp",
               imageAlt: "랫풀다운에서 퀵그립을 사용하는 모습",
               photo: "",
             },
             {
               scene: "바벨·덤벨 로우",
               line: "그립에 쏠리는 신경을 덜고 당기는 궤적과 수축에 집중해보세요.",
-              imageSrc: "/assets/nova/quick-grip/exercise-row.webp",
+              imageSrc: "/assets/sync-2026-10-29/nova/quick-grip/exercise-row.webp",
               imageAlt: "로우 동작에서 퀵그립을 사용하는 모습",
               photo: "",
             },
             {
               scene: "데드리프트",
               line: "중량이 올라갈수록 커지는 악력 부담을 보조해 안정적인 반복을 돕습니다.",
-              imageSrc: "/assets/nova/quick-grip/exercise-deadlift.webp",
+              imageSrc: "/assets/sync-2026-10-29/nova/quick-grip/exercise-deadlift.webp",
               imageAlt: "데드리프트에서 퀵그립을 사용하는 모습",
               photo: "",
             },
             {
               scene: "풀업",
               line: "체중을 당기는 동안 악력 부담을 덜어 등의 움직임과 수축에 집중하도록 돕습니다.",
-              imageSrc: "/assets/nova/quick-grip/exercise-pull-up.webp",
+              imageSrc: "/assets/sync-2026-10-29/nova/quick-grip/exercise-pull-up.webp",
               imageAlt: "풀업에서 퀵그립을 사용하는 모습",
               photo: "",
             },
@@ -506,7 +506,7 @@ export default function NovaQuickGripPage() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/assets/nova/quick-grip/closing-product.webp"
+          src="/assets/sync-2026-10-29/nova/quick-grip/closing-product.webp"
           alt="헬스장에 놓인 Nova 퀵그립 한 쌍"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -664,7 +664,7 @@ export default function NovaQuickGripPage() {
 
         <PhotoSlot
           label=""
-          imageSrc="/assets/nova/quick-grip/components.webp"
+          imageSrc="/assets/sync-2026-10-29/nova/quick-grip/components.webp"
           imageAlt="왼손용과 오른손용 퀵그립 한 쌍"
           aspect="3 / 4"
         />
@@ -948,7 +948,7 @@ function QuickGripPhilosophy() {
       <div className="mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px] bg-[#f5f5f7]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/assets/nova/quick-grip/performance-support-pair.webp"
+          src="/assets/sync-2026-10-29/nova/quick-grip/performance-support-pair.webp"
           alt="헬스장 바닥에 나란히 놓인 Nova Quick Grip 한 쌍"
           className="h-full w-full object-cover object-center"
         />
@@ -972,7 +972,7 @@ function QuickGripComparison() {
       eyebrow: "BEFORE",
       title: "악력이 먼저 지치는 맨손",
       body: "등과 하체에는 힘이 남아 있어도 손과 전완이 먼저 풀려 세트가 끝나는 상태",
-      image: "/assets/nova/quick-grip/grip-comparison-before.webp",
+      image: "/assets/sync-2026-10-29/nova/quick-grip/grip-comparison-before.webp",
       imageAlt: "퀵그립 없이 맨손으로 바벨을 잡아 악력이 지친 모습",
       accent: false,
     },
@@ -980,7 +980,7 @@ function QuickGripComparison() {
       eyebrow: "AFTER",
       title: "목표 부위에 집중하는 퀵그립",
       body: "바를 쥐는 힘을 보조해 그립 걱정을 덜고 당기는 자세와 목표 부위의 수축에 집중하는 상태",
-      image: "/assets/nova/quick-grip/grip-comparison-after.webp",
+      image: "/assets/sync-2026-10-29/nova/quick-grip/grip-comparison-after.webp",
       imageAlt: "Nova Quick Grip을 착용하고 덤벨을 안정적으로 잡은 모습",
       accent: true,
     },

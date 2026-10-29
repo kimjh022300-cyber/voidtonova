@@ -30,7 +30,7 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
 
       <section className="relative aspect-[3/4] overflow-hidden bg-white">
         <Image
-          src="/assets/void/keyboard-palm-rest/product-overview-curved.webp"
+          src="/assets/sync-2026-10-29/void/keyboard-palm-rest/product-overview-curved.webp"
           alt="화이트 텐키리스 키보드 앞에서 얕은 중앙 곡면이 드러나는 블랙월넛 팜레스트"
           fill
         sizes="860px"
@@ -52,7 +52,7 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
         </p>
       </section>
 
-      <section className="bg-[#f8f7f5] px-12 py-36">
+      <section className="px-12 py-36" style={{ background: "linear-gradient(180deg, #f8f7f5 0%, #f8f7f5 calc(100% - 240px), #ffffff 100%)" }}>
         <Title>한눈에 보는<br /><Gradient>Void Keyboard Rest.</Gradient></Title>
         <div className="mt-20 grid grid-cols-2 gap-6">
           {metrics.map(([value, label]) => <Metric key={label} value={value} label={label} />)}
@@ -63,7 +63,7 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
         eyebrow="WHY PALM REST"
         title={<>키보드는 올라와 있는데,<br /><Gradient>손목은 책상에 남아 있습니다.</Gradient></>}
         label="블랙월넛 팜레스트에 손목을 올리고 흰색 텐키리스 키보드를 타이핑하는 모습"
-        image="/assets/void/keyboard-palm-rest/why-palm-rest-hands.webp"
+        image="/assets/sync-2026-10-29/void/keyboard-palm-rest/why-palm-rest-hands.webp"
         imageAlt="블랙월넛 팜레스트에 양쪽 손목을 올리고 흰색 텐키리스 키보드를 타이핑하는 모습"
       >
         키보드 앞에 비어 있는 높이만큼 손목은 공중에 머물거나 책상 모서리에 직접 닿게 됩니다.
@@ -73,10 +73,10 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
       <section className="bg-white px-10 py-36">
         <Title>손목이 놓일 자리가 생기면,<br /><Gradient>타이핑 자세도 달라집니다.</Gradient></Title>
         <div className="mt-20 grid grid-cols-2 gap-6">
-          <Scene title="비어 있는 높이" label="팜레스트 없이 키보드를 사용하는 손목 측면" image="/assets/void/keyboard-palm-rest/posture-without-rest.webp" imageAlt="팜레스트 없이 키보드를 사용해 손목이 책상에 직접 닿는 모습">
+          <Scene title="비어 있는 높이" label="팜레스트 없이 키보드를 사용하는 손목 측면" image="/assets/sync-2026-10-29/void/keyboard-palm-rest/posture-without-rest.webp" imageAlt="팜레스트 없이 키보드를 사용해 손목이 책상에 직접 닿는 모습">
             손목이 공중에 머물거나 책상 모서리에 직접 닿는 상태
           </Scene>
-          <Scene title="이어지는 받침" label="팜레스트와 함께 키보드를 사용하는 손목 측면" image="/assets/void/keyboard-palm-rest/posture-with-rest.webp" imageAlt="블랙월넛 팜레스트가 손목과 키보드 사이 높이를 이어주는 모습" accent>
+          <Scene title="이어지는 받침" label="팜레스트와 함께 키보드를 사용하는 손목 측면" image="/assets/sync-2026-10-29/void/keyboard-palm-rest/posture-with-rest.webp" imageAlt="블랙월넛 팜레스트가 손목과 키보드 사이 높이를 이어주는 모습" accent>
             키보드 앞에 손목을 잠시 내려놓을 수 있는 자리가 생긴 상태
           </Scene>
         </div>
@@ -85,7 +85,7 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
       <Feature
         title={<>텐키리스 키보드 앞,<br /><Gradient>부족하지도 넘치지도 않게.</Gradient></>}
         label="36cm 팜레스트와 텐키리스 키보드의 가로 길이 비교 사진"
-        image="/assets/void/keyboard-palm-rest/desk-white-keyboard.webp"
+        image="/assets/sync-2026-10-29/void/keyboard-palm-rest/desk-white-keyboard.webp"
         imageAlt="화이트 텐키리스 키보드와 폭이 자연스럽게 맞는 36cm 블랙월넛 팜레스트"
         body="가로 약 36cm로 일반적인 텐키리스 키보드와 사용하기 좋은 길이입니다. 키보드의 양끝을 따라 손목이 움직이는 범위를 넓게 받쳐 책상 위 구성을 간결하게 정돈합니다."
         extra={<><div className="mt-14 grid grid-cols-2 gap-5"><Metric value="36cm" label="팜레스트 가로 길이" /><Metric value="8cm" label="손목을 받치는 폭" /></div><p className="mt-9 text-center text-[18px] font-medium text-[#86868b]">키보드마다 하우징 크기가 다르므로 구매 전 실제 길이를 확인해 주세요.</p></>}
@@ -93,7 +93,7 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
       <Feature
         title={<>평평한 나무 한 장이 아닌,<br /><Gradient>손목이 놓이는 곡면.</Gradient></>}
         label="손목이 닿는 중앙부의 완만한 곡면과 측면 높이 사진"
-        image="/assets/void/keyboard-palm-rest/curved-surface-6deg.webp"
+        image="/assets/sync-2026-10-29/void/keyboard-palm-rest/curved-surface-6deg.webp"
         imageAlt="화이트 키보드 앞 블랙월넛 팜레스트의 완만한 곡면과 6도 경사"
         body="손목이 닿는 위치를 따라 상단을 부드러운 곡면과 6° 경사로 다듬었습니다. 키보드 앞의 높이 차이를 완만하게 이어주고, 손목과 손바닥이 한 지점에만 닿지 않도록 넓은 면으로 받쳐줍니다."
       />
@@ -103,14 +103,14 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
       <Feature
         title={<>모양보다 먼저 느껴지는,<br /><Gradient>부드러운 라운드 마감.</Gradient></>}
         label="전면과 측면의 둥글게 다듬은 모서리 클로즈업"
-        image="/assets/void/keyboard-palm-rest/rounded-edge.webp"
+        image="/assets/sync-2026-10-29/void/keyboard-palm-rest/rounded-edge.webp"
         imageAlt="둥글고 매끄럽게 다듬은 블랙월넛 팜레스트 모서리 클로즈업"
         body="손목과 손바닥 가장자리가 닿는 전면과 네 귀퉁이를 둥글게 정리했습니다. 상단 곡면부터 측면까지 매끄럽게 다듬어 원목의 단단함은 유지하고 날카롭게 닿는 느낌은 줄였습니다."
       />
       <Feature
         title={<>손은 움직여도,<br /><Gradient>팜레스트는 제자리에서.</Gradient></>}
         label="제품을 뒤집어 양쪽의 넓은 실리콘 패드를 보여주는 사진"
-        image="/assets/void/keyboard-palm-rest/anti-slip-pad.webp"
+        image="/assets/sync-2026-10-29/void/keyboard-palm-rest/anti-slip-pad.webp"
         imageAlt="블랙월넛 팜레스트 바닥의 넓은 검정색 미끄럼 방지 패드"
         body="바닥 양쪽의 넓은 실리콘 패드가 책상과의 마찰력을 높입니다. 타이핑 중 밀리는 움직임을 줄이고 원목과 책상 표면이 직접 맞닿는 마찰도 덜어줍니다."
       />
@@ -126,7 +126,7 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
           tone="chapter"
           title={<>짙은 색보다 깊은,<br /><Gradient>블랙월넛의 표정.</Gradient></>}
           label="빛에 따라 깊은 브라운 나뭇결이 드러나는 블랙월넛 매크로 사진"
-          image="/assets/void/keyboard-palm-rest/black-walnut-expression.webp"
+          image="/assets/sync-2026-10-29/void/keyboard-palm-rest/black-walnut-expression.webp"
           imageAlt="따뜻한 햇빛 아래 깊은 브라운 나뭇결이 드러나는 블랙월넛 팜레스트"
         >
           빛을 머금은 블랙월넛은 단순한 짙은 갈색에 머물지 않습니다. 보는 각도에 따라 결의 흐름과
@@ -138,7 +138,7 @@ export default function VoidBlackWalnutKeyboardPalmRestPage() {
           <h2 className="mt-9 text-[64px] font-bold leading-[1.16] tracking-[-0.035em]">같은 블랙월넛,<br /><Gradient>서로 다른 하나의 결.</Gradient></h2>
           <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
             <Image
-              src="/assets/void/keyboard-palm-rest/natural-grain-variations.webp"
+              src="/assets/sync-2026-10-29/void/keyboard-palm-rest/natural-grain-variations.webp"
               alt="서로 다른 색 농도와 나뭇결을 가진 블랙월넛 팜레스트 세 개"
               fill
               sizes="764px"
@@ -170,7 +170,7 @@ function Hero() {
   return (
     <section className="relative min-h-[1440px] overflow-hidden bg-[#f2f0ed]">
       <Image
-        src="/assets/void/keyboard-palm-rest/hero-v2.webp"
+        src="/assets/sync-2026-10-29/void/keyboard-palm-rest/hero-v2.webp"
         alt="밝은 데스크 위 텐키리스 키보드와 블랙월넛 팜레스트"
         fill
         preload
@@ -239,9 +239,9 @@ function DeskStyles() {
       <Title>키보드가 달라도,<br /><Gradient>책상의 분위기는 자연스럽게.</Gradient></Title>
       <div className="mt-20 grid grid-cols-3 gap-5">
         {[
-          ["WHITE", "화이트 키보드", "/assets/void/keyboard-palm-rest/desk-white-keyboard.webp", "화이트 텐키리스 키보드와 블랙월넛 팜레스트"],
-          ["BLACK", "블랙 키보드", "/assets/void/keyboard-palm-rest/desk-black-keyboard.webp", "블랙 텐키리스 키보드와 블랙월넛 팜레스트"],
-          ["METAL", "메탈 키보드", "/assets/void/keyboard-palm-rest/desk-metal-keyboard.webp", "메탈 하우징 텐키리스 키보드와 블랙월넛 팜레스트"],
+          ["WHITE", "화이트 키보드", "/assets/sync-2026-10-29/void/keyboard-palm-rest/desk-white-keyboard.webp", "화이트 텐키리스 키보드와 블랙월넛 팜레스트"],
+          ["BLACK", "블랙 키보드", "/assets/sync-2026-10-29/void/keyboard-palm-rest/desk-black-keyboard.webp", "블랙 텐키리스 키보드와 블랙월넛 팜레스트"],
+          ["METAL", "메탈 키보드", "/assets/sync-2026-10-29/void/keyboard-palm-rest/desk-metal-keyboard.webp", "메탈 하우징 텐키리스 키보드와 블랙월넛 팜레스트"],
         ].map(([key, title, image, alt]) => (
           <div key={key}>
             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-[28px]">
@@ -263,25 +263,25 @@ function Recommended() {
     {
       title: "텐키리스 키보드 사용자",
       body: "36cm 길이의 팜레스트를 키보드 앞에 자연스럽게 맞춰 사용하고 싶은 분께 잘 맞습니다.",
-      image: "/assets/void/keyboard-palm-rest/product-overview-white-keyboard.webp",
+      image: "/assets/sync-2026-10-29/void/keyboard-palm-rest/product-overview-white-keyboard.webp",
       alt: "텐키리스 키보드와 36cm 블랙월넛 팜레스트를 함께 사용하는 모습",
     },
     {
       title: "단단한 받침을 선호하는 분",
       body: "푹 꺼지는 쿠션보다 형태를 일정하게 유지하는 원목 받침을 선호하는 분께 잘 맞습니다.",
-      image: "/assets/void/keyboard-palm-rest/black-walnut-expression.webp",
+      image: "/assets/sync-2026-10-29/void/keyboard-palm-rest/black-walnut-expression.webp",
       alt: "형태를 단단하게 유지하는 블랙월넛 원목 팜레스트",
     },
     {
       title: "간편한 관리를 원하는 분",
       body: "먼지와 보풀이 신경 쓰이는 패브릭 대신 매끄러운 표면을 간편하게 관리하고 싶은 분께 잘 맞습니다.",
-      image: "/assets/void/keyboard-palm-rest/care-guide.webp",
+      image: "/assets/sync-2026-10-29/void/keyboard-palm-rest/care-guide.webp",
       alt: "부드러운 마른 천으로 블랙월넛 팜레스트를 닦는 모습",
     },
     {
       title: "우드톤 데스크를 좋아하는 분",
       body: "기능적인 데스크 액세서리도 책상의 소재와 분위기에 맞춰 고르고 싶은 분께 잘 맞습니다.",
-      image: "/assets/void/keyboard-palm-rest/recommended-wood-desk.webp",
+      image: "/assets/sync-2026-10-29/void/keyboard-palm-rest/recommended-wood-desk.webp",
       alt: "월넛 소재의 데스크 액세서리로 꾸민 따뜻한 우드톤 작업 공간",
     },
   ];
@@ -369,7 +369,7 @@ function Care() {
       <Eyebrow>CARE GUIDE</Eyebrow><h2 className="mt-9 text-[64px] font-bold leading-[1.16]">오래 곁에 두기 위한,<br /><Gradient>간단한 관리.</Gradient></h2>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
         <Image
-          src="/assets/void/keyboard-palm-rest/care-guide.webp"
+          src="/assets/sync-2026-10-29/void/keyboard-palm-rest/care-guide.webp"
           alt="부드러운 마른 천으로 블랙월넛 팜레스트 표면을 닦는 모습"
           fill
           sizes="764px"
@@ -385,7 +385,7 @@ function Closing() {
   return (
     <section className="relative min-h-[1440px] overflow-hidden bg-[#eee8e2] px-12 pb-40 pt-8">
       <Image
-        src="/assets/void/keyboard-palm-rest/closing-typing-desk.webp"
+        src="/assets/sync-2026-10-29/void/keyboard-palm-rest/closing-typing-desk.webp"
         alt="우드톤 데스크에서 블랙월넛 팜레스트에 손목을 올리고 텐키리스 키보드를 타이핑하는 모습"
         fill
         sizes="860px"
@@ -425,7 +425,7 @@ function Size() {
       <InfoTitle>사이즈</InfoTitle>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
         <Image
-          src="/assets/void/keyboard-palm-rest/size-guide.webp"
+          src="/assets/sync-2026-10-29/void/keyboard-palm-rest/size-guide.webp"
           alt="Void Keyboard Rest 가로 36cm, 세로 8cm 실측 안내"
           fill
           sizes="780px"
@@ -443,7 +443,7 @@ function Components() {
       <InfoTitle>구성품</InfoTitle>
       <div className="relative mt-24 aspect-[3/4] w-full overflow-hidden rounded-[28px]">
         <Image
-          src="/assets/void/keyboard-palm-rest/components.webp"
+          src="/assets/sync-2026-10-29/void/keyboard-palm-rest/components.webp"
           alt="Void Keyboard Rest 본체 구성품"
           fill
           sizes="780px"
@@ -456,7 +456,7 @@ function Components() {
 }
 
 function ProductInfo() {
-  const info = [["품명 및 모델명", "Void Keyboard Rest"], ["용도", "키보드용 원목 팜레스트"], ["권장 배열", "텐키리스 키보드"], ["색상", "블랙월넛"], ["소재", "블랙월넛 원목 · 실리콘 패드"], ["크기", "약 360 × 80 × 19mm"], ["주요 특징", "곡면형 상단 · 라운드 모서리 · 미끄럼 방지 패드"], ["구성품", "Void Keyboard Rest 본체 1개"], ["제조자(수입자)", "보이드 투 노바"], ["제조국", "확인 후 업데이트 예정"], ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"], ["A/S 책임자와 전화번호", "010-6393-0907"]];
+  const info = [["품명 및 모델명", "Void Keyboard Rest"], ["용도", "키보드용 원목 팜레스트"], ["권장 배열", "텐키리스 키보드"], ["색상", "블랙월넛"], ["소재", "블랙월넛 원목 · 실리콘 패드"], ["크기", "약 360 × 80 × 19mm"], ["주요 특징", "곡면형 상단 · 라운드 모서리 · 미끄럼 방지 패드"], ["구성품", "Void Keyboard Rest 본체 1개"], ["제조자(수입자)", "보이드 투 노바"],  ["품질보증기준", "관련 법령 및 소비자분쟁해결기준에 따름"], ["A/S 책임자와 전화번호", "010-6393-0907"]];
   return <section className="bg-white px-10 pb-36 pt-32"><InfoTitle>제품 정보</InfoTitle><Rows rows={info} /></section>;
 }
 
